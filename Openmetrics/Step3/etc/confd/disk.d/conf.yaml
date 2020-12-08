@@ -1,0 +1,11 @@
+init_config:
+instances:
+  - use_mount: true
+    file_system_blacklist:
+      - tmpfs
+      - shm
+      - autofs$
+    mount_point_blacklist:
+      - /host/rootfs/local/docker.*
+      - /proc/sys/fs/binfmt_misc
+      - /host/proc/sys/fs/binfmt_misc

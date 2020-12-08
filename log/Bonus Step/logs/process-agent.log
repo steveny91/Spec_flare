@@ -1,0 +1,9 @@
+2019-02-18 11:38:14 INFO (log.go:473) - config.Load()
+2019-02-18 11:38:14 INFO (log.go:473) - config.load succeeded
+2019-02-18 11:38:14 INFO (log.go:386) - starting the tagging system
+2019-02-18 11:38:15 INFO (service.go:237) - process-agent not enabled.
+Set env var DD_PROCESS_AGENT_ENABLED=true or add
+process_config:
+  enabled: "true"
+to your datadog.yaml file.
+Exiting.

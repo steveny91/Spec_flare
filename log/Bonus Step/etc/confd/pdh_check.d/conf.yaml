@@ -1,0 +1,6 @@
+init_config:
+instances:
+  - host: .
+    countersetname: User Input Delay per Session
+    metrics:
+      - ['Max Input Delay', pdh.user.input.delay.process, gauge]

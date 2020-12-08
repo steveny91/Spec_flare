@@ -1,0 +1,847 @@
+cmdline:
+- C:\Program Files\Datadog\Datadog Agent\bin\agent\trace-agent.exe
+- --config=C:\ProgramData\Datadog\datadog.yaml
+config:
+  AnalyzedRateByServiceLegacy: {}
+  AnalyzedSpansByService: {}
+  BucketInterval: 1e+10
+  ConfigPath: C:\ProgramData\Datadog\datadog.yaml
+  ConnectionLimit: 2000
+  DDAgentBin: C:\Program Files\Datadog\Datadog Agent\bin\agent.exe
+  DefaultEnv: none
+  Enabled: true
+  Endpoints:
+  - Host: https://trace.agent.datadoghq.com
+    NoProxy: false
+  ExtraAggregators:
+  - http.status_code
+  - version
+  ExtraSampleRate: 1
+  Hostname: DESKTOP-D6V56SV
+  Ignore: {}
+  LogFilePath: C:\ProgramData\Datadog\logs\trace-agent.log
+  LogLevel: debug
+  LogThrottling: false
+  MaxCPU: 0.5
+  MaxEPS: 200
+  MaxMemory: 5e+08
+  MaxTPS: 10
+  Obfuscation: null
+  ProxyURL: null
+  ReceiverHost: localhost
+  ReceiverPort: 8126
+  ReceiverSocket: ""
+  ReceiverTimeout: 0
+  ReplaceTags: null
+  SkipSSLValidation: false
+  StatsWriter:
+    ConnectionLimit: 0
+    FlushPeriodSeconds: 0
+    QueueSize: 0
+  StatsdHost: localhost
+  StatsdPort: 8125
+  TraceWriter:
+    ConnectionLimit: 0
+    FlushPeriodSeconds: 0
+    QueueSize: 0
+  WatchdogInterval: 1e+10
+errorssampler:
+  State:
+    Cardinality: 0
+    InTPS: 0
+    MaxTPS: 10
+    Offset: 1
+    OutTPS: 0
+    Slope: 3
+  Stats:
+    KeptTPS: 0
+    TotalTPS: 0
+memstats:
+  Alloc: 840864
+  BuckHashSys: 1.444798e+06
+  BySize:
+  - Frees: 0
+    Mallocs: 0
+    Size: 0
+  - Frees: 185
+    Mallocs: 335
+    Size: 8
+  - Frees: 20533
+    Mallocs: 21901
+    Size: 16
+  - Frees: 2115
+    Mallocs: 3104
+    Size: 32
+  - Frees: 1258
+    Mallocs: 2624
+    Size: 48
+  - Frees: 745
+    Mallocs: 1061
+    Size: 64
+  - Frees: 450
+    Mallocs: 569
+    Size: 80
+  - Frees: 162
+    Mallocs: 451
+    Size: 96
+  - Frees: 1003
+    Mallocs: 1077
+    Size: 112
+  - Frees: 61
+    Mallocs: 83
+    Size: 128
+  - Frees: 127
+    Mallocs: 179
+    Size: 144
+  - Frees: 38
+    Mallocs: 74
+    Size: 160
+  - Frees: 40
+    Mallocs: 61
+    Size: 176
+  - Frees: 16
+    Mallocs: 24
+    Size: 192
+  - Frees: 103
+    Mallocs: 139
+    Size: 208
+  - Frees: 6
+    Mallocs: 13
+    Size: 224
+  - Frees: 120
+    Mallocs: 139
+    Size: 240
+  - Frees: 19
+    Mallocs: 53
+    Size: 256
+  - Frees: 101
+    Mallocs: 143
+    Size: 288
+  - Frees: 17
+    Mallocs: 21
+    Size: 320
+  - Frees: 45
+    Mallocs: 61
+    Size: 352
+  - Frees: 2
+    Mallocs: 101
+    Size: 384
+  - Frees: 8
+    Mallocs: 16
+    Size: 416
+  - Frees: 3
+    Mallocs: 4
+    Size: 448
+  - Frees: 2
+    Mallocs: 3
+    Size: 480
+  - Frees: 13
+    Mallocs: 14
+    Size: 512
+  - Frees: 21
+    Mallocs: 30
+    Size: 576
+  - Frees: 20
+    Mallocs: 30
+    Size: 640
+  - Frees: 2
+    Mallocs: 9
+    Size: 704
+  - Frees: 2
+    Mallocs: 2
+    Size: 768
+  - Frees: 8
+    Mallocs: 30
+    Size: 896
+  - Frees: 13
+    Mallocs: 26
+    Size: 1024
+  - Frees: 17
+    Mallocs: 24
+    Size: 1152
+  - Frees: 11
+    Mallocs: 19
+    Size: 1280
+  - Frees: 1
+    Mallocs: 2
+    Size: 1408
+  - Frees: 4
+    Mallocs: 4
+    Size: 1536
+  - Frees: 2
+    Mallocs: 8
+    Size: 1792
+  - Frees: 5
+    Mallocs: 6
+    Size: 2048
+  - Frees: 7
+    Mallocs: 12
+    Size: 2304
+  - Frees: 5
+    Mallocs: 12
+    Size: 2688
+  - Frees: 0
+    Mallocs: 0
+    Size: 3072
+  - Frees: 0
+    Mallocs: 2
+    Size: 3200
+  - Frees: 1
+    Mallocs: 1
+    Size: 3456
+  - Frees: 42
+    Mallocs: 52
+    Size: 4096
+  - Frees: 9
+    Mallocs: 10
+    Size: 4864
+  - Frees: 2
+    Mallocs: 4
+    Size: 5376
+  - Frees: 67
+    Mallocs: 68
+    Size: 6144
+  - Frees: 0
+    Mallocs: 1
+    Size: 6528
+  - Frees: 0
+    Mallocs: 0
+    Size: 6784
+  - Frees: 0
+    Mallocs: 0
+    Size: 6912
+  - Frees: 3
+    Mallocs: 6
+    Size: 8192
+  - Frees: 5
+    Mallocs: 16
+    Size: 9472
+  - Frees: 0
+    Mallocs: 0
+    Size: 9728
+  - Frees: 1
+    Mallocs: 1
+    Size: 10240
+  - Frees: 1
+    Mallocs: 1
+    Size: 10880
+  - Frees: 0
+    Mallocs: 0
+    Size: 12288
+  - Frees: 1
+    Mallocs: 1
+    Size: 13568
+  - Frees: 33
+    Mallocs: 34
+    Size: 14336
+  - Frees: 1
+    Mallocs: 1
+    Size: 16384
+  - Frees: 1
+    Mallocs: 1
+    Size: 18432
+  - Frees: 2
+    Mallocs: 5
+    Size: 19072
+  DebugGC: false
+  EnableGC: true
+  Frees: 28445
+  GCCPUFraction: 0
+  GCSys: 483584
+  HeapAlloc: 840864
+  HeapIdle: 5.16096e+06
+  HeapInuse: 2.506752e+06
+  HeapObjects: 5214
+  HeapReleased: 0
+  HeapSys: 7.667712e+06
+  LastGC: 1.5988552386960182e+18
+  Lookups: 0
+  MCacheInuse: 13632
+  MCacheSys: 16384
+  MSpanInuse: 39456
+  MSpanSys: 49152
+  Mallocs: 33659
+  NextGC: 4.194304e+06
+  NumForcedGC: 0
+  NumGC: 2
+  OtherSys: 1.813818e+06
+  PauseEnd:
+  - 1.5988551186908344e+18
+  - 1.5988552386960182e+18
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  PauseNs:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  PauseTotalNs: 0
+  StackInuse: 720896
+  StackSys: 720896
+  Sys: 1.2196344e+07
+  TotalAlloc: 3.29652e+06
+pid: 18632
+prioritysampler:
+  State:
+    Cardinality: 0
+    InTPS: 0
+    MaxTPS: 10
+    Offset: 1
+    OutTPS: 0
+    Slope: 3
+  Stats:
+    KeptTPS: 0
+    TotalTPS: 0
+ratebyservice:
+  'service:,env:': 1
+ratelimiter:
+  RecentPayloadsSeen: 0
+  RecentTracesDropped: 0
+  RecentTracesSeen: 0
+  TargetRate: 1
+receiver: []
+sampler:
+  State:
+    Cardinality: 0
+    InTPS: 0
+    MaxTPS: 10
+    Offset: 1
+    OutTPS: 0
+    Slope: 3
+  Stats:
+    KeptTPS: 0
+    TotalTPS: 0
+stats_writer:
+  Bytes: 0
+  Errors: 0
+  Payloads: 0
+  Retries: 0
+  Splits: 0
+  StatsBuckets: 0
+trace_writer:
+  Bytes: 0
+  BytesEstimated: 0
+  BytesUncompressed: 0
+  Errors: 0
+  Events: 0
+  Payloads: 0
+  Retries: 0
+  SingleMaxSize: 0
+  Spans: 0
+  Traces: 0
+uptime: 135
+version:
+  BuildDate: 2020-03-24 15:27:03.2146701 +0000 GMT m=+0.084983701
+  GitBranch: HEAD
+  GitCommit: 84d743eee
+  GoVersion: 1.12.9
+  Version: 7.18.1
+watchdog:
+  CPU:
+    UserAvg: 0
+  Mem:
+    Alloc: 764976

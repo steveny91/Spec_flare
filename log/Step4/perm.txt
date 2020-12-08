@@ -1,0 +1,5 @@
+vagrant@ubuntu-xenial:/var/log/spring$ ls -la access.log 
+-rw-r--r-- 1 root root 1230 May 19 21:22 access.log
+
+vagrant@ubuntu-xenial:/var/log/spring$ ls -la ./app/app.log
+-rw-r--r-- 1 root root  4560 May 19 21:22 app.log

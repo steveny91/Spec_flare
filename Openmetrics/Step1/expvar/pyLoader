@@ -1,0 +1,41 @@
+ConfigureErrors:
+  openmetrics (1.8.0):
+  - |
+    could not invoke 'openmetrics' python check constructor. New constructor API returned:
+    Traceback (most recent call last):
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 100, in __init__
+        self.get_scraper_config(instance)
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 129, in get_scraper_config
+        config = self.create_scraper_configuration(instance)
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/mixins.py", line 107, in create_scraper_configuration
+        metrics_mapper.update(metric)
+    TypeError: 'int' object is not iterable
+    Deprecated constructor API returned:
+    Traceback (most recent call last):
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 100, in __init__
+        self.get_scraper_config(instance)
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 129, in get_scraper_config
+        config = self.create_scraper_configuration(instance)
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/mixins.py", line 107, in create_scraper_configuration
+        metrics_mapper.update(metric)
+    TypeError: 'int' object is not iterable
+  - |
+    could not invoke 'openmetrics' python check constructor. New constructor API returned:
+    Traceback (most recent call last):
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 100, in __init__
+        self.get_scraper_config(instance)
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 129, in get_scraper_config
+        config = self.create_scraper_configuration(instance)
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/mixins.py", line 107, in create_scraper_configuration
+        metrics_mapper.update(metric)
+    TypeError: 'int' object is not iterable
+    Deprecated constructor API returned:
+    Traceback (most recent call last):
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 100, in __init__
+        self.get_scraper_config(instance)
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 129, in get_scraper_config
+        config = self.create_scraper_configuration(instance)
+      File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/mixins.py", line 107, in create_scraper_configuration
+        metrics_mapper.update(metric)
+    TypeError: 'int' object is not iterable
+Py3Warnings: {}

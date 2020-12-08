@@ -1,0 +1,5 @@
+logs:
+  - type: file
+    path: C:\Users\GTX1080i7\AppData\Roaming\Advanced Combat Tracker\FFXIVLogs\*
+    source: ffxiv
+    service: ffxiv

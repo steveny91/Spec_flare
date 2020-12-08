@@ -1,0 +1,342 @@
+{
+	"Id": "ddba15cab12b1be0bdf56f0bbece577095c3ed85842ad30b94b342821f6f3617",
+	"Created": "2020-11-17T00:34:39.643373528Z",
+	"Path": "/init",
+	"Args": [],
+	"State": {
+		"Status": "running",
+		"Running": true,
+		"Paused": false,
+		"Restarting": false,
+		"OOMKilled": false,
+		"Dead": false,
+		"Pid": 19461,
+		"ExitCode": 0,
+		"Error": "",
+		"StartedAt": "2020-11-17T00:34:41.652176638Z",
+		"FinishedAt": "0001-01-01T00:00:00Z"
+	},
+	cirrus-docker.jfrog.io/datadogmonitoring/datadog:1.6.0-1,
+	"ResolvConfPath": "/var/lib/docker/containers/697fc019a12b42cfbcb4e093fb6779c87997b26460d14528f45dd5afbf9c4087/resolv.conf",
+	"HostnamePath": "/var/lib/docker/containers/697fc019a12b42cfbcb4e093fb6779c87997b26460d14528f45dd5afbf9c4087/hostname",
+	"HostsPath": "/var/lib/kubelet/pods/d2ae7477-aae3-4a64-a055-767aeb1b13bd/etc-hosts",
+	"LogPath": "/var/lib/docker/containers/ddba15cab12b1be0bdf56f0bbece577095c3ed85842ad30b94b342821f6f3617/ddba15cab12b1be0bdf56f0bbece577095c3ed85842ad30b94b342821f6f3617-json.log",
+	"Name": "/k8s_datadog_datadog-6ldcj_monitoring_d2ae7477-aae3-4a64-a055-767aeb1b13bd_0",
+	"RestartCount": 0,
+	"Driver": "overlay2",
+	"Platform": "linux",
+	"MountLabel": "",
+	"ProcessLabel": "",
+	"AppArmorProfile": "",
+	"ExecIDs": [
+		"85cf15ff1dba7ae3ff57d4a36f475faf4f911c24726f9c6a86caa6c08db16afa"
+	],
+	"HostConfig": {
+		"Binds": [
+			"/proc:/host/proc:ro",
+			"/var/run/docker.sock:/var/run/docker.sock:ro",
+			"/sys/fs/cgroup:/host/sys/fs/cgroup:ro",
+			"/var/lib/kubelet/pods/d2ae7477-aae3-4a64-a055-767aeb1b13bd/volumes/kubernetes.io~empty-dir/s6-run:/var/run/s6",
+			"/etc/passwd: ********
+			"/var/lib/kubelet/pods/d2ae7477-aae3-4a64-a055-767aeb1b13bd/volume-subpaths/datadog-datadog-yaml/datadog/5:/etc/datadog-agent/datadog.yaml:ro",
+			"/:/host/rootfs:ro",
+			"/var/lib/kubelet/pods/d2ae7477-aae3-4a64-a055-767aeb1b13bd/volumes/kubernetes.io~secret/datadog-token-cvbbk:/var/run/secrets/kubernetes.io/serviceaccount:ro",
+			"/var/lib/kubelet/pods/d2ae7477-aae3-4a64-a055-767aeb1b13bd/etc-hosts:/etc/hosts",
+			"/var/lib/kubelet/pods/d2ae7477-aae3-4a64-a055-767aeb1b13bd/containers/datadog/24b56c38:/dev/termination-log"
+		],
+		"ContainerIDFile": "",
+		"LogConfig": {
+			"Type": "json-file",
+			"Config": {
+				"max-file": "10",
+				"max-size": "10m"
+			}
+		},
+		"NetworkMode": "container:697fc019a12b42cfbcb4e093fb6779c87997b26460d14528f45dd5afbf9c4087",
+		"PortBindings": null,
+		"RestartPolicy": {
+			"Name": "no",
+			"MaximumRetryCount": 0
+		},
+		"AutoRemove": false,
+		"VolumeDriver": "",
+		"VolumesFrom": null,
+		"CapAdd": null,
+		"CapDrop": null,
+		"Capabilities": null,
+		"Dns": null,
+		"DnsOptions": null,
+		"DnsSearch": null,
+		"ExtraHosts": null,
+		"GroupAdd": null,
+		"IpcMode": "container:697fc019a12b42cfbcb4e093fb6779c87997b26460d14528f45dd5afbf9c4087",
+		"Cgroup": "",
+		"Links": null,
+		"OomScoreAdj": -998,
+		"PidMode": "",
+		"Privileged": false,
+		"PublishAllPorts": false,
+		"ReadonlyRootfs": false,
+		"SecurityOpt": [
+			"seccomp=unconfined"
+		],
+		"UTSMode": "",
+		"UsernsMode": "",
+		"ShmSize": 67108864,
+		"Runtime": "runc",
+		"ConsoleSize": [
+			0,
+			0
+		],
+		"Isolation": "",
+		"CpuShares": 204,
+		"Memory": 536870912,
+		"NanoCpus": 0,
+		"CgroupParent": "/kubepods/podd2ae7477-aae3-4a64-a055-767aeb1b13bd",
+		"BlkioWeight": 0,
+		"BlkioWeightDevice": null,
+		"BlkioDeviceReadBps": null,
+		"BlkioDeviceWriteBps": null,
+		"BlkioDeviceReadIOps": null,
+		"BlkioDeviceWriteIOps": null,
+		"CpuPeriod": 100000,
+		"CpuQuota": 20000,
+		"CpuRealtimePeriod": 0,
+		"CpuRealtimeRuntime": 0,
+		"CpusetCpus": "",
+		"CpusetMems": "",
+		"Devices": [],
+		"DeviceCgroupRules": null,
+		"DeviceRequests": null,
+		"KernelMemory": 0,
+		"KernelMemoryTCP": 0,
+		"MemoryReservation": 0,
+		"MemorySwap": 536870912,
+		"MemorySwappiness": null,
+		"OomKillDisable": false,
+		"PidsLimit": null,
+		"Ulimits": null,
+		"CpuCount": 0,
+		"CpuPercent": 0,
+		"IOMaximumIOps": 0,
+		"IOMaximumBandwidth": 0,
+		"MaskedPaths": [
+			"/proc/acpi",
+			"/proc/kcore",
+			"/proc/keys",
+			"/proc/latency_stats",
+			"/proc/timer_list",
+			"/proc/timer_stats",
+			"/proc/sched_debug",
+			"/proc/scsi",
+			"/sys/firmware"
+		],
+		"ReadonlyPaths": [
+			"/proc/asound",
+			"/proc/bus",
+			"/proc/fs",
+			"/proc/irq",
+			"/proc/sys",
+			"/proc/sysrq-trigger"
+		]
+	},
+	"GraphDriver": {
+		"Data": {
+			"LowerDir": "/var/lib/docker/overlay2/e817dbef6e190bc44c70ed6c83591ccee6474e11ec4584159a1488ba7c6c4228-init/diff:/var/lib/docker/overlay2/fdca4b13ccbe3262da974004fa0c642c6e2b878fda2c75227ec263bc09363d7f/diff:/var/lib/docker/overlay2/c057fb58f9dfe888d20a72cbbfa1ea535727e993b6f042f8376db282d3f94b20/diff:/var/lib/docker/overlay2/188f43175a1d888cb4de077af6e0daf7a986f56b211c0722ae37fd3ca9462415/diff:/var/lib/docker/overlay2/202c5ff729b289e28835d95761ce187bcab991f7321a00e7bd83e01586274b34/diff:/var/lib/docker/overlay2/306798a6e510e5ef79f12517c6a8630a166287cee7ea29f6100fd427912dcc36/diff:/var/lib/docker/overlay2/3e4ece1c890d46917af32ec800b81c46953b4e419cbd9d99d7a93cd4beecbe4f/diff:/var/lib/docker/overlay2/5f7b8e7c648fa970662e4610e51798877dea8cefef11c4b82b0c85451cb56173/diff:/var/lib/docker/overlay2/31612f31aa077fd36752c1fb9f7846be7bfaff941b3f793a76708416172cf990/diff:/var/lib/docker/overlay2/1f1be31d76ee34a0fbb2d79f082dddc8843af1cb7ea7815139516420279c1038/diff:/var/lib/docker/overlay2/8422e732950b345cb41519a2bf95ba0de6eeead1c5f7ff117dda308b6d3c0fc5/diff:/var/lib/docker/overlay2/0ea500867e58c7042729fa9246e081e3ca7683f93946c82d2fb6de1e092bf428/diff:/var/lib/docker/overlay2/2498d8d16ba5d990d5d6b39f11cf6a4577e50775656280f32be9f19572ac34d7/diff:/var/lib/docker/overlay2/b282c281fd87a17c200b07181bbd05c1bbc1d71ac3e2f6f00666538bd2963009/diff:/var/lib/docker/overlay2/08c7e53a9f807f4e6db375b6d40248140a30e4e6176bc413308ee8337317e361/diff:/var/lib/docker/overlay2/f1a318fdae054fcf13464eda50aaaaf92b6aa8fb98ac2631747ee208f19900aa/diff:/var/lib/docker/overlay2/464e8d1fcf673db87329bfe76404a6a8f95e6fd9ac3de42c1b8b7098e157ee94/diff",
+			"MergedDir": "/var/lib/docker/overlay2/e817dbef6e190bc44c70ed6c83591ccee6474e11ec4584159a1488ba7c6c4228/merged",
+			"UpperDir": "/var/lib/docker/overlay2/e817dbef6e190bc44c70ed6c83591ccee6474e11ec4584159a1488ba7c6c4228/diff",
+			"WorkDir": "/var/lib/docker/overlay2/e817dbef6e190bc44c70ed6c83591ccee6474e11ec4584159a1488ba7c6c4228/work"
+		},
+		"Name": "overlay2"
+	},
+	"Mounts": [
+		{
+			"Type": "bind",
+			"Source": "/proc",
+			"Destination": "/host/proc",
+			"Mode": "ro",
+			"RW": false,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/run/docker.sock",
+			"Destination": "/var/run/docker.sock",
+			"Mode": "ro",
+			"RW": false,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/sys/fs/cgroup",
+			"Destination": "/host/sys/fs/cgroup",
+			"Mode": "ro",
+			"RW": false,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/etc/passwd",
+			"Destination": "/etc/passwd",
+			"Mode": "ro",
+			"RW": false,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/",
+			"Destination": "/host/rootfs",
+			"Mode": "ro",
+			"RW": false,
+			"Propagation": "rslave"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/lib/kubelet/pods/d2ae7477-aae3-4a64-a055-767aeb1b13bd/etc-hosts",
+			"Destination": "/etc/hosts",
+			"Mode": "",
+			"RW": true,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "volume",
+			"Name": "636a8b0d3312c59dbe7898709d5a8617da862e3f8d7698554b4fd599e936b459",
+			"Source": "/var/lib/docker/volumes/636a8b0d3312c59dbe7898709d5a8617da862e3f8d7698554b4fd599e936b459/_data",
+			"Destination": "/tmp",
+			"Driver": "local",
+			"Mode": "",
+			"RW": true,
+			"Propagation": ""
+		},
+		{
+			"Type": "volume",
+			"Name": "64ae620f276c2bc8bb9f891af0dbfc4f5fe1f60886abff1b2b511d8a38eed430",
+			"Source": "/var/lib/docker/volumes/64ae620f276c2bc8bb9f891af0dbfc4f5fe1f60886abff1b2b511d8a38eed430/_data",
+			"Destination": "/var/log/datadog",
+			"Driver": "local",
+			"Mode": "",
+			"RW": true,
+			"Propagation": ""
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/lib/kubelet/pods/d2ae7477-aae3-4a64-a055-767aeb1b13bd/volumes/kubernetes.io~empty-dir/s6-run",
+			"Destination": "/var/run/s6",
+			"Mode": "",
+			"RW": true,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/lib/kubelet/pods/d2ae7477-aae3-4a64-a055-767aeb1b13bd/volume-subpaths/datadog-datadog-yaml/datadog/5",
+			"Destination": "/etc/datadog-agent/datadog.yaml",
+			"Mode": "ro",
+			"RW": false,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/lib/kubelet/pods/d2ae7477-aae3-4a64-a055-767aeb1b13bd/volumes/kubernetes.io~secret/datadog-token-cvbbk",
+			"Destination": "/var/run/secrets/kubernetes.io/serviceaccount",
+			"Mode": "ro",
+			"RW": false,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "bind",
+			"Source": "/var/lib/kubelet/pods/d2ae7477-aae3-4a64-a055-767aeb1b13bd/containers/datadog/24b56c38",
+			"Destination": "/dev/termination-log",
+			"Mode": "",
+			"RW": true,
+			"Propagation": "rprivate"
+		},
+		{
+			"Type": "volume",
+			"Name": "8b8ce4ba2f0cbe0a3abd530f35f9415984e521338fc70dd571b5f0886ed38237",
+			"Source": "/var/lib/docker/volumes/8b8ce4ba2f0cbe0a3abd530f35f9415984e521338fc70dd571b5f0886ed38237/_data",
+			"Destination": "/etc/datadog-agent",
+			"Driver": "local",
+			"Mode": "",
+			"RW": true,
+			"Propagation": ""
+		}
+	],
+	"Config": {
+		"Hostname": "datadog-6ldcj",
+		"Domainname": "",
+		"User": "0",
+		"AttachStdin": false,
+		"AttachStdout": false,
+		"AttachStderr": false,
+		"ExposedPorts": {
+			"8125/udp": {},
+			"8126/tcp": {},
+			"9001/tcp": {}
+		},
+		"Tty": false,
+		"OpenStdin": false,
+		"StdinOnce": false,
+		"Env": [
+			"Stripped out",
+			"See runtime_config_dump.yaml for consolidated configuration",
+			"and envvars.log for whitelisted envvars if found"
+		],
+		"Cmd": null,
+		"Healthcheck": {
+			"Test": [
+				"NONE"
+			],
+			"Interval": 30000000000,
+			"Timeout": 5000000000,
+			"Retries": 2
+		},
+		"Image": "cirrus-docker.jfrog.io/datadogmonitoring/datadog@sha256:2aa2ff3b2a046b55e42ddd956f8223eaabf4bb8dbdf5b389dc0a6a3ab20de567",
+		"Volumes": {
+			"/etc/datadog-agent": {},
+			"/tmp": {},
+			"/var/log/datadog": {},
+			"/var/run/s6": {}
+		},
+		"WorkingDir": "",
+		"Entrypoint": [
+			"/init"
+		],
+		"OnBuild": null,
+		"Labels": {
+			"annotation.io.kubernetes.container.hash": "58a462d0",
+			"annotation.io.kubernetes.container.ports": "[{\"name\":\"dogstatsdport\",\"containerPort\":8125,\"protocol\":\"TCP\"}]",
+			"annotation.io.kubernetes.container.restartCount": "0",
+			"annotation.io.kubernetes.container.terminationMessagePath": "/dev/termination-log",
+			"annotation.io.kubernetes.container.terminationMessagePolicy": "File",
+			"annotation.io.kubernetes.pod.terminationGracePeriod": "30",
+			"io.kubernetes.container.logpath": "/var/log/pods/monitoring_datadog-6ldcj_d2ae7477-aae3-4a64-a055-767aeb1b13bd/datadog/0.log",
+			"io.kubernetes.container.name": "datadog",
+			"io.kubernetes.docker.type": "container",
+			"io.kubernetes.pod.name": "datadog-6ldcj",
+			"io.kubernetes.pod.namespace": "monitoring",
+			"io.kubernetes.pod.uid": "d2ae7477-aae3-4a64-a055-767aeb1b13bd",
+			"io.kubernetes.sandbox.id": "697fc019a12b42cfbcb4e093fb6779c87997b26460d14528f45dd5afbf9c4087",
+			"maintainer": "Datadog \u003cpackage@datadoghq.com\u003e"
+		}
+	},
+	"NetworkSettings": {
+		"Bridge": "",
+		"SandboxID": "",
+		"HairpinMode": false,
+		"LinkLocalIPv6Address": "",
+		"LinkLocalIPv6PrefixLen": 0,
+		"Ports": {},
+		"SandboxKey": "",
+		"SecondaryIPAddresses": null,
+		"SecondaryIPv6Addresses": null,
+		"EndpointID": "",
+		"Gateway": "",
+		"GlobalIPv6Address": "",
+		"GlobalIPv6PrefixLen": 0,
+		"IPAddress": "",
+		"IPPrefixLen": 0,
+		"IPv6Gateway": "",
+		"MacAddress": "",
+		"Networks": {}
+	}
+}

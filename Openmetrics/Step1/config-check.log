@@ -1,0 +1,1507 @@
+=== cpu check ===
+Configuration provider: file
+Configuration source: file:/etc/datadog-agent/conf.d/cpu.d/conf.yaml.default
+Instance ID: cpu:d884b5186b651429
+{}
+~
+===
+=== disk check ===
+Configuration provider: file
+Configuration source: file:/etc/datadog-agent/conf.d/disk.d/conf.yaml
+Instance ID: disk:53391b91feb5f23f
+file_system_blacklist:
+- tmpfs
+- shm
+- autofs$
+mount_point_blacklist:
+- /host/rootfs/local/docker.*
+- /proc/sys/fs/binfmt_misc
+- /host/proc/sys/fs/binfmt_misc
+use_mount: true
+~
+===
+=== docker check ===
+Configuration provider: file
+Configuration source: file:/etc/datadog-agent/conf.d/docker.d/config.yaml
+Instance ID: docker:a23e1ad7e696540d
+collect_container_size: true
+collect_container_size_frequency: 60
+collect_disk_stats: true
+collect_events: true
+collect_exit_codes: true
+collect_image_size: true
+collect_images_stats: true
+~
+===
+=== elastic check ===
+Configuration provider: file
+Configuration source: file:/etc/datadog-agent/conf.d/elastic.d/auto_conf.yaml
+Instance ID: elastic:198dade9627bae62
+tags:
+- short_image:elasticsearch-oss
+- kube_namespace:ops
+- role:master
+- kube_service:elasticsearch-discovery
+- kube_container_name:elasticsearch
+- pod_name:elasticsearch-master-1
+- persistentvolumeclaim:data-elasticsearch-master-1
+- statefulset.kubernetes.io/pod-name:elasticsearch-master-1
+- kube_stateful_set:elasticsearch-master
+- pod_phase:running
+- image_tag:6.8.6
+- docpod_name:elasticsearch-master-1
+- component:master
+- docker_image:docker.elastic.co/elasticsearch/elasticsearch-oss:6.8.6
+- app:elasticsearch
+- release:elasticsearch
+- image_name:docker.elastic.co/elasticsearch/elasticsearch-oss
+- controller-revision-hash:elasticsearch-master-6c96cc479c
+url: http://10.0.29.100:9200
+~
+Auto-discovery IDs:
+* elasticsearch
+* elasticsearch-oss
+===
+=== elastic check ===
+Configuration provider: file
+Configuration source: file:/etc/datadog-agent/conf.d/elastic.d/auto_conf.yaml
+Instance ID: elastic:92c1c5058a34566c
+tags:
+- kube_namespace:ops
+- release:elasticsearch
+- kube_container_name:chown
+- pod_phase:running
+- image_name:docker.elastic.co/elasticsearch/elasticsearch-oss
+- docker_image:docker.elastic.co/elasticsearch/elasticsearch-oss:6.8.6
+- pod_name:elasticsearch-master-1
+- controller-revision-hash:elasticsearch-master-6c96cc479c
+- persistentvolumeclaim:data-elasticsearch-master-1
+- short_image:elasticsearch-oss
+- app:elasticsearch
+- statefulset.kubernetes.io/pod-name:elasticsearch-master-1
+- image_tag:6.8.6
+- kube_stateful_set:elasticsearch-master
+- component:master
+- role:master
+- docpod_name:elasticsearch-master-1
+url: http://10.0.29.100:9200
+~
+Auto-discovery IDs:
+* elasticsearch
+* elasticsearch-oss
+===
+=== file_handle check ===
+Configuration provider: file
+Configuration source: file:/etc/datadog-agent/conf.d/file_handle.d/conf.yaml.default
+Instance ID: file_handle:d884b5186b651429
+{}
+~
+===
+=== io check ===
+Configuration provider: file
+Configuration source: file:/etc/datadog-agent/conf.d/io.d/conf.yaml.default
+Instance ID: io:d884b5186b651429
+{}
+~
+===
+=== kubelet check ===
+Configuration provider: file
+Configuration source: file:/etc/datadog-agent/conf.d/kubelet.d/conf.yaml.default
+Instance ID: kubelet:d884b5186b651429
+{}
+~
+===
+=== kubernetes_apiserver check ===
+Configuration provider: file
+Configuration source: file:/etc/datadog-agent/conf.d/kubernetes_apiserver.d/conf.yaml.default
+Instance ID: kubernetes_apiserver:d884b5186b651429
+{}
+~
+===
+=== load check ===
+Configuration provider: file
+Configuration source: file:/etc/datadog-agent/conf.d/load.d/conf.yaml.default
+Instance ID: load:d884b5186b651429
+{}
+~
+===
+=== memory check ===
+Configuration provider: file
+Configuration source: file:/etc/datadog-agent/conf.d/memory.d/conf.yaml.default
+Instance ID: memory:d884b5186b651429
+{}
+~
+===
+=== network check ===
+Configuration provider: file
+Configuration source: file:/etc/datadog-agent/conf.d/network.d/conf.yaml.default
+Instance ID: network:5c571333f400457d
+collect_connection_state: false
+~
+Init Config:
+{}
+===
+=== ntp check ===
+Configuration provider: file
+Configuration source: file:/etc/datadog-agent/conf.d/ntp.d/conf.yaml.default
+Instance ID: ntp:d884b5186b651429
+{}
+~
+===
+=== openmetrics check ===
+Configuration provider: kubernetes
+Configuration source: kubelet:docker://fecfbeed03383e1a8d6dfa7eba920e0acda80c109636abf6712df3c091c82800
+Instance ID: openmetrics:cnr_model_storage_service:4d3f0cbc31cc4481
+metrics:
+- jvm*
+- http*
+- executor*
+- system*
+- process*
+- s3*
+- cache*
+namespace: cnr_model_storage_service
+prometheus_url: http://10.0.28.160:8080/ops/prometheus
+tags:
+- kube_deployment:mss-service
+- kube_container_name:mss-service
+- kube_app_instance:model-storage-service
+- kube_namespace:morza-17-11-2020automatic
+- image_tag:0.0.9-95
+- kube_replica_set:mss-service-7bfbb5f86b
+- pod_name:mss-service-7bfbb5f86b-xjrqq
+- image_name:cirrus-docker.jfrog.io/model-storage/docker-image
+- kube_service:mss-service
+- docker_image:cirrus-docker.jfrog.io/model-storage/docker-image:0.0.9-95
+- short_image:docker-image
+- docpod_name:mss-service-7bfbb5f86b-xjrqq
+- pod-template-hash:7bfbb5f86b
+- pod_phase:running
+- app.kubernetes.io/name:mss-service
+- kube_service:mss-servicemonitoring
+- kube_app_name:mss-service
+- app.kubernetes.io/instance:model-storage-service
+~
+Init Config:
+{}
+Auto-discovery IDs:
+* docker://fecfbeed03383e1a8d6dfa7eba920e0acda80c109636abf6712df3c091c82800
+===
+=== openmetrics check ===
+Configuration provider: kubernetes
+Configuration source: kubelet:docker://3f4a316e4204f5c94e29f5757b8614cd40641de89d212c0ff6c4a0ec2f43592a
+Instance ID: openmetrics:cnr_gateway_service:ea54b1df0a2a40d7
+metrics:
+- jvm*
+- http*
+- executor*
+- system*
+- process*
+- s3*
+- cache*
+namespace: cnr_gateway_service
+prometheus_url: http://10.0.30.142:9091/metrics
+tags:
+- app.kubernetes.io/instance:gateway-service
+- pod_phase:running
+- pod-template-hash:6c5b79f67c
+- kube_app_instance:gateway-service
+- kube_deployment:gateway-service
+- pod_name:gateway-service-6c5b79f67c-6csww
+- kube_app_name:gateway-service
+- short_image:docker-image
+- image_tag:0.3.9-411
+- kube_service:gateway-service
+- docpod_name:gateway-service-6c5b79f67c-6csww
+- image_name:cirrus-docker.jfrog.io/gateway-service/docker-image
+- kube_replica_set:gateway-service-6c5b79f67c
+- docker_image:cirrus-docker.jfrog.io/gateway-service/docker-image:0.3.9-411
+- kube_namespace:chauv-dev
+- kube_container_name:gateway-service
+- app.kubernetes.io/name:gateway-service
+~
+Init Config:
+{}
+Auto-discovery IDs:
+* docker://3f4a316e4204f5c94e29f5757b8614cd40641de89d212c0ff6c4a0ec2f43592a
+===
+=== openmetrics check ===
+Configuration provider: kubernetes
+Configuration source: kubelet:docker://b2e9d74d65d74ebb58d3ca8f93565609e1f6990e6e1aa3f8ee40530d25c10338
+Instance ID: openmetrics:cnr_gateway_service:b27ba7aa4fe85b6b
+metrics:
+- go*
+- gs:*
+- process*
+namespace: cnr_gateway_service
+prometheus_url: http://10.0.31.155:9091/metrics
+tags:
+- kube_container_name:gateway-service
+- image_tag:0.3.9-438
+- kube_service:gateway-service
+- kube_replica_set:gateway-service-5b5c667d76
+- kube_namespace:morza-test-gw
+- pod-template-hash:5b5c667d76
+- app.kubernetes.io/instance:gateway-service
+- pod_name:gateway-service-5b5c667d76-9865g
+- docker_image:cirrus-docker.jfrog.io/gateway-service/docker-image:0.3.9-438
+- kube_app_name:gateway-service
+- kube_app_instance:gateway-service
+- image_name:cirrus-docker.jfrog.io/gateway-service/docker-image
+- app.kubernetes.io/name:gateway-service
+- short_image:docker-image
+- docpod_name:gateway-service-5b5c667d76-9865g
+- pod_phase:running
+- kube_deployment:gateway-service
+~
+Init Config:
+{}
+Auto-discovery IDs:
+* docker://b2e9d74d65d74ebb58d3ca8f93565609e1f6990e6e1aa3f8ee40530d25c10338
+===
+=== openmetrics check ===
+Configuration provider: kubernetes
+Configuration source: kubelet:docker://3ddd462149f742cfcd7e7cb5b218500a28af84493cde3518e761427b3108dffc
+Instance ID: openmetrics:cnr_gateway_service:6f016b93f16b728c
+metrics:
+- go*
+- gs:*
+- process*
+namespace: cnr_gateway_service
+prometheus_url: http://10.0.31.58:9091/metrics
+tags:
+- pod_name:gateway-service-f8574d4cc-s9th6
+- kube_deployment:gateway-service
+- kube_container_name:gateway-service
+- docpod_name:gateway-service-f8574d4cc-s9th6
+- kube_replica_set:gateway-service-f8574d4cc
+- kube_namespace:test-gs-morza
+- pod_phase:running
+- image_name:cirrus-docker.jfrog.io/gateway-service/docker-image
+- kube_app_name:gateway-service
+- kube_service:gateway-service
+- short_image:docker-image
+- docker_image:platformservices-docker-dev-local.bin.pega.io/gateway-service/docker-image:0.3.9-447
+- app.kubernetes.io/name:gateway-service
+- image_tag:0.3.9-447
+- kube_app_instance:gateway-service
+- app.kubernetes.io/instance:gateway-service
+- pod-template-hash:f8574d4cc
+~
+Init Config:
+{}
+Auto-discovery IDs:
+* docker://3ddd462149f742cfcd7e7cb5b218500a28af84493cde3518e761427b3108dffc
+===
+=== openmetrics check ===
+Configuration provider: kubernetes
+Configuration source: kubelet:docker://bfc02caf3a06b8b3328321dc8b7edf70a32bfca8bc58e831ab70dad2e9079bdf
+Instance ID: openmetrics:cnr_model_storage_service:f65ecb8dd416cf88
+metrics:
+- jvm*
+- http*
+- executor*
+- system*
+- process*
+- s3*
+- cache*
+namespace: cnr_model_storage_service
+prometheus_url: http://10.0.30.8:8080/ops/prometheus
+tags:
+- docpod_name:mss-service-66ffcf77d4-lj4g2
+- kube_namespace:morza-test-mss
+- kube_replica_set:mss-service-66ffcf77d4
+- pod_phase:running
+- kube_container_name:mss-service
+- app.kubernetes.io/instance:model-storage-service
+- short_image:docker-image
+- kube_app_name:mss-service
+- image_tag:0.0.9-95
+- app.kubernetes.io/name:mss-service
+- pod-template-hash:66ffcf77d4
+- image_name:cirrus-docker.jfrog.io/model-storage/docker-image
+- pod_name:mss-service-66ffcf77d4-lj4g2
+- kube_deployment:mss-service
+- docker_image:cirrus-docker.jfrog.io/model-storage/docker-image:0.0.9-95
+- kube_service:mss-service
+- kube_service:mss-servicemonitoring
+- kube_app_instance:model-storage-service
+~
+Init Config:
+{}
+Auto-discovery IDs:
+* docker://bfc02caf3a06b8b3328321dc8b7edf70a32bfca8bc58e831ab70dad2e9079bdf
+===
+=== openmetrics check ===
+Configuration provider: kubernetes
+Configuration source: kubelet:docker://a6b873da460de97e29a2b76cb25357f04651d6be9cf9beda92dfe30cd8045436
+Instance ID: openmetrics:0:aadcd6cacd939ba8
+metrics:
+- 0
+namespace: "0"
+prometheus_url: http://10.0.29.159:0/0
+tags:
+- pod_phase:running
+- short_image:service
+- kube_app_name:constellation-customer-content
+- pod_name:constellation-customer-content-569fc74bd5-4mm2q
+- kube_namespace:c11n
+- kube_deployment:constellation-customer-content
+- image_tag:latest
+- app.kubernetes.io/name:constellation-customer-content
+- image_name:cirrus-docker.jfrog.io/constellationui/service
+- kube_replica_set:constellation-customer-content-569fc74bd5
+- kube_container_name:constellation-customer-content
+- app.kubernetes.io/instance:constellationui
+- kube_service:constellation-customer-content
+- docpod_name:constellation-customer-content-569fc74bd5-4mm2q
+- docker_image:cirrus-docker.jfrog.io/constellationui/service:latest
+- kube_app_instance:constellationui
+- pod-template-hash:569fc74bd5
+~
+Init Config:
+{}
+Auto-discovery IDs:
+* docker://a6b873da460de97e29a2b76cb25357f04651d6be9cf9beda92dfe30cd8045436
+===
+=== openmetrics check ===
+Configuration provider: kubernetes
+Configuration source: kubelet:docker://d4b24d6343b5e007ff818161f11a3968141e855ef861f528e0da50269b6da228
+Instance ID: openmetrics:0:a814ed0de2b98e2e
+metrics:
+- 0
+namespace: "0"
+prometheus_url: http://10.0.31.149:0/0
+tags:
+- app.kubernetes.io/name:constellation-customer-content85
+- kube_namespace:c11n
+- pod-template-hash:c78f466cf
+- pod_name:constellation-customer-content85-c78f466cf-45khh
+- kube_container_name:constellation-customer-content85
+- image_name:cirrus-docker.jfrog.io/constellationui/service
+- pod_phase:running
+- kube_replica_set:constellation-customer-content85-c78f466cf
+- docker_image:cirrus-docker.jfrog.io/constellationui/service:8.5.1-rc-latest
+- docpod_name:constellation-customer-content85-c78f466cf-45khh
+- kube_app_instance:constellationui
+- image_tag:8.5.1-rc-latest
+- kube_app_name:constellation-customer-content85
+- kube_deployment:constellation-customer-content85
+- short_image:service
+- app.kubernetes.io/instance:constellationui
+- kube_service:constellation-customer-content85
+~
+Init Config:
+{}
+Auto-discovery IDs:
+* docker://d4b24d6343b5e007ff818161f11a3968141e855ef861f528e0da50269b6da228
+===
+=== openmetrics check ===
+Configuration provider: kubernetes
+Configuration source: kubelet:docker://3b05a0d1f440b9bdae0dbaf1a94746fb4f388faca758315c8f24117949d99517
+Instance ID: openmetrics:cnr_dx_case_service:9132a027fc687927
+metrics:
+- jvm*
+- http*
+- executor*
+- system*
+- process*
+- cache*
+- cases*
+- assignments*
+namespace: cnr_dx_case_service
+prometheus_url: http://10.0.30.249:8080/actuator/prometheus
+tags:
+- app.kubernetes.io/instance:dx-case-service
+- kube_service:dx-case-servicemonitoring
+- short_image:docker-image
+- kube_namespace:prod
+- pod_phase:running
+- image_tag:0.1.17-450
+- kube_app_name:dx-case-service
+- docpod_name:dx-case-service-77b99b87cd-kxrfg
+- kube_deployment:dx-case-service
+- app.kubernetes.io/name:dx-case-service
+- docker_image:cirrus-docker.jfrog.io/dx-case-service/docker-image:0.1.17-450
+- kube_container_name:dx-case-service
+- image_name:cirrus-docker.jfrog.io/dx-case-service/docker-image
+- kube_service:dx-case-service
+- kube_replica_set:dx-case-service-77b99b87cd
+- pod_name:dx-case-service-77b99b87cd-kxrfg
+- pod-template-hash:77b99b87cd
+- kube_app_instance:dx-case-service
+~
+Init Config:
+{}
+Auto-discovery IDs:
+* docker://3b05a0d1f440b9bdae0dbaf1a94746fb4f388faca758315c8f24117949d99517
+===
+=== openmetrics check ===
+Configuration provider: kubernetes
+Configuration source: kubelet:docker://01a3f44274e0b0c41b4cfa5b789e8fe8932e7740f5581caba686c54dfe19c07e
+Instance ID: openmetrics:eksiam:553270df6954c937
+metrics:
+- kube2iam_*
+namespace: eksiam
+prometheus_url: http://10.0.28.12:8181/metrics
+tags:
+- kube_daemon_set:n2a98b14-597e-422c-89b0-d4f8352db29a-kube2iam
+- image_tag:0.10.7
+- app.kubernetes.io/name:kube2iam
+- image_name:jtblin/kube2iam
+- kube_app_instance:n2a98b14-597e-422c-89b0-d4f8352db29a
+- docker_image:jtblin/kube2iam:0.10.7
+- pod_name:n2a98b14-597e-422c-89b0-d4f8352db29a-kube2iam-kxng5
+- docpod_name:n2a98b14-597e-422c-89b0-d4f8352db29a-kube2iam-kxng5
+- pod_phase:running
+- kube_app_name:kube2iam
+- kube_container_name:kube2iam
+- short_image:kube2iam
+- pod-template-generation:1
+- app.kubernetes.io/instance:n2a98b14-597e-422c-89b0-d4f8352db29a
+- controller-revision-hash:5999c6cb9b
+- kube_namespace:kube-system
+~
+Init Config:
+{}
+Auto-discovery IDs:
+* docker://01a3f44274e0b0c41b4cfa5b789e8fe8932e7740f5581caba686c54dfe19c07e
+===
+=== openmetrics check ===
+Configuration provider: kubernetes
+Configuration source: kubelet:docker://66858ca02a9ac7bbac09b3da4ccf07247fe45dc7af65a4e3599add716025bf50
+Instance ID: openmetrics:cnr_data_service:f7544457c1bcd572
+metrics:
+- jvm*
+- http*
+- system*
+- process*
+- mongodb*
+- reactor*
+- oms*
+namespace: cnr_data_service
+prometheus_url: http://10.0.29.107:8080/actuator/prometheus
+tags:
+- docpod_name:data-service-bc68cbc6-rctlp
+- app.kubernetes.io/instance:data-service
+- kube_service:data-service
+- docker_image:cirrus-docker.jfrog.io/platform-services/data-service:0.10.0-2
+- pod-template-hash:bc68cbc6
+- kube_container_name:data-service
+- pod_name:data-service-bc68cbc6-rctlp
+- app.kubernetes.io/name:data-service
+- kube_app_name:data-service
+- kube_replica_set:data-service-bc68cbc6
+- kube_app_instance:data-service
+- short_image:data-service
+- kube_deployment:data-service
+- pod_phase:running
+- image_name:cirrus-docker.jfrog.io/platform-services/data-service
+- image_tag:0.10.0-2
+- kube_namespace:staging
+- kube_service:data-servicemonitoring
+~
+Init Config:
+{}
+Auto-discovery IDs:
+* docker://66858ca02a9ac7bbac09b3da4ccf07247fe45dc7af65a4e3599add716025bf50
+===
+=== openmetrics check ===
+Configuration provider: kubernetes
+Configuration source: kubelet:docker://6b98b8fc4f9acb349696dcc3a6bd2ad55ccb808db7776dc8cef9dc560a8bd46b
+Instance ID: openmetrics:cnr_gateway_service:988d4703ec006fac
+metrics:
+- go*
+- gs:*
+- process*
+namespace: cnr_gateway_service
+prometheus_url: http://10.0.28.251:9091/metrics
+tags:
+- pod-template-hash:65dbf67486
+- app.kubernetes.io/instance:gateway-service
+- kube_app_instance:gateway-service
+- docker_image:cirrus-docker.jfrog.io/gateway-service/docker-image:0.3.9-445
+- kube_container_name:gateway-service
+- pod_phase:running
+- kube_app_name:gateway-service
+- kube_replica_set:gateway-service-65dbf67486
+- short_image:docker-image
+- image_name:cirrus-docker.jfrog.io/gateway-service/docker-image
+- kube_service:gateway-service
+- docpod_name:gateway-service-65dbf67486-9gknz
+- pod_name:gateway-service-65dbf67486-9gknz
+- app.kubernetes.io/name:gateway-service
+- kube_deployment:gateway-service
+- kube_namespace:testmorza-18-11-2020-automatic
+- image_tag:0.3.9-445
+~
+Init Config:
+{}
+Auto-discovery IDs:
+* docker://6b98b8fc4f9acb349696dcc3a6bd2ad55ccb808db7776dc8cef9dc560a8bd46b
+===
+=== openmetrics check ===
+Configuration provider: kubernetes
+Configuration source: kubelet:docker://407913add09225a959cc4a116da78e5a57c39b050f671877606e6a92f11a8eac
+Instance ID: openmetrics:cnr_dx_case_service:b8d45f0a210e4e08
+metrics:
+- jvm*
+- http*
+- executor*
+- system*
+- process*
+- cache*
+- cases*
+- assignments*
+namespace: cnr_dx_case_service
+prometheus_url: http://10.0.28.239:8080/actuator/prometheus
+tags:
+- docker_image:cirrus-docker.jfrog.io/dx-case-service/docker-image:0.1.17-450
+- image_name:cirrus-docker.jfrog.io/dx-case-service/docker-image
+- short_image:docker-image
+- kube_deployment:dx-case-service
+- pod_name:dx-case-service-f5bbcd9c9-bv4f4
+- app.kubernetes.io/instance:dx-case-service
+- kube_app_name:dx-case-service
+- app.kubernetes.io/name:dx-case-service
+- kube_service:dx-case-service
+- pod-template-hash:f5bbcd9c9
+- kube_namespace:test2
+- docpod_name:dx-case-service-f5bbcd9c9-bv4f4
+- kube_container_name:dx-case-service
+- kube_app_instance:dx-case-service
+- kube_replica_set:dx-case-service-f5bbcd9c9
+- kube_service:dx-case-servicemonitoring
+- pod_phase:running
+- image_tag:0.1.17-450
+~
+Init Config:
+{}
+Auto-discovery IDs:
+* docker://407913add09225a959cc4a116da78e5a57c39b050f671877606e6a92f11a8eac
+===
+=== openmetrics check ===
+Configuration provider: kubernetes
+Configuration source: kubelet:docker://cf5543e48f3efd227784d3c2a48d485e7dfb2b2cb2f61e59a84f4c10d033c000
+Instance ID: openmetrics:cnr_model_storage_service:6d1f649a5e0a4f01
+metrics:
+- jvm*
+- http*
+- executor*
+- system*
+- process*
+- s3*
+- cache*
+namespace: cnr_model_storage_service
+prometheus_url: http://10.0.31.154:8080/ops/prometheus
+tags:
+- short_image:docker-image
+- app.kubernetes.io/instance:model-storage-service
+- kube_service:mss-servicemonitoring
+- kube_namespace:immortale-m
+- kube_service:mss-service
+- app.kubernetes.io/name:mss-service
+- pod_phase:running
+- pod-template-hash:699cd956f6
+- kube_container_name:mss-service
+- image_tag:0.0.9-95
+- kube_app_instance:model-storage-service
+- image_name:cirrus-docker.jfrog.io/model-storage/docker-image
+- kube_app_name:mss-service
+- docker_image:cirrus-docker.jfrog.io/model-storage/docker-image:0.0.9-95
+- kube_replica_set:mss-service-699cd956f6
+- docpod_name:mss-service-699cd956f6-8qcwq
+- kube_deployment:mss-service
+- pod_name:mss-service-699cd956f6-8qcwq
+~
+Init Config:
+{}
+Auto-discovery IDs:
+* docker://cf5543e48f3efd227784d3c2a48d485e7dfb2b2cb2f61e59a84f4c10d033c000
+===
+=== openmetrics check ===
+Configuration provider: kubernetes
+Configuration source: kubelet:docker://1d4ff7190fe09cfef4fdb44e17d1ab06acfc829534e3805e00ba343eb21113f6
+Instance ID: openmetrics:cnr_gateway_service:7b8e6efece4990ed
+metrics:
+- go*
+- gs:*
+- process*
+namespace: cnr_gateway_service
+prometheus_url: http://10.0.31.140:9091/metrics
+tags:
+- pod-template-hash:5b5c667d76
+- app.kubernetes.io/instance:gateway-service
+- kube_namespace:morza-test-gw
+- short_image:docker-image
+- docpod_name:gateway-service-5b5c667d76-77x59
+- kube_app_name:gateway-service
+- kube_app_instance:gateway-service
+- image_name:cirrus-docker.jfrog.io/gateway-service/docker-image
+- image_tag:0.3.9-438
+- kube_replica_set:gateway-service-5b5c667d76
+- pod_name:gateway-service-5b5c667d76-77x59
+- docker_image:cirrus-docker.jfrog.io/gateway-service/docker-image:0.3.9-438
+- kube_deployment:gateway-service
+- pod_phase:running
+- app.kubernetes.io/name:gateway-service
+- kube_container_name:gateway-service
+- kube_service:gateway-service
+~
+Init Config:
+{}
+Auto-discovery IDs:
+* docker://1d4ff7190fe09cfef4fdb44e17d1ab06acfc829534e3805e00ba343eb21113f6
+===
+=== openmetrics check ===
+Configuration provider: kubernetes
+Configuration source: kubelet:docker://116ee3176b1768569793ccb472a3fe1e81866a21be79d2e638e0494af32c6428
+Instance ID: openmetrics:cnr_data_service:7c7f5de3afa2df5f
+metrics:
+- jvm*
+- http*
+- system*
+- process*
+- mongodb*
+- reactor*
+- oms*
+namespace: cnr_data_service
+prometheus_url: http://10.0.29.117:8080/actuator/prometheus
+tags:
+- image_name:cirrus-docker.jfrog.io/platform-services/data-service
+- kube_container_name:data-service
+- docker_image:cirrus-docker.jfrog.io/platform-services/data-service:0.10.0-2
+- kube_app_instance:data-service
+- kube_service:data-servicemonitoring
+- docpod_name:data-service-7f8b7c6bd4-zrts5
+- pod_phase:running
+- image_tag:0.10.0-2
+- pod-template-hash:7f8b7c6bd4
+- app.kubernetes.io/name:data-service
+- app.kubernetes.io/instance:data-service
+- kube_app_name:data-service
+- short_image:data-service
+- kube_deployment:data-service
+- kube_service:data-service
+- pod_name:data-service-7f8b7c6bd4-zrts5
+- kube_namespace:prod
+- kube_replica_set:data-service-7f8b7c6bd4
+~
+Init Config:
+{}
+Auto-discovery IDs:
+* docker://116ee3176b1768569793ccb472a3fe1e81866a21be79d2e638e0494af32c6428
+===
+=== system_core check ===
+Configuration provider: file
+Configuration source: file:/etc/datadog-agent/conf.d/system_core.d/conf.yaml
+Instance ID: system_core:d884b5186b651429
+{}
+~
+===
+=== uptime check ===
+Configuration provider: file
+Configuration source: file:/etc/datadog-agent/conf.d/uptime.d/conf.yaml.default
+Instance ID: uptime:d884b5186b651429
+{}
+~
+===
+=== Resolve warnings ===
+coredns
+* No service found with this AD identifier: coredns
+* Can't resolve the template for coredns at this moment.
+couch
+* No service found with this AD identifier: couchdb
+* Can't resolve the template for couch at this moment.
+etcd
+* No service found with this AD identifier: etcd
+* Can't resolve the template for etcd at this moment.
+kube_dns
+* No service found with this AD identifier: kubedns-amd64
+* No service found with this AD identifier: k8s-dns-kube-dns-amd64
+* Can't resolve the template for kube_dns at this moment.
+couchbase
+* No service found with this AD identifier: couchbase
+* Can't resolve the template for couchbase at this moment.
+external_dns
+* No service found with this AD identifier: external-dns
+* Can't resolve the template for external_dns at this moment.
+kyototycoon
+* No service found with this AD identifier: kyototycoon
+* Can't resolve the template for kyototycoon at this moment.
+presto
+* No service found with this AD identifier: presto
+* Can't resolve the template for presto at this moment.
+tomcat
+* No service found with this AD identifier: tomcat
+* Can't resolve the template for tomcat at this moment.
+cilium
+* No service found with this AD identifier: cilium-agent
+* Can't resolve the template for cilium at this moment.
+kube_apiserver_metrics
+* No service found with this AD identifier: kube-apiserver
+* Can't resolve the template for kube_apiserver_metrics at this moment.
+kube_scheduler
+* No service found with this AD identifier: kube-scheduler
+* Can't resolve the template for kube_scheduler at this moment.
+mcache
+* No service found with this AD identifier: memcached
+* Can't resolve the template for mcache at this moment.
+riak
+* No service found with this AD identifier: riak
+* Can't resolve the template for riak at this moment.
+kubernetes_state
+* No service found with this AD identifier: kube-state-metrics
+* Can't resolve the template for kubernetes_state at this moment.
+* No service found with this AD identifier: kube-state-metrics
+* Can't resolve the template for kubernetes_state at this moment.
+redisdb
+* No service found with this AD identifier: redis
+* Can't resolve the template for redisdb at this moment.
+snmp
+* No service found with this AD identifier: snmp
+* Can't resolve the template for snmp at this moment.
+apache
+* No service found with this AD identifier: httpd
+* Can't resolve the template for apache at this moment.
+consul
+* No service found with this AD identifier: consul
+* Can't resolve the template for consul at this moment.
+harbor
+* No service found with this AD identifier: nginx-photon
+* Can't resolve the template for harbor at this moment.
+istio
+* No service found with this AD identifier: proxyv2
+* Can't resolve the template for istio at this moment.
+kube_controller_manager
+* No service found with this AD identifier: kube-controller-manager
+* Can't resolve the template for kube_controller_manager at this moment.
+=== Unresolved Configs ===
+Auto-discovery IDs: proxyv2
+Templates:
+check_name: istio
+init_config: null
+instances:
+- istio_mesh_endpoint: http://%%host%%:15090/stats/prometheus
+  send_histograms_buckets: true
+logs_config: null
+Auto-discovery IDs: riak
+Templates:
+check_name: riak
+init_config: null
+instances:
+- url: http://%%host%%:8098/stats
+logs_config: null
+Auto-discovery IDs: snmp
+Templates:
+check_name: snmp
+init_config: null
+instances:
+- authKey: ********
+  authProtocol: '%%extra_auth_protocol%%'
+  community_string: ********
+  context_engine_id: '%%extra_context_engine_id%%'
+  context_name: '%%extra_context_name%%'
+  ip_address: '%%host%%'
+  port: '%%port%%'
+  privKey: ********
+  privProtocol: '%%extra_priv_protocol%%'
+  retries: '%%extra_retries%%'
+  snmp_version: '%%extra_version%%'
+  tags:
+  - autodiscovery_subnet:%%extra_autodiscovery_subnet%%
+  timeout: '%%extra_timeout%%'
+  user: '%%extra_user%%'
+logs_config: null
+Auto-discovery IDs: 
+Templates:
+check_name: openmetrics
+init_config: {}
+instances:
+- metrics:
+  - go*
+  - gs:*
+  - process*
+  namespace: cnr_gateway_service
+  prometheus_url: http://%%host%%:9091/metrics
+logs_config: null
+Auto-discovery IDs: docker://407913add09225a959cc4a116da78e5a57c39b050f671877606e6a92f11a8eac
+Templates:
+check_name: openmetrics
+init_config: {}
+instances:
+- metrics:
+  - jvm*
+  - http*
+  - executor*
+  - system*
+  - process*
+  - cache*
+  - cases*
+  - assignments*
+  namespace: cnr_dx_case_service
+  prometheus_url: http://%%host%%:8080/actuator/prometheus
+logs_config: null
+Auto-discovery IDs: external-dns
+Templates:
+check_name: external_dns
+init_config: null
+instances:
+- prometheus_url: http://%%host%%:7979/metrics
+  tags:
+  - externaldns-pod:%%host%%
+logs_config: null
+Auto-discovery IDs: kubedns-amd64,k8s-dns-kube-dns-amd64
+Templates:
+check_name: kube_dns
+init_config: null
+instances:
+- prometheus_endpoint: http://%%host%%:10055/metrics
+  tags:
+  - dns-pod:%%host%%
+logs_config: null
+Auto-discovery IDs: presto
+Templates:
+check_name: presto
+init_config:
+  collect_default_metrics: true
+  conf:
+  - include:
+      attribute:
+        AbandonedQueries.OneMinute.Count:
+          alias: presto.execution.abandoned_queries.one_minute.count
+        AbandonedQueries.OneMinute.Rate:
+          alias: presto.execution.abandoned_queries.one_minute.rate
+        AbandonedQueries.TotalCount:
+          alias: presto.execution.abandoned_queries.total_count
+        CanceledQueries.OneMinute.Count:
+          alias: presto.execution.canceled_queries.one_minute.count
+        CanceledQueries.OneMinute.Rate:
+          alias: presto.execution.canceled_queries.one_minute.rate
+        CanceledQueries.TotalCount:
+          alias: presto.execution.canceled_queries.total_count
+        CompletedQueries.OneMinute.Count:
+          alias: presto.execution.completed_queries.one_minute.count
+        CompletedQueries.OneMinute.Rate:
+          alias: presto.execution.completed_queries.one_minute.rate
+        CompletedQueries.TotalCount:
+          alias: presto.execution.completed_queries.total_count
+        ConsumedCpuTimeSecs.OneMinute.Count:
+          alias: presto.execution.consumed_cpu_time_secs.one_minute.count
+        ConsumedCpuTimeSecs.OneMinute.Rate:
+          alias: presto.execution.consumed_cpu_time_secs.one_minute.rate
+        ConsumedCpuTimeSecs.TotalCount:
+          alias: presto.execution.consumed_cpu_time_secs.total_count
+        CpuInputByteRate.AllTime.Avg:
+          alias: presto.execution.cpu_input_byte_rate.all_time.avg
+        CpuInputByteRate.AllTime.P75:
+          alias: presto.execution.cpu_input_byte_rate.all_time.p75
+        CpuInputByteRate.AllTime.P95:
+          alias: presto.execution.cpu_input_byte_rate.all_time.p95
+        CpuInputByteRate.OneMinute.Avg:
+          alias: presto.execution.cpu_input_byte_rate.one_minute.avg
+        CpuInputByteRate.OneMinute.Count:
+          alias: presto.execution.cpu_input_byte_rate.one_minute.count
+        CpuInputByteRate.OneMinute.Max:
+          alias: presto.execution.cpu_input_byte_rate.one_minute.max
+        CpuInputByteRate.OneMinute.Min:
+          alias: presto.execution.cpu_input_byte_rate.one_minute.min
+        CpuInputByteRate.OneMinute.P75:
+          alias: presto.execution.cpu_input_byte_rate.one_minute.p75
+        CpuInputByteRate.OneMinute.P95:
+          alias: presto.execution.cpu_input_byte_rate.one_minute.p95
+        CpuInputByteRate.OneMinute.Total:
+          alias: presto.execution.cpu_input_byte_rate.one_minute.total
+        ExecutionTime.AllTime.Avg:
+          alias: presto.execution.execution_time.all_time.avg
+        ExecutionTime.AllTime.Count:
+          alias: presto.execution.execution_time.all_time.count
+        ExecutionTime.AllTime.Max:
+          alias: presto.execution.execution_time.all_time.max
+        ExecutionTime.AllTime.Min:
+          alias: presto.execution.execution_time.all_time.min
+        ExecutionTime.AllTime.P75:
+          alias: presto.execution.execution_time.all_time.p75
+        ExecutionTime.AllTime.P95:
+          alias: presto.execution.execution_time.all_time.p95
+        ExecutionTime.OneMinute.Avg:
+          alias: presto.execution.execution_time.one_minute.avg
+        ExecutionTime.OneMinute.Max:
+          alias: presto.execution.execution_time.one_minute.max
+        ExecutionTime.OneMinute.Min:
+          alias: presto.execution.execution_time.one_minute.min
+        ExecutionTime.OneMinute.P75:
+          alias: presto.execution.execution_time.one_minute.p75
+        ExecutionTime.OneMinute.P95:
+          alias: presto.execution.execution_time.one_minute.p95
+        Executor.ActiveCount:
+          alias: presto.execution.executor.active_count
+        Executor.CompletedTaskCount:
+          alias: presto.execution.executor.completed_task_count
+        Executor.CorePoolSize:
+          alias: presto.execution.executor.core_pool_size
+        Executor.PoolSize:
+          alias: presto.execution.executor.pool_size
+        Executor.QueuedTaskCount:
+          alias: presto.execution.executor.queued_task_count
+        Executor.TaskCount:
+          alias: presto.execution.executor.task_count
+        ExternalFailures.OneMinute.Count:
+          alias: presto.execution.external_failures.one_minute.count
+        ExternalFailures.OneMinute.Rate:
+          alias: presto.execution.external_failures.one_minute.rate
+        ExternalFailures.TotalCount:
+          alias: presto.execution.external_failures.total_count
+        FailedQueries.OneMinute.Count:
+          alias: presto.execution.failed_queries.one_minute.count
+        FailedQueries.OneMinute.Rate:
+          alias: presto.execution.failed_queries.one_minute.rate
+        FailedQueries.TotalCount:
+          alias: presto.execution.failed_queries.total_count
+        InsufficientResourcesFailures.OneMinute.Count:
+          alias: presto.execution.insufficient_resources_failures.one_minute.count
+        InsufficientResourcesFailures.OneMinute.Rate:
+          alias: presto.execution.insufficient_resources_failures.one_minute.rate
+        InsufficientResourcesFailures.TotalCount:
+          alias: presto.execution.insufficient_resources_failures.total_count
+        InternalFailures.OneMinute.Count:
+          alias: presto.execution.internal_failures.one_minute.count
+        InternalFailures.OneMinute.Rate:
+          alias: presto.execution.internal_failures.one_minute.rate
+        InternalFailures.TotalCount:
+          alias: presto.execution.internal_failures.total_count
+        ManagementExecutor.ActiveCount:
+          alias: presto.execution.management_executor.active_count
+        ManagementExecutor.CompletedTaskCount:
+          alias: presto.execution.management_executor.completed_task_count
+        ManagementExecutor.QueuedTaskCount:
+          alias: presto.execution.management_executor.queued_task_count
+        RunningQueries:
+          alias: presto.execution.running_queries
+        StartedQueries.OneMinute.Count:
+          alias: presto.execution.started_queries.one_minute.count
+        StartedQueries.OneMinute.Rate:
+          alias: presto.execution.started_queries.one_minute.rate
+        StartedQueries.TotalCount:
+          alias: presto.execution.started_queries.total_count
+        UserErrorFailures.OneMinute.Count:
+          alias: presto.execution.user_error_failures.one_minute.count
+        UserErrorFailures.OneMinute.Rate:
+          alias: presto.execution.user_error_failures.one_minute.rate
+        UserErrorFailures.TotalCount:
+          alias: presto.execution.user_error_failures.total_count
+        WallInputBytesRate.OneMinute.Avg:
+          alias: presto.execution.wall_input_bytes_rate.one_minute.avg
+        WallInputBytesRate.OneMinute.Max:
+          alias: presto.execution.wall_input_bytes_rate.one_minute.max
+        WallInputBytesRate.OneMinute.Min:
+          alias: presto.execution.wall_input_bytes_rate.one_minute.min
+        WallInputBytesRate.OneMinute.P75:
+          alias: presto.execution.wall_input_bytes_rate.one_minute.p75
+        WallInputBytesRate.OneMinute.P95:
+          alias: presto.execution.wall_input_bytes_rate.one_minute.p95
+      bean: presto.execution:name=QueryManager
+  - include:
+      attribute:
+        BlockedSplits:
+          alias: presto.execution.executor.blocked_splits
+        ProcessorExecutor.QueuedTaskCount:
+          alias: presto.execution.executor.processor_executor.queued_task_count
+        RunningSplits:
+          alias: presto.execution.executor.running_splits
+        TotalSplits:
+          alias: presto.execution.executor.total_splits
+        WaitingSplits:
+          alias: presto.execution.executor.waiting_splits
+      bean: presto.execution.executor:name=TaskExecutor
+  - include:
+      attribute:
+        InputDataSize.OneMinute.Count:
+          alias: presto.execution.input_data_size.one_minute.count
+        InputDataSize.OneMinute.Rate:
+          alias: presto.execution.input_data_size.one_minute.rate
+        InputDataSize.TotalCount:
+          alias: presto.execution.input_data_size.total_count
+        InputPositions.OneMinute.Count:
+          alias: presto.execution.input_positions.one_minute.count
+        InputPositions.OneMinute.Rate:
+          alias: presto.execution.input_positions.one_minute.rate
+        InputPositions.TotalCount:
+          alias: presto.execution.input_positions.total_count
+        OutputDataSize.OneMinute.Count:
+          alias: presto.execution.output_data_size.one_minute.count
+        OutputDataSize.OneMinute.Rate:
+          alias: presto.execution.output_data_size.one_minute.rate
+        OutputDataSize.TotalCount:
+          alias: presto.execution.output_data_size.total_count
+        OutputPositions.OneMinute.Count:
+          alias: presto.execution.output_positions.one_minute.count
+        OutputPositions.OneMinute.Rate:
+          alias: presto.execution.output_positions.one_minute.rate
+        OutputPositions.TotalCount:
+          alias: presto.execution.output_positions.total_count
+        TaskNotificationExecutor.ActiveCount:
+          alias: presto.execution.task_notification_executor.active_count
+        TaskNotificationExecutor.CompletedTaskCount:
+          alias: presto.execution.task_notification_executor.completed_task_count
+        TaskNotificationExecutor.PoolSize:
+          alias: presto.execution.task_notification_executor.pool_size
+        TaskNotificationExecutor.QueuedTaskCount:
+          alias: presto.execution.task_notification_executor.queued_task_count
+      bean: presto.execution:name=TaskManager
+  - include:
+      attribute:
+        ActiveCount:
+          alias: presto.failure_detector.active_count
+      bean:
+      - presto.failureDetector:name=HeartbeatFailureDetector
+  - include:
+      attribute:
+        AssignedQueries:
+          alias: presto.memory.assigned_queries
+        BlockedNodes:
+          alias: presto.memory.blocked_nodes
+        ClusterMemoryBytes:
+          alias: presto.memory.cluster_memory_bytes
+        FreeBytes:
+          alias: presto.memory.free_bytes
+        FreeDistributedBytes:
+          alias: presto.memory.free_distributed_bytes
+        MaxBytes:
+          alias: presto.memory.max_bytes
+        Nodes:
+          alias: presto.memory.nodes
+        ReservedBytes:
+          alias: presto.memory.reserved_bytes
+        ReservedDistributedBytes:
+          alias: presto.memory.reserved_distributed_bytes
+        ReservedRevocableBytes:
+          alias: presto.memory.reserved_revocable_bytes
+        ReservedRevocableDistributedBytes:
+          alias: presto.memory.reserved_revocable_distributed_bytes
+        TotalDistributedBytes:
+          alias: presto.memory.total_distributed_bytes
+      domain: presto.memory
+  is_jmx: true
+instances:
+- host: '%%host%%'
+  port: '%%port%%'
+logs_config: null
+Auto-discovery IDs: docker://3f4a316e4204f5c94e29f5757b8614cd40641de89d212c0ff6c4a0ec2f43592a
+Templates:
+check_name: openmetrics
+init_config: {}
+instances:
+- metrics:
+  - jvm*
+  - http*
+  - executor*
+  - system*
+  - process*
+  - s3*
+  - cache*
+  namespace: cnr_gateway_service
+  prometheus_url: http://%%host%%:9091/metrics
+logs_config: null
+Auto-discovery IDs: docker://b2e9d74d65d74ebb58d3ca8f93565609e1f6990e6e1aa3f8ee40530d25c10338
+Templates:
+check_name: openmetrics
+init_config: {}
+instances:
+- metrics:
+  - go*
+  - gs:*
+  - process*
+  namespace: cnr_gateway_service
+  prometheus_url: http://%%host%%:9091/metrics
+logs_config: null
+Auto-discovery IDs: docker://d4b24d6343b5e007ff818161f11a3968141e855ef861f528e0da50269b6da228
+Templates:
+check_name: openmetrics
+init_config: {}
+instances:
+- metrics:
+  - 0
+  namespace: "0"
+  prometheus_url: http://%%host%%:0/0
+logs_config: null
+Auto-discovery IDs: elasticsearch,elasticsearch-oss
+Templates:
+check_name: elastic
+init_config: null
+instances:
+- url: http://%%host%%:9200
+logs_config: null
+Auto-discovery IDs: couchdb
+Templates:
+check_name: couch
+init_config: null
+instances:
+- server: http://%%host%%:5984
+logs_config: null
+Auto-discovery IDs: docker://a6b873da460de97e29a2b76cb25357f04651d6be9cf9beda92dfe30cd8045436
+Templates:
+check_name: openmetrics
+init_config: {}
+instances:
+- metrics:
+  - 0
+  namespace: "0"
+  prometheus_url: http://%%host%%:0/0
+logs_config: null
+Auto-discovery IDs: docker://fecfbeed03383e1a8d6dfa7eba920e0acda80c109636abf6712df3c091c82800
+Templates:
+check_name: openmetrics
+init_config: {}
+instances:
+- metrics:
+  - jvm*
+  - http*
+  - executor*
+  - system*
+  - process*
+  - s3*
+  - cache*
+  namespace: cnr_model_storage_service
+  prometheus_url: http://%%host%%:8080/ops/prometheus
+logs_config: null
+Auto-discovery IDs: etcd
+Templates:
+check_name: etcd
+init_config: null
+instances:
+- prometheus_url: http://%%host%%:2379/metrics
+logs_config: null
+Auto-discovery IDs: docker://1d4ff7190fe09cfef4fdb44e17d1ab06acfc829534e3805e00ba343eb21113f6
+Templates:
+check_name: openmetrics
+init_config: {}
+instances:
+- metrics:
+  - go*
+  - gs:*
+  - process*
+  namespace: cnr_gateway_service
+  prometheus_url: http://%%host%%:9091/metrics
+logs_config: null
+Auto-discovery IDs: docker://6b98b8fc4f9acb349696dcc3a6bd2ad55ccb808db7776dc8cef9dc560a8bd46b
+Templates:
+check_name: openmetrics
+init_config: {}
+instances:
+- metrics:
+  - go*
+  - gs:*
+  - process*
+  namespace: cnr_gateway_service
+  prometheus_url: http://%%host%%:9091/metrics
+logs_config: null
+Auto-discovery IDs: kube-controller-manager
+Templates:
+check_name: kube_controller_manager
+init_config: null
+instances:
+- bearer_token_auth: true
+  prometheus_url: http://%%host%%:10252/metrics
+logs_config: null
+Auto-discovery IDs: kyototycoon
+Templates:
+check_name: kyototycoon
+init_config: null
+instances:
+- report_url: http://%%host%%:1978/rpc/report
+logs_config: null
+Auto-discovery IDs: cilium-agent
+Templates:
+check_name: cilium
+init_config: null
+instances:
+- agent_endpoint: http://%%host%%:9090/metrics
+  tags:
+  - cilium-pod:%%host%%
+logs_config: null
+Auto-discovery IDs: coredns
+Templates:
+check_name: coredns
+init_config: null
+instances:
+- prometheus_url: http://%%host%%:9153/metrics
+  tags:
+  - dns-pod:%%host%%
+logs_config: null
+Auto-discovery IDs: couchbase
+Templates:
+check_name: couchbase
+init_config: null
+instances:
+- password: ********
+  server: http://%%host%%:8091
+  user: Administrator
+logs_config: null
+Auto-discovery IDs: docker://116ee3176b1768569793ccb472a3fe1e81866a21be79d2e638e0494af32c6428
+Templates:
+check_name: openmetrics
+init_config: {}
+instances:
+- metrics:
+  - jvm*
+  - http*
+  - system*
+  - process*
+  - mongodb*
+  - reactor*
+  - oms*
+  namespace: cnr_data_service
+  prometheus_url: http://%%host%%:8080/actuator/prometheus
+logs_config: null
+Auto-discovery IDs: memcached
+Templates:
+check_name: mcache
+init_config: null
+instances:
+- port: "11211"
+  url: '%%host%%'
+logs_config: null
+Auto-discovery IDs: consul
+Templates:
+check_name: consul
+init_config: null
+instances:
+- catalog_checks: true
+  new_leader_checks: true
+  url: http://%%host%%:8500
+logs_config: null
+Auto-discovery IDs: docker://3b05a0d1f440b9bdae0dbaf1a94746fb4f388faca758315c8f24117949d99517
+Templates:
+check_name: openmetrics
+init_config: {}
+instances:
+- metrics:
+  - jvm*
+  - http*
+  - executor*
+  - system*
+  - process*
+  - cache*
+  - cases*
+  - assignments*
+  namespace: cnr_dx_case_service
+  prometheus_url: http://%%host%%:8080/actuator/prometheus
+logs_config: null
+Auto-discovery IDs: docker://3ddd462149f742cfcd7e7cb5b218500a28af84493cde3518e761427b3108dffc
+Templates:
+check_name: openmetrics
+init_config: {}
+instances:
+- metrics:
+  - go*
+  - gs:*
+  - process*
+  namespace: cnr_gateway_service
+  prometheus_url: http://%%host%%:9091/metrics
+logs_config: null
+Auto-discovery IDs: docker://bfc02caf3a06b8b3328321dc8b7edf70a32bfca8bc58e831ab70dad2e9079bdf
+Templates:
+check_name: openmetrics
+init_config: {}
+instances:
+- metrics:
+  - jvm*
+  - http*
+  - executor*
+  - system*
+  - process*
+  - s3*
+  - cache*
+  namespace: cnr_model_storage_service
+  prometheus_url: http://%%host%%:8080/ops/prometheus
+logs_config: null
+Auto-discovery IDs: docker://66858ca02a9ac7bbac09b3da4ccf07247fe45dc7af65a4e3599add716025bf50
+Templates:
+check_name: openmetrics
+init_config: {}
+instances:
+- metrics:
+  - jvm*
+  - http*
+  - system*
+  - process*
+  - mongodb*
+  - reactor*
+  - oms*
+  namespace: cnr_data_service
+  prometheus_url: http://%%host%%:8080/actuator/prometheus
+logs_config: null
+Auto-discovery IDs: docker://cf5543e48f3efd227784d3c2a48d485e7dfb2b2cb2f61e59a84f4c10d033c000
+Templates:
+check_name: openmetrics
+init_config: {}
+instances:
+- metrics:
+  - jvm*
+  - http*
+  - executor*
+  - system*
+  - process*
+  - s3*
+  - cache*
+  namespace: cnr_model_storage_service
+  prometheus_url: http://%%host%%:8080/ops/prometheus
+logs_config: null
+Auto-discovery IDs: kube-scheduler
+Templates:
+check_name: kube_scheduler
+init_config: null
+instances:
+- bearer_token_auth: true
+  prometheus_url: http://%%host%%:10251/metrics
+logs_config: null
+Auto-discovery IDs: tomcat
+Templates:
+check_name: tomcat
+init_config:
+  collect_default_metrics: true
+  conf:
+  - include:
+      attribute:
+        currentThreadCount:
+          alias: tomcat.threads.count
+          metric_type: gauge
+        currentThreadsBusy:
+          alias: tomcat.threads.busy
+          metric_type: gauge
+        maxThreads:
+          alias: tomcat.threads.max
+          metric_type: gauge
+      type: ThreadPool
+  - include:
+      attribute:
+        bytesReceived:
+          alias: tomcat.bytes_rcvd
+          metric_type: counter
+        bytesSent:
+          alias: tomcat.bytes_sent
+          metric_type: counter
+        errorCount:
+          alias: tomcat.error_count
+          metric_type: counter
+        maxTime:
+          alias: tomcat.max_time
+          metric_type: gauge
+        processingTime:
+          alias: tomcat.processing_time
+          metric_type: counter
+        requestCount:
+          alias: tomcat.request_count
+          metric_type: counter
+      type: GlobalRequestProcessor
+  - include:
+      attribute:
+        errorCount:
+          alias: tomcat.servlet.error_count
+          metric_type: counter
+        processingTime:
+          alias: tomcat.servlet.processing_time
+          metric_type: counter
+        requestCount:
+          alias: tomcat.servlet.request_count
+          metric_type: counter
+      j2eeType: Servlet
+  - include:
+      attribute:
+        accessCount:
+          alias: tomcat.cache.access_count
+          metric_type: counter
+        hitsCounts:
+          alias: tomcat.cache.hits_count
+          metric_type: counter
+      type: Cache
+  - include:
+      attribute:
+        accessCount:
+          alias: tomcat.string_cache.access_count
+          metric_type: counter
+        hitCount:
+          alias: tomcat.string_cache.hit_count
+          metric_type: counter
+      type: StringCache
+  - include:
+      attribute:
+        hitCount:
+          alias: tomcat.web.cache.hit_count
+          metric_type: counter
+        lookupCount:
+          alias: tomcat.web.cache.lookup_count
+          metric_type: counter
+      name: Cache
+      type: WebResourceRoot
+  - include:
+      attribute:
+        jspCount:
+          alias: tomcat.jsp.count
+          metric_type: counter
+        jspReloadCount:
+          alias: tomcat.jsp.reload_count
+          metric_type: counter
+      type: JspMonitor
+  is_jmx: true
+instances:
+- host: '%%host%%'
+  port: "9012"
+logs_config: null
+Auto-discovery IDs: redis
+Templates:
+check_name: redisdb
+init_config: null
+instances:
+- host: '%%host%%'
+  port: "6379"
+logs_config: null
+Auto-discovery IDs: docker://01a3f44274e0b0c41b4cfa5b789e8fe8932e7740f5581caba686c54dfe19c07e
+Templates:
+check_name: openmetrics
+init_config: {}
+instances:
+- metrics:
+  - kube2iam_*
+  namespace: eksiam
+  prometheus_url: http://%%host%%:8181/metrics
+logs_config: null
+Auto-discovery IDs: httpd
+Templates:
+check_name: apache
+init_config: null
+instances:
+- apache_status_url: http://%%host%%/server-status?auto
+logs_config: null
+Auto-discovery IDs: kube-apiserver
+Templates:
+check_name: kube_apiserver_metrics
+init_config: null
+instances:
+- prometheus_url: https://%%host%%:6443/metrics
+  tags:
+  - apiserver:%%host%%
+logs_config: null
+Auto-discovery IDs: kube-state-metrics
+Templates:
+check_name: kubernetes_state
+init_config: null
+instances:
+- kube_state_url: http://%%host%%:8080/metrics
+  telemetry: true
+logs_config: null
+check_name: kubernetes_state
+init_config: null
+instances:
+- kube_state_url: http://%%host%%:8080/metrics
+logs_config: null
+Auto-discovery IDs: nginx-photon
+Templates:
+check_name: harbor
+init_config: null
+instances:
+- password: ********
+  url: http://%%host%%/
+  username: <USER_ID>
+logs_config: null

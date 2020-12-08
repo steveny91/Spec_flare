@@ -1,0 +1,367 @@
+===============
+Agent (v7.21.1)
+===============
+  Status date: 2020-11-24 15:39:25.275005 UTC
+  Agent start: 2020-11-17 00:34:44.473467 UTC
+  Pid: 384
+  Go Version: go1.13.11
+  Python Version: 3.8.1
+  Build arch: amd64
+  Agent flavor: agent
+  Check Runners: 4
+  Log Level: INFO
+  Paths
+  =====
+    Config File: /etc/datadog-agent/datadog.yaml
+    conf.d: /etc/datadog-agent/conf.d
+    checks.d: /etc/datadog-agent/checks.d
+  Clocks
+  ======
+    System UTC time: 2020-11-24 15:39:25.275005 UTC
+  Host Info
+  =========
+    bootTime: 2020-11-17 00:29:58.000000 UTC
+    kernelArch: x86_64
+    kernelVersion: 4.14.193-149.317.amzn2.x86_64
+    os: linux
+    platform: debian
+    platformFamily: debian
+    platformVersion: bullseye/sid
+    procs: 394
+    uptime: 5m3s
+  Hostnames
+  =========
+    ec2-hostname: ip-10-0-28-12.ec2.internal
+    host_aliases: [ip-10-0-28-12.ec2.internal]
+    hostname: i-0286d5b68a611e991
+    instance-id: i-0286d5b68a611e991
+    socket-fqdn: datadog-6ldcj
+    socket-hostname: datadog-6ldcj
+    host tags:
+      app.kubernetes.io/cluster_name:rnd
+      app.kubernetes.io/region:us-east-1
+      eks_deployment_type:blue
+      k8_nodename:ip-10-0-28-12.ec2.internal
+      az:us-east-1c
+    hostname provider: aws
+    unused hostname providers:
+      configuration/environment: hostname is empty
+      gce: unable to retrieve hostname from GCE: status code 404 trying to GET http://169.254.169.254/computeMetadata/v1/instance/hostname
+  Metadata
+  ========
+    cloud_provider: AWS
+    hostname_source: aws
+=========
+Collector
+=========
+  Running Checks
+  ==============
+    cpu
+    ---
+      Instance ID: cpu [OK]
+      Configuration Source: file:/etc/datadog-agent/conf.d/cpu.d/conf.yaml.default
+      Total Runs: 43,938
+      Metric Samples: Last Run: 6, Total: 263,622
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 0s
+      Last Execution Date : 2020-11-24 15:39:21.000000 UTC
+      Last Successful Execution Date : 2020-11-24 15:39:21.000000 UTC
+    disk (2.10.1)
+    -------------
+      Instance ID: disk:53391b91feb5f23f [OK]
+      Configuration Source: file:/etc/datadog-agent/conf.d/disk.d/conf.yaml
+      Total Runs: 43,938
+      Metric Samples: Last Run: 872, Total: 40,325,828
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 500ms
+      Last Execution Date : 2020-11-24 15:39:16.000000 UTC
+      Last Successful Execution Date : 2020-11-24 15:39:16.000000 UTC
+    docker
+    ------
+      Instance ID: docker [OK]
+      Configuration Source: file:/etc/datadog-agent/conf.d/docker.d/config.yaml
+      Total Runs: 43,938
+      Metric Samples: Last Run: 2,458, Total: 115,967,573
+      Events: Last Run: 0, Total: 1,011
+      Service Checks: Last Run: 1, Total: 44,111
+      Average Execution Time : 1.193s
+      Last Execution Date : 2020-11-24 15:39:23.000000 UTC
+      Last Successful Execution Date : 2020-11-24 15:39:23.000000 UTC
+    elastic (1.18.0)
+    ----------------
+      Instance ID: elastic:198dade9627bae62 [OK]
+      Configuration Source: file:/etc/datadog-agent/conf.d/elastic.d/auto_conf.yaml
+      Total Runs: 43,762
+      Metric Samples: Last Run: 192, Total: 8,401,536
+      Events: Last Run: 0, Total: 8
+      Service Checks: Last Run: 2, Total: 87,520
+      Average Execution Time : 181ms
+      Last Execution Date : 2020-11-24 15:39:20.000000 UTC
+      Last Successful Execution Date : 2020-11-24 15:39:20.000000 UTC
+      metadata:
+        version.major: 6
+        version.minor: 8
+        version.patch: 6
+        version.raw: 6.8.6
+        version.scheme: semver
+      Instance ID: elastic:92c1c5058a34566c [OK]
+      Configuration Source: file:/etc/datadog-agent/conf.d/elastic.d/auto_conf.yaml
+      Total Runs: 43,762
+      Metric Samples: Last Run: 192, Total: 8,401,536
+      Events: Last Run: 0, Total: 8
+      Service Checks: Last Run: 2, Total: 87,520
+      Average Execution Time : 240ms
+      Last Execution Date : 2020-11-24 15:39:21.000000 UTC
+      Last Successful Execution Date : 2020-11-24 15:39:21.000000 UTC
+      metadata:
+        version.major: 6
+        version.minor: 8
+        version.patch: 6
+        version.raw: 6.8.6
+        version.scheme: semver
+    file_handle
+    -----------
+      Instance ID: file_handle [OK]
+      Configuration Source: file:/etc/datadog-agent/conf.d/file_handle.d/conf.yaml.default
+      Total Runs: 43,937
+      Metric Samples: Last Run: 5, Total: 219,685
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 0s
+      Last Execution Date : 2020-11-24 15:39:13.000000 UTC
+      Last Successful Execution Date : 2020-11-24 15:39:13.000000 UTC
+    io
+    --
+      Instance ID: io [OK]
+      Configuration Source: file:/etc/datadog-agent/conf.d/io.d/conf.yaml.default
+      Total Runs: 43,938
+      Metric Samples: Last Run: 156, Total: 6,852,010
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 0s
+      Last Execution Date : 2020-11-24 15:39:20.000000 UTC
+      Last Successful Execution Date : 2020-11-24 15:39:20.000000 UTC
+    kubelet (4.1.1)
+    ---------------
+      Instance ID: kubelet:d884b5186b651429 [OK]
+      Configuration Source: file:/etc/datadog-agent/conf.d/kubelet.d/conf.yaml.default
+      Total Runs: 43,937
+      Metric Samples: Last Run: 1,446, Total: 68,033,619
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 4, Total: 175,748
+      Average Execution Time : 2.273s
+      Last Execution Date : 2020-11-24 15:39:15.000000 UTC
+      Last Successful Execution Date : 2020-11-24 15:39:15.000000 UTC
+    kubernetes_apiserver
+    --------------------
+      Instance ID: kubernetes_apiserver [OK]
+      Configuration Source: file:/etc/datadog-agent/conf.d/kubernetes_apiserver.d/conf.yaml.default
+      Total Runs: 43,938
+      Metric Samples: Last Run: 0, Total: 0
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 0s
+      Last Execution Date : 2020-11-24 15:39:19.000000 UTC
+      Last Successful Execution Date : 2020-11-24 15:39:19.000000 UTC
+    load
+    ----
+      Instance ID: load [OK]
+      Configuration Source: file:/etc/datadog-agent/conf.d/load.d/conf.yaml.default
+      Total Runs: 43,937
+      Metric Samples: Last Run: 6, Total: 263,622
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 0s
+      Last Execution Date : 2020-11-24 15:39:11.000000 UTC
+      Last Successful Execution Date : 2020-11-24 15:39:11.000000 UTC
+    memory
+    ------
+      Instance ID: memory [OK]
+      Configuration Source: file:/etc/datadog-agent/conf.d/memory.d/conf.yaml.default
+      Total Runs: 43,938
+      Metric Samples: Last Run: 17, Total: 746,946
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 0s
+      Last Execution Date : 2020-11-24 15:39:18.000000 UTC
+      Last Successful Execution Date : 2020-11-24 15:39:18.000000 UTC
+    network (1.17.0)
+    ----------------
+      Instance ID: network:5c571333f400457d [OK]
+      Configuration Source: file:/etc/datadog-agent/conf.d/network.d/conf.yaml.default
+      Total Runs: 43,937
+      Metric Samples: Last Run: 31, Total: 1,362,047
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 3ms
+      Last Execution Date : 2020-11-24 15:39:10.000000 UTC
+      Last Successful Execution Date : 2020-11-24 15:39:10.000000 UTC
+    ntp
+    ---
+      Instance ID: ntp:d884b5186b651429 [OK]
+      Configuration Source: file:/etc/datadog-agent/conf.d/ntp.d/conf.yaml.default
+      Total Runs: 733
+      Metric Samples: Last Run: 0, Total: 0
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 1, Total: 733
+      Average Execution Time : 20.127s
+      Last Execution Date : 2020-11-24 15:35:21.000000 UTC
+      Last Successful Execution Date : 2020-11-24 15:35:21.000000 UTC
+    openmetrics (1.8.0)
+    -------------------
+      Instance ID: openmetrics:cnr_gateway_service:b27ba7aa4fe85b6b [OK]
+      Configuration Source: file
+      Total Runs: 43,938
+      Metric Samples: Last Run: 244, Total: 10,562,685
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 1, Total: 43,938
+      Average Execution Time : 56ms
+      Last Execution Date : 2020-11-24 15:39:16.000000 UTC
+      Last Successful Execution Date : 2020-11-24 15:39:16.000000 UTC
+      
+    system_core (1.7.0)
+    -------------------
+      Instance ID: system_core:d884b5186b651429 [OK]
+      Configuration Source: file:/etc/datadog-agent/conf.d/system_core.d/conf.yaml
+      Total Runs: 43,937
+      Metric Samples: Last Run: 81, Total: 3,558,897
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 67ms
+      Last Execution Date : 2020-11-24 15:39:15.000000 UTC
+      Last Successful Execution Date : 2020-11-24 15:39:15.000000 UTC
+    uptime
+    ------
+      Instance ID: uptime [OK]
+      Configuration Source: file:/etc/datadog-agent/conf.d/uptime.d/conf.yaml.default
+      Total Runs: 43,938
+      Metric Samples: Last Run: 1, Total: 43,938
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 0s
+      Last Execution Date : 2020-11-24 15:39:17.000000 UTC
+      Last Successful Execution Date : 2020-11-24 15:39:17.000000 UTC
+  Check Initialization Errors
+  ===========================
+      openmetrics (1.8.0)
+      -------------------
+      instance 0:
+        could not invoke 'openmetrics' python check constructor. New constructor API returned:
+Traceback (most recent call last):
+  File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 100, in __init__
+    self.get_scraper_config(instance)
+  File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 129, in get_scraper_config
+    config = self.create_scraper_configuration(instance)
+  File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/mixins.py", line 107, in create_scraper_configuration
+    metrics_mapper.update(metric)
+TypeError: 'int' object is not iterable
+Deprecated constructor API returned:
+Traceback (most recent call last):
+  File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 100, in __init__
+    self.get_scraper_config(instance)
+  File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 129, in get_scraper_config
+    config = self.create_scraper_configuration(instance)
+  File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/mixins.py", line 107, in create_scraper_configuration
+    metrics_mapper.update(metric)
+TypeError: 'int' object is not iterable
+      instance 1:
+        could not invoke 'openmetrics' python check constructor. New constructor API returned:
+Traceback (most recent call last):
+  File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 100, in __init__
+    self.get_scraper_config(instance)
+  File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 129, in get_scraper_config
+    config = self.create_scraper_configuration(instance)
+  File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/mixins.py", line 107, in create_scraper_configuration
+    metrics_mapper.update(metric)
+TypeError: 'int' object is not iterable
+Deprecated constructor API returned:
+Traceback (most recent call last):
+  File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 100, in __init__
+    self.get_scraper_config(instance)
+  File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/base_check.py", line 129, in get_scraper_config
+    config = self.create_scraper_configuration(instance)
+  File "/opt/datadog-agent/embedded/lib/python3.8/site-packages/datadog_checks/base/checks/openmetrics/mixins.py", line 107, in create_scraper_configuration
+    metrics_mapper.update(metric)
+TypeError: 'int' object is not iterable
+========
+JMXFetch
+========
+  Initialized checks
+  ==================
+    no checks
+  Failed checks
+  =============
+    no checks
+=========
+Forwarder
+=========
+  Transactions
+  ============
+    CheckRunsV1: 43,938
+    Connections: 0
+    Containers: 0
+    Dropped: 0
+    DroppedOnInput: 0
+    Events: 0
+    HostMetadata: 0
+    IntakeV1: 5,564
+    Metadata: 0
+    Pods: 0
+    Processes: 0
+    RTContainers: 0
+    RTProcesses: 0
+    Requeued: 0
+    Retried: 0
+    RetryQueueSize: 0
+    Series: 0
+    ServiceChecks: 0
+    SketchSeries: 0
+    Success: 137,373
+    TimeseriesV1: 43,938
+  API Keys status
+  ===============
+    API key ending with 3ed98: API Key valid
+==========
+Endpoints
+==========
+  https://app.datadoghq.com - API Key ending with:
+      - 3ed98
+==========
+Logs Agent
+==========
+  Logs Agent is not running
+=========
+APM Agent
+=========
+  Status: Running
+  Pid: <no value>
+  Uptime: <no value> seconds
+  Mem alloc: =========
+Aggregator
+=========
+  Checks Metric Sample: 329,164,826
+  Dogstatsd Metric Sample: 900,730
+  Event: 1,028
+  Events Flushed: 1,028
+  Number Of Flushes: 43,938
+  Series Flushed: 324,478,126
+  Service Check: 1,922,316
+  Service Checks Flushed: 1,966,228
+=========
+DogStatsD
+=========
+  Event Packets: 0
+  Event Parse Errors: 0
+  Metric Packets: 900,729
+  Metric Parse Errors: 0
+  Service Check Packets: 0
+  Service Check Parse Errors: 0
+  Udp Bytes: 78,980,664
+  Udp Packet Reading Errors: 0
+  Udp Packets: 195,609
+  Uds Bytes: 0
+  Uds Origin Detection Errors: 0
+  Uds Packet Reading Errors: 0
+  Uds Packets: 0

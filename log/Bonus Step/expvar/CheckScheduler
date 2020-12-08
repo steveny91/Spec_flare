@@ -1,0 +1,6 @@
+LoaderErrors:
+  pdh_check:
+    Core Check Loader: Check pdh_check not found in Catalog
+    JMX Check Loader: check is not a jmx check, or unable to determine if it's so
+    Python Check Loader: Could not configure any python check pdh_check
+RunErrors: {}

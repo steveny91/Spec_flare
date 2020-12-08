@@ -1,0 +1,25 @@
+instance:
+  - metrics:
+    - '*'
+    namespace: cnr_model_storage_service
+    prometheus_url: http://10.0.28.160:8080/ops/prometheus
+    tags:
+    - kube_deployment:mss-service
+    - kube_container_name:mss-service
+    - kube_app_instance:model-storage-service
+    - kube_namespace:morza-17-11-2020automatic
+    - image_tag:0.0.9-95
+    - kube_replica_set:mss-service-7bfbb5f86b
+    - pod_name:mss-service-7bfbb5f86b-xjrqq
+    - image_name:cirrus-docker.jfrog.io/model-storage/docker-image
+    - kube_service:mss-service
+    - docker_image:cirrus-docker.jfrog.io/model-storage/docker-image:0.0.9-95
+    - short_image:docker-image
+    - docpod_name:mss-service-7bfbb5f86b-xjrqq
+    - pod-template-hash:7bfbb5f86b
+    - pod_phase:running
+    - app.kubernetes.io/name:mss-service
+    - kube_service:mss-servicemonitoring
+    - kube_app_name:mss-service
+    - app.kubernetes.io/instance:model-storage-service
+init_config:

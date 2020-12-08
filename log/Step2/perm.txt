@@ -1,0 +1,2 @@
+vagrant@ubuntu-xenial:/etc/datadog-agent/conf.d$ ls -la log.yaml 
+-rw-r----- 1 root root 145 May 19 21:23 log.yaml

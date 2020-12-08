@@ -1,0 +1,8 @@
+2020-11-17 00:34:42.957450500 starting agent
+2020-11-17 00:34:42.985304500 starting process-agent
+2020-11-17 00:34:42.981634500 starting security-agent
+2020-11-17 00:34:42.991201500 starting trace-agent
+2020-11-17 00:34:42.991524500 starting system-probe
+2020-11-17 00:34:45.798519500 security-agent exited with code 0, disabling
+2020-11-17 00:34:50.310323500 system-probe exited with code 0, disabling
+2020-11-17 00:34:53.786359500 trace-agent exited with code 0, disabling

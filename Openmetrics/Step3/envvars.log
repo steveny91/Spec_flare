@@ -1,0 +1,15 @@
+Found the following envvars:
+ -  DD_LOG_LEVEL=INFO
+ -  DD_HEALTH_PORT=5555
+ -  DD_PROCESS_AGENT_ENABLED=true
+ -  DD_LEADER_ELECTION=true
+ -  DD_KUBERNETES_POD_LABELS_AS_TAGS={"*":"%%label%%"}
+ -  DD_KUBERNETES_NODE_LABELS_AS_TAGS={"eks_worker_group":"eks_deployment_type","failure-domain.beta.kubernetes.io/zone":"az","kubernetes.io/hostname":"k8_nodename"}
+ -  DD_DOGSTATSD_NON_LOCAL_TRAFFIC=true
+ -  DD_DOGSTATSD_ORIGIN_DETECTION=true
+ -  DD_COLLECT_KUBERNETES_EVENTS=true
+ -  DD_DOCKER_LABELS_AS_TAGS={"io.kubernetes.pod.name":"docpod_name"}
+ -  DD_KUBERNETES_KUBELET_HOST=10.0.28.12
+ -  DD_TAGS=app.kubernetes.io/cluster_name:rnd app.kubernetes.io/region:us-east-1
+ -  DD_PYTHON_VERSION=3
+ -  DD_CHECKS_TAG_CARDINALITY=orchestrator

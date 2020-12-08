@@ -1,0 +1,817 @@
+goroutine 186 [running]:
+runtime/pprof.writeGoroutineStacks(0x1832780, 0xc00017a2a0, 0x0, 0x0)
+	c:/go/src/runtime/pprof/pprof.go:679 +0xa4
+runtime/pprof.writeGoroutine(0x1832780, 0xc00017a2a0, 0x2, 0x4561400, 0x0)
+	c:/go/src/runtime/pprof/pprof.go:668 +0x4b
+runtime/pprof.(*Profile).WriteTo(0x1210980, 0x1832780, 0xc00017a2a0, 0x2, 0xc00017a2a0, 0xc00008eb70)
+	c:/go/src/runtime/pprof/pprof.go:329 +0x397
+net/http/pprof.handler.ServeHTTP(0xc000662011, 0x9, 0x184e900, 0xc00017a2a0, 0xc0003c6100)
+	c:/go/src/net/http/pprof/pprof.go:245 +0x35d
+net/http/pprof.Index(0x184e900, 0xc00017a2a0, 0xc0003c6100)
+	c:/go/src/net/http/pprof/pprof.go:268 +0x6fe
+net/http.HandlerFunc.ServeHTTP(0x1663c10, 0x184e900, 0xc00017a2a0, 0xc0003c6100)
+	c:/go/src/net/http/server.go:1995 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x2458ea0, 0x184e900, 0xc00017a2a0, 0xc0003c6100)
+	c:/go/src/net/http/server.go:2375 +0x1dd
+net/http.serverHandler.ServeHTTP(0xc00039d790, 0x184e900, 0xc00017a2a0, 0xc0003c6100)
+	c:/go/src/net/http/server.go:2774 +0xaf
+net/http.(*conn).serve(0xc000465d60, 0x1853700, 0xc000470b40)
+	c:/go/src/net/http/server.go:1878 +0x858
+created by net/http.(*Server).Serve
+	c:/go/src/net/http/server.go:2884 +0x2fb
+goroutine 1 [syscall, 2 minutes, locked to thread]:
+syscall.Syscall(0x7ff94bc05f10, 0x1, 0xc000457e98, 0x0, 0x0, 0x0, 0x0, 0x0)
+	c:/go/src/runtime/syscall_windows.go:184 +0xea
+github.com/DataDog/datadog-agent/vendor/golang.org/x/sys/windows.StartServiceCtrlDispatcher(0xc000457e98, 0x1663448, 0xc000492400)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/golang.org/x/sys/windows/zsyscall_windows.go:418 +0x6b
+github.com/DataDog/datadog-agent/vendor/golang.org/x/sys/windows/svc.Run(0x160da99, 0xc, 0x1832380, 0x247cf48, 0x0, 0x0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/golang.org/x/sys/windows/svc/service.go:352 +0x1ce
+main.runService(0xc000461100)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/main_windows.go:128 +0x13d
+main.main()
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/main_windows.go:41 +0x1a9
+goroutine 52 [syscall, 2 minutes]:
+os/signal.signal_recv(0x0)
+	c:/go/src/runtime/sigqueue.go:139 +0xa3
+os/signal.loop()
+	c:/go/src/os/signal/signal_unix.go:23 +0x29
+created by os/signal.init.0
+	c:/go/src/os/signal/signal_unix.go:29 +0x48
+goroutine 34 [sync.Cond.Wait, 2 minutes]:
+runtime.goparkunlock(...)
+	c:/go/src/runtime/proc.go:307
+sync.runtime_notifyListWait(0xc000122750, 0x0)
+	c:/go/src/runtime/sema.go:510 +0x107
+sync.(*Cond).Wait(0xc000122740)
+	c:/go/src/sync/cond.go:56 +0xa5
+github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog.(*asyncLoopLogger).processItem(0xc00015a240, 0x0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:50 +0x98
+github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog.(*asyncLoopLogger).processQueue(0xc00015a240)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:63 +0x49
+created by github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog.NewAsyncLoopLogger
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:40 +0xa3
+goroutine 35 [sync.Cond.Wait, 2 minutes]:
+runtime.goparkunlock(...)
+	c:/go/src/runtime/proc.go:307
+sync.runtime_notifyListWait(0xc0001228d0, 0x0)
+	c:/go/src/runtime/sema.go:510 +0x107
+sync.(*Cond).Wait(0xc0001228c0)
+	c:/go/src/sync/cond.go:56 +0xa5
+github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog.(*asyncLoopLogger).processItem(0xc00015a360, 0x0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:50 +0x98
+github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog.(*asyncLoopLogger).processQueue(0xc00015a360)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:63 +0x49
+created by github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog.NewAsyncLoopLogger
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:40 +0xa3
+goroutine 51 [select]:
+github.com/DataDog/datadog-agent/vendor/github.com/patrickmn/go-cache.(*janitor).Run(0xc000129940, 0xc000131940)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/patrickmn/go-cache/cache.go:1079 +0xdc
+created by github.com/DataDog/datadog-agent/vendor/github.com/patrickmn/go-cache.runJanitor
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/patrickmn/go-cache/cache.go:1099 +0xb0
+goroutine 114 [sync.Cond.Wait, 2 minutes]:
+runtime.goparkunlock(...)
+	c:/go/src/runtime/proc.go:307
+sync.runtime_notifyListWait(0xc0004704d0, 0x0)
+	c:/go/src/runtime/sema.go:510 +0x107
+sync.(*Cond).Wait(0xc0004704c0)
+	c:/go/src/sync/cond.go:56 +0xa5
+github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog.(*asyncLoopLogger).processItem(0xc000488000, 0x0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:50 +0x98
+github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog.(*asyncLoopLogger).processQueue(0xc000488000)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:63 +0x49
+created by github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog.NewAsyncLoopLogger
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:40 +0xa3
+goroutine 130 [sync.Cond.Wait, 2 minutes]:
+runtime.goparkunlock(...)
+	c:/go/src/runtime/proc.go:307
+sync.runtime_notifyListWait(0xc000492390, 0x0)
+	c:/go/src/runtime/sema.go:510 +0x107
+sync.(*Cond).Wait(0xc000492380)
+	c:/go/src/sync/cond.go:56 +0xa5
+github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog.(*asyncLoopLogger).processItem(0xc0004ae000, 0x0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:50 +0x98
+github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog.(*asyncLoopLogger).processQueue(0xc0004ae000)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:63 +0x49
+created by github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog.NewAsyncLoopLogger
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:40 +0xa3
+goroutine 146 [select, 2 minutes]:
+github.com/DataDog/datadog-agent/vendor/golang.org/x/sys/windows/svc.(*service).run(0xc000492400)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/golang.org/x/sys/windows/svc/service.go:250 +0x382
+created by github.com/DataDog/datadog-agent/vendor/golang.org/x/sys/windows/svc.Run
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/golang.org/x/sys/windows/svc/service.go:350 +0x1c0
+goroutine 93 [select, 2 minutes]:
+main.(*myservice).Execute(0x247cf48, 0xc00008e750, 0x3, 0x3, 0xc000178000, 0xc000178060, 0x0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/main_windows.go:79 +0x1b4
+github.com/DataDog/datadog-agent/vendor/golang.org/x/sys/windows/svc.(*service).run.func1(0xc000492400, 0xc00008e750, 0x3, 0x3, 0xc000178000, 0xc000178060, 0xc000178180)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/golang.org/x/sys/windows/svc/service.go:238 +0x71
+created by github.com/DataDog/datadog-agent/vendor/golang.org/x/sys/windows/svc.(*service).run
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/golang.org/x/sys/windows/svc/service.go:237 +0x20c
+goroutine 4 [sync.Cond.Wait]:
+runtime.goparkunlock(...)
+	c:/go/src/runtime/proc.go:307
+sync.runtime_notifyListWait(0xc0004717d0, 0x34a)
+	c:/go/src/runtime/sema.go:510 +0x107
+sync.(*Cond).Wait(0xc0004717c0)
+	c:/go/src/sync/cond.go:56 +0xa5
+github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog.(*asyncLoopLogger).processItem(0xc0004ae240, 0x0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:50 +0x98
+github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog.(*asyncLoopLogger).processQueue(0xc0004ae240)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:63 +0x49
+created by github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog.NewAsyncLoopLogger
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:40 +0xa3
+goroutine 79 [IO wait]:
+internal/poll.runtime_pollWait(0x4618e58, 0x72, 0x1833d00)
+	c:/go/src/runtime/netpoll.go:182 +0x5d
+internal/poll.(*pollDesc).wait(0xc0003b0748, 0x72, 0x11ce600, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_poll_runtime.go:87 +0xa2
+internal/poll.(*ioSrv).ExecIO(0x2454298, 0xc0003b0598, 0xc0003fab20, 0x1, 0x0, 0x2c8)
+	c:/go/src/internal/poll/fd_windows.go:228 +0x124
+internal/poll.(*FD).acceptOne(0xc0003b0580, 0x2c8, 0xc0001120f0, 0x2, 0x2, 0xc0003b0598, 0xc000060700, 0xc0004d3c28, 0x40e4ff, 0x10)
+	c:/go/src/internal/poll/fd_windows.go:864 +0xa9
+internal/poll.(*FD).Accept(0xc0003b0580, 0xc0005eaa50, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	c:/go/src/internal/poll/fd_windows.go:898 +0x148
+net.(*netFD).accept(0xc0003b0580, 0xc000048570, 0xc000048500, 0x40dc43)
+	c:/go/src/net/fd_windows.go:193 +0x81
+net.(*TCPListener).accept(0xc0004680d8, 0xc0004d3de8, 0x14c6940, 0x5c1a70c6429c201)
+	c:/go/src/net/tcpsock_posix.go:139 +0x39
+net.(*TCPListener).AcceptTCP(0xc0004680d8, 0xc00039d820, 0x4e0c8d, 0x5f4c9856)
+	c:/go/src/net/tcpsock.go:247 +0x4f
+net/http.tcpKeepAliveListener.Accept(0xc0004680d8, 0xc0004d3e60, 0x18, 0xc00011c780, 0x6fd77b)
+	c:/go/src/net/http/server.go:3264 +0x36
+net/http.(*Server).Serve(0xc00039d790, 0x184f6c0, 0xc0004680d8, 0x0, 0x0)
+	c:/go/src/net/http/server.go:2859 +0x234
+net/http.(*Server).ListenAndServe(0xc00039d790, 0xc00039d790, 0x0)
+	c:/go/src/net/http/server.go:2797 +0xeb
+net/http.ListenAndServe(0xc0003f6080, 0xe, 0x1832520, 0x2458ea0, 0xe, 0x0)
+	c:/go/src/net/http/server.go:3037 +0x7b
+created by github.com/DataDog/datadog-agent/cmd/agent/app.StartAgent
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/app/run.go:187 +0x706
+goroutine 163 [chan receive]:
+github.com/DataDog/datadog-agent/pkg/status/health.(*catalog).run(0xc000123800)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/status/health/health.go:80 +0x5a
+created by github.com/DataDog/datadog-agent/pkg/status/health.(*catalog).register
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/status/health/health.go:52 +0x21d
+goroutine 5 [IO wait]:
+internal/poll.runtime_pollWait(0x4618f28, 0x72, 0x1833d00)
+	c:/go/src/runtime/netpoll.go:182 +0x5d
+internal/poll.(*pollDesc).wait(0xc0003b0f88, 0x72, 0x11ce600, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_poll_runtime.go:87 +0xa2
+internal/poll.(*ioSrv).ExecIO(0x2454298, 0xc0003b0dd8, 0xc00065a5e0, 0x1, 0x0, 0xbd4)
+	c:/go/src/internal/poll/fd_windows.go:228 +0x124
+internal/poll.(*FD).acceptOne(0xc0003b0dc0, 0xbd4, 0xc0005b3e00, 0x2, 0x2, 0xc0003b0dd8, 0x461c40, 0xc0004d1cb0, 0x40e4ff, 0x10)
+	c:/go/src/internal/poll/fd_windows.go:864 +0xa9
+internal/poll.(*FD).Accept(0xc0003b0dc0, 0xc0005db020, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	c:/go/src/internal/poll/fd_windows.go:898 +0x148
+net.(*netFD).accept(0xc0003b0dc0, 0x245a0e0, 0x4561400, 0x3)
+	c:/go/src/net/fd_windows.go:193 +0x81
+net.(*TCPListener).accept(0xc000468208, 0xc0004d1e78, 0x431cf8, 0x16641f8)
+	c:/go/src/net/tcpsock_posix.go:139 +0x39
+net.(*TCPListener).Accept(0xc000468208, 0xc0004d1e88, 0xc0004d1eb0, 0x6fe149, 0xc00007c570)
+	c:/go/src/net/tcpsock.go:260 +0x4f
+crypto/tls.(*listener).Accept(0xc0001c2440, 0xc0004d1f00, 0x18, 0xc00011d380, 0x6fd77b)
+	c:/go/src/crypto/tls/tls.go:62 +0x3e
+net/http.(*Server).Serve(0xc00007c4e0, 0x184c240, 0xc0001c2440, 0x0, 0x0)
+	c:/go/src/net/http/server.go:2859 +0x234
+created by github.com/DataDog/datadog-agent/cmd/agent/api.StartServer
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/api/server.go:92 +0x8e8
+goroutine 6 [IO wait]:
+internal/poll.runtime_pollWait(0x4618d88, 0x72, 0x1833d00)
+	c:/go/src/runtime/netpoll.go:182 +0x5d
+internal/poll.(*pollDesc).wait(0xc0003cf248, 0x72, 0x11ce600, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_poll_runtime.go:87 +0xa2
+internal/poll.(*ioSrv).ExecIO(0x2454298, 0xc0003cf098, 0xc000622480, 0x1, 0x0, 0xbfc)
+	c:/go/src/internal/poll/fd_windows.go:228 +0x124
+internal/poll.(*FD).acceptOne(0xc0003cf080, 0xbfc, 0xc0005b2000, 0x2, 0x2, 0xc0003cf098, 0x461c40, 0xc0004cdcc0, 0x40e4ff, 0x10)
+	c:/go/src/internal/poll/fd_windows.go:864 +0xa9
+internal/poll.(*FD).Accept(0xc0003cf080, 0xc0004e8970, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, ...)
+	c:/go/src/internal/poll/fd_windows.go:898 +0x148
+net.(*netFD).accept(0xc0003cf080, 0x16641f8, 0xc0004cde48, 0xb7c38a9e)
+	c:/go/src/net/fd_windows.go:193 +0x81
+net.(*TCPListener).accept(0xc00012a198, 0x6fe149, 0xc00007c710, 0x4e0c8d)
+	c:/go/src/net/tcpsock_posix.go:139 +0x39
+net.(*TCPListener).Accept(0xc00012a198, 0xc0004cdec0, 0x18, 0xc0004b0480, 0x6fd77b)
+	c:/go/src/net/tcpsock.go:260 +0x4f
+net/http.(*Server).Serve(0xc00007c680, 0x184e680, 0xc00012a198, 0x0, 0x0)
+	c:/go/src/net/http/server.go:2859 +0x234
+net/http.Serve(0x184e680, 0xc00012a198, 0x18317c0, 0xc00040e3f0, 0xe, 0x184e680)
+	c:/go/src/net/http/server.go:2456 +0x75
+created by github.com/DataDog/datadog-agent/cmd/agent/gui.StartGUIServer
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/gui/gui.go:80 +0x845
+goroutine 7 [select]:
+github.com/DataDog/datadog-agent/pkg/forwarder.(*Worker).Start.func1(0xc000470180)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/forwarder/worker.go:100 +0x200
+created by github.com/DataDog/datadog-agent/pkg/forwarder.(*Worker).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/forwarder/worker.go:83 +0x46
+goroutine 8 [select]:
+github.com/DataDog/datadog-agent/pkg/forwarder.(*domainForwarder).handleFailedTransactions(0xc000489440)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/forwarder/domain_forwarder.go:135 +0x11f
+created by github.com/DataDog/datadog-agent/pkg/forwarder.(*domainForwarder).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/forwarder/domain_forwarder.go:174 +0x320
+goroutine 164 [select]:
+github.com/DataDog/datadog-agent/pkg/forwarder.(*forwarderHealth).healthCheckLoop(0xc00048f200)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/forwarder/forwarder_health.go:100 +0x1b9
+created by github.com/DataDog/datadog-agent/pkg/forwarder.(*forwarderHealth).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/forwarder/forwarder_health.go:76 +0x91
+goroutine 215 [select, 2 minutes]:
+github.com/DataDog/datadog-agent/pkg/logs/input/windowsevent.(*Launcher).run(0xc00018f650)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/input/windowsevent/launcher.go:48 +0xd7
+created by github.com/DataDog/datadog-agent/pkg/logs/input/windowsevent.(*Launcher).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/input/windowsevent/launcher.go:42 +0xdf
+goroutine 165 [select]:
+github.com/DataDog/datadog-agent/pkg/aggregator.(*BufferedAggregator).run(0xc000278000)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/aggregator/aggregator.go:627 +0x32a
+created by github.com/DataDog/datadog-agent/pkg/aggregator.InitAggregatorWithFlushInterval.func1
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/aggregator/aggregator.go:156 +0xa6
+goroutine 168 [select]:
+github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners.(*packetsBuffer).flushLoop(0xc0001306c0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners/packets_buffer.go:38 +0xba
+created by github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners.newPacketsBuffer
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners/packets_buffer.go:32 +0x115
+goroutine 169 [select]:
+github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners.(*packetBuffer).flushLoop(0xc000130800)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners/packet_buffer.go:41 +0xe5
+created by github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners.newPacketBuffer
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners/packet_buffer.go:35 +0xff
+goroutine 170 [IO wait]:
+internal/poll.runtime_pollWait(0x4618cb8, 0x72, 0x1833d00)
+	c:/go/src/runtime/netpoll.go:182 +0x5d
+internal/poll.(*pollDesc).wait(0xc0003b0a08, 0x72, 0x11ce600, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_poll_runtime.go:87 +0xa2
+internal/poll.(*ioSrv).ExecIO(0x2454298, 0xc0003b0858, 0x1663688, 0x0, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_windows.go:228 +0x124
+internal/poll.(*FD).ReadFrom(0xc0003b0840, 0xc00041e000, 0x2000, 0x2000, 0x0, 0x0, 0x0, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_windows.go:642 +0x120
+net.(*netFD).readFrom(0xc0003b0840, 0xc00041e000, 0x2000, 0x2000, 0xc0004f7ea8, 0x40bbac, 0x14844e0, 0x14e98a0, 0x1845e00)
+	c:/go/src/net/fd_windows.go:158 +0x62
+net.(*UDPConn).readFrom(0xc0004680f0, 0xc00041e000, 0x2000, 0x2000, 0xc0004f7f48, 0x103b6b2, 0xc000130830, 0xc00041e000)
+	c:/go/src/net/udpsock_posix.go:47 +0x71
+net.(*UDPConn).ReadFrom(0xc0004680f0, 0xc00041e000, 0x2000, 0x2000, 0x0, 0x1846240, 0xc000b6df50, 0x0, 0x0)
+	c:/go/src/net/udpsock.go:121 +0x65
+github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners.(*UDPListener).Listen(0xc000130c40)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners/udp.go:97 +0x107
+created by github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).handleMessages
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:225 +0x8b
+goroutine 171 [select]:
+github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).worker(0xc0003c6400)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:262 +0x205
+created by github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).handleMessages
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:236 +0xf0
+goroutine 172 [select]:
+github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).worker(0xc0003c6400)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:262 +0x205
+created by github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).handleMessages
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:236 +0xf0
+goroutine 173 [select]:
+github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).worker(0xc0003c6400)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:262 +0x205
+created by github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).handleMessages
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:236 +0xf0
+goroutine 174 [select]:
+github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).worker(0xc0003c6400)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:262 +0x205
+created by github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).handleMessages
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:236 +0xf0
+goroutine 175 [select]:
+github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).worker(0xc0003c6400)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:262 +0x205
+created by github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).handleMessages
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:236 +0xf0
+goroutine 176 [select]:
+github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).worker(0xc0003c6400)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:262 +0x205
+created by github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).handleMessages
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:236 +0xf0
+goroutine 10 [select]:
+github.com/DataDog/datadog-agent/pkg/logs/auditor.(*Auditor).run(0xc000490140)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/auditor/auditor.go:138 +0x18e
+created by github.com/DataDog/datadog-agent/pkg/logs/auditor.(*Auditor).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/auditor/auditor.go:75 +0x88
+goroutine 11 [select]:
+github.com/DataDog/datadog-agent/pkg/logs/sender.(*batchStrategy).Send(0xc00007ae00, 0xc000125860, 0xc000125740, 0xc000472000)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/sender/batch_strategy.go:46 +0x101
+github.com/DataDog/datadog-agent/pkg/logs/sender.(*Sender).run(0xc0003bfef0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/sender/sender.go:58 +0xab
+created by github.com/DataDog/datadog-agent/pkg/logs/sender.(*Sender).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/sender/sender.go:44 +0x46
+goroutine 12 [chan receive, 2 minutes]:
+github.com/DataDog/datadog-agent/pkg/logs/processor.(*Processor).run(0xc000470240)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/processor/processor.go:54 +0xa2
+created by github.com/DataDog/datadog-agent/pkg/logs/processor.(*Processor).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/processor/processor.go:39 +0x46
+goroutine 13 [select]:
+github.com/DataDog/datadog-agent/pkg/logs/sender.(*batchStrategy).Send(0xc00007ae40, 0xc0001259e0, 0xc000125740, 0xc000472010)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/sender/batch_strategy.go:46 +0x101
+github.com/DataDog/datadog-agent/pkg/logs/sender.(*Sender).run(0xc00048e150)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/sender/sender.go:58 +0xab
+created by github.com/DataDog/datadog-agent/pkg/logs/sender.(*Sender).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/sender/sender.go:44 +0x46
+goroutine 14 [chan receive]:
+github.com/DataDog/datadog-agent/pkg/logs/processor.(*Processor).run(0xc0004702c0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/processor/processor.go:54 +0xa2
+created by github.com/DataDog/datadog-agent/pkg/logs/processor.(*Processor).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/processor/processor.go:39 +0x46
+goroutine 15 [select]:
+github.com/DataDog/datadog-agent/pkg/logs/sender.(*batchStrategy).Send(0xc00007ae80, 0xc000125b60, 0xc000125740, 0xc000070df0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/sender/batch_strategy.go:46 +0x101
+github.com/DataDog/datadog-agent/pkg/logs/sender.(*Sender).run(0xc00048e3f0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/sender/sender.go:58 +0xab
+created by github.com/DataDog/datadog-agent/pkg/logs/sender.(*Sender).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/sender/sender.go:44 +0x46
+goroutine 16 [chan receive, 2 minutes]:
+github.com/DataDog/datadog-agent/pkg/logs/processor.(*Processor).run(0xc000470300)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/processor/processor.go:54 +0xa2
+created by github.com/DataDog/datadog-agent/pkg/logs/processor.(*Processor).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/processor/processor.go:39 +0x46
+goroutine 210 [select]:
+github.com/DataDog/datadog-agent/pkg/logs/sender.(*batchStrategy).Send(0xc00007aee0, 0xc000125ce0, 0xc000125740, 0xc000472020)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/sender/batch_strategy.go:46 +0x101
+github.com/DataDog/datadog-agent/pkg/logs/sender.(*Sender).run(0xc00048e600)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/sender/sender.go:58 +0xab
+created by github.com/DataDog/datadog-agent/pkg/logs/sender.(*Sender).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/sender/sender.go:44 +0x46
+goroutine 211 [chan receive, 2 minutes]:
+github.com/DataDog/datadog-agent/pkg/logs/processor.(*Processor).run(0xc000470340)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/processor/processor.go:54 +0xa2
+created by github.com/DataDog/datadog-agent/pkg/logs/processor.(*Processor).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/processor/processor.go:39 +0x46
+goroutine 212 [select]:
+github.com/DataDog/datadog-agent/pkg/logs/input/file.(*Scanner).run(0xc0003d8700)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/input/file/scanner.go:71 +0x14a
+created by github.com/DataDog/datadog-agent/pkg/logs/input/file.(*Scanner).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/input/file/scanner.go:56 +0x46
+goroutine 213 [select, 2 minutes]:
+github.com/DataDog/datadog-agent/pkg/logs/input/listener.(*Launcher).run(0xc000490190)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/input/listener/launcher.go:43 +0x11f
+created by github.com/DataDog/datadog-agent/pkg/logs/input/listener.(*Launcher).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/input/listener/launcher.go:37 +0x46
+goroutine 507 [select]:
+net/http.(*persistConn).writeLoop(0xc0002c3320)
+	c:/go/src/net/http/transport.go:1978 +0x11a
+created by net/http.(*Transport).dialConn
+	c:/go/src/net/http/transport.go:1360 +0xb14
+goroutine 217 [select]:
+github.com/DataDog/datadog-agent/pkg/tagger.(*Tagger).run(0xc0001dcd90, 0xc000136048, 0x913be0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/tagger/tagger.go:89 +0x149
+created by github.com/DataDog/datadog-agent/pkg/tagger.(*Tagger).Init
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/tagger/tagger.go:83 +0x199
+goroutine 219 [chan receive]:
+github.com/DataDog/datadog-agent/pkg/collector/runner.(*Runner).work(0xc00018fce0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/runner/runner.go:245 +0x140
+created by github.com/DataDog/datadog-agent/pkg/collector/runner.(*Runner).AddWorker
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/runner/runner.go:100 +0x91
+goroutine 220 [chan receive]:
+github.com/DataDog/datadog-agent/pkg/collector/runner.(*Runner).work(0xc00018fce0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/runner/runner.go:245 +0x140
+created by github.com/DataDog/datadog-agent/pkg/collector/runner.(*Runner).AddWorker
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/runner/runner.go:100 +0x91
+goroutine 221 [chan receive]:
+github.com/DataDog/datadog-agent/pkg/collector/runner.(*Runner).work(0xc00018fce0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/runner/runner.go:245 +0x140
+created by github.com/DataDog/datadog-agent/pkg/collector/runner.(*Runner).AddWorker
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/runner/runner.go:100 +0x91
+goroutine 222 [chan receive]:
+github.com/DataDog/datadog-agent/pkg/collector/runner.(*Runner).work(0xc00018fce0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/runner/runner.go:245 +0x140
+created by github.com/DataDog/datadog-agent/pkg/collector/runner.(*Runner).AddWorker
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/runner/runner.go:100 +0x91
+goroutine 223 [chan receive, 2 minutes]:
+github.com/DataDog/datadog-agent/pkg/collector/scheduler.(*Scheduler).Run.func1(0xc0000fa9c0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/scheduler/scheduler.go:154 +0xc8
+created by github.com/DataDog/datadog-agent/pkg/collector/scheduler.(*Scheduler).Run
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/scheduler/scheduler.go:142 +0xc0
+goroutine 201 [sleep]:
+runtime.goparkunlock(...)
+	c:/go/src/runtime/proc.go:307
+time.Sleep(0x3b9aca00)
+	c:/go/src/runtime/time.go:105 +0x16e
+github.com/DataDog/datadog-agent/pkg/logs/input/file.(*Tailer).wait(...)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/input/file/tailer.go:272
+github.com/DataDog/datadog-agent/pkg/logs/input/file.(*Tailer).readForever(0xc00039e630)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/input/file/tailer.go:175 +0x1bd
+created by github.com/DataDog/datadog-agent/pkg/logs/input/file.(*Tailer).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/input/file/tailer.go:116 +0x131
+goroutine 107 [select]:
+net/http.(*persistConn).roundTrip(0xc00066e480, 0xc0005b0120, 0x0, 0x0, 0x0)
+	c:/go/src/net/http/transport.go:2194 +0x763
+net/http.(*Transport).roundTrip(0x1218680, 0xc00013ef00, 0x8, 0xc00009e647, 0xc000916fa8)
+	c:/go/src/net/http/transport.go:481 +0xa22
+net/http.(*Transport).RoundTrip(0x1218680, 0xc00013ef00, 0x1218680, 0x0, 0x0)
+	c:/go/src/net/http/roundtrip.go:17 +0x3c
+net/http.send(0xc00013ef00, 0x1832540, 0x1218680, 0x0, 0x0, 0x0, 0xc0004683b8, 0xc0009171d0, 0x1, 0x0)
+	c:/go/src/net/http/client.go:250 +0x468
+net/http.(*Client).send(0xc0005b0030, 0xc00013ef00, 0x0, 0x0, 0x0, 0xc0004683b8, 0x0, 0x1, 0xc000060700)
+	c:/go/src/net/http/client.go:174 +0x102
+net/http.(*Client).do(0xc0005b0030, 0xc00013ef00, 0x0, 0x0, 0x0)
+	c:/go/src/net/http/client.go:641 +0x280
+net/http.(*Client).Do(...)
+	c:/go/src/net/http/client.go:509
+github.com/DataDog/datadog-agent/pkg/flare.zipHTTPCallContent(0xc0005a4140, 0x42, 0xc000577290, 0xf, 0x161802c, 0x13, 0xc00009e640, 0x33, 0x0, 0x0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/flare/archive.go:544 +0x1ba
+github.com/DataDog/datadog-agent/pkg/flare.zipStackTraces(...)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/flare/archive.go:528
+github.com/DataDog/datadog-agent/pkg/flare.createArchive(0xc0005a40a0, 0x4a, 0x1608500, 0xc0006cf618, 0xc0000b0810, 0x25, 0x0, 0x0, 0x0, 0x0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/flare/archive.go:206 +0xa7d
+github.com/DataDog/datadog-agent/pkg/flare.CreateArchive(0xc00009e800, 0xc00009e800, 0x35, 0xc0000b0750, 0x2f, 0xc0000b0810, 0x25, 0x0, 0x0, 0x0, ...)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/flare/archive.go:94 +0x2b7
+github.com/DataDog/datadog-agent/cmd/agent/gui.makeFlare(0x4658340, 0xc0000060c8, 0xc00013e800)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/gui/agent.go:137 +0x1bb
+net/http.HandlerFunc.ServeHTTP(0x1660070, 0x4658340, 0xc0000060c8, 0xc00013e800)
+	c:/go/src/net/http/server.go:1995 +0x4b
+github.com/DataDog/datadog-agent/vendor/github.com/gorilla/mux.(*Router).ServeHTTP(0xc00040f1f0, 0x4658340, 0xc0000060c8, 0xc00013e800)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/gorilla/mux/mux.go:162 +0x10c
+github.com/DataDog/datadog-agent/vendor/github.com/urfave/negroni.Wrap.func1(0x4658340, 0xc0000060c8, 0xc00013e600, 0xc000622380)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/urfave/negroni/negroni.go:46 +0x54
+github.com/DataDog/datadog-agent/vendor/github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc00007aa00, 0x4658340, 0xc0000060c8, 0xc00013e600, 0xc000622380)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/urfave/negroni/negroni.go:29 +0x55
+github.com/DataDog/datadog-agent/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x18335c0, 0xc00007aa00, 0xc00007aa60, 0x4658340, 0xc0000060c8, 0xc00013e600)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/urfave/negroni/negroni.go:38 +0xa3
+github.com/DataDog/datadog-agent/cmd/agent/gui.authorizePOST(0x4658340, 0xc0000060c8, 0xc00013e600, 0xc000622300)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/gui/gui.go:176 +0x18d
+github.com/DataDog/datadog-agent/vendor/github.com/urfave/negroni.HandlerFunc.ServeHTTP(0x1660000, 0x4658340, 0xc0000060c8, 0xc00013e600, 0xc000622300)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/urfave/negroni/negroni.go:29 +0x55
+github.com/DataDog/datadog-agent/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x18335c0, 0x1660000, 0xc00007aa40, 0x4658340, 0xc0000060c8, 0xc00013e600)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/urfave/negroni/negroni.go:38 +0xa3
+github.com/DataDog/datadog-agent/vendor/github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc00048eea0, 0x184e900, 0xc00078e2a0, 0xc00013e600)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/urfave/negroni/negroni.go:96 +0xf3
+github.com/DataDog/datadog-agent/vendor/github.com/gorilla/mux.(*Router).ServeHTTP(0xc00040e3f0, 0x184e900, 0xc00078e2a0, 0xc00013e600)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/gorilla/mux/mux.go:162 +0x10c
+net/http.serverHandler.ServeHTTP(0xc00007c680, 0x184e900, 0xc00078e2a0, 0xc00013e100)
+	c:/go/src/net/http/server.go:2774 +0xaf
+net/http.(*conn).serve(0xc000465b80, 0x1853700, 0xc000492280)
+	c:/go/src/net/http/server.go:1878 +0x858
+created by net/http.(*Server).Serve
+	c:/go/src/net/http/server.go:2884 +0x2fb
+goroutine 200 [chan receive]:
+github.com/DataDog/datadog-agent/pkg/logs/decoder.(*Decoder).run(0xc000083040)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/decoder/decoder.go:108 +0x8e
+created by github.com/DataDog/datadog-agent/pkg/logs/decoder.(*Decoder).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/decoder/decoder.go:98 +0x5d
+goroutine 199 [chan receive]:
+github.com/DataDog/datadog-agent/pkg/logs/decoder.(*SingleLineHandler).run(0xc00048f0e0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/decoder/line_handler.go:71 +0x9d
+created by github.com/DataDog/datadog-agent/pkg/logs/decoder.(*SingleLineHandler).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/decoder/line_handler.go:66 +0x46
+goroutine 235 [IO wait]:
+internal/poll.runtime_pollWait(0x46188a8, 0x72, 0x1833d00)
+	c:/go/src/runtime/netpoll.go:182 +0x5d
+internal/poll.(*pollDesc).wait(0xc0003b1248, 0x72, 0x11ce600, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_poll_runtime.go:87 +0xa2
+internal/poll.(*ioSrv).ExecIO(0x2454298, 0xc0003b1098, 0x1663680, 0xc0001d9058, 0xc000287820, 0x61faa8)
+	c:/go/src/internal/poll/fd_windows.go:228 +0x124
+internal/poll.(*FD).Read(0xc0003b1080, 0xc0001f5800, 0x165b, 0x165b, 0x0, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_windows.go:502 +0x26b
+net.(*netFD).Read(0xc0003b1080, 0xc0001f5800, 0x165b, 0x165b, 0x17f210b, 0x0, 0xc000000032)
+	c:/go/src/net/fd_windows.go:152 +0x56
+net.(*conn).Read(0xc00012abd8, 0xc0001f5800, 0x165b, 0x165b, 0x0, 0x0, 0x0)
+	c:/go/src/net/net.go:177 +0x70
+crypto/tls.(*atLeastReader).Read(0xc0003faa00, 0xc0001f5800, 0x165b, 0x165b, 0x2030001, 0x30001, 0xc000287938)
+	c:/go/src/crypto/tls/conn.go:761 +0x67
+bytes.(*Buffer).ReadFrom(0xc000459e58, 0x1830960, 0xc0003faa00, 0x40bafc, 0x1433b40, 0x159bb80)
+	c:/go/src/bytes/buffer.go:207 +0xc4
+crypto/tls.(*Conn).readFromUntil(0xc000459c00, 0x754a310, 0xc00012abd8, 0x5, 0xc00012abd8, 0x20)
+	c:/go/src/crypto/tls/conn.go:783 +0xff
+crypto/tls.(*Conn).readRecordOrCCS(0xc000459c00, 0x1664100, 0xc000459d38, 0xc000287b88)
+	c:/go/src/crypto/tls/conn.go:590 +0x12c
+crypto/tls.(*Conn).readRecord(...)
+	c:/go/src/crypto/tls/conn.go:558
+crypto/tls.(*Conn).Read(0xc000459c00, 0xc00033b000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	c:/go/src/crypto/tls/conn.go:1236 +0x13e
+net/http.(*persistConn).Read(0xc000230c60, 0xc00033b000, 0x1000, 0x1000, 0xc000287c88, 0x4065e5, 0xc000252600)
+	c:/go/src/net/http/transport.go:1526 +0x82
+bufio.(*Reader).fill(0xc0004082a0)
+	c:/go/src/bufio/bufio.go:100 +0x116
+bufio.(*Reader).Peek(0xc0004082a0, 0x1, 0x0, 0x0, 0x1, 0xc000642100, 0x0)
+	c:/go/src/bufio/bufio.go:138 +0x56
+net/http.(*persistConn).readLoop(0xc000230c60)
+	c:/go/src/net/http/transport.go:1679 +0x1aa
+created by net/http.(*Transport).dialConn
+	c:/go/src/net/http/transport.go:1359 +0xaef
+goroutine 198 [chan receive]:
+github.com/DataDog/datadog-agent/pkg/logs/input/file.(*Tailer).forwardMessages(0xc00039e630)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/input/file/tailer.go:229 +0xaa
+created by github.com/DataDog/datadog-agent/pkg/logs/input/file.(*Tailer).Start
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/logs/input/file/tailer.go:114 +0xfd
+goroutine 197 [select]:
+github.com/DataDog/datadog-agent/pkg/autodiscovery.(*AutoConfig).serviceListening(0xc0004aed80)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/autodiscovery/autoconfig.go:95 +0x169
+created by github.com/DataDog/datadog-agent/pkg/autodiscovery.NewAutoConfig
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/autodiscovery/autoconfig.go:83 +0x386
+goroutine 259 [select]:
+github.com/DataDog/datadog-agent/pkg/collector/scheduler.(*jobQueue).process(0xc0003f5b90, 0xc0000fa9c0, 0x1)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/scheduler/job.go:161 +0x114
+github.com/DataDog/datadog-agent/pkg/collector/scheduler.(*jobQueue).run.func1(0xc0003f5b90, 0xc0000fa9c0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/scheduler/job.go:150 +0x66
+created by github.com/DataDog/datadog-agent/pkg/collector/scheduler.(*jobQueue).run
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/scheduler/job.go:148 +0x50
+goroutine 520 [select]:
+net/http.(*persistConn).writeLoop(0xc0001b87e0)
+	c:/go/src/net/http/transport.go:1978 +0x11a
+created by net/http.(*Transport).dialConn
+	c:/go/src/net/http/transport.go:1360 +0xb14
+goroutine 251 [select]:
+github.com/DataDog/datadog-agent/pkg/collector/scheduler.(*jobQueue).process(0xc000489830, 0xc0000fa9c0, 0x1)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/scheduler/job.go:161 +0x114
+github.com/DataDog/datadog-agent/pkg/collector/scheduler.(*jobQueue).run.func1(0xc000489830, 0xc0000fa9c0)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/scheduler/job.go:150 +0x66
+created by github.com/DataDog/datadog-agent/pkg/collector/scheduler.(*jobQueue).run
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/scheduler/job.go:148 +0x50
+goroutine 331 [select]:
+github.com/DataDog/datadog-agent/pkg/metadata.(*Scheduler).AddCollector.func1(0xc00048aa80, 0xc000658180, 0x8bb2c97000, 0x1830cc0, 0x247cf48, 0x160e255, 0xc)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/metadata/scheduler.go:91 +0x145
+created by github.com/DataDog/datadog-agent/pkg/metadata.(*Scheduler).AddCollector
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/metadata/scheduler.go:87 +0x2ff
+goroutine 330 [select]:
+github.com/DataDog/datadog-agent/pkg/metadata.(*Scheduler).AddCollector.func1(0xc00048aa80, 0xc000658140, 0x1a3185c5000, 0x1831060, 0x247cf48, 0x1605593, 0x4)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/metadata/scheduler.go:91 +0x145
+created by github.com/DataDog/datadog-agent/pkg/metadata.(*Scheduler).AddCollector
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/metadata/scheduler.go:87 +0x2ff
+goroutine 332 [select]:
+github.com/DataDog/datadog-agent/pkg/metadata.(*Scheduler).AddCollector.func1(0xc00048aa80, 0xc000658200, 0x8bb2c97000, 0x1832fa0, 0xc000b222d0, 0x160d21e, 0xb)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/metadata/scheduler.go:91 +0x145
+created by github.com/DataDog/datadog-agent/pkg/metadata.(*Scheduler).AddCollector
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/metadata/scheduler.go:87 +0x2ff
+goroutine 236 [select]:
+net/http.(*persistConn).writeLoop(0xc000230c60)
+	c:/go/src/net/http/transport.go:1978 +0x11a
+created by net/http.(*Transport).dialConn
+	c:/go/src/net/http/transport.go:1360 +0xb14
+goroutine 506 [IO wait]:
+internal/poll.runtime_pollWait(0x46187d8, 0x72, 0x1833d00)
+	c:/go/src/runtime/netpoll.go:182 +0x5d
+internal/poll.(*pollDesc).wait(0xc000892748, 0x72, 0x11ce600, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_poll_runtime.go:87 +0xa2
+internal/poll.(*ioSrv).ExecIO(0x2454298, 0xc000892598, 0x1663680, 0xc0001d9a58, 0xc000745820, 0x61faa8)
+	c:/go/src/internal/poll/fd_windows.go:228 +0x124
+internal/poll.(*FD).Read(0xc000892580, 0xc000238600, 0x12ba, 0x12ba, 0x0, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_windows.go:502 +0x26b
+net.(*netFD).Read(0xc000892580, 0xc000238600, 0x12ba, 0x12ba, 0x17f210b, 0x75406a8, 0xc0003dd0f0)
+	c:/go/src/net/fd_windows.go:152 +0x56
+net.(*conn).Read(0xc00012ad80, 0xc000238600, 0x12ba, 0x12ba, 0x0, 0x0, 0x0)
+	c:/go/src/net/net.go:177 +0x70
+crypto/tls.(*atLeastReader).Read(0xc00046ea00, 0xc000238600, 0x12ba, 0x12ba, 0x2030001, 0x30001, 0xc000745938)
+	c:/go/src/crypto/tls/conn.go:761 +0x67
+bytes.(*Buffer).ReadFrom(0xc00090a258, 0x1830960, 0xc00046ea00, 0x40bafc, 0x1433b40, 0x159bb80)
+	c:/go/src/bytes/buffer.go:207 +0xc4
+crypto/tls.(*Conn).readFromUntil(0xc00090a000, 0x754a310, 0xc00012ad80, 0x5, 0xc00012ad80, 0x2030000)
+	c:/go/src/crypto/tls/conn.go:783 +0xff
+crypto/tls.(*Conn).readRecordOrCCS(0xc00090a000, 0x1664100, 0xc00090a138, 0xc000745b88)
+	c:/go/src/crypto/tls/conn.go:590 +0x12c
+crypto/tls.(*Conn).readRecord(...)
+	c:/go/src/crypto/tls/conn.go:558
+crypto/tls.(*Conn).Read(0xc00090a000, 0xc0009d4000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	c:/go/src/crypto/tls/conn.go:1236 +0x13e
+net/http.(*persistConn).Read(0xc0002c3320, 0xc0009d4000, 0x1000, 0x1000, 0xc000745c88, 0x4065e5, 0xc0003bad80)
+	c:/go/src/net/http/transport.go:1526 +0x82
+bufio.(*Reader).fill(0xc0008acc00)
+	c:/go/src/bufio/bufio.go:100 +0x116
+bufio.(*Reader).Peek(0xc0008acc00, 0x1, 0x0, 0x0, 0x1, 0xc000b34d00, 0x0)
+	c:/go/src/bufio/bufio.go:138 +0x56
+net/http.(*persistConn).readLoop(0xc0002c3320)
+	c:/go/src/net/http/transport.go:1679 +0x1aa
+created by net/http.(*Transport).dialConn
+	c:/go/src/net/http/transport.go:1359 +0xaef
+goroutine 461 [IO wait]:
+internal/poll.runtime_pollWait(0x4618be8, 0x72, 0x1833d00)
+	c:/go/src/runtime/netpoll.go:182 +0x5d
+internal/poll.(*pollDesc).wait(0xc0003cea08, 0x72, 0x11ce600, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_poll_runtime.go:87 +0xa2
+internal/poll.(*ioSrv).ExecIO(0x2454298, 0xc0003ce858, 0x1663680, 0xc000b34480, 0xc000b34480, 0xc00014a550)
+	c:/go/src/internal/poll/fd_windows.go:228 +0x124
+internal/poll.(*FD).Read(0xc0003ce840, 0xc0003bfb11, 0x1, 0x1, 0x0, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_windows.go:502 +0x26b
+net.(*netFD).Read(0xc0003ce840, 0xc0003bfb11, 0x1, 0x1, 0x0, 0x0, 0x0)
+	c:/go/src/net/fd_windows.go:152 +0x56
+net.(*conn).Read(0xc000136008, 0xc0003bfb11, 0x1, 0x1, 0x0, 0x0, 0x0)
+	c:/go/src/net/net.go:177 +0x70
+net/http.(*connReader).backgroundRead(0xc0003bfb00)
+	c:/go/src/net/http/server.go:677 +0x5f
+created by net/http.(*connReader).startBackgroundRead
+	c:/go/src/net/http/server.go:673 +0xd1
+goroutine 312 [select]:
+net/http.(*persistConn).writeLoop(0xc0001c6120)
+	c:/go/src/net/http/transport.go:1978 +0x11a
+created by net/http.(*Transport).dialConn
+	c:/go/src/net/http/transport.go:1360 +0xb14
+goroutine 521 [IO wait]:
+internal/poll.runtime_pollWait(0x4618b18, 0x72, 0x1833d00)
+	c:/go/src/runtime/netpoll.go:182 +0x5d
+internal/poll.(*pollDesc).wait(0xc0008921c8, 0x72, 0x11ce600, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_poll_runtime.go:87 +0xa2
+internal/poll.(*ioSrv).ExecIO(0x2454298, 0xc000892018, 0x1663680, 0xc000b99a70, 0x4ef50a, 0x898)
+	c:/go/src/internal/poll/fd_windows.go:228 +0x124
+internal/poll.(*FD).Read(0xc000892000, 0xc00059a000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_windows.go:502 +0x26b
+net.(*netFD).Read(0xc000892000, 0xc00059a000, 0x1000, 0x1000, 0xc000048500, 0xc000b99b08, 0x6f2b21)
+	c:/go/src/net/fd_windows.go:152 +0x56
+net.(*conn).Read(0xc000468168, 0xc00059a000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	c:/go/src/net/net.go:177 +0x70
+net/http.(*connReader).Read(0xc000418ba0, 0xc00059a000, 0x1000, 0x1000, 0x0, 0x0, 0x72)
+	c:/go/src/net/http/server.go:787 +0x10e
+bufio.(*Reader).fill(0xc00046b800)
+	c:/go/src/bufio/bufio.go:100 +0x116
+bufio.(*Reader).Peek(0xc00046b800, 0x4, 0x0, 0x0, 0x0, 0x0, 0x4e87c4)
+	c:/go/src/bufio/bufio.go:138 +0x56
+net/http.(*conn).readRequest(0xc00014c8c0, 0x1853700, 0xc0005e0b40, 0x0, 0x0, 0x0)
+	c:/go/src/net/http/server.go:964 +0xb61
+net/http.(*conn).serve(0xc00014c8c0, 0x1853700, 0xc0005e0b40)
+	c:/go/src/net/http/server.go:1819 +0x6b4
+created by net/http.(*Server).Serve
+	c:/go/src/net/http/server.go:2884 +0x2fb
+goroutine 333 [chan receive, 2 minutes]:
+github.com/DataDog/datadog-agent/pkg/metadata/inventories.StartMetadataUpdatedGoroutine.func1(0x45d964b800, 0x18310a0, 0xc00048aa80)
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/metadata/inventories/inventories.go:182 +0x41
+created by github.com/DataDog/datadog-agent/pkg/metadata/inventories.StartMetadataUpdatedGoroutine
+	C:/omnibus-ruby/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/metadata/inventories/inventories.go:180 +0x5a
+goroutine 311 [IO wait]:
+internal/poll.runtime_pollWait(0x4618638, 0x72, 0x1833d00)
+	c:/go/src/runtime/netpoll.go:182 +0x5d
+internal/poll.(*pollDesc).wait(0xc0003cf508, 0x72, 0x11ce600, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_poll_runtime.go:87 +0xa2
+internal/poll.(*ioSrv).ExecIO(0x2454298, 0xc0003cf358, 0x1663680, 0xc0001d9cd8, 0xc00044b820, 0x61faa8)
+	c:/go/src/internal/poll/fd_windows.go:228 +0x124
+internal/poll.(*FD).Read(0xc0003cf340, 0xc00068a000, 0x1b11, 0x1b11, 0x0, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_windows.go:502 +0x26b
+net.(*netFD).Read(0xc0003cf340, 0xc00068a000, 0x1b11, 0x1b11, 0x17f210b, 0x0, 0xc000000036)
+	c:/go/src/net/fd_windows.go:152 +0x56
+net.(*conn).Read(0xc000006090, 0xc00068a000, 0x1b11, 0x1b11, 0x0, 0x0, 0x0)
+	c:/go/src/net/net.go:177 +0x70
+crypto/tls.(*atLeastReader).Read(0xc0001384c0, 0xc00068a000, 0x1b11, 0x1b11, 0x2030000, 0x30000, 0xc00044b938)
+	c:/go/src/crypto/tls/conn.go:761 +0x67
+bytes.(*Buffer).ReadFrom(0xc0003ebe58, 0x1830960, 0xc0001384c0, 0x40bafc, 0x1433b40, 0x159bb80)
+	c:/go/src/bytes/buffer.go:207 +0xc4
+crypto/tls.(*Conn).readFromUntil(0xc0003ebc00, 0x754a310, 0xc000006090, 0x5, 0xc000006090, 0x20)
+	c:/go/src/crypto/tls/conn.go:783 +0xff
+crypto/tls.(*Conn).readRecordOrCCS(0xc0003ebc00, 0x1664100, 0xc0003ebd38, 0xc00044bb88)
+	c:/go/src/crypto/tls/conn.go:590 +0x12c
+crypto/tls.(*Conn).readRecord(...)
+	c:/go/src/crypto/tls/conn.go:558
+crypto/tls.(*Conn).Read(0xc0003ebc00, 0xc000759000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	c:/go/src/crypto/tls/conn.go:1236 +0x13e
+net/http.(*persistConn).Read(0xc0001c6120, 0xc000759000, 0x1000, 0x1000, 0xc00044bc88, 0x4065e5, 0xc000b341e0)
+	c:/go/src/net/http/transport.go:1526 +0x82
+bufio.(*Reader).fill(0xc0000fb260)
+	c:/go/src/bufio/bufio.go:100 +0x116
+bufio.(*Reader).Peek(0xc0000fb260, 0x1, 0x0, 0x0, 0x1, 0xc000b34500, 0x12175a0)
+	c:/go/src/bufio/bufio.go:138 +0x56
+net/http.(*persistConn).readLoop(0xc0001c6120)
+	c:/go/src/net/http/transport.go:1679 +0x1aa
+created by net/http.(*Transport).dialConn
+	c:/go/src/net/http/transport.go:1359 +0xaef
+goroutine 547 [IO wait]:
+internal/poll.runtime_pollWait(0x4618498, 0x72, 0x1833d00)
+	c:/go/src/runtime/netpoll.go:182 +0x5d
+internal/poll.(*pollDesc).wait(0xc0008b01c8, 0x72, 0x11ce600, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_poll_runtime.go:87 +0xa2
+internal/poll.(*ioSrv).ExecIO(0x2454298, 0xc0008b0018, 0x1663680, 0xc0004ffef8, 0x4068ad, 0xc0004a52c0)
+	c:/go/src/internal/poll/fd_windows.go:228 +0x124
+internal/poll.(*FD).Read(0xc0008b0000, 0xc000b7a2b1, 0x1, 0x1, 0x0, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_windows.go:502 +0x26b
+net.(*netFD).Read(0xc0008b0000, 0xc000b7a2b1, 0x1, 0x1, 0x731c7b, 0xc000b34b40, 0xc0004fff80)
+	c:/go/src/net/fd_windows.go:152 +0x56
+net.(*conn).Read(0xc00012a310, 0xc000b7a2b1, 0x1, 0x1, 0x0, 0x0, 0x0)
+	c:/go/src/net/net.go:177 +0x70
+net/http.(*connReader).backgroundRead(0xc000b7a2a0)
+	c:/go/src/net/http/server.go:677 +0x5f
+created by net/http.(*connReader).startBackgroundRead
+	c:/go/src/net/http/server.go:673 +0xd1
+goroutine 522 [select]:
+net.(*netFD).connect.func2(0x1853780, 0xc0004147e0, 0xc0008922c0, 0xc0008f67e0)
+	c:/go/src/net/fd_windows.go:106 +0xbe
+created by net.(*netFD).connect
+	c:/go/src/net/fd_windows.go:105 +0x1c2
+goroutine 519 [IO wait]:
+internal/poll.runtime_pollWait(0x4618a48, 0x72, 0x1833d00)
+	c:/go/src/runtime/netpoll.go:182 +0x5d
+internal/poll.(*pollDesc).wait(0xc0003b1a88, 0x72, 0x11ce600, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_poll_runtime.go:87 +0xa2
+internal/poll.(*ioSrv).ExecIO(0x2454298, 0xc0003b18d8, 0x1663680, 0x3, 0xc00003a570, 0xc00003a500)
+	c:/go/src/internal/poll/fd_windows.go:228 +0x124
+internal/poll.(*FD).Read(0xc0003b18c0, 0xc0007e0000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_windows.go:502 +0x26b
+net.(*netFD).Read(0xc0003b18c0, 0xc0007e0000, 0x1000, 0x1000, 0x1, 0x434583, 0xc000b67b88)
+	c:/go/src/net/fd_windows.go:152 +0x56
+net.(*conn).Read(0xc000468150, 0xc0007e0000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	c:/go/src/net/net.go:177 +0x70
+net/http.(*persistConn).Read(0xc0001b87e0, 0xc0007e0000, 0x1000, 0x1000, 0xc000b67c88, 0x4065e5, 0xc00034c000)
+	c:/go/src/net/http/transport.go:1526 +0x82
+bufio.(*Reader).fill(0xc0004145a0)
+	c:/go/src/bufio/bufio.go:100 +0x116
+bufio.(*Reader).Peek(0xc0004145a0, 0x1, 0x0, 0x0, 0x1, 0xc0008f6600, 0x0)
+	c:/go/src/bufio/bufio.go:138 +0x56
+net/http.(*persistConn).readLoop(0xc0001b87e0)
+	c:/go/src/net/http/transport.go:1679 +0x1aa
+created by net/http.(*Transport).dialConn
+	c:/go/src/net/http/transport.go:1359 +0xaef
+goroutine 183 [chan receive]:
+net/http.(*Transport).getConn.func2.1(0xc0006560c0, 0x1218680, 0x0, 0x0, 0xc000338bc0, 0x4, 0xc0006a63e0, 0x12, 0x0, 0x1663bd0)
+	c:/go/src/net/http/transport.go:983 +0x51
+created by net/http.(*Transport).getConn.func2
+	c:/go/src/net/http/transport.go:982 +0x101
+goroutine 466 [IO wait]:
+internal/poll.runtime_pollWait(0x4618978, 0x72, 0x1833d00)
+	c:/go/src/runtime/netpoll.go:182 +0x5d
+internal/poll.(*pollDesc).wait(0xc0006f4cc8, 0x72, 0x11ce600, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_poll_runtime.go:87 +0xa2
+internal/poll.(*ioSrv).ExecIO(0x2454298, 0xc0006f4b18, 0x1663680, 0x0, 0x0, 0xc00073d588)
+	c:/go/src/internal/poll/fd_windows.go:228 +0x124
+internal/poll.(*FD).Read(0xc0006f4b00, 0xc00069a480, 0x205, 0x205, 0x0, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_windows.go:502 +0x26b
+net.(*netFD).Read(0xc0006f4b00, 0xc00069a480, 0x205, 0x205, 0x17f210b, 0x0, 0x0)
+	c:/go/src/net/fd_windows.go:152 +0x56
+net.(*conn).Read(0xc0000066b0, 0xc00069a480, 0x205, 0x205, 0x0, 0x0, 0x0)
+	c:/go/src/net/net.go:177 +0x70
+crypto/tls.(*atLeastReader).Read(0xc00007b200, 0xc00069a480, 0x205, 0x205, 0x1574, 0x1800, 0xc00073d6d0)
+	c:/go/src/crypto/tls/conn.go:761 +0x67
+bytes.(*Buffer).ReadFrom(0xc0007fd3d8, 0x1830960, 0xc00007b200, 0x40bafc, 0x1433b40, 0x159bb80)
+	c:/go/src/bytes/buffer.go:207 +0xc4
+crypto/tls.(*Conn).readFromUntil(0xc0007fd180, 0x754a310, 0xc0000066b0, 0x5, 0xc0000066b0, 0x0)
+	c:/go/src/crypto/tls/conn.go:783 +0xff
+crypto/tls.(*Conn).readRecordOrCCS(0xc0007fd180, 0x1664100, 0xc0007fd2b8, 0x6f2b21)
+	c:/go/src/crypto/tls/conn.go:590 +0x12c
+crypto/tls.(*Conn).readRecord(...)
+	c:/go/src/crypto/tls/conn.go:558
+crypto/tls.(*Conn).Read(0xc0007fd180, 0xc00071d000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	c:/go/src/crypto/tls/conn.go:1236 +0x13e
+net/http.(*connReader).Read(0xc000bbe660, 0xc00071d000, 0x1000, 0x1000, 0x953, 0x5, 0x30002)
+	c:/go/src/net/http/server.go:787 +0x10e
+bufio.(*Reader).fill(0xc000922180)
+	c:/go/src/bufio/bufio.go:100 +0x116
+bufio.(*Reader).ReadSlice(0xc000922180, 0xc00073da0a, 0x5c51b0, 0xc00073db00, 0x40dc43, 0xc0009de200, 0x100)
+	c:/go/src/bufio/bufio.go:356 +0x44
+bufio.(*Reader).ReadLine(0xc000922180, 0xc00073db08, 0x245a0e0, 0x4561aa8, 0x0, 0x4e8054, 0x1582800)
+	c:/go/src/bufio/bufio.go:385 +0x3b
+net/textproto.(*Reader).readLineSlice(0xc000b8cd80, 0xc0009de200, 0xc0006f4b00, 0xc0002a5c80, 0xc000131c40, 0x0)
+	c:/go/src/net/textproto/reader.go:55 +0x76
+net/textproto.(*Reader).ReadLine(...)
+	c:/go/src/net/textproto/reader.go:36
+net/http.readRequest(0xc000922180, 0x1663900, 0xc0009de200, 0x0, 0x0)
+	c:/go/src/net/http/request.go:968 +0x94
+net/http.(*conn).readRequest(0xc00066b680, 0x1853700, 0xc00029d6c0, 0x0, 0x0, 0x0)
+	c:/go/src/net/http/server.go:967 +0x16a
+net/http.(*conn).serve(0xc00066b680, 0x1853700, 0xc00029d6c0)
+	c:/go/src/net/http/server.go:1819 +0x6b4
+created by net/http.(*Server).Serve
+	c:/go/src/net/http/server.go:2884 +0x2fb
+goroutine 479 [IO wait]:
+internal/poll.runtime_pollWait(0x4618708, 0x77, 0x1833d00)
+	c:/go/src/runtime/netpoll.go:182 +0x5d
+internal/poll.(*pollDesc).wait(0xc000892488, 0x77, 0xc00024a100, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_poll_runtime.go:87 +0xa2
+internal/poll.(*ioSrv).ExecIO(0x24542a0, 0xc0008923b0, 0x1663670, 0x20, 0xc0002a5e00, 0x5b18d2)
+	c:/go/src/internal/poll/fd_windows.go:228 +0x124
+internal/poll.(*FD).ConnectEx(0xc0008922c0, 0x1832ac0, 0xc0005e88c0, 0xc0004147e0, 0xc0008922c0)
+	c:/go/src/internal/poll/fd_windows.go:854 +0x76
+net.(*netFD).connect(0xc0008922c0, 0x1853780, 0xc0004147e0, 0x0, 0x0, 0x1832ac0, 0xc0005e88c0, 0x0, 0x0, 0x0, ...)
+	c:/go/src/net/fd_windows.go:117 +0x1ed
+net.(*netFD).dial(0xc0008922c0, 0x1853780, 0xc0004147e0, 0x185a500, 0x0, 0x185a500, 0xc0006c3f80, 0x0, 0xc00024a101, 0xc00091b478)
+	c:/go/src/net/sock_posix.go:149 +0x109
+net.socket(0x1853780, 0xc0004147e0, 0x1604d5f, 0x3, 0x2, 0x1, 0x0, 0x0, 0x185a500, 0x0, ...)
+	c:/go/src/net/sock_posix.go:70 +0x1d9
+net.internetSocket(0x1853780, 0xc0004147e0, 0x1604d5f, 0x3, 0x185a500, 0x0, 0x185a500, 0xc0006c3f80, 0x1, 0x0, ...)
+	c:/go/src/net/ipsock_posix.go:141 +0x178
+net.(*sysDialer).doDialTCP(0xc0004aa780, 0x1853780, 0xc0004147e0, 0x0, 0xc0006c3f80, 0x1413880, 0x247cf48, 0x0)
+	c:/go/src/net/tcpsock_posix.go:65 +0xc9
+net.(*sysDialer).dialTCP(0xc0004aa780, 0x1853780, 0xc0004147e0, 0x0, 0xc0006c3f80, 0xc00091b6b8, 0x5abd75, 0xbfcb43fd0e8a76c8)
+	c:/go/src/net/tcpsock_posix.go:61 +0xde
+net.(*sysDialer).dialSingle(0xc0004aa780, 0x1853780, 0xc0004147e0, 0x1846200, 0xc0006c3f80, 0x0, 0x0, 0x0, 0x0)
+	c:/go/src/net/dial.go:571 +0x352
+net.(*sysDialer).dialSerial(0xc0004aa780, 0x1853780, 0xc0004147e0, 0xc0004e89c0, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	c:/go/src/net/dial.go:539 +0x228
+net.(*Dialer).DialContext(0xc0000fa060, 0x1853740, 0xc000086100, 0x1604d5f, 0x3, 0xc0006a63e0, 0x12, 0x0, 0x0, 0x0, ...)
+	c:/go/src/net/dial.go:417 +0x672
+net/http.(*Transport).dial(0x1218680, 0x1853740, 0xc000086100, 0x1604d5f, 0x3, 0xc0006a63e0, 0x12, 0x0, 0xc0004680b0, 0xd6e2460afabef36b, ...)
+	c:/go/src/net/http/transport.go:934 +0x217
+net/http.(*Transport).dialConn(0x1218680, 0x1853740, 0xc000086100, 0x0, 0xc000338bc0, 0x4, 0xc0006a63e0, 0x12, 0x0, 0x0, ...)
+	c:/go/src/net/http/transport.go:1261 +0x19d8
+net/http.(*Transport).getConn.func4(0x1218680, 0x1853740, 0xc000086100, 0xc000433ad0, 0xc0006560c0)
+	c:/go/src/net/http/transport.go:1017 +0xad
+created by net/http.(*Transport).getConn
+	c:/go/src/net/http/transport.go:1016 +0x45c
+goroutine 532 [IO wait]:
+internal/poll.runtime_pollWait(0x4618568, 0x72, 0x1833d00)
+	c:/go/src/runtime/netpoll.go:182 +0x5d
+internal/poll.(*pollDesc).wait(0xc0008937c8, 0x72, 0x11ce600, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_poll_runtime.go:87 +0xa2
+internal/poll.(*ioSrv).ExecIO(0x2454298, 0xc000893618, 0x1663680, 0x0, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_windows.go:228 +0x124
+internal/poll.(*FD).Read(0xc000893600, 0xc000921000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	c:/go/src/internal/poll/fd_windows.go:502 +0x26b
+net.(*netFD).Read(0xc000893600, 0xc000921000, 0x1000, 0x1000, 0xc0006d9ba0, 0xc0007e23c0, 0xc0006d9ba0)
+	c:/go/src/net/fd_windows.go:152 +0x56
+net.(*conn).Read(0xc0004683c0, 0xc000921000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	c:/go/src/net/net.go:177 +0x70
+net/http.(*persistConn).Read(0xc00066e480, 0xc000921000, 0x1000, 0x1000, 0x60, 0xc0006d9c88, 0x431406)
+	c:/go/src/net/http/transport.go:1526 +0x82
+bufio.(*Reader).fill(0xc000415b00)
+	c:/go/src/bufio/bufio.go:100 +0x116
+bufio.(*Reader).Peek(0xc000415b00, 0x1, 0xc00034c060, 0xc0006d9d88, 0x2, 0x2, 0xa)
+	c:/go/src/bufio/bufio.go:138 +0x56
+net/http.(*persistConn).readLoop(0xc00066e480)
+	c:/go/src/net/http/transport.go:1679 +0x1aa
+created by net/http.(*Transport).dialConn
+	c:/go/src/net/http/transport.go:1359 +0xaef
+goroutine 533 [select]:
+net/http.(*persistConn).writeLoop(0xc00066e480)
+	c:/go/src/net/http/transport.go:1978 +0x11a
+created by net/http.(*Transport).dialConn
+	c:/go/src/net/http/transport.go:1360 +0xb14

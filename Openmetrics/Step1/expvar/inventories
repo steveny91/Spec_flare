@@ -1,0 +1,115 @@
+agent_metadata:
+  cloud_provider: AWS
+  hostname_source: aws
+check_metadata:
+  cpu:
+  - config.hash: cpu
+    config.provider: file
+    last_updated: 1.6055732832661586e+18
+  disk:
+  - config.hash: disk:53391b91feb5f23f
+    config.provider: file
+    last_updated: 1.6055732832661586e+18
+  docker:
+  - config.hash: docker
+    config.provider: file
+    last_updated: 1.6055732832661586e+18
+  elastic:
+  - config.hash: elastic:92c1c5058a34566c
+    config.provider: file
+    last_updated: 1.6055760066882452e+18
+    version.major: "6"
+    version.minor: "8"
+    version.patch: "6"
+    version.raw: 6.8.6
+    version.scheme: semver
+  - config.hash: elastic:198dade9627bae62
+    config.provider: file
+    last_updated: 1.605576005688111e+18
+    version.major: "6"
+    version.minor: "8"
+    version.patch: "6"
+    version.raw: 6.8.6
+    version.scheme: semver
+  file_handle:
+  - config.hash: file_handle
+    config.provider: file
+    last_updated: 1.6055732832661586e+18
+  io:
+  - config.hash: io
+    config.provider: file
+    last_updated: 1.6055732832661586e+18
+  kubelet:
+  - config.hash: kubelet:d884b5186b651429
+    config.provider: file
+    last_updated: 1.6055732832661586e+18
+  kubernetes_apiserver:
+  - config.hash: kubernetes_apiserver
+    config.provider: file
+    last_updated: 1.6055732832661586e+18
+  load:
+  - config.hash: load
+    config.provider: file
+    last_updated: 1.6055732832661586e+18
+  memory:
+  - config.hash: memory
+    config.provider: file
+    last_updated: 1.6055732832661586e+18
+  network:
+  - config.hash: network:5c571333f400457d
+    config.provider: file
+    last_updated: 1.6055732832661586e+18
+  ntp:
+  - config.hash: ntp:d884b5186b651429
+    config.provider: file
+    last_updated: 1.6055732832661586e+18
+  openmetrics:
+  - config.hash: openmetrics:cnr_dx_case_service:b8d45f0a210e4e08
+    config.provider: kubernetes
+    last_updated: 1.6055732832661586e+18
+  - config.hash: openmetrics:cnr_data_service:7c7f5de3afa2df5f
+    config.provider: kubernetes
+    last_updated: 1.6055732832661586e+18
+  - config.hash: openmetrics:eksiam:553270df6954c937
+    config.provider: kubernetes
+    last_updated: 1.6055732832661586e+18
+  - config.hash: openmetrics:cnr_gateway_service:7b8e6efece4990ed
+    config.provider: kubernetes
+    last_updated: 1.6055732832661586e+18
+  - config.hash: openmetrics:cnr_model_storage_service:4d3f0cbc31cc4481
+    config.provider: kubernetes
+    last_updated: 1.6055732832661586e+18
+  - config.hash: openmetrics:cnr_data_service:f7544457c1bcd572
+    config.provider: kubernetes
+    last_updated: 1.6055732832661586e+18
+  - config.hash: openmetrics:cnr_gateway_service:6f016b93f16b728c
+    config.provider: kubernetes
+    last_updated: 1.6055732832661586e+18
+  - config.hash: openmetrics:cnr_gateway_service:ea54b1df0a2a40d7
+    config.provider: kubernetes
+    last_updated: 1.6055732832661586e+18
+  - config.hash: openmetrics:cnr_gateway_service:988d4703ec006fac
+    config.provider: kubernetes
+    last_updated: 1.6055732832661586e+18
+  - config.hash: openmetrics:cnr_model_storage_service:f65ecb8dd416cf88
+    config.provider: kubernetes
+    last_updated: 1.6055732832661586e+18
+  - config.hash: openmetrics:cnr_dx_case_service:9132a027fc687927
+    config.provider: kubernetes
+    last_updated: 1.6055732832661586e+18
+  - config.hash: openmetrics:cnr_gateway_service:b27ba7aa4fe85b6b
+    config.provider: kubernetes
+    last_updated: 1.6055732832661586e+18
+  - config.hash: openmetrics:cnr_model_storage_service:6d1f649a5e0a4f01
+    config.provider: kubernetes
+    last_updated: 1.6055732832661586e+18
+  system_core:
+  - config.hash: system_core:d884b5186b651429
+    config.provider: file
+    last_updated: 1.6055732832661586e+18
+  uptime:
+  - config.hash: uptime
+    config.provider: file
+    last_updated: 1.6055732832661586e+18
+hostname: i-0286d5b68a611e991
+timestamp: 1.6062323665755602e+18

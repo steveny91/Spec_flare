@@ -1,0 +1,41 @@
+=== Running Alibaba Metadata availability diagnosis ===
+[ERROR] error: Alibaba HostAliases: unable to query metadata endpoint: Get http://100.100.100.200/latest/meta-data/instance-id: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers) - 1606232366973910293
+===> FAIL
+=== Running Azure Metadata availability diagnosis ===
+[ERROR] error: Azure HostAliases: unable to query metadata endpoint: status code 404 trying to GET http://169.254.169.254/metadata/instance/compute/vmId?api-version=2017-04-02&format=text - 1606232366975315267
+===> FAIL
+=== Running CRI availability diagnosis ===
+[ERROR] error: temporary failure in criutil, will retry later: try delay not elapsed yet - 1606232366975375399
+===> FAIL
+=== Running Cluster Agent availability diagnosis ===
+[ERROR] error: temporary failure in clusterAgentClient, will retry later: cannot get a cluster agent endpoint for kubernetes service DATADOG_CLUSTER_AGENT, env DATADOG_CLUSTER_AGENT_SERVICE_HOST is empty - 1606232366976381946
+===> FAIL
+=== Running Containerd availability diagnosis ===
+[ERROR] errorf: Containerd init error: temporary failure in containerdutil, will retry later: failed to dial "/var/run/containerd/containerd.sock": context deadline exceeded - 1606232367976625838
+===> FAIL
+=== Running Docker availability diagnosis ===
+[INFO] info: successfully connected to docker - 1606232367976666693
+[INFO] infof: successfully got hostname "ip-10-0-28-12.ec2.internal" from docker - 1606232367990969355
+===> PASS
+=== Running EC2 Metadata availability diagnosis ===
+===> PASS
+=== Running ECS Fargate Metadata availability diagnosis ===
+[ERROR] error: Get http://169.254.170.2/v2/metadata: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers) - 1606232368565224287
+===> FAIL
+=== Running ECS Metadata availability diagnosis ===
+[ERROR] error: temporary failure in ecsutil-meta-v1, will retry later: try delay not elapsed yet - 1606232368565350111
+===> FAIL
+=== Running ECS Metadata with tags availability diagnosis ===
+[ERROR] error: temporary failure in ecsutil-meta-v3, will retry later: Could not initialize client: missing metadata v3 URL - 1606232368565466974
+===> FAIL
+=== Running GCE Metadata availability diagnosis ===
+[ERROR] error: unable to retrieve hostname from GCE: status code 404 trying to GET http://169.254.169.254/computeMetadata/v1/instance/hostname - 1606232368566603758
+===> FAIL
+=== Running Kubelet availability diagnosis ===
+===> PASS
+=== Running Kubernetes API Server availability diagnosis ===
+[INFO] infof: Detecting OpenShift APIs: no API available - 1606232368568409222
+===> PASS
+=== Running Tencent Metadata availability diagnosis ===
+[ERROR] error: cloud provider is disabled by configuration - 1606232368568496606
+===> FAIL

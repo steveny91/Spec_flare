@@ -1,0 +1,151 @@
+=== apache check ===
+Configuration provider: file
+Configuration source: file:C:\ProgramData\Datadog\conf.d\apache.d\conf.yaml
+Log Config:
+logs:
+- path: C:\Users\GTX1080i7\AppData\Roaming\Advanced Combat Tracker\FFXIVLogs\*
+  service: ffxiv
+  source: ffxiv
+  type: file
+===
+=== cpu check ===
+Configuration provider: file
+Configuration source: file:C:\ProgramData\Datadog\conf.d\cpu.d\conf.yaml.default
+Instance ID: cpu:d884b5186b651429
+{}
+~
+===
+=== disk check ===
+Configuration provider: file
+Configuration source: file:C:\ProgramData\Datadog\conf.d\disk.d\conf.yaml.default
+Instance ID: disk:e5dffb8bef24336f
+use_mount: false
+~
+===
+=== file_handle check ===
+Configuration provider: file
+Configuration source: file:C:\ProgramData\Datadog\conf.d\file_handle.d\conf.yaml.default
+Instance ID: file_handle:d884b5186b651429
+{}
+~
+===
+=== io check ===
+Configuration provider: file
+Configuration source: file:C:\ProgramData\Datadog\conf.d\io.d\conf.yaml.default
+Instance ID: io:d884b5186b651429
+{}
+~
+===
+=== memory check ===
+Configuration provider: file
+Configuration source: file:C:\ProgramData\Datadog\conf.d\memory.d\conf.yaml.default
+Instance ID: memory:d884b5186b651429
+{}
+~
+===
+=== network check ===
+Configuration provider: file
+Configuration source: file:C:\ProgramData\Datadog\conf.d\network.d\conf.yaml.default
+Instance ID: network:e0204ad63d43c949
+collect_connection_state: false
+~
+===
+=== ntp check ===
+Configuration provider: file
+Configuration source: file:C:\ProgramData\Datadog\conf.d\ntp.d\conf.yaml.default
+Instance ID: ntp:d884b5186b651429
+{}
+~
+===
+=== oracle check ===
+Configuration provider: file
+Configuration source: file:C:\ProgramData\Datadog\conf.d\oracle.d\conf.yaml
+Instance ID: oracle:1dd7bd75e745f06b
+password: ********
+server: localhost:1521
+service_name: <SERVICE_NAME>
+user: datadog
+~
+===
+=== pdh_check check ===
+Configuration provider: file
+Configuration source: file:C:\ProgramData\Datadog\conf.d\pdh_check.d\conf.yaml
+Instance ID: pdh_check:8a9a7b2d1a57dbc3
+countersetname: User Input Delay per Session
+host: .
+metrics:
+- - Max Input Delay
+  - pdh.user.input.delay.process
+  - gauge
+~
+===
+=== service check ===
+Configuration provider: file
+Configuration source: file:C:\ProgramData\Datadog\conf.d\service.yaml
+Instance ID: service:d884b5186b651429
+{}
+~
+Log Config:
+logs:
+- path: C:\ProgramData\Datadog\logs\agent.log
+  service: datadog
+  source: datadog
+  type: file
+===
+=== uptime check ===
+Configuration provider: file
+Configuration source: file:C:\ProgramData\Datadog\conf.d\uptime.d\conf.yaml.default
+Instance ID: uptime:d884b5186b651429
+{}
+~
+===
+=== winproc check ===
+Configuration provider: file
+Configuration source: file:C:\ProgramData\Datadog\conf.d\winproc.d\conf.yaml.default
+Instance ID: winproc:d884b5186b651429
+{}
+~
+===
+=== wmi_check check ===
+Configuration provider: file
+Configuration source: file:C:\ProgramData\Datadog\conf.d\wmi_check.d\conf.yaml
+Instance ID: wmi_check:b622eb805c30c1f5
+class: Win32_OperatingSystem
+metrics:
+- - NumberOfProcesses
+  - testing.system.proc.count
+  - gauge
+- - NumberOfUsers
+  - testing.system.users.count
+  - gauge
+~
+Instance ID: wmi_check:bee71cb6c1fcaf5
+class: Win32_PerfFormattedData_PerfProc_Process
+metrics:
+- - ThreadCount
+  - wmi.proc.threads.count
+  - gauge
+- - VirtualBytes
+  - wmi.proc.mem.virtual
+  - gauge
+- - PercentProcessorTime
+  - wmi.proc.cpu_pct
+  - gauge
+tag_by: Name
+~
+Instance ID: wmi_check:1f8c02f477e7e613
+class: Win32_PerfFormattedData_PerfProc_Process
+filters:
+- Name: app%
+metrics:
+- - IOReadBytesPerSec
+  - test.proc.io.bytes_read
+  - gauge
+tag_by: Name
+tag_queries:
+- - IDProcess
+  - Win32_Process
+  - Handle
+  - CommandLine
+~
+===

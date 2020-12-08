@@ -1,0 +1,17 @@
+=== Running Alibaba Metadata availability diagnosis ===
+[ERROR] error: Alibaba HostAliases: unable to query metadata endpoint: Get http://100.100.100.200/latest/meta-data/instance-id: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers) - 1598855254544335200
+===> FAIL
+=== Running Azure Metadata availability diagnosis ===
+[ERROR] error: Azure HostAliases: unable to query metadata endpoint: Get http://169.254.169.254/metadata/instance/compute/vmId?api-version=2017-04-02&format=text: dial tcp 169.254.169.254:80: connectex: A socket operation was attempted to an unreachable network. - 1598855254545330900
+===> FAIL
+=== Running Cluster Agent availability diagnosis ===
+[DEBUG] debugf: Identified service for the Datadog Cluster Agent: datadog-cluster-agent - 1598855254545330900
+[DEBUG] debugf: Cluster Agent init error: temporary failure in clusterAgentClient, will retry later: cannot get a cluster agent endpoint for kubernetes service DATADOG_CLUSTER_AGENT, env DATADOG_CLUSTER_AGENT_SERVICE_HOST is empty - 1598855254546327400
+[ERROR] error: temporary failure in clusterAgentClient, will retry later: cannot get a cluster agent endpoint for kubernetes service DATADOG_CLUSTER_AGENT, env DATADOG_CLUSTER_AGENT_SERVICE_HOST is empty - 1598855254546327400
+===> FAIL
+=== Running EC2 Metadata availability diagnosis ===
+[ERROR] error: unable to fetch EC2 API, Get http://169.254.169.254/latest/meta-data/hostname: dial tcp 169.254.169.254:80: connectex: A socket operation was attempted to an unreachable network. - 1598855254546327400
+===> FAIL
+=== Running GCE Metadata availability diagnosis ===
+[ERROR] error: unable to retrieve hostname from GCE: Get http://169.254.169.254/computeMetadata/v1/instance/hostname: dial tcp 169.254.169.254:80: connectex: A socket operation was attempted to an unreachable network. - 1598855254547324700
+===> FAIL

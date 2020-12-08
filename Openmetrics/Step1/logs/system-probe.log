@@ -1,0 +1,3 @@
+2020-11-17 00:34:45 UTC | SYS-PROBE | INFO | (pkg/util/log/log.go:482 in func1) | no config exists at /etc/datadog-agent/system-probe.yaml, ignoring...
+2020-11-17 00:34:45 UTC | SYS-PROBE | INFO | (pkg/util/log/log.go:482 in func1) | overriding API key from env DD_API_KEY value
+2020-11-17 00:34:45 UTC | SYS-PROBE | INFO | (cmd/system-probe/main_common.go:75 in runAgent) | system probe not enabled. exiting.

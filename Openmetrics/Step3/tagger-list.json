@@ -1,0 +1,4368 @@
+{
+	"entities": {
+		"container_id://00617cc20932b6a10198f8efafa2abb6d3467b6233395b0072df879fd9a3860f": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:jaeger-agent-m9bxt"
+			]
+		},
+		"container_id://0152379716d942f39132642591b26a462d9267b442bbb67789549a84f768ea8d": {
+			"sources": [
+				"kube-metadata-collector",
+				"kubelet",
+				"docker"
+			],
+			"tags": [
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:operator-management-service-54c58654-jgkdg",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1"
+			]
+		},
+		"container_id://01a3f44274e0b0c41b4cfa5b789e8fe8932e7740f5581caba686c54dfe19c07e": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"image_name:jtblin/kube2iam",
+				"app.kubernetes.io/instance:n2a98b14-597e-422c-89b0-d4f8352db29a",
+				"app.kubernetes.io/name:kube2iam",
+				"pod-template-generation:1",
+				"short_image:kube2iam",
+				"kube_namespace:kube-system",
+				"pod_phase:running",
+				"kube_app_name:kube2iam",
+				"kube_app_instance:n2a98b14-597e-422c-89b0-d4f8352db29a",
+				"kube_daemon_set:n2a98b14-597e-422c-89b0-d4f8352db29a-kube2iam",
+				"docker_image:jtblin/kube2iam:0.10.7",
+				"kube_container_name:kube2iam",
+				"controller-revision-hash:5999c6cb9b",
+				"docpod_name:n2a98b14-597e-422c-89b0-d4f8352db29a-kube2iam-kxng5",
+				"image_tag:0.10.7",
+				"pod_name:n2a98b14-597e-422c-89b0-d4f8352db29a-kube2iam-kxng5"
+			]
+		},
+		"container_id://0557a6e925f060015f88f9d4e19929221f0e44f8c5fd695e441cce487d634f26": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"docpod_name:aws-node-7rnpr",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1"
+			]
+		},
+		"container_id://0d2d1f5d54767ac2742463bdd97263af26c10cdc834ed8d3fc4d81b0e8f82d5c": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:gateway-service-1605623800-standalone-6f576c899f-zd7gf",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause"
+			]
+		},
+		"container_id://0de0b9fd26f91d439b1df11c6b2e862f4fa5eeacf8a2082403cecb0d07c3e26e": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": []
+		},
+		"container_id://109a17c0e8e68c25737ac57c3da61111d23f870696fcd1e4ea73363c06c2f0ec": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": []
+		},
+		"container_id://10b9a256c803cbcba4fcb6764fc335d279ac67a00b35790cd3519bc640c0ec58": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:gateway-service-6c5b79f67c-6csww"
+			]
+		},
+		"container_id://116ee3176b1768569793ccb472a3fe1e81866a21be79d2e638e0494af32c6428": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"kube_app_name:data-service",
+				"pod-template-hash:7f8b7c6bd4",
+				"image_name:cirrus-docker.jfrog.io/platform-services/data-service",
+				"short_image:data-service",
+				"pod_phase:running",
+				"kube_service:data-service",
+				"kube_service:data-servicemonitoring",
+				"image_tag:0.10.0-2",
+				"docker_image:cirrus-docker.jfrog.io/platform-services/data-service:0.10.0-2",
+				"app.kubernetes.io/instance:data-service",
+				"kube_deployment:data-service",
+				"app.kubernetes.io/name:data-service",
+				"docpod_name:data-service-7f8b7c6bd4-zrts5",
+				"kube_namespace:prod",
+				"kube_container_name:data-service",
+				"kube_app_instance:data-service",
+				"kube_replica_set:data-service-7f8b7c6bd4",
+				"pod_name:data-service-7f8b7c6bd4-zrts5"
+			]
+		},
+		"container_id://12323fd14162d110d5ecceb46f290d4c3f64786a6e2615426200f364e888de93": {
+			"sources": [
+				"docker",
+				"kube-metadata-collector",
+				"kubelet"
+			],
+			"tags": [
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:mss-service-7bfbb5f86b-xjrqq",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1"
+			]
+		},
+		"container_id://1417dcaa8a1809b81108ecf161217fb1d9e2423edbca4eae221b69d3a39d4ec3": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"image_name:karank/kube-fluentd-operator",
+				"short_image:kube-fluentd-operator",
+				"image_tag:patchfix",
+				"app:log-router",
+				"pod-template-generation:24",
+				"release:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b",
+				"controller-revision-hash:5ddc7bfc45",
+				"docker_image:karank/kube-fluentd-operator:patchfix",
+				"kube_namespace:logging",
+				"kube_container_name:reloader",
+				"pod_phase:running",
+				"docpod_name:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b-log-router-clndn",
+				"kube_daemon_set:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b-log-router",
+				"pod_name:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b-log-router-clndn"
+			]
+		},
+		"container_id://161793f3db802c8969c97520977832ac845fa63e4a7dac405c68a0ac59772f15": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"short_image:kube-fluentd-operator",
+				"app:log-router",
+				"pod-template-generation:17",
+				"controller-revision-hash:567c48f8bc",
+				"release:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b",
+				"kube_daemon_set:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b-log-router",
+				"kube_namespace:logging",
+				"image_tag:patchfix",
+				"image_name:karank/kube-fluentd-operator",
+				"docker_image:karank/kube-fluentd-operator:patchfix",
+				"docpod_name:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b-log-router-2bw9m",
+				"kube_container_name:fluentd",
+				"pod_phase:running",
+				"pod_name:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b-log-router-2bw9m"
+			]
+		},
+		"container_id://188f321d742fe7ae3b4e4c151a161fefb0b11997104f730b578d25969c1417df": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:dx-case-service-864cc46556-v55g4"
+			]
+		},
+		"container_id://1b287b64acd57b428694845b7a1838922b21ebaefe696dea752d12e8a37e887f": {
+			"sources": [
+				"kubelet",
+				"docker",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"docker_image:platformservices-docker-dev-local.bin.pega.io/gateway-service/docker-image:0.3.9-447",
+				"kube_deployment:orion-gw-standalone",
+				"kube_app_version:0.1.0",
+				"kube_app_managed_by:Helm",
+				"pod-template-hash:6c8674bd8c",
+				"kube_service:orion-gw-standalone",
+				"image_tag:0.3.9-447",
+				"image_name:platformservices-docker-dev-local.bin.pega.io/gateway-service/docker-image",
+				"kube_app_instance:orion-gw",
+				"kube_app_name:standalone",
+				"app.kubernetes.io/instance:orion-gw",
+				"pega/isolationID:rnd-staging-aia",
+				"short_image:docker-image",
+				"kube_container_name:standalone",
+				"pod_phase:running",
+				"helm.sh/chart:standalone-0.3.10-SNAPSHOT",
+				"kube_namespace:staging",
+				"app.kubernetes.io/version:0.1.0",
+				"pega/modelName:review",
+				"pega/modelID:orion-sprint-20-23-currency-perct-loc-picklist",
+				"pega/isolationName:orion",
+				"docpod_name:orion-gw-standalone-6c8674bd8c-jdznr",
+				"app.kubernetes.io/name:standalone",
+				"app.kubernetes.io/managed-by:Helm",
+				"pod_name:orion-gw-standalone-6c8674bd8c-jdznr",
+				"kube_replica_set:orion-gw-standalone-6c8674bd8c"
+			]
+		},
+		"container_id://1d4ff7190fe09cfef4fdb44e17d1ab06acfc829534e3805e00ba343eb21113f6": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_container_name:gateway-service",
+				"app.kubernetes.io/instance:gateway-service",
+				"image_tag:0.3.9-438",
+				"docker_image:cirrus-docker.jfrog.io/gateway-service/docker-image:0.3.9-438",
+				"kube_app_instance:gateway-service",
+				"kube_deployment:gateway-service",
+				"kube_namespace:morza-test-gw",
+				"docpod_name:gateway-service-5b5c667d76-77x59",
+				"pod-template-hash:5b5c667d76",
+				"short_image:docker-image",
+				"kube_app_name:gateway-service",
+				"app.kubernetes.io/name:gateway-service",
+				"image_name:cirrus-docker.jfrog.io/gateway-service/docker-image",
+				"kube_service:gateway-service",
+				"pod_phase:running",
+				"kube_replica_set:gateway-service-5b5c667d76",
+				"pod_name:gateway-service-5b5c667d76-77x59"
+			]
+		},
+		"container_id://20055ffcecdb2d439ce2318881b781499910047829fbada830bc2907d6b9aa6d": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:constellation-customer-content-569fc74bd5-4mm2q",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause"
+			]
+		},
+		"container_id://203c3dc7d4111f35999832900e8a08ac01ee1f7d93b65a565b92bbf6f53bd920": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": []
+		},
+		"container_id://20e9e25e3b07ae65b7335f442b84f559957ef3f5d6d0fc74e098b39057c16e88": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:dx-case-service-77b99b87cd-kxrfg",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1"
+			]
+		},
+		"container_id://269b6ee203017a8d9177f7f656b59653b6542a61ef1616f47688adaa56c7b59e": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"kube_namespace:keystone-dev7",
+				"app.kubernetes.io/instance:n3eca355-b738-4cdb-bdb6-ceee75e97070",
+				"docpod_name:operator-management-service-54c58654-jgkdg",
+				"pod-template-hash:54c58654",
+				"pod_phase:pending",
+				"kube_app_name:operator-management-service",
+				"app.kubernetes.io/name:operator-management-service",
+				"kube_deployment:operator-management-service",
+				"kube_app_instance:n3eca355-b738-4cdb-bdb6-ceee75e97070",
+				"image_tag:1.18.0",
+				"docker_image:jaegertracing/jaeger-agent:1.18.0",
+				"short_image:jaeger-agent",
+				"image_name:jaegertracing/jaeger-agent",
+				"kube_container_name:jaeger-agent",
+				"pod_name:operator-management-service-54c58654-jgkdg",
+				"kube_replica_set:operator-management-service-54c58654"
+			]
+		},
+		"container_id://26e12de7e0049e7e5b730df16c9468ab5d93e8111e4b1e5068601f3b1611e616": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:data-service-58975b4745-8hgmv",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause"
+			]
+		},
+		"container_id://2ccd11cb46b54fc68c972792241401db4fd9463412a0dfd563e96ed8610d790c": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"docpod_name:gateway-service-65dbf67486-9gknz",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1"
+			]
+		},
+		"container_id://2cfcdbfaefa094999b218ba7dbceca90bcc5a518e57aafe040648281c221ad69": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_container_name:jaeger-agent",
+				"image_tag:1.18.0",
+				"kube_namespace:prod",
+				"docker_image:jaegertracing/jaeger-agent:1.18.0",
+				"image_name:jaegertracing/jaeger-agent",
+				"kube_service:data-service",
+				"kube_service:data-servicemonitoring",
+				"docpod_name:data-service-7f8b7c6bd4-zrts5",
+				"pod-template-hash:7f8b7c6bd4",
+				"pod_phase:running",
+				"kube_deployment:data-service",
+				"app.kubernetes.io/instance:data-service",
+				"app.kubernetes.io/name:data-service",
+				"kube_app_instance:data-service",
+				"short_image:jaeger-agent",
+				"kube_app_name:data-service",
+				"pod_name:data-service-7f8b7c6bd4-zrts5",
+				"kube_replica_set:data-service-7f8b7c6bd4"
+			]
+		},
+		"container_id://2f8946de4273472744debe2544253a7b01bcbdd7c528b471d983bd5f26251415": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"kube_deployment:dx-case-service",
+				"pod-template-hash:77b99b87cd",
+				"pod_phase:running",
+				"kube_container_name:jaeger-agent",
+				"kube_app_instance:dx-case-service",
+				"docker_image:jaegertracing/jaeger-agent:1.18.0",
+				"app.kubernetes.io/instance:dx-case-service",
+				"short_image:jaeger-agent",
+				"image_tag:1.18.0",
+				"docpod_name:dx-case-service-77b99b87cd-kxrfg",
+				"kube_namespace:prod",
+				"image_name:jaegertracing/jaeger-agent",
+				"app.kubernetes.io/name:dx-case-service",
+				"kube_app_name:dx-case-service",
+				"kube_service:dx-case-servicemonitoring",
+				"kube_service:dx-case-service",
+				"kube_replica_set:dx-case-service-77b99b87cd",
+				"pod_name:dx-case-service-77b99b87cd-kxrfg"
+			]
+		},
+		"container_id://3766f136da308cce96f61d836aae5908c1d69ecf2bb18cd3685b31424d7690ae": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_namespace:ops",
+				"controller-revision-hash:77d6d9887c",
+				"app.kubernetes.io/instance:jaeger",
+				"kube_service:jaeger-agent",
+				"docker_image:jaegertracing/jaeger-agent:1.18.0",
+				"pod_phase:running",
+				"image_name:jaegertracing/jaeger-agent",
+				"kube_app_component:agent",
+				"kube_app_name:jaeger",
+				"kube_daemon_set:jaeger-agent",
+				"kube_container_name:jaeger-agent",
+				"kube_app_instance:jaeger",
+				"app.kubernetes.io/component:agent",
+				"app.kubernetes.io/name:jaeger",
+				"pod-template-generation:1",
+				"short_image:jaeger-agent",
+				"image_tag:1.18.0",
+				"docpod_name:jaeger-agent-m9bxt",
+				"pod_name:jaeger-agent-m9bxt"
+			]
+		},
+		"container_id://38da005811249a7c822ebfb0d54289b755b59af10cba414826d93d53e0a319b3": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": []
+		},
+		"container_id://394a3b38159b712b03d5ba78ef18c1234dce23877df600a5d454867c738d9d05": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"docpod_name:authentication-service-b9d9c5d-2ls4s",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1"
+			]
+		},
+		"container_id://3b05a0d1f440b9bdae0dbaf1a94746fb4f388faca758315c8f24117949d99517": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"kube_app_name:dx-case-service",
+				"app.kubernetes.io/instance:dx-case-service",
+				"image_name:cirrus-docker.jfrog.io/dx-case-service/docker-image",
+				"pod_phase:running",
+				"kube_service:dx-case-servicemonitoring",
+				"kube_service:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"image_tag:0.1.17-450",
+				"docpod_name:dx-case-service-77b99b87cd-kxrfg",
+				"kube_deployment:dx-case-service",
+				"kube_container_name:dx-case-service",
+				"kube_namespace:prod",
+				"short_image:docker-image",
+				"pod-template-hash:77b99b87cd",
+				"kube_app_instance:dx-case-service",
+				"docker_image:cirrus-docker.jfrog.io/dx-case-service/docker-image:0.1.17-450",
+				"pod_name:dx-case-service-77b99b87cd-kxrfg",
+				"kube_replica_set:dx-case-service-77b99b87cd"
+			]
+		},
+		"container_id://3b78ade661b1f1b53f066dc3b40947bc2b3ebb86ffc7982f40ba5ae8f2a91856": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:gateway-service-69df6dc4b5-vgj9c"
+			]
+		},
+		"container_id://3bf3827bcac0042772e936228ba904fb94f095e701b14b6268b6fa0e175c9d2c": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"docker_image:envoyproxy/envoy-dev:***********************************dd032",
+				"kube_container_name:envoy",
+				"docpod_name:integration-gateway-service-54f8889b5-7dhkq",
+				"kube_app_instance:integration-gateway-service",
+				"app.kubernetes.io/instance:integration-gateway-service",
+				"app.kubernetes.io/name:integration-gateway-service",
+				"pod-template-hash:54f8889b5",
+				"kube_namespace:integrationgateway-dev",
+				"kube_app_name:integration-gateway-service",
+				"short_image:envoy-dev",
+				"kube_service:integration-gateway-service",
+				"image_tag:***********************************dd032",
+				"pod_phase:running",
+				"kube_deployment:integration-gateway-service",
+				"image_name:envoyproxy/envoy-dev",
+				"pod_name:integration-gateway-service-54f8889b5-7dhkq",
+				"kube_replica_set:integration-gateway-service-54f8889b5"
+			]
+		},
+		"container_id://3ddd462149f742cfcd7e7cb5b218500a28af84493cde3518e761427b3108dffc": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"kube_app_instance:gateway-service",
+				"pod-template-hash:f8574d4cc",
+				"pod_phase:running",
+				"short_image:docker-image",
+				"docker_image:platformservices-docker-dev-local.bin.pega.io/gateway-service/docker-image:0.3.9-447",
+				"image_name:cirrus-docker.jfrog.io/gateway-service/docker-image",
+				"kube_namespace:test-gs-morza",
+				"kube_deployment:gateway-service",
+				"app.kubernetes.io/instance:gateway-service",
+				"app.kubernetes.io/name:gateway-service",
+				"kube_service:gateway-service",
+				"kube_app_name:gateway-service",
+				"image_tag:0.3.9-447",
+				"docpod_name:gateway-service-f8574d4cc-s9th6",
+				"kube_container_name:gateway-service",
+				"pod_name:gateway-service-f8574d4cc-s9th6",
+				"kube_replica_set:gateway-service-f8574d4cc"
+			]
+		},
+		"container_id://3f4a316e4204f5c94e29f5757b8614cd40641de89d212c0ff6c4a0ec2f43592a": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_service:gateway-service",
+				"pod-template-hash:6c5b79f67c",
+				"kube_deployment:gateway-service",
+				"kube_container_name:gateway-service",
+				"image_name:cirrus-docker.jfrog.io/gateway-service/docker-image",
+				"app.kubernetes.io/instance:gateway-service",
+				"docpod_name:gateway-service-6c5b79f67c-6csww",
+				"kube_namespace:chauv-dev",
+				"kube_app_name:gateway-service",
+				"image_tag:0.3.9-411",
+				"docker_image:cirrus-docker.jfrog.io/gateway-service/docker-image:0.3.9-411",
+				"kube_app_instance:gateway-service",
+				"short_image:docker-image",
+				"app.kubernetes.io/name:gateway-service",
+				"pod_phase:running",
+				"kube_replica_set:gateway-service-6c5b79f67c",
+				"pod_name:gateway-service-6c5b79f67c-6csww"
+			]
+		},
+		"container_id://401b9a4b165da9b3ac6d525e1a55830ae353f7da6573cd5ba03b12f84e84b6ed": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": []
+		},
+		"container_id://407913add09225a959cc4a116da78e5a57c39b050f671877606e6a92f11a8eac": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"docpod_name:dx-case-service-f5bbcd9c9-bv4f4",
+				"app.kubernetes.io/instance:dx-case-service",
+				"kube_deployment:dx-case-service",
+				"image_tag:0.1.17-450",
+				"kube_app_instance:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"kube_container_name:dx-case-service",
+				"pod_phase:running",
+				"kube_service:dx-case-servicemonitoring",
+				"kube_service:dx-case-service",
+				"docker_image:cirrus-docker.jfrog.io/dx-case-service/docker-image:0.1.17-450",
+				"image_name:cirrus-docker.jfrog.io/dx-case-service/docker-image",
+				"short_image:docker-image",
+				"kube_app_name:dx-case-service",
+				"pod-template-hash:f5bbcd9c9",
+				"kube_namespace:test2",
+				"pod_name:dx-case-service-f5bbcd9c9-bv4f4",
+				"kube_replica_set:dx-case-service-f5bbcd9c9"
+			]
+		},
+		"container_id://43104d9cda6c968c3d98ddf287674d6e6fc7a1e3eb8c706b751859616ad7572d": {
+			"sources": [
+				"docker",
+				"kube-metadata-collector",
+				"kubelet"
+			],
+			"tags": [
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:dx-case-service-6856b75d54-6vhz8",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause"
+			]
+		},
+		"container_id://43459680fb819155731910ec8acd60064c1749a6bd65dd5c592c78be843c0037": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_daemon_set:prometheus-prometheus-node-exporter",
+				"kube_namespace:ops",
+				"image_tag:v1.0.0",
+				"heritage:Helm",
+				"image_name:quay.io/prometheus/node-exporter",
+				"kube_container_name:node-exporter",
+				"short_image:node-exporter",
+				"docker_image:quay.io/prometheus/node-exporter:v1.0.0",
+				"app:prometheus-node-exporter",
+				"pod_phase:running",
+				"jobLabel:node-exporter",
+				"release:prometheus",
+				"pod-template-generation:1",
+				"docpod_name:prometheus-prometheus-node-exporter-t2h89",
+				"chart:prometheus-node-exporter-1.10.0",
+				"controller-revision-hash:6b7bb8459f",
+				"pod_name:prometheus-prometheus-node-exporter-t2h89"
+			]
+		},
+		"container_id://46217d1ecb425f28689716ee63765aa059d70051efbe2ab2f110d3bf5b59678e": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:integration-gateway-service-54f8889b5-7dhkq",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1"
+			]
+		},
+		"container_id://4a8738142dfe5b815c36e987aaffd5f6c654470b5321ed0bc99e734aa312f41f": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": []
+		},
+		"container_id://4b22bed8aa796d172ef2d39fe1a85ed85ff346288a92bfc23886007d53efcffa": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": []
+		},
+		"container_id://4cbb055eb2cefa7eb2164ff7ddc75b15184bf4bc17981370aa5aceca6a6dcc91": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"image_name:704449933085.dkr.ecr.us-east-1.amazonaws.com/orion",
+				"image_tag:dx-case-isinpagelist",
+				"app.kubernetes.io/instance:dx-case-service",
+				"kube_deployment:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"docker_image:704449933085.dkr.ecr.us-east-1.amazonaws.com/orion:dx-case-isinpagelist",
+				"pod-template-hash:658ddf4bdc",
+				"kube_namespace:orion",
+				"kube_app_name:dx-case-service",
+				"docpod_name:dx-case-service-658ddf4bdc-gzjdx",
+				"short_image:orion",
+				"kube_app_instance:dx-case-service",
+				"pod_phase:running",
+				"kube_container_name:dx-case-service",
+				"kube_service:dx-case-service",
+				"kube_replica_set:dx-case-service-658ddf4bdc",
+				"pod_name:dx-case-service-658ddf4bdc-gzjdx"
+			]
+		},
+		"container_id://4d445e50277e50c53a2ea564da0201ccaec8c1a7e286dbb722729dc5f516a636": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"app.kubernetes.io/instance:orion-pagelist",
+				"image_name:platformservices-docker-dev-local.bin.pega.io/gateway-service/docker-image",
+				"pega/isolationName:orion",
+				"pega/modelName:review2",
+				"kube_container_name:standalone",
+				"kube_deployment:orion-pagelist-standalone",
+				"app.kubernetes.io/version:0.1.0",
+				"kube_app_name:standalone",
+				"pod-template-hash:5dcdfb5988",
+				"image_tag:0.3.9-447",
+				"kube_app_instance:orion-pagelist",
+				"docker_image:platformservices-docker-dev-local.bin.pega.io/gateway-service/docker-image:0.3.9-447",
+				"short_image:docker-image",
+				"pega/isolationID:rnd-staging-aia",
+				"kube_app_version:0.1.0",
+				"docpod_name:orion-pagelist-standalone-5dcdfb5988-gvnsq",
+				"helm.sh/chart:standalone-0.3.10-SNAPSHOT",
+				"kube_namespace:staging",
+				"app.kubernetes.io/managed-by:Helm",
+				"kube_service:orion-pagelist-standalone",
+				"app.kubernetes.io/name:standalone",
+				"pega/modelID:orion-sprint-20-23-isinpagelist-3",
+				"pod_phase:running",
+				"kube_app_managed_by:Helm",
+				"kube_replica_set:orion-pagelist-standalone-5dcdfb5988",
+				"pod_name:orion-pagelist-standalone-5dcdfb5988-gvnsq"
+			]
+		},
+		"container_id://4f7d07c8187e8cc4d5a8223100166a9b4fcebfd95661cf9aca1481de397ec2ad": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"release:elasticsearch",
+				"image_name:docker.elastic.co/elasticsearch/elasticsearch-oss",
+				"image_tag:6.8.6",
+				"pod_phase:running",
+				"kube_stateful_set:elasticsearch-master",
+				"docpod_name:elasticsearch-master-1",
+				"controller-revision-hash:elasticsearch-master-6c96cc479c",
+				"role:master",
+				"statefulset.kubernetes.io/pod-name:elasticsearch-master-1",
+				"kube_namespace:ops",
+				"kube_container_name:chown",
+				"app:elasticsearch",
+				"persistentvolumeclaim:data-elasticsearch-master-1",
+				"docker_image:docker.elastic.co/elasticsearch/elasticsearch-oss:6.8.6",
+				"short_image:elasticsearch-oss",
+				"component:master",
+				"pod_name:elasticsearch-master-1"
+			]
+		},
+		"container_id://515dda84ec4c2fc29b58ab51dfab05550a66e538f1d2d536fa9fc68258f2224b": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": []
+		},
+		"container_id://53c7597948a6e8a0aac9c47281a4a85ab936c83a2370600ede83b68553af92fe": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": []
+		},
+		"container_id://582a6a18cb4b8c375cd4e7c810a79c71e3c712ebd0a25708e037e5bad23d1147": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_daemon_set:aws-node",
+				"kube_container_name:aws-node",
+				"pod-template-generation:1",
+				"short_image:amazon-k8s-cni",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.6.3-eksbuild.1",
+				"kube_namespace:kube-system",
+				"k8s-app:aws-node",
+				"pod_phase:running",
+				"controller-revision-hash:9f658f887",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni",
+				"image_tag:v1.6.3-eksbuild.1",
+				"docpod_name:aws-node-7rnpr",
+				"pod_name:aws-node-7rnpr"
+			]
+		},
+		"container_id://596066760ecad8260dcd884af03e1e8fe438259fa24ccc7e2eb4b5b0135e0c13": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": []
+		},
+		"container_id://5bcf0dad33ee73586a0405e713719ae9c865e2db3c61ac82cb002c7d66c2b425": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:n2a98b14-597e-422c-89b0-d4f8352db29a-kube2iam-kxng5",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1"
+			]
+		},
+		"container_id://5df04447acb895630be23e0a1f1be453d7f10b31ffed960e7e307612073bfa78": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:data-service-bc68cbc6-rctlp"
+			]
+		},
+		"container_id://612f2922b2b036fa586ec9e198edc0e37157fa39e9ae0172e9544fabd0dcdadd": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:elasticsearch-master-1"
+			]
+		},
+		"container_id://63880fc94d7b2c717d27fdafc74611da1c3b08f3cf9e138ed5ad5e67ca1779b5": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"docker_image:jaegertracing/jaeger-agent:1.18.0",
+				"short_image:jaeger-agent",
+				"kube_deployment:data-service",
+				"pod-template-hash:bc68cbc6",
+				"pod_phase:running",
+				"kube_service:data-service",
+				"kube_service:data-servicemonitoring",
+				"image_tag:1.18.0",
+				"kube_namespace:staging",
+				"app.kubernetes.io/instance:data-service",
+				"image_name:jaegertracing/jaeger-agent",
+				"docpod_name:data-service-bc68cbc6-rctlp",
+				"kube_app_name:data-service",
+				"app.kubernetes.io/name:data-service",
+				"kube_app_instance:data-service",
+				"kube_container_name:jaeger-agent",
+				"pod_name:data-service-bc68cbc6-rctlp",
+				"kube_replica_set:data-service-bc68cbc6"
+			]
+		},
+		"container_id://65d1b235e8bce51801d7955fc7ccaca1d21a305a938326825f95fd66bf1b52aa": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"app.kubernetes.io/name:authentication-service",
+				"kube_namespace:prod",
+				"image_name:platformservices-docker-release-local.bin.pega.io/platform-services/mock-authentication-service",
+				"pod-template-hash:7bb669cc5d",
+				"image_tag:0.0.11-33",
+				"kube_service:authentication-service",
+				"docpod_name:authentication-service-7bb669cc5d-wjjm4",
+				"kube_deployment:authentication-service",
+				"kube_app_name:authentication-service",
+				"kube_container_name:mas",
+				"app.kubernetes.io/instance:mock-authentication-service",
+				"docker_image:platformservices-docker-release-local.bin.pega.io/platform-services/mock-authentication-service:0.0.11-33",
+				"kube_app_instance:mock-authentication-service",
+				"pod_phase:running",
+				"short_image:mock-authentication-service",
+				"pod_name:authentication-service-7bb669cc5d-wjjm4",
+				"kube_replica_set:authentication-service-7bb669cc5d"
+			]
+		},
+		"container_id://6677ef27b4c7c01def3d7ed4c567744a8d3a8fece2b74c124b5bcf6bb3416531": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"docpod_name:data-service-58975b4745-bs84g",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1"
+			]
+		},
+		"container_id://66858ca02a9ac7bbac09b3da4ccf07247fe45dc7af65a4e3599add716025bf50": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"image_name:cirrus-docker.jfrog.io/platform-services/data-service",
+				"short_image:data-service",
+				"docpod_name:data-service-bc68cbc6-rctlp",
+				"app.kubernetes.io/name:data-service",
+				"image_tag:0.10.0-2",
+				"kube_deployment:data-service",
+				"kube_app_name:data-service",
+				"kube_app_instance:data-service",
+				"kube_container_name:data-service",
+				"app.kubernetes.io/instance:data-service",
+				"pod_phase:running",
+				"kube_namespace:staging",
+				"kube_service:data-service",
+				"kube_service:data-servicemonitoring",
+				"docker_image:cirrus-docker.jfrog.io/platform-services/data-service:0.10.0-2",
+				"pod-template-hash:bc68cbc6",
+				"pod_name:data-service-bc68cbc6-rctlp",
+				"kube_replica_set:data-service-bc68cbc6"
+			]
+		},
+		"container_id://6799e1059b427497a3bb4ef8e71e8b765aaf2168d1303d77e479682c3e15aab0": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": []
+		},
+		"container_id://697fc019a12b42cfbcb4e093fb6779c87997b26460d14528f45dd5afbf9c4087": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:datadog-6ldcj"
+			]
+		},
+		"container_id://6b98b8fc4f9acb349696dcc3a6bd2ad55ccb808db7776dc8cef9dc560a8bd46b": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"pod-template-hash:65dbf67486",
+				"kube_deployment:gateway-service",
+				"docker_image:cirrus-docker.jfrog.io/gateway-service/docker-image:0.3.9-445",
+				"image_name:cirrus-docker.jfrog.io/gateway-service/docker-image",
+				"app.kubernetes.io/name:gateway-service",
+				"kube_namespace:testmorza-18-11-2020-automatic",
+				"kube_service:gateway-service",
+				"short_image:docker-image",
+				"app.kubernetes.io/instance:gateway-service",
+				"kube_app_name:gateway-service",
+				"image_tag:0.3.9-445",
+				"docpod_name:gateway-service-65dbf67486-9gknz",
+				"kube_app_instance:gateway-service",
+				"pod_phase:running",
+				"kube_container_name:gateway-service",
+				"pod_name:gateway-service-65dbf67486-9gknz",
+				"kube_replica_set:gateway-service-65dbf67486"
+			]
+		},
+		"container_id://6f6514a0542ee44653961ce9849fcc39b26300546d6fe2832b935d18cfa56311": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:data-service-58975b4745-2j7p2"
+			]
+		},
+		"container_id://74cc0d3459cda9bbb1fee7564dcf1416ec96701c795d6d4f40c833a6f739a523": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:gateway-service-5959466bf4-zt7w7"
+			]
+		},
+		"container_id://7c3834cc81bf057bcbe406c4921ce8bcaa7436662054214ded483bd28e575552": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:data-service-58975b4745-sqfwg",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1"
+			]
+		},
+		"container_id://7e68b05626ce70172c5c285b80e2526e8f5223bc8a4e4497dbbce7316f8027cf": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"short_image:kube-fluentd-operator",
+				"image_tag:localpatch",
+				"docpod_name:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b-log-router-2bw9m",
+				"docker_image:karank/kube-fluentd-operator:localpatch",
+				"image_name:karank/kube-fluentd-operator"
+			]
+		},
+		"container_id://81bb20c516029f08d1144e82e60df2ad2cdec1259752523c8778547a041dfc3c": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"docpod_name:data-service-58975b4745-6slr5",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1"
+			]
+		},
+		"container_id://86ec4b62d1bdb5dcb2e04125968cfe8a9b6dcab2e7094e9242ff47878004666d": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:gateway-service-5b5c667d76-77x59"
+			]
+		},
+		"container_id://88ea6868c2cfd7982878b0ec2f1f39dac7c805a0a4f0e304c06445e8a45dbace": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": []
+		},
+		"container_id://8a8f912ecbba30e9f103426dd8989d7dd6e1ec34c18266db0ea05a849ddf61ee": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:authentication-service-7bb669cc5d-wjjm4"
+			]
+		},
+		"container_id://8bd2b5dc7f607d4c6eb58a54a85fa2b081e712219c8ce4b0112f4596cdec6adc": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"pega/modelID:441f9684-bcf7-4df3-986d-631aa0a57826",
+				"app.kubernetes.io/managed-by:Helm",
+				"kube_app_name:standalone",
+				"pod_phase:running",
+				"pega/isolationName:tenant01",
+				"kube_app_managed_by:Helm",
+				"kube_namespace:keystone-dev",
+				"app.kubernetes.io/instance:gateway-service-1605623800",
+				"kube_service:gateway-service-1605623800-standalone",
+				"image_name:platformservices-docker-dev-local.bin.pega.io/gateway-service/docker-image",
+				"kube_app_instance:gateway-service-1605623800",
+				"pega/isolationID:tenant01",
+				"kube_deployment:gateway-service-1605623800-standalone",
+				"helm.sh/chart:standalone-0.3.9-SNAPSHOT",
+				"short_image:docker-image",
+				"image_tag:0.3.10-454",
+				"pega/modelName:441f9684-bcf7-4df3-986d-631aa0a57826",
+				"app.kubernetes.io/name:standalone",
+				"docpod_name:gateway-service-1605623800-standalone-6f576c899f-zd7gf",
+				"docker_image:cirrus-docker.jfrog.io/gateway-service/docker-image:0.3.10-454",
+				"kube_app_version:0.1.0",
+				"app.kubernetes.io/version:0.1.0",
+				"pod-template-hash:6f576c899f",
+				"kube_container_name:standalone",
+				"kube_replica_set:gateway-service-1605623800-standalone-6f576c899f",
+				"pod_name:gateway-service-1605623800-standalone-6f576c899f-zd7gf"
+			]
+		},
+		"container_id://910285300b6fbf13186c01c8108bea6f893af912282bb9e661239154c29392c5": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b-log-router-clndn"
+			]
+		},
+		"container_id://91b52092f463c92602d74ead613580ff6f6becc19d28a8062f0a71fd90a0be09": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:data-service-58975b4745-gcpc9",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause"
+			]
+		},
+		"container_id://92dc15658175d860511fcdfdf591855cf35d518088d3424c9b770fede816bc86": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_container_name:jaeger-agent",
+				"image_name:jaegertracing/jaeger-agent",
+				"pod-template-hash:b9d9c5d",
+				"app.kubernetes.io/name:authentication-service",
+				"kube_app_name:authentication-service",
+				"app.kubernetes.io/instance:authentication-svc",
+				"kube_service:authentication-service",
+				"kube_deployment:authentication-service",
+				"short_image:jaeger-agent",
+				"docker_image:jaegertracing/jaeger-agent:1.18.0",
+				"image_tag:1.18.0",
+				"pod_phase:running",
+				"kube_namespace:orion",
+				"kube_app_instance:authentication-svc",
+				"docpod_name:authentication-service-b9d9c5d-qn5pk",
+				"kube_replica_set:authentication-service-b9d9c5d",
+				"pod_name:authentication-service-b9d9c5d-qn5pk"
+			]
+		},
+		"container_id://94b2fd672a06729e834753e3d857a134fc2b6cff61c7b939506c3a8a2804afc6": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"kube_service:dx-case-service",
+				"image_tag:0.1.11-434",
+				"docpod_name:dx-case-service-6856b75d54-6vhz8",
+				"kube_app_instance:dx-case-service",
+				"kube_deployment:dx-case-service",
+				"docker_image:docker-dev.bin.pega.io/dx-case-service/docker-image:0.1.11-434",
+				"short_image:docker-image",
+				"kube_namespace:keystone-dev",
+				"pod-template-hash:6856b75d54",
+				"app.kubernetes.io/instance:dx-case-service",
+				"kube_app_name:dx-case-service",
+				"pod_phase:running",
+				"kube_container_name:dx-case-service",
+				"image_name:docker-dev.bin.pega.io/dx-case-service/docker-image",
+				"app.kubernetes.io/name:dx-case-service",
+				"kube_replica_set:dx-case-service-6856b75d54",
+				"pod_name:dx-case-service-6856b75d54-6vhz8"
+			]
+		},
+		"container_id://95411cf54b21d4ec276ef83bae2eebbf342897cfae09b8fdb272b60f72b29016": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"short_image:orion",
+				"kube_namespace:orion",
+				"kube_app_name:authentication-service",
+				"app.kubernetes.io/name:authentication-service",
+				"image_name:704449933085.dkr.ecr.us-east-1.amazonaws.com/orion",
+				"kube_container_name:mas",
+				"pod_phase:running",
+				"app.kubernetes.io/instance:authentication-svc",
+				"kube_service:authentication-service",
+				"image_tag:auth-service",
+				"docker_image:704449933085.dkr.ecr.us-east-1.amazonaws.com/orion:auth-service",
+				"kube_deployment:authentication-service",
+				"kube_app_instance:authentication-svc",
+				"pod-template-hash:b9d9c5d",
+				"docpod_name:authentication-service-b9d9c5d-2ls4s",
+				"pod_name:authentication-service-b9d9c5d-2ls4s",
+				"kube_replica_set:authentication-service-b9d9c5d"
+			]
+		},
+		"container_id://95a32c4b1d2695cc425910da5a9aa9b96b451621ebe8c65a8a9ccf164964097c": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"docpod_name:constellation-customer-content85-c78f466cf-45khh",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1"
+			]
+		},
+		"container_id://9a1394835732b5238e417df1819145d7b2b859ec6c47df0e26a9a3da7e5be3fe": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": []
+		},
+		"container_id://9b5023749ad510c3e2a327ac4a2aaca143fce63d80c48adca8a141e9ea328be1": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:gateway-service-5b5c667d76-9865g",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1"
+			]
+		},
+		"container_id://9bd3131111aa0e53b26abf635ee2020be4aaae7eb888abf42dd26fc1e48c487a": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": []
+		},
+		"container_id://9db977e129f3d2c22be9459c4f54ce46a03835227db00099face7a991cea0fcc": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:data-service-7f8b7c6bd4-zrts5"
+			]
+		},
+		"container_id://a3c333173d7197fe64b5642b90b0a34027f1197d9e5544b043d9baa72b05975f": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"kube_app_instance:ui-view-service",
+				"kube_namespace:prod",
+				"pod-template-hash:678486d9b4",
+				"kube_service:ui-view-service",
+				"image_name:jaegertracing/jaeger-agent",
+				"short_image:jaeger-agent",
+				"app.kubernetes.io/name:ui-view-service",
+				"app.kubernetes.io/instance:ui-view-service",
+				"kube_deployment:ui-view-service",
+				"kube_app_name:ui-view-service",
+				"docker_image:jaegertracing/jaeger-agent:1.18.0",
+				"pod_phase:running",
+				"kube_container_name:jaeger-agent",
+				"image_tag:1.18.0",
+				"docpod_name:ui-view-service-678486d9b4-fqzdj",
+				"kube_replica_set:ui-view-service-678486d9b4",
+				"pod_name:ui-view-service-678486d9b4-fqzdj"
+			]
+		},
+		"container_id://a646660619c0a4189c3d14f73af0d6ce3e34eed408bfbf58bd3095605e34624f": {
+			"sources": [
+				"docker",
+				"kube-metadata-collector",
+				"kubelet"
+			],
+			"tags": [
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:dx-case-service-f5bbcd9c9-bv4f4"
+			]
+		},
+		"container_id://a6b873da460de97e29a2b76cb25357f04651d6be9cf9beda92dfe30cd8045436": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"pod-template-hash:569fc74bd5",
+				"kube_app_instance:constellationui",
+				"kube_service:constellation-customer-content",
+				"image_tag:latest",
+				"short_image:service",
+				"kube_namespace:c11n",
+				"pod_phase:running",
+				"kube_deployment:constellation-customer-content",
+				"image_name:cirrus-docker.jfrog.io/constellationui/service",
+				"kube_app_name:constellation-customer-content",
+				"docker_image:cirrus-docker.jfrog.io/constellationui/service:latest",
+				"app.kubernetes.io/name:constellation-customer-content",
+				"kube_container_name:constellation-customer-content",
+				"app.kubernetes.io/instance:constellationui",
+				"docpod_name:constellation-customer-content-569fc74bd5-4mm2q",
+				"pod_name:constellation-customer-content-569fc74bd5-4mm2q",
+				"kube_replica_set:constellation-customer-content-569fc74bd5"
+			]
+		},
+		"container_id://a913cfa863b3a6a4201b232cb110802a3be35db5691fefc09aca581d16304f17": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:kube-proxy-79z54",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause"
+			]
+		},
+		"container_id://ab15cdbea8d84b31fcc8e59c7e4e36a55db56305e49a2b02aeb9c8ac3982359b": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:orion-pagelist-standalone-5dcdfb5988-gvnsq"
+			]
+		},
+		"container_id://ae3af67e704fc9fb853e605feddc6b1cf2ba5813ca487784c8a92fd7e1e9f62e": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:data-service-58975b4745-xn28m",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1"
+			]
+		},
+		"container_id://b2e9d74d65d74ebb58d3ca8f93565609e1f6990e6e1aa3f8ee40530d25c10338": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"kube_container_name:gateway-service",
+				"pod-template-hash:5b5c667d76",
+				"docpod_name:gateway-service-5b5c667d76-9865g",
+				"app.kubernetes.io/name:gateway-service",
+				"kube_app_instance:gateway-service",
+				"kube_service:gateway-service",
+				"short_image:docker-image",
+				"image_tag:0.3.9-438",
+				"docker_image:cirrus-docker.jfrog.io/gateway-service/docker-image:0.3.9-438",
+				"kube_namespace:morza-test-gw",
+				"kube_app_name:gateway-service",
+				"kube_deployment:gateway-service",
+				"image_name:cirrus-docker.jfrog.io/gateway-service/docker-image",
+				"pod_phase:running",
+				"app.kubernetes.io/instance:gateway-service",
+				"pod_name:gateway-service-5b5c667d76-9865g",
+				"kube_replica_set:gateway-service-5b5c667d76"
+			]
+		},
+		"container_id://b69ab5598b101fda6fc6039137753ad69dc24dee57a43a856bdf2c30b31fdc74": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:prometheus-prometheus-node-exporter-t2h89"
+			]
+		},
+		"container_id://b762ce6020d9441872706bd56e98d22fe28fd67a5678a2d00a34000bd5f00cc6": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:gateway-service-1603977279-standalone-646db8c56c-q8pd8",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause"
+			]
+		},
+		"container_id://b81ba28615f69c1d69f70d2994ec2ae8e8ebe3b6e77b1fd88696ca6aa7cf7363": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": []
+		},
+		"container_id://b9b9830ba610e8e493d62bfd13ac6233fdfa65c1070fa4759a1438d619c0955d": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"app.kubernetes.io/instance:authentication-svc",
+				"pod_phase:running",
+				"kube_app_name:authentication-service",
+				"kube_container_name:jaeger-agent",
+				"kube_service:authentication-service",
+				"docpod_name:authentication-service-b9d9c5d-2ls4s",
+				"kube_app_instance:authentication-svc",
+				"image_tag:1.18.0",
+				"docker_image:jaegertracing/jaeger-agent:1.18.0",
+				"image_name:jaegertracing/jaeger-agent",
+				"pod-template-hash:b9d9c5d",
+				"short_image:jaeger-agent",
+				"kube_namespace:orion",
+				"kube_deployment:authentication-service",
+				"app.kubernetes.io/name:authentication-service",
+				"pod_name:authentication-service-b9d9c5d-2ls4s",
+				"kube_replica_set:authentication-service-b9d9c5d"
+			]
+		},
+		"container_id://bde7f3cc85d261851fdb28017268959e059392beb96edcfdc3c5b255799d9215": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"docker_image:docker.elastic.co/elasticsearch/elasticsearch-oss:6.8.6",
+				"role:master",
+				"kube_namespace:ops",
+				"release:elasticsearch",
+				"kube_container_name:elasticsearch",
+				"docpod_name:elasticsearch-master-1",
+				"statefulset.kubernetes.io/pod-name:elasticsearch-master-1",
+				"component:master",
+				"image_tag:6.8.6",
+				"pod_phase:running",
+				"persistentvolumeclaim:data-elasticsearch-master-1",
+				"image_name:docker.elastic.co/elasticsearch/elasticsearch-oss",
+				"short_image:elasticsearch-oss",
+				"controller-revision-hash:elasticsearch-master-6c96cc479c",
+				"app:elasticsearch",
+				"kube_stateful_set:elasticsearch-master",
+				"kube_service:elasticsearch-discovery",
+				"pod_name:elasticsearch-master-1"
+			]
+		},
+		"container_id://bdf8e3c7841a6f3c98e415f30f8c44387a002758d7bbd2b27d13f7ccab4653ed": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"app.kubernetes.io/instance:ui-view-service",
+				"app.kubernetes.io/name:ui-view-service",
+				"pod-template-hash:678486d9b4",
+				"kube_namespace:prod",
+				"docker_image:docker-dev.bin.pega.io/ui-view-service/docker-image:0.0.4-9",
+				"image_tag:0.0.4-9",
+				"docpod_name:ui-view-service-678486d9b4-fqzdj",
+				"image_name:docker-dev.bin.pega.io/ui-view-service/docker-image",
+				"kube_deployment:ui-view-service",
+				"kube_app_instance:ui-view-service",
+				"short_image:docker-image",
+				"pod_phase:running",
+				"kube_container_name:ui-view-service",
+				"kube_app_name:ui-view-service",
+				"kube_service:ui-view-service",
+				"pod_name:ui-view-service-678486d9b4-fqzdj",
+				"kube_replica_set:ui-view-service-678486d9b4"
+			]
+		},
+		"container_id://bfc02caf3a06b8b3328321dc8b7edf70a32bfca8bc58e831ab70dad2e9079bdf": {
+			"sources": [
+				"docker",
+				"kube-metadata-collector",
+				"kubelet"
+			],
+			"tags": [
+				"image_tag:0.0.9-95",
+				"pod_phase:running",
+				"docker_image:cirrus-docker.jfrog.io/model-storage/docker-image:0.0.9-95",
+				"pod-template-hash:66ffcf77d4",
+				"kube_container_name:mss-service",
+				"kube_namespace:morza-test-mss",
+				"kube_app_instance:model-storage-service",
+				"kube_deployment:mss-service",
+				"kube_service:mss-service",
+				"kube_service:mss-servicemonitoring",
+				"app.kubernetes.io/instance:model-storage-service",
+				"app.kubernetes.io/name:mss-service",
+				"docpod_name:mss-service-66ffcf77d4-lj4g2",
+				"short_image:docker-image",
+				"kube_app_name:mss-service",
+				"image_name:cirrus-docker.jfrog.io/model-storage/docker-image",
+				"pod_name:mss-service-66ffcf77d4-lj4g2",
+				"kube_replica_set:mss-service-66ffcf77d4"
+			]
+		},
+		"container_id://bfcdf46669c93b4f94621ebb0f4d6b1b7ed4fa2a486f6fc93bd68cab784bd788": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:data-service-58975b4745-ggdk7",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1"
+			]
+		},
+		"container_id://c3a6e83cfcbc6372481301d7a690fe39f39323debde1e6f2781a0f8ee4021397": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:mss-service-699cd956f6-8qcwq",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause"
+			]
+		},
+		"container_id://c3ba53c25fc14e9f1540eae5ca9c3c54d5b37eb399a48a88ad26f723e75f3a39": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": []
+		},
+		"container_id://c631c291e21f32594022d39a9d31b6f1fae6da904f42519309654d2651282cc2": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_version:0.1.0",
+				"image_name:platformservices-docker-dev-local.bin.pega.io/gateway-service/docker-image",
+				"docpod_name:gateway-service-1603977279-standalone-646db8c56c-q8pd8",
+				"kube_app_instance:gateway-service-1603977279",
+				"pod_phase:running",
+				"image_tag:0.3.9-438",
+				"kube_deployment:gateway-service-1603977279-standalone",
+				"pega/isolationName:uiview",
+				"short_image:docker-image",
+				"kube_namespace:staging",
+				"app.kubernetes.io/name:standalone",
+				"pega/modelName:aia",
+				"kube_service:gateway-service-1603977279-standalone",
+				"pod-template-hash:646db8c56c",
+				"pega/modelID:c4244f5c-b473-46e4-a483-ab7fe1c92698",
+				"helm.sh/chart:standalone-0.3.9-SNAPSHOT",
+				"docker_image:cirrus-docker.jfrog.io/gateway-service/docker-image:0.3.9-438",
+				"app.kubernetes.io/instance:gateway-service-1603977279",
+				"pega/isolationID:uiview-dev-aia",
+				"app.kubernetes.io/managed-by:Helm",
+				"kube_app_managed_by:Helm",
+				"kube_container_name:standalone",
+				"kube_app_name:standalone",
+				"app.kubernetes.io/version:0.1.0",
+				"kube_replica_set:gateway-service-1603977279-standalone-646db8c56c",
+				"pod_name:gateway-service-1603977279-standalone-646db8c56c-q8pd8"
+			]
+		},
+		"container_id://cc59376f41fbef13eb64c80347faf71dc53efa2942937a6558707bb8355d5721": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:mss-service-66ffcf77d4-lj4g2",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1"
+			]
+		},
+		"container_id://cf5543e48f3efd227784d3c2a48d485e7dfb2b2cb2f61e59a84f4c10d033c000": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"docpod_name:mss-service-699cd956f6-8qcwq",
+				"docker_image:cirrus-docker.jfrog.io/model-storage/docker-image:0.0.9-95",
+				"short_image:docker-image",
+				"kube_app_name:mss-service",
+				"kube_namespace:immortale-m",
+				"kube_app_instance:model-storage-service",
+				"kube_service:mss-servicemonitoring",
+				"kube_service:mss-service",
+				"image_name:cirrus-docker.jfrog.io/model-storage/docker-image",
+				"app.kubernetes.io/instance:model-storage-service",
+				"image_tag:0.0.9-95",
+				"kube_container_name:mss-service",
+				"kube_deployment:mss-service",
+				"app.kubernetes.io/name:mss-service",
+				"pod_phase:running",
+				"pod-template-hash:699cd956f6",
+				"kube_replica_set:mss-service-699cd956f6",
+				"pod_name:mss-service-699cd956f6-8qcwq"
+			]
+		},
+		"container_id://d03843af30173ed07969f502d3481d0f2fa9cf9661cc1f75a8193d01a59d14f0": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:gateway-service-f8574d4cc-s9th6",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause"
+			]
+		},
+		"container_id://d31738cd2d985696d589d3b34b8bac119f4579e7bfaf5600e5f975c365863c4b": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"image_tag:localpatch",
+				"docpod_name:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b-log-router-2bw9m",
+				"docker_image:karank/kube-fluentd-operator:localpatch",
+				"image_name:karank/kube-fluentd-operator",
+				"short_image:kube-fluentd-operator"
+			]
+		},
+		"container_id://d4b24d6343b5e007ff818161f11a3968141e855ef861f528e0da50269b6da228": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_instance:constellationui",
+				"docker_image:cirrus-docker.jfrog.io/constellationui/service:8.5.1-rc-latest",
+				"app.kubernetes.io/name:constellation-customer-content85",
+				"image_name:cirrus-docker.jfrog.io/constellationui/service",
+				"app.kubernetes.io/instance:constellationui",
+				"pod_phase:running",
+				"kube_deployment:constellation-customer-content85",
+				"kube_namespace:c11n",
+				"short_image:service",
+				"docpod_name:constellation-customer-content85-c78f466cf-45khh",
+				"kube_container_name:constellation-customer-content85",
+				"image_tag:8.5.1-rc-latest",
+				"pod-template-hash:c78f466cf",
+				"kube_app_name:constellation-customer-content85",
+				"kube_service:constellation-customer-content85",
+				"kube_replica_set:constellation-customer-content85-c78f466cf",
+				"pod_name:constellation-customer-content85-c78f466cf-45khh"
+			]
+		},
+		"container_id://d4deaf8e15cbe33f5bb8531c8cd4105cc5656c9e265d5a74e89a5cae7031edf1": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:dx-case-service-658ddf4bdc-gzjdx",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1"
+			]
+		},
+		"container_id://d6d5dbdacae77d3ca165f641fad12a4eb9f4d617ea5d4294daa4a58c76615ab5": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_instance:dx-case-service",
+				"docker_image:jaegertracing/jaeger-agent:1.18.0",
+				"pod-template-hash:f5bbcd9c9",
+				"image_name:jaegertracing/jaeger-agent",
+				"app.kubernetes.io/instance:dx-case-service",
+				"short_image:jaeger-agent",
+				"kube_namespace:test2",
+				"kube_service:dx-case-servicemonitoring",
+				"kube_service:dx-case-service",
+				"kube_container_name:jaeger-agent",
+				"image_tag:1.18.0",
+				"pod_phase:running",
+				"docpod_name:dx-case-service-f5bbcd9c9-bv4f4",
+				"app.kubernetes.io/name:dx-case-service",
+				"kube_app_name:dx-case-service",
+				"kube_deployment:dx-case-service",
+				"kube_replica_set:dx-case-service-f5bbcd9c9",
+				"pod_name:dx-case-service-f5bbcd9c9-bv4f4"
+			]
+		},
+		"container_id://d6eec25636ceccc600f416b7769578f63f6c4512dc003b139a4ca69e89af42ff": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"image_name:jaegertracing/jaeger-agent",
+				"image_tag:1.18.0",
+				"docpod_name:dx-case-service-6856b75d54-6vhz8",
+				"pod_phase:running",
+				"kube_app_name:dx-case-service",
+				"kube_app_instance:dx-case-service",
+				"kube_deployment:dx-case-service",
+				"short_image:jaeger-agent",
+				"kube_container_name:jaeger-agent",
+				"pod-template-hash:6856b75d54",
+				"app.kubernetes.io/instance:dx-case-service",
+				"kube_service:dx-case-service",
+				"kube_namespace:keystone-dev",
+				"docker_image:jaegertracing/jaeger-agent:1.18.0",
+				"app.kubernetes.io/name:dx-case-service",
+				"kube_replica_set:dx-case-service-6856b75d54",
+				"pod_name:dx-case-service-6856b75d54-6vhz8"
+			]
+		},
+		"container_id://d72b79ca8b2751efce1b6348d4735d8c24a891ea4f1b208bfb767415a51dbd00": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"image_name:karank/kube-fluentd-operator",
+				"short_image:kube-fluentd-operator",
+				"image_tag:patchfix",
+				"docpod_name:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b-log-router-clndn",
+				"docker_image:karank/kube-fluentd-operator:patchfix"
+			]
+		},
+		"container_id://d7ea2f8065a292a2a46ba8df3d0ae8b4c550f21a96d88a6c00c792cf561439d3": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"statefulset.kubernetes.io/pod-name:elasticsearch-master-1",
+				"app:elasticsearch",
+				"docpod_name:elasticsearch-master-1",
+				"component:master",
+				"kube_stateful_set:elasticsearch-master",
+				"release:elasticsearch",
+				"kube_container_name:sysctl",
+				"pod_phase:running",
+				"kube_namespace:ops",
+				"controller-revision-hash:elasticsearch-master-6c96cc479c",
+				"role:master",
+				"short_image:busybox",
+				"image_tag:latest",
+				"persistentvolumeclaim:data-elasticsearch-master-1",
+				"docker_image:busybox:latest",
+				"image_name:busybox",
+				"pod_name:elasticsearch-master-1"
+			]
+		},
+		"container_id://d9b296eb396f1cf72751bbea711511cf48c06a71856a982fc76634ba5276399d": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_namespace:orion",
+				"app.kubernetes.io/name:authentication-service",
+				"image_name:704449933085.dkr.ecr.us-east-1.amazonaws.com/orion",
+				"kube_deployment:authentication-service",
+				"pod-template-hash:b9d9c5d",
+				"kube_app_name:authentication-service",
+				"kube_container_name:mas",
+				"image_tag:auth-service",
+				"app.kubernetes.io/instance:authentication-svc",
+				"docker_image:704449933085.dkr.ecr.us-east-1.amazonaws.com/orion:auth-service",
+				"kube_app_instance:authentication-svc",
+				"pod_phase:running",
+				"short_image:orion",
+				"kube_service:authentication-service",
+				"docpod_name:authentication-service-b9d9c5d-qn5pk",
+				"pod_name:authentication-service-b9d9c5d-qn5pk",
+				"kube_replica_set:authentication-service-b9d9c5d"
+			]
+		},
+		"container_id://ddba15cab12b1be0bdf56f0bbece577095c3ed85842ad30b94b342821f6f3617": {
+			"sources": [
+				"kubelet",
+				"docker",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"kube_namespace:monitoring",
+				"image_tag:1.6.0-1",
+				"kube_daemon_set:datadog",
+				"docker_image:cirrus-docker.jfrog.io/datadogmonitoring/datadog:1.6.0-1",
+				"docpod_name:datadog-6ldcj",
+				"short_image:datadog",
+				"app:datadog",
+				"image_name:cirrus-docker.jfrog.io/datadogmonitoring/datadog",
+				"kube_container_name:datadog",
+				"controller-revision-hash:5d84655fd5",
+				"pod-template-generation:1",
+				"pod_phase:running",
+				"pod_name:datadog-6ldcj"
+			]
+		},
+		"container_id://e9ae4b56f4f182c5b4aacdadb8a649b2e4077e38aabe8368e5e8f504658cf289": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"kube_service:integration-gateway-service",
+				"kube_app_name:integration-gateway-service",
+				"app.kubernetes.io/name:integration-gateway-service",
+				"kube_container_name:integration-gateway-service",
+				"kube_namespace:integrationgateway-dev",
+				"image_tag:latest",
+				"app.kubernetes.io/instance:integration-gateway-service",
+				"docpod_name:integration-gateway-service-54f8889b5-7dhkq",
+				"kube_app_instance:integration-gateway-service",
+				"pod-template-hash:54f8889b5",
+				"kube_deployment:integration-gateway-service",
+				"docker_image:cirrus-docker.jfrog.io/platform-services/integration-gateway-service:latest",
+				"image_name:cirrus-docker.jfrog.io/platform-services/integration-gateway-service",
+				"short_image:integration-gateway-service",
+				"pod_phase:running",
+				"pod_name:integration-gateway-service-54f8889b5-7dhkq",
+				"kube_replica_set:integration-gateway-service-54f8889b5"
+			]
+		},
+		"container_id://ed6613b2dd61b87c7fbc8645ab9096f693d2bf8a5ab9e0267e32731f0a600181": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:orion-gw-standalone-6c8674bd8c-jdznr"
+			]
+		},
+		"container_id://eeb62a322c1fd9314ac84dbdca03a812cae8be3882e94ffc811831b6d65343d2": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pod_phase:running",
+				"app.kubernetes.io/instance:mock-authentication-service",
+				"image_tag:1.18.0",
+				"pod-template-hash:7bb669cc5d",
+				"image_name:jaegertracing/jaeger-agent",
+				"kube_namespace:prod",
+				"short_image:jaeger-agent",
+				"kube_deployment:authentication-service",
+				"kube_service:authentication-service",
+				"docker_image:jaegertracing/jaeger-agent:1.18.0",
+				"kube_app_name:authentication-service",
+				"kube_container_name:jaeger-agent",
+				"app.kubernetes.io/name:authentication-service",
+				"kube_app_instance:mock-authentication-service",
+				"docpod_name:authentication-service-7bb669cc5d-wjjm4",
+				"pod_name:authentication-service-7bb669cc5d-wjjm4",
+				"kube_replica_set:authentication-service-7bb669cc5d"
+			]
+		},
+		"container_id://f3c209860e2fc3086c4ff8dfaea6396e5b0a89dca6ab4af65fc1b1f3bc55a47f": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:ui-view-service-678486d9b4-fqzdj",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1"
+			]
+		},
+		"container_id://f49675359ede74727262f2cbc2ce568a199caeed4bb0e9deba2cacdecc68b8f5": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"docpod_name:data-service-58975b4745-w5kqt",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1"
+			]
+		},
+		"container_id://f786a4cf9247d3e4de68f6f4f9455e186df09ac53a3959f86864ee84fc2975c8": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:authentication-service-b9d9c5d-qn5pk"
+			]
+		},
+		"container_id://f7d7ed2f11b385cf5e4bbcffb45ed4a9659cef74a181cb8399939e599abf2411": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"docpod_name:authentication-service-5f7559bddc-9dkmt",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1"
+			]
+		},
+		"container_id://f843ea7ee213dafa18bc17bd00bce86f6b57ad909f1c39c068c4a039c10aa5fb": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause",
+				"short_image:pause",
+				"image_tag:3.1-eksbuild.1",
+				"docpod_name:data-service-58975b4745-l5pnc",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/pause:3.1-eksbuild.1"
+			]
+		},
+		"container_id://fe384b7e0df8168680a9de270b676818c5a4c661312d4e4e859797f3e87ef35c": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pod_phase:running",
+				"k8s-app:kube-proxy",
+				"controller-revision-hash:68d6584976",
+				"image_name:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy",
+				"docker_image:602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.16.13-eksbuild.1",
+				"pod-template-generation:1",
+				"kube_daemon_set:kube-proxy",
+				"kube_container_name:kube-proxy",
+				"short_image:kube-proxy",
+				"docpod_name:kube-proxy-79z54",
+				"kube_namespace:kube-system",
+				"image_tag:v1.16.13-eksbuild.1",
+				"pod_name:kube-proxy-79z54"
+			]
+		},
+		"container_id://fecfbeed03383e1a8d6dfa7eba920e0acda80c109636abf6712df3c091c82800": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pod_phase:running",
+				"kube_namespace:morza-17-11-2020automatic",
+				"docker_image:cirrus-docker.jfrog.io/model-storage/docker-image:0.0.9-95",
+				"short_image:docker-image",
+				"kube_app_instance:model-storage-service",
+				"app.kubernetes.io/instance:model-storage-service",
+				"image_name:cirrus-docker.jfrog.io/model-storage/docker-image",
+				"app.kubernetes.io/name:mss-service",
+				"docpod_name:mss-service-7bfbb5f86b-xjrqq",
+				"kube_container_name:mss-service",
+				"kube_deployment:mss-service",
+				"image_tag:0.0.9-95",
+				"kube_service:mss-service",
+				"kube_service:mss-servicemonitoring",
+				"kube_app_name:mss-service",
+				"pod-template-hash:7bfbb5f86b",
+				"pod_name:mss-service-7bfbb5f86b-xjrqq",
+				"kube_replica_set:mss-service-7bfbb5f86b"
+			]
+		},
+		"container_id://feea327b14f4705549cfb9504b065025b6df4e897439eb8a131f3b839b4eb6e4": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"image_name:karank/kube-fluentd-operator",
+				"pod-template-generation:24",
+				"app:log-router",
+				"image_tag:patchfix",
+				"docker_image:karank/kube-fluentd-operator:patchfix",
+				"docpod_name:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b-log-router-clndn",
+				"release:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b",
+				"controller-revision-hash:5ddc7bfc45",
+				"pod_phase:running",
+				"short_image:kube-fluentd-operator",
+				"kube_daemon_set:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b-log-router",
+				"kube_namespace:logging",
+				"kube_container_name:fluentd",
+				"pod_name:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b-log-router-clndn"
+			]
+		},
+		"kubernetes_pod_uid://01aa7bbd-b7d7-48c0-a99b-b7c8484a60f4": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_namespace:integrationgateway",
+				"kube_app_instance:integration-gateway-service",
+				"app.kubernetes.io/instance:integration-gateway-service",
+				"pod_phase:running",
+				"kube_service:integration-gateway-service",
+				"kube_deployment:integration-gateway-service",
+				"kube_app_name:integration-gateway-service",
+				"app.kubernetes.io/name:integration-gateway-service",
+				"pod-template-hash:54f8889b5",
+				"pod_name:integration-gateway-service-54f8889b5-54vsc",
+				"kube_replica_set:integration-gateway-service-54f8889b5"
+			]
+		},
+		"kubernetes_pod_uid://054c2dff-710c-44e1-aefc-21da71dbbb12": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_deployment:ui-view-service",
+				"kube_namespace:staging",
+				"app.kubernetes.io/name:ui-view-service",
+				"pod-template-hash:757c5fbfd4",
+				"kube_service:ui-view-service",
+				"kube_app_instance:ui-view-service",
+				"app.kubernetes.io/instance:ui-view-service",
+				"pod_phase:running",
+				"kube_app_name:ui-view-service",
+				"pod_name:ui-view-service-757c5fbfd4-ljxqq",
+				"kube_replica_set:ui-view-service-757c5fbfd4"
+			]
+		},
+		"kubernetes_pod_uid://118453b9-3caa-46bc-99e7-2c9f8a437a19": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"app.kubernetes.io/instance:data-service",
+				"kube_service:data-service",
+				"pod-template-hash:58975b4745",
+				"kube_namespace:prod",
+				"kube_app_instance:data-service",
+				"kube_app_name:data-service",
+				"app.kubernetes.io/name:data-service",
+				"pod_phase:running",
+				"kube_deployment:data-service",
+				"pod_name:data-service-58975b4745-xn28m",
+				"kube_replica_set:data-service-58975b4745"
+			]
+		},
+		"kubernetes_pod_uid://126a969b-5d5a-4fde-90b1-591253ba1eb1": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pod-template-hash:58975b4745",
+				"pod_phase:running",
+				"kube_namespace:prod",
+				"kube_app_instance:data-service",
+				"app.kubernetes.io/name:data-service",
+				"kube_deployment:data-service",
+				"app.kubernetes.io/instance:data-service",
+				"kube_app_name:data-service",
+				"kube_service:data-service",
+				"pod_name:data-service-58975b4745-8hgmv",
+				"kube_replica_set:data-service-58975b4745"
+			]
+		},
+		"kubernetes_pod_uid://13ec2263-c35c-440c-acea-bf5c7387caee": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_service:elasticsearch-discovery",
+				"kube_stateful_set:elasticsearch-master",
+				"persistentvolumeclaim:data-elasticsearch-master-1",
+				"component:master",
+				"controller-revision-hash:elasticsearch-master-6c96cc479c",
+				"app:elasticsearch",
+				"pod_phase:running",
+				"kube_namespace:ops",
+				"release:elasticsearch",
+				"role:master",
+				"statefulset.kubernetes.io/pod-name:elasticsearch-master-1",
+				"pod_name:elasticsearch-master-1"
+			]
+		},
+		"kubernetes_pod_uid://16335dde-1653-4bd8-b9db-ea25ef5e5026": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_instance:dx-case-service",
+				"app.kubernetes.io/instance:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"pod-template-hash:79d489b95b",
+				"kube_deployment:dx-case-service",
+				"kube_namespace:prod",
+				"kube_service:dx-case-service",
+				"kube_app_name:dx-case-service",
+				"pod_phase:running",
+				"kube_replica_set:dx-case-service-79d489b95b",
+				"pod_name:dx-case-service-79d489b95b-7fp7b"
+			]
+		},
+		"kubernetes_pod_uid://169d640f-5798-4e10-b717-b73a6177ea0a": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pod-template-hash:79d489b95b",
+				"kube_app_instance:dx-case-service",
+				"app.kubernetes.io/instance:dx-case-service",
+				"kube_service:dx-case-service",
+				"pod_phase:running",
+				"kube_deployment:dx-case-service",
+				"kube_namespace:prod",
+				"kube_app_name:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"pod_name:dx-case-service-79d489b95b-czrfd",
+				"kube_replica_set:dx-case-service-79d489b95b"
+			]
+		},
+		"kubernetes_pod_uid://1a1063f3-ac18-4eee-9c22-e94bc60a00ff": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_service:dx-case-service",
+				"kube_namespace:keystone-dev",
+				"kube_app_name:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"pod-template-hash:6856b75d54",
+				"kube_app_instance:dx-case-service",
+				"app.kubernetes.io/instance:dx-case-service",
+				"pod_phase:running",
+				"kube_deployment:dx-case-service",
+				"pod_name:dx-case-service-6856b75d54-6vhz8",
+				"kube_replica_set:dx-case-service-6856b75d54"
+			]
+		},
+		"kubernetes_pod_uid://1cdac6b9-5949-4b50-92e8-67cdcd0f6e4b": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pega/isolationID:rnd-staging-aia",
+				"pod-template-hash:86f4b6b5f7",
+				"app.kubernetes.io/managed-by:Helm",
+				"kube_deployment:orion-gw-standalone",
+				"kube_service:orion-gw-standalone",
+				"kube_app_instance:orion-gw",
+				"helm.sh/chart:standalone-0.3.10-SNAPSHOT",
+				"pega/isolationName:orion",
+				"kube_app_version:0.1.0",
+				"pega/modelName:review",
+				"kube_namespace:staging",
+				"app.kubernetes.io/name:standalone",
+				"pod_phase:running",
+				"app.kubernetes.io/instance:orion-gw",
+				"kube_app_name:standalone",
+				"app.kubernetes.io/version:0.1.0",
+				"pega/modelID:orion-sprint-20-23-currency-perct-6",
+				"kube_app_managed_by:Helm",
+				"kube_replica_set:orion-gw-standalone-86f4b6b5f7",
+				"pod_name:orion-gw-standalone-86f4b6b5f7-47zzv"
+			]
+		},
+		"kubernetes_pod_uid://1fe66dbb-0fe7-4a8a-a9c8-aa4192d62eb0": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"pod-template-hash:58975b4745",
+				"kube_app_name:data-service",
+				"app.kubernetes.io/name:data-service",
+				"kube_deployment:data-service",
+				"kube_namespace:prod",
+				"kube_service:data-service",
+				"kube_app_instance:data-service",
+				"app.kubernetes.io/instance:data-service",
+				"pod_phase:running",
+				"pod_name:data-service-58975b4745-g4h4m",
+				"kube_replica_set:data-service-58975b4745"
+			]
+		},
+		"kubernetes_pod_uid://217fac3c-0d9a-4b3e-bb17-65513f966688": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_name:dx-case-service",
+				"pod_phase:pending",
+				"kube_namespace:sharks-test",
+				"pod-template-hash:d9669b5c5",
+				"app.kubernetes.io/instance:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"kube_deployment:dx-case-service",
+				"kube_app_instance:dx-case-service",
+				"pod_name:dx-case-service-d9669b5c5-5r4rb",
+				"kube_replica_set:dx-case-service-d9669b5c5"
+			]
+		},
+		"kubernetes_pod_uid://2272a5b4-89f9-46b1-b47f-0946bbfebc76": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pod-template-hash:54f8889b5",
+				"pod_phase:running",
+				"kube_deployment:integration-gateway-service",
+				"kube_namespace:integrationgateway-dev",
+				"app.kubernetes.io/name:integration-gateway-service",
+				"kube_service:integration-gateway-service",
+				"kube_app_instance:integration-gateway-service",
+				"app.kubernetes.io/instance:integration-gateway-service",
+				"kube_app_name:integration-gateway-service",
+				"pod_name:integration-gateway-service-54f8889b5-7dhkq",
+				"kube_replica_set:integration-gateway-service-54f8889b5"
+			]
+		},
+		"kubernetes_pod_uid://2477aea1-e18b-4750-86a4-882b97b4c15b": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"kube_namespace:morza-test-gw",
+				"kube_app_name:gateway-service",
+				"app.kubernetes.io/name:gateway-service",
+				"kube_service:gateway-service",
+				"kube_deployment:gateway-service",
+				"app.kubernetes.io/instance:gateway-service",
+				"pod_phase:running",
+				"pod-template-hash:5b5c667d76",
+				"kube_app_instance:gateway-service",
+				"pod_name:gateway-service-5b5c667d76-77x59",
+				"kube_replica_set:gateway-service-5b5c667d76"
+			]
+		},
+		"kubernetes_pod_uid://25d48215-da53-4c4a-83dd-25a65b527ca2": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pod-template-generation:24",
+				"release:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b",
+				"pod_phase:running",
+				"kube_daemon_set:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b-log-router",
+				"kube_namespace:logging",
+				"app:log-router",
+				"controller-revision-hash:5ddc7bfc45",
+				"pod_name:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b-log-router-clndn"
+			]
+		},
+		"kubernetes_pod_uid://2744ba15-7d15-42a5-a2f1-8594f623387c": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_name:mss-service",
+				"pod-template-hash:7bfbb5f86b",
+				"pod_phase:running",
+				"kube_deployment:mss-service",
+				"kube_namespace:morza-17-11-2020automatic",
+				"app.kubernetes.io/instance:model-storage-service",
+				"kube_service:mss-service",
+				"kube_service:mss-servicemonitoring",
+				"kube_app_instance:model-storage-service",
+				"app.kubernetes.io/name:mss-service",
+				"pod_name:mss-service-7bfbb5f86b-xjrqq",
+				"kube_replica_set:mss-service-7bfbb5f86b"
+			]
+		},
+		"kubernetes_pod_uid://2a9cba59-d004-4fc9-a7c9-d914c45643bc": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_service:gateway-service-1603977279-standalone",
+				"pega/modelID:c4244f5c-b473-46e4-a483-ab7fe1c92698",
+				"pega/isolationName:uiview",
+				"helm.sh/chart:standalone-0.3.9-SNAPSHOT",
+				"kube_app_instance:gateway-service-1603977279",
+				"kube_app_name:standalone",
+				"kube_deployment:gateway-service-1603977279-standalone",
+				"app.kubernetes.io/managed-by:Helm",
+				"kube_app_version:0.1.0",
+				"pega/isolationID:uiview-dev-aia",
+				"app.kubernetes.io/instance:gateway-service-1603977279",
+				"pega/modelName:aia",
+				"app.kubernetes.io/version:0.1.0",
+				"pod_phase:running",
+				"kube_app_managed_by:Helm",
+				"kube_namespace:staging",
+				"app.kubernetes.io/name:standalone",
+				"pod-template-hash:646db8c56c",
+				"pod_name:gateway-service-1603977279-standalone-646db8c56c-q8pd8",
+				"kube_replica_set:gateway-service-1603977279-standalone-646db8c56c"
+			]
+		},
+		"kubernetes_pod_uid://2dbcce93-a19a-4375-9239-72da1261e330": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_name:dx-case-service",
+				"pod-template-hash:864cc46556",
+				"pod_phase:running",
+				"kube_namespace:orion",
+				"app.kubernetes.io/instance:dx-case-service",
+				"kube_deployment:dx-case-service",
+				"kube_app_instance:dx-case-service",
+				"kube_service:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"pod_name:dx-case-service-864cc46556-7bcpp",
+				"kube_replica_set:dx-case-service-864cc46556"
+			]
+		},
+		"kubernetes_pod_uid://2e0980d9-96c0-4dbc-b6e5-033858f85782": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_deployment:operator-management-service",
+				"kube_app_instance:n3eca355-b738-4cdb-bdb6-ceee75e97070",
+				"app.kubernetes.io/name:operator-management-service",
+				"pod-template-hash:54c58654",
+				"kube_namespace:keystone-dev7",
+				"app.kubernetes.io/instance:n3eca355-b738-4cdb-bdb6-ceee75e97070",
+				"kube_app_name:operator-management-service",
+				"pod_phase:pending",
+				"pod_name:operator-management-service-54c58654-jgkdg",
+				"kube_replica_set:operator-management-service-54c58654"
+			]
+		},
+		"kubernetes_pod_uid://2e8a53b2-9144-4d95-990f-b1fa9ea22081": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_name:constellation-customer-content",
+				"kube_deployment:constellation-customer-content",
+				"kube_app_instance:constellationui",
+				"app.kubernetes.io/name:constellation-customer-content",
+				"pod-template-hash:569fc74bd5",
+				"pod_phase:running",
+				"kube_service:constellation-customer-content",
+				"kube_namespace:c11n",
+				"app.kubernetes.io/instance:constellationui",
+				"pod_name:constellation-customer-content-569fc74bd5-4mm2q",
+				"kube_replica_set:constellation-customer-content-569fc74bd5"
+			]
+		},
+		"kubernetes_pod_uid://304132db-553b-43fe-8a5b-68d805116726": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pod-template-hash:7786c7444f",
+				"pega/isolationName:cnrall",
+				"app.kubernetes.io/version:0.1.0",
+				"pod_phase:running",
+				"app.kubernetes.io/name:standalone",
+				"kube_app_version:0.1.0",
+				"pega/modelID:e9b656c1-3083-4f10-ba5f-8986f69afb31",
+				"kube_deployment:gateway-service-1604646932-standalone",
+				"app.kubernetes.io/managed-by:Helm",
+				"kube_namespace:prod",
+				"helm.sh/chart:standalone-0.3.9-SNAPSHOT",
+				"pega/modelName:aia",
+				"kube_service:gateway-service-1604646932-standalone",
+				"app.kubernetes.io/instance:gateway-service-1604646932",
+				"kube_app_managed_by:Helm",
+				"kube_app_instance:gateway-service-1604646932",
+				"kube_app_name:standalone",
+				"pega/isolationID:rnd-prod-cnrall-aia",
+				"pod_name:gateway-service-1604646932-standalone-7786c7444f-lmnzr",
+				"kube_replica_set:gateway-service-1604646932-standalone-7786c7444f"
+			]
+		},
+		"kubernetes_pod_uid://38f63aa3-145e-42df-a46b-6b329a187b15": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"app.kubernetes.io/instance:gateway-service",
+				"kube_deployment:gateway-service",
+				"kube_namespace:cnd-dev",
+				"kube_app_name:gateway-service",
+				"app.kubernetes.io/name:gateway-service",
+				"pod-template-hash:d4c67f58",
+				"pod_phase:running",
+				"kube_app_instance:gateway-service",
+				"kube_replica_set:gateway-service-d4c67f58",
+				"pod_name:gateway-service-d4c67f58-l9brj"
+			]
+		},
+		"kubernetes_pod_uid://3bedd68a-6728-4032-b9d6-4e52a326ce4e": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"app.kubernetes.io/name:gateway-service",
+				"kube_deployment:gateway-service",
+				"kube_service:gateway-service",
+				"pod-template-hash:84c5dccb59",
+				"pod_phase:running",
+				"kube_namespace:cnd-dev",
+				"kube_app_instance:gateway-service",
+				"app.kubernetes.io/instance:gateway-service",
+				"kube_app_name:gateway-service",
+				"pod_name:gateway-service-84c5dccb59-2gmxl",
+				"kube_replica_set:gateway-service-84c5dccb59"
+			]
+		},
+		"kubernetes_pod_uid://3c095e4c-5296-4232-b30b-f232460fbf8f": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_deployment:gateway-service-1604588859-standalone",
+				"pega/isolationID:rnd-staging-aia",
+				"kube_app_version:0.1.0",
+				"pega/isolationName:cnrstaging",
+				"pod_phase:running",
+				"helm.sh/chart:standalone-0.3.10-SNAPSHOT",
+				"app.kubernetes.io/name:standalone",
+				"app.kubernetes.io/version:0.1.0",
+				"kube_app_name:standalone",
+				"kube_service:gateway-service-1604588859-standalone",
+				"pega/modelName:aia",
+				"kube_app_instance:gateway-service-1604588859",
+				"app.kubernetes.io/instance:gateway-service-1604588859",
+				"app.kubernetes.io/managed-by:Helm",
+				"pod-template-hash:7ccb45bd49",
+				"kube_namespace:staging",
+				"pega/modelID:19d3e8d5-75bb-46a3-9bf4-db9764d81854",
+				"kube_app_managed_by:Helm",
+				"pod_name:gateway-service-1604588859-standalone-7ccb45bd49-v5znk",
+				"kube_replica_set:gateway-service-1604588859-standalone-7ccb45bd49"
+			]
+		},
+		"kubernetes_pod_uid://3ccfa1de-16db-4843-931d-e9c0f7d3ae54": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pega/modelID:e9b656c1-3083-4f10-ba5f-8986f69afb31",
+				"kube_app_name:standalone",
+				"app.kubernetes.io/instance:gateway-service-1604646955",
+				"app.kubernetes.io/managed-by:Helm",
+				"pega/modelName:aia",
+				"kube_app_version:0.1.0",
+				"kube_deployment:gateway-service-1604646955-standalone",
+				"kube_namespace:prod",
+				"helm.sh/chart:standalone-0.3.9-SNAPSHOT",
+				"app.kubernetes.io/name:standalone",
+				"pega/isolationID:rnd-prod-cnrdev-aia",
+				"app.kubernetes.io/version:0.1.0",
+				"pod-template-hash:6cd5f9768d",
+				"kube_app_managed_by:Helm",
+				"pega/isolationName:cnrdev",
+				"kube_app_instance:gateway-service-1604646955",
+				"pod_phase:running",
+				"pod_name:gateway-service-1604646955-standalone-6cd5f9768d-m6h8v",
+				"kube_replica_set:gateway-service-1604646955-standalone-6cd5f9768d"
+			]
+		},
+		"kubernetes_pod_uid://3cd295f0-cc8d-44d2-8aea-b0d2dca66762": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"app.kubernetes.io/name:standalone",
+				"pega/modelName:aia",
+				"app.kubernetes.io/version:0.1.0",
+				"pega/isolationName:cnrstaging",
+				"app.kubernetes.io/instance:gateway-service-1604588859",
+				"pega/isolationID:rnd-staging-aia",
+				"kube_app_instance:gateway-service-1604588859",
+				"kube_namespace:staging",
+				"pod_phase:running",
+				"pod-template-hash:6b5fc646fd",
+				"pega/modelID:19d3e8d5-75bb-46a3-9bf4-db9764d81854",
+				"kube_app_version:0.1.0",
+				"kube_app_name:standalone",
+				"kube_deployment:gateway-service-1604588859-standalone",
+				"kube_app_managed_by:Helm",
+				"helm.sh/chart:standalone-0.3.10-SNAPSHOT",
+				"app.kubernetes.io/managed-by:Helm",
+				"pod_name:gateway-service-1604588859-standalone-6b5fc646fd-c2m2f",
+				"kube_replica_set:gateway-service-1604588859-standalone-6b5fc646fd"
+			]
+		},
+		"kubernetes_pod_uid://3f4998b6-e1d3-472c-bdea-2975cf0a4298": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_managed_by:Helm",
+				"pega/isolationName:sharks02",
+				"kube_app_name:standalone",
+				"app.kubernetes.io/instance:travel-app-manual-testing",
+				"kube_app_version:0.1.0",
+				"app.kubernetes.io/managed-by:Helm",
+				"helm.sh/chart:standalone-0.3.9-SNAPSHOT",
+				"kube_deployment:travel-app-manual-testing-standalone",
+				"app.kubernetes.io/version:0.1.0",
+				"pod-template-hash:6b8df78dc",
+				"kube_namespace:staging",
+				"kube_service:travel-app-manual-testing-standalone",
+				"pega/modelName:travelse",
+				"kube_app_instance:travel-app-manual-testing",
+				"pega/isolationID:sharks02",
+				"app.kubernetes.io/name:standalone",
+				"pega/modelID:b84b820e-6f33-4ff1-bba7-1cb48fbac905_tweaked",
+				"pod_phase:running",
+				"kube_replica_set:travel-app-manual-testing-standalone-6b8df78dc",
+				"pod_name:travel-app-manual-testing-standalone-6b8df78dc-8t6tl"
+			]
+		},
+		"kubernetes_pod_uid://46c88a25-877d-48f1-ae55-0ec961a79ad3": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"app.kubernetes.io/name:gateway-service",
+				"kube_deployment:gateway-service",
+				"pod_phase:running",
+				"kube_namespace:cnd-dev",
+				"kube_app_instance:gateway-service",
+				"app.kubernetes.io/instance:gateway-service",
+				"kube_app_name:gateway-service",
+				"pod-template-hash:5fb8df4776",
+				"kube_replica_set:gateway-service-5fb8df4776",
+				"pod_name:gateway-service-5fb8df4776-957w7"
+			]
+		},
+		"kubernetes_pod_uid://484dd26a-3595-4975-a0bf-e9d6116dbe89": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_name:data-service",
+				"app.kubernetes.io/name:data-service",
+				"pod_phase:running",
+				"kube_deployment:data-service",
+				"kube_app_instance:data-service",
+				"app.kubernetes.io/instance:data-service",
+				"pod-template-hash:58975b4745",
+				"kube_namespace:prod",
+				"kube_service:data-service",
+				"kube_replica_set:data-service-58975b4745",
+				"pod_name:data-service-58975b4745-w5kqt"
+			]
+		},
+		"kubernetes_pod_uid://490da332-17b1-4dc0-9e56-2995bf71eae2": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"controller-revision-hash:5999c6cb9b",
+				"kube_namespace:kube-system",
+				"app.kubernetes.io/name:kube2iam",
+				"pod-template-generation:1",
+				"kube_daemon_set:n2a98b14-597e-422c-89b0-d4f8352db29a-kube2iam",
+				"pod_phase:running",
+				"kube_app_instance:n2a98b14-597e-422c-89b0-d4f8352db29a",
+				"app.kubernetes.io/instance:n2a98b14-597e-422c-89b0-d4f8352db29a",
+				"kube_app_name:kube2iam",
+				"pod_name:n2a98b14-597e-422c-89b0-d4f8352db29a-kube2iam-kxng5"
+			]
+		},
+		"kubernetes_pod_uid://4b009136-6438-4dc7-ad0a-0f1e14a163ed": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pod_phase:running",
+				"kube_deployment:dx-case-service",
+				"app.kubernetes.io/instance:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"kube_namespace:orion",
+				"kube_app_instance:dx-case-service",
+				"kube_service:dx-case-service",
+				"kube_app_name:dx-case-service",
+				"pod-template-hash:864cc46556",
+				"pod_name:dx-case-service-864cc46556-fxqcv",
+				"kube_replica_set:dx-case-service-864cc46556"
+			]
+		},
+		"kubernetes_pod_uid://4bb1843b-0e94-4d58-8693-26c1373e9ad0": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"app.kubernetes.io/version:0.1.0",
+				"pod_phase:running",
+				"pega/modelName:review",
+				"kube_service:orion-gw-standalone",
+				"app.kubernetes.io/managed-by:Helm",
+				"app.kubernetes.io/name:standalone",
+				"pega/isolationID:rnd-staging-aia",
+				"kube_app_managed_by:Helm",
+				"kube_app_version:0.1.0",
+				"pod-template-hash:79c766cfb9",
+				"kube_namespace:staging",
+				"helm.sh/chart:standalone-0.3.10-SNAPSHOT",
+				"kube_app_instance:orion-gw",
+				"app.kubernetes.io/instance:orion-gw",
+				"pega/modelID:orion-sprint-20-23-currency-perct-picklist-2",
+				"pega/isolationName:orion",
+				"kube_app_name:standalone",
+				"kube_deployment:orion-gw-standalone",
+				"pod_name:orion-gw-standalone-79c766cfb9-cr45h",
+				"kube_replica_set:orion-gw-standalone-79c766cfb9"
+			]
+		},
+		"kubernetes_pod_uid://4c0420b5-e0c4-4b7d-8414-d52ee133c2e4": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_version:0.1.0",
+				"kube_app_managed_by:Helm",
+				"kube_namespace:staging",
+				"app.kubernetes.io/version:0.1.0",
+				"pega/modelID:e9b656c1-3083-4f10-ba5f-8986f69afb31",
+				"pega/isolationName:cnrstaging",
+				"pega/modelName:aia",
+				"kube_deployment:gateway-service-1604588859-standalone",
+				"pod-template-hash:546495d9d7",
+				"kube_app_name:standalone",
+				"kube_app_instance:gateway-service-1604588859",
+				"pega/isolationID:rnd-staging-aia",
+				"helm.sh/chart:standalone-0.3.10-SNAPSHOT",
+				"app.kubernetes.io/instance:gateway-service-1604588859",
+				"pod_phase:running",
+				"app.kubernetes.io/managed-by:Helm",
+				"app.kubernetes.io/name:standalone",
+				"kube_replica_set:gateway-service-1604588859-standalone-546495d9d7",
+				"pod_name:gateway-service-1604588859-standalone-546495d9d7-cc9pc"
+			]
+		},
+		"kubernetes_pod_uid://4caafa19-4337-42a2-930b-b01c4692d314": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"app.kubernetes.io/instance:mock-authentication-service",
+				"kube_app_name:authentication-service",
+				"pod-template-hash:5f7559bddc",
+				"kube_app_instance:mock-authentication-service",
+				"app.kubernetes.io/name:authentication-service",
+				"kube_service:authentication-service",
+				"pod_phase:running",
+				"kube_deployment:authentication-service",
+				"kube_namespace:keystone-dev",
+				"pod_name:authentication-service-5f7559bddc-9dkmt",
+				"kube_replica_set:authentication-service-5f7559bddc"
+			]
+		},
+		"kubernetes_pod_uid://4d5a3426-96e6-40e0-a0c2-740f7ef3cd3d": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pod-template-hash:79d6576d86",
+				"pod_phase:running",
+				"kube_namespace:cnd-dev",
+				"kube_app_instance:gateway-service",
+				"app.kubernetes.io/instance:gateway-service",
+				"kube_deployment:gateway-service",
+				"kube_app_name:gateway-service",
+				"app.kubernetes.io/name:gateway-service",
+				"pod_name:gateway-service-79d6576d86-nfkks",
+				"kube_replica_set:gateway-service-79d6576d86"
+			]
+		},
+		"kubernetes_pod_uid://4fb8847a-2477-4932-896c-6a514058e1a9": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"kube_app_instance:dx-case-service",
+				"kube_app_name:dx-case-service",
+				"pod-template-hash:864cc46556",
+				"kube_namespace:orion",
+				"app.kubernetes.io/instance:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"pod_phase:running",
+				"kube_deployment:dx-case-service",
+				"kube_service:dx-case-service",
+				"pod_name:dx-case-service-864cc46556-v2fxq",
+				"kube_replica_set:dx-case-service-864cc46556"
+			]
+		},
+		"kubernetes_pod_uid://55322433-899c-4fa5-8e6a-1cb4b8fa97bd": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"pod_phase:running",
+				"kube_deployment:gateway-service",
+				"kube_namespace:cnd-dev",
+				"app.kubernetes.io/instance:gateway-service",
+				"kube_app_name:gateway-service",
+				"app.kubernetes.io/name:gateway-service",
+				"pod-template-hash:79d6576d86",
+				"kube_app_instance:gateway-service",
+				"kube_replica_set:gateway-service-79d6576d86",
+				"pod_name:gateway-service-79d6576d86-nkdj9"
+			]
+		},
+		"kubernetes_pod_uid://573916ec-d256-483c-bda7-bf355cf4b6e7": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_name:standalone",
+				"kube_service:gateway-service-1605710975-standalone",
+				"app.kubernetes.io/managed-by:Helm",
+				"kube_namespace:cnd-dev2",
+				"app.kubernetes.io/version:0.1.0",
+				"kube_app_managed_by:Helm",
+				"pega/isolationID:cnd-iso-dev2",
+				"app.kubernetes.io/name:standalone",
+				"pod_phase:running",
+				"pod-template-hash:6ff8c5ddb9",
+				"kube_app_version:0.1.0",
+				"helm.sh/chart:standalone-0.3.10-SNAPSHOT",
+				"kube_app_instance:gateway-service-1605710975",
+				"app.kubernetes.io/instance:gateway-service-1605710975",
+				"pega/isolationName:cnddev2",
+				"pega/modelID:a76b3d22-e10f-4754-91e1-c458fb6f022d",
+				"kube_deployment:gateway-service-1605710975-standalone",
+				"pega/modelName:cndmodel1",
+				"kube_replica_set:gateway-service-1605710975-standalone-6ff8c5ddb9",
+				"pod_name:gateway-service-1605710975-standalone-6ff8c5ddb9-p2sqk"
+			]
+		},
+		"kubernetes_pod_uid://591fcf23-ad63-423c-9f11-f592f7bc5261": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"app.kubernetes.io/instance:data-service",
+				"kube_app_name:data-service",
+				"app.kubernetes.io/name:data-service",
+				"pod-template-hash:665c67bbb7",
+				"kube_service:data-service",
+				"pod_phase:running",
+				"kube_deployment:data-service",
+				"kube_namespace:staging",
+				"kube_app_instance:data-service",
+				"kube_replica_set:data-service-665c67bbb7",
+				"pod_name:data-service-665c67bbb7-47ztz"
+			]
+		},
+		"kubernetes_pod_uid://59bafbc1-7f51-41a2-8cc8-e99b4c5bb352": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"kube_service:integration-gateway-service",
+				"pod-template-hash:54f8889b5",
+				"kube_deployment:integration-gateway-service",
+				"kube_app_instance:integration-gateway-service",
+				"kube_namespace:integrationgateway",
+				"app.kubernetes.io/instance:integration-gateway-service",
+				"kube_app_name:integration-gateway-service",
+				"app.kubernetes.io/name:integration-gateway-service",
+				"pod_phase:running",
+				"kube_replica_set:integration-gateway-service-54f8889b5",
+				"pod_name:integration-gateway-service-54f8889b5-zxkn2"
+			]
+		},
+		"kubernetes_pod_uid://5d365e37-461e-444e-9e53-b4281ee6b4b5": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"kube_app_name:dx-case-service",
+				"pod-template-hash:79f799bf49",
+				"pod_phase:running",
+				"kube_namespace:sharks",
+				"kube_app_instance:dx-case-service",
+				"kube_deployment:dx-case-service",
+				"app.kubernetes.io/instance:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"kube_service:dx-case-servicemonitoring",
+				"kube_service:dx-case-service",
+				"kube_replica_set:dx-case-service-79f799bf49",
+				"pod_name:dx-case-service-79f799bf49-md8pt"
+			]
+		},
+		"kubernetes_pod_uid://5d406422-5f19-4e5f-8f1b-703a6917b29d": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"kube_service:constellation-customer-content85",
+				"kube_app_name:constellation-customer-content85",
+				"pod_phase:running",
+				"kube_namespace:c11n",
+				"kube_app_instance:constellationui",
+				"app.kubernetes.io/name:constellation-customer-content85",
+				"pod-template-hash:c78f466cf",
+				"kube_deployment:constellation-customer-content85",
+				"app.kubernetes.io/instance:constellationui",
+				"kube_replica_set:constellation-customer-content85-c78f466cf",
+				"pod_name:constellation-customer-content85-c78f466cf-45khh"
+			]
+		},
+		"kubernetes_pod_uid://5f2d6955-a9d7-4ce2-9e91-759d399a835c": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"app.kubernetes.io/instance:dx-case-service1",
+				"pod-template-hash:7967999cdb",
+				"kube_deployment:dx-case-service1",
+				"app.kubernetes.io/name:dx-case-service",
+				"pod_phase:running",
+				"kube_service:dx-case-service1",
+				"kube_namespace:keystone-dev",
+				"kube_app_instance:dx-case-service1",
+				"kube_app_name:dx-case-service",
+				"kube_replica_set:dx-case-service1-7967999cdb",
+				"pod_name:dx-case-service1-7967999cdb-22pxs"
+			]
+		},
+		"kubernetes_pod_uid://5f5826fe-f629-4164-8a40-5a8e4a67844e": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": []
+		},
+		"kubernetes_pod_uid://632c447b-eb60-4ef7-a766-ee631c78b660": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_service:ui-view-service",
+				"pod_phase:running",
+				"kube_deployment:ui-view-service",
+				"app.kubernetes.io/instance:ui-view-service",
+				"kube_app_instance:ui-view-service",
+				"kube_app_name:ui-view-service",
+				"app.kubernetes.io/name:ui-view-service",
+				"pod-template-hash:678486d9b4",
+				"kube_namespace:prod",
+				"kube_replica_set:ui-view-service-678486d9b4",
+				"pod_name:ui-view-service-678486d9b4-fqzdj"
+			]
+		},
+		"kubernetes_pod_uid://67d0b940-5e1f-44f9-b8b3-d43f2aae9473": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pod_phase:running",
+				"kube_deployment:data-service",
+				"kube_namespace:prod",
+				"kube_app_name:data-service",
+				"app.kubernetes.io/name:data-service",
+				"pod-template-hash:58975b4745",
+				"kube_app_instance:data-service",
+				"app.kubernetes.io/instance:data-service",
+				"kube_service:data-service",
+				"pod_name:data-service-58975b4745-ggdk7",
+				"kube_replica_set:data-service-58975b4745"
+			]
+		},
+		"kubernetes_pod_uid://6b4ef50e-9deb-4843-bc8f-11f1214a72f8": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pod-template-hash:77447f8c76",
+				"kube_service:orion-gw-standalone",
+				"app.kubernetes.io/name:standalone",
+				"pega/modelID:orion-sprint-20-23-currency-perct-picklist-3",
+				"kube_app_instance:orion-gw",
+				"app.kubernetes.io/instance:orion-gw",
+				"helm.sh/chart:standalone-0.3.10-SNAPSHOT",
+				"kube_deployment:orion-gw-standalone",
+				"kube_app_version:0.1.0",
+				"kube_app_name:standalone",
+				"app.kubernetes.io/version:0.1.0",
+				"pega/isolationID:rnd-staging-aia",
+				"pega/isolationName:orion",
+				"app.kubernetes.io/managed-by:Helm",
+				"kube_namespace:staging",
+				"pod_phase:running",
+				"kube_app_managed_by:Helm",
+				"pega/modelName:review",
+				"kube_replica_set:orion-gw-standalone-77447f8c76",
+				"pod_name:orion-gw-standalone-77447f8c76-wqmp7"
+			]
+		},
+		"kubernetes_pod_uid://7a95d767-bfc0-428c-b8c4-63ad815aa1e3": {
+			"sources": [
+				"kubelet",
+				"docker",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"pod-template-hash:58975b4745",
+				"pod_phase:running",
+				"kube_service:data-service",
+				"app.kubernetes.io/instance:data-service",
+				"kube_app_name:data-service",
+				"kube_app_instance:data-service",
+				"app.kubernetes.io/name:data-service",
+				"kube_deployment:data-service",
+				"kube_namespace:prod",
+				"pod_name:data-service-58975b4745-2j7p2",
+				"kube_replica_set:data-service-58975b4745"
+			]
+		},
+		"kubernetes_pod_uid://7bac5adf-3396-4599-bf49-777e81298f4b": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"pod-template-hash:66ffcf77d4",
+				"kube_deployment:mss-service",
+				"kube_namespace:morza-test-mss",
+				"kube_app_name:mss-service",
+				"kube_service:mss-service",
+				"kube_service:mss-servicemonitoring",
+				"pod_phase:running",
+				"kube_app_instance:model-storage-service",
+				"app.kubernetes.io/instance:model-storage-service",
+				"app.kubernetes.io/name:mss-service",
+				"pod_name:mss-service-66ffcf77d4-lj4g2",
+				"kube_replica_set:mss-service-66ffcf77d4"
+			]
+		},
+		"kubernetes_pod_uid://7eaef026-3c4a-4255-8cfe-332d6fa2d6ec": {
+			"sources": [
+				"kubelet",
+				"docker",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"app.kubernetes.io/instance:data-service",
+				"app.kubernetes.io/name:data-service",
+				"pod_phase:running",
+				"kube_deployment:data-service",
+				"kube_namespace:prod",
+				"kube_service:data-service",
+				"kube_app_instance:data-service",
+				"kube_app_name:data-service",
+				"pod-template-hash:58975b4745",
+				"pod_name:data-service-58975b4745-gcpc9",
+				"kube_replica_set:data-service-58975b4745"
+			]
+		},
+		"kubernetes_pod_uid://81f277ff-6d3c-4b0c-8e2f-304eed0c9338": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pod-template-hash:b9d9c5d",
+				"pod_phase:running",
+				"kube_service:authentication-service",
+				"kube_namespace:orion",
+				"app.kubernetes.io/instance:authentication-svc",
+				"kube_app_name:authentication-service",
+				"app.kubernetes.io/name:authentication-service",
+				"kube_app_instance:authentication-svc",
+				"kube_deployment:authentication-service",
+				"pod_name:authentication-service-b9d9c5d-2ls4s",
+				"kube_replica_set:authentication-service-b9d9c5d"
+			]
+		},
+		"kubernetes_pod_uid://851f050e-f75b-44ae-ae9c-1b8eadd6cf93": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"app.kubernetes.io/instance:dx-case-service",
+				"kube_deployment:dx-case-service",
+				"kube_namespace:orion",
+				"kube_service:dx-case-service",
+				"kube_app_name:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"pod-template-hash:658ddf4bdc",
+				"kube_app_instance:dx-case-service",
+				"pod_phase:running",
+				"pod_name:dx-case-service-658ddf4bdc-b8bgh",
+				"kube_replica_set:dx-case-service-658ddf4bdc"
+			]
+		},
+		"kubernetes_pod_uid://88685681-210f-4b7d-aac2-25e4595a44f7": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"app.kubernetes.io/name:standalone",
+				"app.kubernetes.io/managed-by:Helm",
+				"pega/isolationName:tenant01",
+				"pega/modelName:441f9684-bcf7-4df3-986d-631aa0a57826",
+				"kube_app_managed_by:Helm",
+				"kube_app_instance:gateway-service-1605623800",
+				"app.kubernetes.io/version:0.1.0",
+				"pega/isolationID:tenant01",
+				"pod-template-hash:6f576c899f",
+				"kube_namespace:keystone-dev",
+				"helm.sh/chart:standalone-0.3.9-SNAPSHOT",
+				"pega/modelID:441f9684-bcf7-4df3-986d-631aa0a57826",
+				"pod_phase:running",
+				"app.kubernetes.io/instance:gateway-service-1605623800",
+				"kube_deployment:gateway-service-1605623800-standalone",
+				"kube_app_version:0.1.0",
+				"kube_app_name:standalone",
+				"kube_replica_set:gateway-service-1605623800-standalone-6f576c899f",
+				"pod_name:gateway-service-1605623800-standalone-6f576c899f-42lsx"
+			]
+		},
+		"kubernetes_pod_uid://8f33e1b1-e42e-4835-ad6d-006d2925609a": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_namespace:orion",
+				"pod_phase:running",
+				"kube_deployment:dx-case-service",
+				"kube_service:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"pod-template-hash:864cc46556",
+				"kube_app_instance:dx-case-service",
+				"app.kubernetes.io/instance:dx-case-service",
+				"kube_app_name:dx-case-service",
+				"pod_name:dx-case-service-864cc46556-chrgd",
+				"kube_replica_set:dx-case-service-864cc46556"
+			]
+		},
+		"kubernetes_pod_uid://927168bf-5f66-44c7-8ee2-25f5282b8754": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"app.kubernetes.io/version:0.1.0",
+				"kube_service:gateway-service-1605623800-standalone",
+				"app.kubernetes.io/instance:gateway-service-1605623800",
+				"kube_app_managed_by:Helm",
+				"pod_phase:running",
+				"pega/isolationName:tenant01",
+				"helm.sh/chart:standalone-0.3.9-SNAPSHOT",
+				"kube_app_instance:gateway-service-1605623800",
+				"pega/modelName:441f9684-bcf7-4df3-986d-631aa0a57826",
+				"pod-template-hash:6f576c899f",
+				"pega/isolationID:tenant01",
+				"app.kubernetes.io/name:standalone",
+				"pega/modelID:441f9684-bcf7-4df3-986d-631aa0a57826",
+				"kube_app_name:standalone",
+				"kube_namespace:keystone-dev",
+				"app.kubernetes.io/managed-by:Helm",
+				"kube_app_version:0.1.0",
+				"kube_deployment:gateway-service-1605623800-standalone",
+				"kube_replica_set:gateway-service-1605623800-standalone-6f576c899f",
+				"pod_name:gateway-service-1605623800-standalone-6f576c899f-zd7gf"
+			]
+		},
+		"kubernetes_pod_uid://95feaafd-52fd-4da6-bcb5-c6224654773c": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pod-template-hash:b9d9c5d",
+				"kube_namespace:orion",
+				"app.kubernetes.io/name:authentication-service",
+				"kube_app_instance:authentication-svc",
+				"app.kubernetes.io/instance:authentication-svc",
+				"pod_phase:running",
+				"kube_deployment:authentication-service",
+				"kube_app_name:authentication-service",
+				"kube_service:authentication-service",
+				"kube_replica_set:authentication-service-b9d9c5d",
+				"pod_name:authentication-service-b9d9c5d-qn5pk"
+			]
+		},
+		"kubernetes_pod_uid://9717e206-ce2b-438a-b2de-e177c58bc7e8": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": []
+		},
+		"kubernetes_pod_uid://97d1a194-3fc0-43fc-b6e0-71bc728aa1ed": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"kube_deployment:dx-case-service",
+				"app.kubernetes.io/instance:dx-case-service",
+				"kube_app_name:dx-case-service",
+				"pod_phase:running",
+				"kube_service:dx-case-service",
+				"kube_namespace:orion",
+				"pod-template-hash:864cc46556",
+				"kube_app_instance:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"pod_name:dx-case-service-864cc46556-v55g4",
+				"kube_replica_set:dx-case-service-864cc46556"
+			]
+		},
+		"kubernetes_pod_uid://98b1af6f-3a9d-423c-8f69-736f43bffa67": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"kube_namespace:prod",
+				"app.kubernetes.io/instance:data-service",
+				"pod-template-hash:58975b4745",
+				"kube_deployment:data-service",
+				"kube_app_instance:data-service",
+				"kube_app_name:data-service",
+				"app.kubernetes.io/name:data-service",
+				"kube_service:data-service",
+				"pod_phase:running",
+				"pod_name:data-service-58975b4745-sqfwg",
+				"kube_replica_set:data-service-58975b4745"
+			]
+		},
+		"kubernetes_pod_uid://9c2ef2b8-6d0c-4e29-9157-0cb9e4a10d27": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"app.kubernetes.io/name:standalone",
+				"kube_app_version:0.1.0",
+				"pega/isolationName:cnrstaging",
+				"pod_phase:running",
+				"app.kubernetes.io/managed-by:Helm",
+				"pod-template-hash:87cf47c79",
+				"pega/modelName:cnronboarding",
+				"app.kubernetes.io/instance:gateway-cnronboarding",
+				"kube_app_name:standalone",
+				"app.kubernetes.io/version:0.1.0",
+				"kube_namespace:staging",
+				"kube_app_instance:gateway-cnronboarding",
+				"kube_service:gateway-cnronboarding-standalone",
+				"kube_app_managed_by:Helm",
+				"kube_deployment:gateway-cnronboarding-standalone",
+				"pega/modelID:eb7db169-4458-4e1b-a319-34cd8600b125",
+				"helm.sh/chart:standalone-0.3.10-SNAPSHOT",
+				"pega/isolationID:rnd-staging-cnronboarding",
+				"pod_name:gateway-cnronboarding-standalone-87cf47c79-g7vn8",
+				"kube_replica_set:gateway-cnronboarding-standalone-87cf47c79"
+			]
+		},
+		"kubernetes_pod_uid://9d70eb18-5660-4656-9a05-d903dc08880e": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"kube_service:data-service",
+				"kube_service:data-servicemonitoring",
+				"kube_app_instance:data-service",
+				"app.kubernetes.io/instance:data-service",
+				"pod-template-hash:776bd8557",
+				"kube_app_name:data-service",
+				"app.kubernetes.io/name:data-service",
+				"pod_phase:running",
+				"kube_deployment:data-service",
+				"kube_namespace:staging",
+				"kube_replica_set:data-service-776bd8557",
+				"pod_name:data-service-776bd8557-sthvn"
+			]
+		},
+		"kubernetes_pod_uid://9ff2cb62-7b6a-4017-90f9-0ac73c460f1a": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"app.kubernetes.io/version:0.1.0",
+				"app.kubernetes.io/name:standalone",
+				"kube_deployment:orion-gw-standalone",
+				"app.kubernetes.io/managed-by:Helm",
+				"helm.sh/chart:standalone-0.3.10-SNAPSHOT",
+				"kube_app_instance:orion-gw",
+				"pega/modelID:orion-sprint-20-23-currency-perct-loc-picklist",
+				"pod-template-hash:5dd7b86fd5",
+				"kube_app_version:0.1.0",
+				"pega/isolationID:rnd-staging-aia",
+				"kube_namespace:staging",
+				"pega/isolationName:orion",
+				"kube_app_name:standalone",
+				"kube_app_managed_by:Helm",
+				"app.kubernetes.io/instance:orion-gw",
+				"pega/modelName:review",
+				"pod_phase:running",
+				"kube_replica_set:orion-gw-standalone-5dd7b86fd5",
+				"pod_name:orion-gw-standalone-5dd7b86fd5-frvjb"
+			]
+		},
+		"kubernetes_pod_uid://a007db4d-cdc2-4250-8683-bda73a0b26cb": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"kube_daemon_set:aws-node",
+				"kube_namespace:kube-system",
+				"k8s-app:aws-node",
+				"pod-template-generation:1",
+				"controller-revision-hash:9f658f887",
+				"pod_phase:running",
+				"pod_name:aws-node-7rnpr"
+			]
+		},
+		"kubernetes_pod_uid://a4041c16-8600-4533-806e-7db75111af00": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pod_phase:running",
+				"kube_namespace:testmorza-18-11-2020-automatic",
+				"kube_app_name:gateway-service",
+				"app.kubernetes.io/name:gateway-service",
+				"kube_service:gateway-service",
+				"pod-template-hash:65dbf67486",
+				"kube_deployment:gateway-service",
+				"kube_app_instance:gateway-service",
+				"app.kubernetes.io/instance:gateway-service",
+				"pod_name:gateway-service-65dbf67486-9gknz",
+				"kube_replica_set:gateway-service-65dbf67486"
+			]
+		},
+		"kubernetes_pod_uid://a6623398-e924-41e3-8a9f-d3265818c151": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"app.kubernetes.io/instance:gateway-service",
+				"kube_deployment:gateway-service",
+				"kube_namespace:cnd-dev",
+				"pod-template-hash:6d74446795",
+				"app.kubernetes.io/name:gateway-service",
+				"kube_app_instance:gateway-service",
+				"pod_phase:running",
+				"kube_service:gateway-service",
+				"kube_app_name:gateway-service",
+				"kube_replica_set:gateway-service-6d74446795",
+				"pod_name:gateway-service-6d74446795-q66qr"
+			]
+		},
+		"kubernetes_pod_uid://a8f8b32b-50f8-49f8-8d55-f283a38d8891": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": []
+		},
+		"kubernetes_pod_uid://ac71c363-11e0-4d82-80a6-004d44d7d1fa": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_name:dx-case-service",
+				"kube_namespace:orion",
+				"app.kubernetes.io/instance:dx-case-service",
+				"kube_service:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"pod-template-hash:658ddf4bdc",
+				"pod_phase:running",
+				"kube_deployment:dx-case-service",
+				"kube_app_instance:dx-case-service",
+				"pod_name:dx-case-service-658ddf4bdc-gzjdx",
+				"kube_replica_set:dx-case-service-658ddf4bdc"
+			]
+		},
+		"kubernetes_pod_uid://acad74fa-b56f-4162-9974-90a86d113a3e": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"app.kubernetes.io/instance:dx-case-service",
+				"pod_phase:pending",
+				"kube_deployment:dx-case-service",
+				"kube_app_instance:dx-case-service",
+				"kube_app_name:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"pod-template-hash:64b89cf9dc",
+				"kube_namespace:sharks",
+				"pod_name:dx-case-service-64b89cf9dc-hdhg5",
+				"kube_replica_set:dx-case-service-64b89cf9dc"
+			]
+		},
+		"kubernetes_pod_uid://adddafb3-3127-4dbb-9d3a-a370a1c227de": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_instance:gateway-service",
+				"kube_app_name:gateway-service",
+				"pod_phase:running",
+				"kube_deployment:gateway-service",
+				"kube_service:gateway-service",
+				"app.kubernetes.io/instance:gateway-service",
+				"app.kubernetes.io/name:gateway-service",
+				"pod-template-hash:6c5b79f67c",
+				"kube_namespace:chauv-dev",
+				"kube_replica_set:gateway-service-6c5b79f67c",
+				"pod_name:gateway-service-6c5b79f67c-6csww"
+			]
+		},
+		"kubernetes_pod_uid://ae57115b-282c-4459-bdc5-cff7c5d7a410": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_name:authentication-service",
+				"pod_phase:running",
+				"kube_namespace:prod",
+				"pod-template-hash:7bb669cc5d",
+				"kube_app_instance:mock-authentication-service",
+				"app.kubernetes.io/instance:mock-authentication-service",
+				"app.kubernetes.io/name:authentication-service",
+				"kube_deployment:authentication-service",
+				"kube_service:authentication-service",
+				"kube_replica_set:authentication-service-7bb669cc5d",
+				"pod_name:authentication-service-7bb669cc5d-wjjm4"
+			]
+		},
+		"kubernetes_pod_uid://b0bbceaf-99d9-45a7-b5f8-1a2ed551bf9e": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_namespace:sharks-tests",
+				"app.kubernetes.io/instance:dx-case-service",
+				"kube_app_name:dx-case-service",
+				"kube_deployment:dx-case-service",
+				"kube_app_instance:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"pod-template-hash:b4f455cb5",
+				"pod_phase:pending",
+				"kube_replica_set:dx-case-service-b4f455cb5",
+				"pod_name:dx-case-service-b4f455cb5-9vt6s"
+			]
+		},
+		"kubernetes_pod_uid://b0f2bdc3-2ffb-4ad0-adc1-ef982bfb401e": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": []
+		},
+		"kubernetes_pod_uid://b536f143-5b9e-46c5-96f9-0da692fce596": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pod-template-hash:77b99b87cd",
+				"kube_namespace:prod",
+				"kube_app_instance:dx-case-service",
+				"kube_app_name:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"pod_phase:running",
+				"kube_deployment:dx-case-service",
+				"app.kubernetes.io/instance:dx-case-service",
+				"kube_service:dx-case-servicemonitoring",
+				"kube_service:dx-case-service",
+				"pod_name:dx-case-service-77b99b87cd-kxrfg",
+				"kube_replica_set:dx-case-service-77b99b87cd"
+			]
+		},
+		"kubernetes_pod_uid://ba17a819-31cc-483d-be39-063f96adcdbe": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_namespace:immortale-m",
+				"app.kubernetes.io/instance:model-storage-service",
+				"kube_app_name:mss-service",
+				"pod-template-hash:699cd956f6",
+				"pod_phase:running",
+				"kube_deployment:mss-service",
+				"kube_app_instance:model-storage-service",
+				"app.kubernetes.io/name:mss-service",
+				"kube_service:mss-servicemonitoring",
+				"kube_service:mss-service",
+				"pod_name:mss-service-699cd956f6-8qcwq",
+				"kube_replica_set:mss-service-699cd956f6"
+			]
+		},
+		"kubernetes_pod_uid://bd51a966-62d8-4b8f-b3fa-1491fceb28a1": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": []
+		},
+		"kubernetes_pod_uid://bf2ee0ea-89c0-4603-ab08-fe3519d2340f": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"kube_app_managed_by:Helm",
+				"kube_app_version:0.1.0",
+				"app.kubernetes.io/instance:travel-app-manual-testing",
+				"pega/isolationName:sharks02",
+				"pega/modelName:travelse",
+				"kube_namespace:staging",
+				"pod-template-hash:96585cdfd",
+				"kube_app_name:standalone",
+				"app.kubernetes.io/version:0.1.0",
+				"app.kubernetes.io/name:standalone",
+				"pod_phase:running",
+				"kube_app_instance:travel-app-manual-testing",
+				"kube_deployment:travel-app-manual-testing-standalone",
+				"helm.sh/chart:standalone-0.3.10-SNAPSHOT",
+				"pega/modelID:67a2bb11-e667-4f8e-8f4a-905e9ed8d61e",
+				"pega/isolationID:sharks02",
+				"app.kubernetes.io/managed-by:Helm",
+				"kube_replica_set:travel-app-manual-testing-standalone-96585cdfd",
+				"pod_name:travel-app-manual-testing-standalone-96585cdfd-xcxf5"
+			]
+		},
+		"kubernetes_pod_uid://c062d2bb-68ee-4db1-bdea-18ce317a5f0a": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_deployment:data-service",
+				"kube_service:data-servicemonitoring",
+				"kube_service:data-service",
+				"kube_namespace:immortale-m",
+				"pod-template-hash:54bb78489",
+				"app.kubernetes.io/instance:data-service",
+				"app.kubernetes.io/name:data-service",
+				"kube_app_instance:data-service",
+				"kube_app_name:data-service",
+				"pod_phase:running",
+				"kube_replica_set:data-service-54bb78489",
+				"pod_name:data-service-54bb78489-bxt5g"
+			]
+		},
+		"kubernetes_pod_uid://c541b815-1159-4328-96ae-11a363f897fb": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_deployment:data-service",
+				"kube_namespace:prod",
+				"kube_service:data-service",
+				"kube_app_instance:data-service",
+				"app.kubernetes.io/instance:data-service",
+				"pod-template-hash:58975b4745",
+				"pod_phase:running",
+				"kube_app_name:data-service",
+				"app.kubernetes.io/name:data-service",
+				"pod_name:data-service-58975b4745-ncj9t",
+				"kube_replica_set:data-service-58975b4745"
+			]
+		},
+		"kubernetes_pod_uid://c6ca5a26-0e4b-43f3-b818-2a24270cfbea": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pega/modelID:orion-sprint-20-23-isinpagelist-2",
+				"app.kubernetes.io/instance:orion-pagelist",
+				"pod_phase:running",
+				"pega/modelName:review2",
+				"pod-template-hash:74d58759d7",
+				"kube_app_name:standalone",
+				"pega/isolationName:orion",
+				"kube_namespace:staging",
+				"helm.sh/chart:standalone-0.3.10-SNAPSHOT",
+				"kube_deployment:orion-pagelist-standalone",
+				"kube_app_managed_by:Helm",
+				"pega/isolationID:rnd-staging-aia",
+				"app.kubernetes.io/name:standalone",
+				"kube_app_version:0.1.0",
+				"kube_app_instance:orion-pagelist",
+				"app.kubernetes.io/version:0.1.0",
+				"app.kubernetes.io/managed-by:Helm",
+				"pod_name:orion-pagelist-standalone-74d58759d7-lftsl",
+				"kube_replica_set:orion-pagelist-standalone-74d58759d7"
+			]
+		},
+		"kubernetes_pod_uid://c8d13104-ddd5-4702-955c-ec35775c94ea": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_instance:dx-case-service",
+				"pod-template-hash:f5bbcd9c9",
+				"kube_service:dx-case-servicemonitoring",
+				"kube_service:dx-case-service",
+				"app.kubernetes.io/instance:dx-case-service",
+				"kube_app_name:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"pod_phase:running",
+				"kube_deployment:dx-case-service",
+				"kube_namespace:test2",
+				"kube_replica_set:dx-case-service-f5bbcd9c9",
+				"pod_name:dx-case-service-f5bbcd9c9-bv4f4"
+			]
+		},
+		"kubernetes_pod_uid://cd749c64-7198-4bff-8870-75bb4119383c": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"kube_app_name:data-service",
+				"app.kubernetes.io/name:data-service",
+				"kube_deployment:data-service",
+				"kube_namespace:prod",
+				"app.kubernetes.io/instance:data-service",
+				"pod-template-hash:58975b4745",
+				"pod_phase:running",
+				"kube_app_instance:data-service",
+				"kube_service:data-service",
+				"pod_name:data-service-58975b4745-6slr5",
+				"kube_replica_set:data-service-58975b4745"
+			]
+		},
+		"kubernetes_pod_uid://cdd41872-f005-45c8-a162-a9532749d33e": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"app.kubernetes.io/name:gateway-service",
+				"kube_namespace:bhana-dev",
+				"pod-template-hash:798d7c4bc8",
+				"kube_app_instance:gateway-service",
+				"kube_app_name:gateway-service",
+				"pod_phase:running",
+				"kube_deployment:gateway-service",
+				"kube_service:gateway-service",
+				"app.kubernetes.io/instance:gateway-service",
+				"pod_name:gateway-service-798d7c4bc8-gcfm6",
+				"kube_replica_set:gateway-service-798d7c4bc8"
+			]
+		},
+		"kubernetes_pod_uid://d07137cd-abed-4d7d-942c-003ee5a76dd3": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"kube_app_name:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"pod-template-hash:56689d8b97",
+				"kube_deployment:dx-case-service",
+				"kube_namespace:keystone-dev",
+				"kube_app_instance:dx-case-service",
+				"pod_phase:running",
+				"app.kubernetes.io/instance:dx-case-service",
+				"kube_service:dx-case-service",
+				"kube_replica_set:dx-case-service-56689d8b97",
+				"pod_name:dx-case-service-56689d8b97-7g82b"
+			]
+		},
+		"kubernetes_pod_uid://d2ae7477-aae3-4a64-a055-767aeb1b13bd": {
+			"sources": [
+				"kubelet",
+				"docker",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"kube_daemon_set:datadog",
+				"kube_namespace:monitoring",
+				"app:datadog",
+				"controller-revision-hash:5d84655fd5",
+				"pod-template-generation:1",
+				"pod_phase:running",
+				"pod_name:datadog-6ldcj"
+			]
+		},
+		"kubernetes_pod_uid://d3558e88-dfd1-4a7b-8ffe-e9ad79ad97c5": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pod_phase:running",
+				"kube_namespace:keystone-dev",
+				"kube_app_instance:dx-case-service1",
+				"kube_app_name:dx-case-service",
+				"kube_service:dx-case-service1",
+				"app.kubernetes.io/name:dx-case-service",
+				"pod-template-hash:7967999cdb",
+				"kube_deployment:dx-case-service1",
+				"app.kubernetes.io/instance:dx-case-service1",
+				"pod_name:dx-case-service1-7967999cdb-m2fwq",
+				"kube_replica_set:dx-case-service1-7967999cdb"
+			]
+		},
+		"kubernetes_pod_uid://d5237963-d09e-4748-8bac-26c5001831d9": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"controller-revision-hash:567c48f8bc",
+				"pod-template-generation:17",
+				"release:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b",
+				"pod_phase:running",
+				"kube_daemon_set:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b-log-router",
+				"kube_namespace:logging",
+				"app:log-router",
+				"pod_name:k4111106-eb9c-4ea5-9265-ae9a83e1ad9b-log-router-2bw9m"
+			]
+		},
+		"kubernetes_pod_uid://dc0ed599-c7e9-4ef1-889f-bbb8c908b535": {
+			"sources": [
+				"kube-metadata-collector",
+				"kubelet",
+				"docker"
+			],
+			"tags": [
+				"kube_app_instance:data-service",
+				"pod_phase:running",
+				"kube_service:data-service",
+				"kube_service:data-servicemonitoring",
+				"app.kubernetes.io/name:data-service",
+				"pod-template-hash:bc68cbc6",
+				"app.kubernetes.io/instance:data-service",
+				"kube_deployment:data-service",
+				"kube_namespace:staging",
+				"kube_app_name:data-service",
+				"kube_replica_set:data-service-bc68cbc6",
+				"pod_name:data-service-bc68cbc6-rctlp"
+			]
+		},
+		"kubernetes_pod_uid://ddda487a-4f03-46fc-994c-d9fe8c7656d0": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"app.kubernetes.io/name:jaeger",
+				"controller-revision-hash:77d6d9887c",
+				"pod_phase:running",
+				"pod-template-generation:1",
+				"kube_daemon_set:jaeger-agent",
+				"kube_app_instance:jaeger",
+				"app.kubernetes.io/instance:jaeger",
+				"kube_namespace:ops",
+				"app.kubernetes.io/component:agent",
+				"kube_app_component:agent",
+				"kube_app_name:jaeger",
+				"kube_service:jaeger-agent",
+				"pod_name:jaeger-agent-m9bxt"
+			]
+		},
+		"kubernetes_pod_uid://dedf6dd3-7ec2-4af2-8eb0-646cc6f16965": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_instance:dx-case-service",
+				"app.kubernetes.io/name:dx-case-service",
+				"pod_phase:running",
+				"kube_deployment:dx-case-service",
+				"kube_service:dx-case-service",
+				"app.kubernetes.io/instance:dx-case-service",
+				"kube_app_name:dx-case-service",
+				"pod-template-hash:5c479995bf",
+				"kube_namespace:orion",
+				"pod_name:dx-case-service-5c479995bf-frpl5",
+				"kube_replica_set:dx-case-service-5c479995bf"
+			]
+		},
+		"kubernetes_pod_uid://df697c02-c1de-4d5d-96b8-1c79bfaaac30": {
+			"sources": [
+				"kube-metadata-collector",
+				"kubelet",
+				"docker"
+			],
+			"tags": [
+				"kube_namespace:cnd-dev",
+				"kube_app_name:gateway-service",
+				"kube_service:gateway-service",
+				"kube_app_instance:gateway-service",
+				"pod_phase:running",
+				"kube_deployment:gateway-service",
+				"app.kubernetes.io/name:gateway-service",
+				"pod-template-hash:76dc8946ff",
+				"app.kubernetes.io/instance:gateway-service",
+				"pod_name:gateway-service-76dc8946ff-qlb4m",
+				"kube_replica_set:gateway-service-76dc8946ff"
+			]
+		},
+		"kubernetes_pod_uid://e0bcdb51-d372-4ec7-8974-a44741732dd0": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"kube_app_instance:data-service",
+				"kube_namespace:prod",
+				"kube_service:data-service",
+				"app.kubernetes.io/instance:data-service",
+				"kube_app_name:data-service",
+				"app.kubernetes.io/name:data-service",
+				"pod_phase:running",
+				"kube_deployment:data-service",
+				"pod-template-hash:58975b4745",
+				"kube_replica_set:data-service-58975b4745",
+				"pod_name:data-service-58975b4745-l5pnc"
+			]
+		},
+		"kubernetes_pod_uid://e2e3bcb3-0a4d-4d7b-8296-e1e2ed44b26c": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_deployment:gateway-service",
+				"kube_namespace:test-gs-morza",
+				"kube_service:gateway-service",
+				"app.kubernetes.io/instance:gateway-service",
+				"kube_app_name:gateway-service",
+				"app.kubernetes.io/name:gateway-service",
+				"pod-template-hash:f8574d4cc",
+				"pod_phase:running",
+				"kube_app_instance:gateway-service",
+				"pod_name:gateway-service-f8574d4cc-s9th6",
+				"kube_replica_set:gateway-service-f8574d4cc"
+			]
+		},
+		"kubernetes_pod_uid://e459d8af-c800-4201-a4e9-47952004ff56": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_instance:gateway-service",
+				"kube_app_name:gateway-service",
+				"app.kubernetes.io/name:gateway-service",
+				"kube_service:gateway-service",
+				"pod-template-hash:5c76d989dd",
+				"kube_namespace:chauv-dev9",
+				"app.kubernetes.io/instance:gateway-service",
+				"pod_phase:running",
+				"kube_deployment:gateway-service",
+				"pod_name:gateway-service-5c76d989dd-wdjsd",
+				"kube_replica_set:gateway-service-5c76d989dd"
+			]
+		},
+		"kubernetes_pod_uid://e6437541-806c-4d7d-9476-4377e15c94e4": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"k8s-app:kube-proxy",
+				"pod-template-generation:1",
+				"controller-revision-hash:68d6584976",
+				"pod_phase:running",
+				"kube_daemon_set:kube-proxy",
+				"kube_namespace:kube-system",
+				"pod_name:kube-proxy-79z54"
+			]
+		},
+		"kubernetes_pod_uid://e89ffd8b-8d0e-4910-a015-9a44ec9741ac": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"kube_app_instance:data-service",
+				"app.kubernetes.io/instance:data-service",
+				"pod_phase:running",
+				"kube_deployment:data-service",
+				"kube_namespace:prod",
+				"pod-template-hash:58975b4745",
+				"kube_app_name:data-service",
+				"app.kubernetes.io/name:data-service",
+				"kube_service:data-service",
+				"kube_replica_set:data-service-58975b4745",
+				"pod_name:data-service-58975b4745-mxc42"
+			]
+		},
+		"kubernetes_pod_uid://e9c6c7d9-5ae2-4cea-ba5c-a28a521c5f20": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_deployment:data-service",
+				"kube_service:data-service",
+				"pod-template-hash:58975b4745",
+				"kube_namespace:prod",
+				"kube_app_instance:data-service",
+				"app.kubernetes.io/instance:data-service",
+				"kube_app_name:data-service",
+				"app.kubernetes.io/name:data-service",
+				"pod_phase:running",
+				"pod_name:data-service-58975b4745-bs84g",
+				"kube_replica_set:data-service-58975b4745"
+			]
+		},
+		"kubernetes_pod_uid://eb9ca27c-d6ed-4b7e-b038-07c9857f1b53": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"pod_phase:running",
+				"kube_deployment:ui-view-service",
+				"app.kubernetes.io/instance:ui-view-service",
+				"pod-template-hash:78fd8475d8",
+				"kube_namespace:prod",
+				"kube_app_instance:ui-view-service",
+				"kube_app_name:ui-view-service",
+				"app.kubernetes.io/name:ui-view-service",
+				"kube_service:ui-view-service",
+				"pod_name:ui-view-service-78fd8475d8-ktpc7",
+				"kube_replica_set:ui-view-service-78fd8475d8"
+			]
+		},
+		"kubernetes_pod_uid://ed17e69b-3e94-408e-a6a6-d08802bd707f": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_instance:data-service",
+				"app.kubernetes.io/instance:data-service",
+				"kube_app_name:data-service",
+				"app.kubernetes.io/name:data-service",
+				"pod-template-hash:58975b4745",
+				"kube_service:data-service",
+				"pod_phase:running",
+				"kube_namespace:prod",
+				"kube_deployment:data-service",
+				"pod_name:data-service-58975b4745-xqrdr",
+				"kube_replica_set:data-service-58975b4745"
+			]
+		},
+		"kubernetes_pod_uid://ef918f4b-345b-4bdc-b885-b59f12d0d8a8": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"release:prometheus",
+				"app:prometheus-node-exporter",
+				"chart:prometheus-node-exporter-1.10.0",
+				"pod-template-generation:1",
+				"kube_namespace:ops",
+				"pod_phase:running",
+				"controller-revision-hash:6b7bb8459f",
+				"heritage:Helm",
+				"jobLabel:node-exporter",
+				"kube_daemon_set:prometheus-prometheus-node-exporter",
+				"pod_name:prometheus-prometheus-node-exporter-t2h89"
+			]
+		},
+		"kubernetes_pod_uid://f0e256dd-6206-45e5-be2b-048207193bad": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"pega/isolationID:rnd-staging-aia",
+				"pod_phase:running",
+				"kube_deployment:orion-pagelist-standalone",
+				"kube_app_managed_by:Helm",
+				"app.kubernetes.io/version:0.1.0",
+				"kube_app_instance:orion-pagelist",
+				"pod-template-hash:5dcdfb5988",
+				"pega/isolationName:orion",
+				"kube_service:orion-pagelist-standalone",
+				"pega/modelID:orion-sprint-20-23-isinpagelist-3",
+				"kube_app_name:standalone",
+				"helm.sh/chart:standalone-0.3.10-SNAPSHOT",
+				"pega/modelName:review2",
+				"app.kubernetes.io/managed-by:Helm",
+				"kube_namespace:staging",
+				"app.kubernetes.io/instance:orion-pagelist",
+				"app.kubernetes.io/name:standalone",
+				"kube_app_version:0.1.0",
+				"kube_replica_set:orion-pagelist-standalone-5dcdfb5988",
+				"pod_name:orion-pagelist-standalone-5dcdfb5988-gvnsq"
+			]
+		},
+		"kubernetes_pod_uid://f3e8e544-4dd0-4c42-b1cc-c64175a9c801": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"app.kubernetes.io/name:gateway-service",
+				"pod_phase:running",
+				"kube_deployment:gateway-service",
+				"app.kubernetes.io/instance:gateway-service",
+				"kube_service:gateway-service",
+				"kube_app_name:gateway-service",
+				"pod-template-hash:69df6dc4b5",
+				"kube_namespace:cnd-dev",
+				"kube_app_instance:gateway-service",
+				"kube_replica_set:gateway-service-69df6dc4b5",
+				"pod_name:gateway-service-69df6dc4b5-vgj9c"
+			]
+		},
+		"kubernetes_pod_uid://f467af7f-f71b-45b3-b23d-0b0e6a2b8e1d": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_name:gateway-service",
+				"pod-template-hash:5b5c667d76",
+				"kube_deployment:gateway-service",
+				"kube_namespace:morza-test-gw",
+				"app.kubernetes.io/instance:gateway-service",
+				"app.kubernetes.io/name:gateway-service",
+				"pod_phase:running",
+				"kube_app_instance:gateway-service",
+				"kube_service:gateway-service",
+				"pod_name:gateway-service-5b5c667d76-9865g",
+				"kube_replica_set:gateway-service-5b5c667d76"
+			]
+		},
+		"kubernetes_pod_uid://f6c5a0ad-0a05-4814-8c1a-9dd2600b95f3": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"helm.sh/chart:standalone-0.3.10-SNAPSHOT",
+				"kube_app_name:standalone",
+				"app.kubernetes.io/name:standalone",
+				"kube_namespace:staging",
+				"pega/isolationName:orion",
+				"kube_service:orion-gw-standalone",
+				"pega/modelName:review",
+				"pod_phase:running",
+				"app.kubernetes.io/instance:orion-gw",
+				"app.kubernetes.io/version:0.1.0",
+				"pega/modelID:orion-sprint-20-23-currency-perct-loc-picklist",
+				"app.kubernetes.io/managed-by:Helm",
+				"pod-template-hash:6c8674bd8c",
+				"pega/isolationID:rnd-staging-aia",
+				"kube_app_version:0.1.0",
+				"kube_app_instance:orion-gw",
+				"kube_app_managed_by:Helm",
+				"kube_deployment:orion-gw-standalone",
+				"kube_replica_set:orion-gw-standalone-6c8674bd8c",
+				"pod_name:orion-gw-standalone-6c8674bd8c-jdznr"
+			]
+		},
+		"kubernetes_pod_uid://f9032f66-5225-4126-91dc-de6c62d3d1dd": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_app_instance:data-service",
+				"kube_app_name:data-service",
+				"pod-template-hash:58975b4745",
+				"kube_deployment:data-service",
+				"kube_namespace:prod",
+				"app.kubernetes.io/instance:data-service",
+				"kube_service:data-service",
+				"app.kubernetes.io/name:data-service",
+				"pod_phase:running",
+				"pod_name:data-service-58975b4745-djrbs",
+				"kube_replica_set:data-service-58975b4745"
+			]
+		},
+		"kubernetes_pod_uid://f91285bd-3a17-4e27-a376-83bd64f288a8": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_service:data-service",
+				"kube_service:data-servicemonitoring",
+				"kube_app_name:data-service",
+				"app.kubernetes.io/name:data-service",
+				"pod-template-hash:7f8b7c6bd4",
+				"kube_deployment:data-service",
+				"kube_namespace:prod",
+				"app.kubernetes.io/instance:data-service",
+				"pod_phase:running",
+				"kube_app_instance:data-service",
+				"kube_replica_set:data-service-7f8b7c6bd4",
+				"pod_name:data-service-7f8b7c6bd4-zrts5"
+			]
+		},
+		"kubernetes_pod_uid://fb074171-79d5-4d50-beb7-b03072863310": {
+			"sources": [
+				"docker",
+				"kubelet",
+				"kube-metadata-collector"
+			],
+			"tags": [
+				"kube_deployment:gateway-cnronboarding-standalone",
+				"kube_app_name:standalone",
+				"pega/isolationName:cnrstaging",
+				"app.kubernetes.io/managed-by:Helm",
+				"kube_app_version:0.1.0",
+				"pod-template-hash:648799dcb5",
+				"kube_namespace:staging",
+				"helm.sh/chart:standalone-0.3.10-SNAPSHOT",
+				"pega/modelID:eb7db169-4458-4e1b-a319-34cd8600b125",
+				"app.kubernetes.io/version:0.1.0",
+				"pod_phase:running",
+				"kube_app_instance:gateway-cnronboarding",
+				"app.kubernetes.io/instance:gateway-cnronboarding",
+				"app.kubernetes.io/name:standalone",
+				"pega/modelName:cnronboarding",
+				"kube_app_managed_by:Helm",
+				"pega/isolationID:rnd-staging-cnronboarding",
+				"kube_replica_set:gateway-cnronboarding-standalone-648799dcb5",
+				"pod_name:gateway-cnronboarding-standalone-648799dcb5-lk7bq"
+			]
+		},
+		"kubernetes_pod_uid://fc97ff08-d1c5-48b2-be12-cc2aae8356ac": {
+			"sources": [
+				"kubelet",
+				"kube-metadata-collector",
+				"docker"
+			],
+			"tags": [
+				"kube_deployment:gateway-service",
+				"kube_namespace:cnd-dev",
+				"kube_app_instance:gateway-service",
+				"app.kubernetes.io/name:gateway-service",
+				"pod_phase:running",
+				"app.kubernetes.io/instance:gateway-service",
+				"kube_app_name:gateway-service",
+				"pod-template-hash:56b6bfdf4b",
+				"kube_service:gateway-service",
+				"pod_name:gateway-service-56b6bfdf4b-ddjvn",
+				"kube_replica_set:gateway-service-56b6bfdf4b"
+			]
+		},
+		"kubernetes_pod_uid://fcece24f-9da7-4e7b-b111-7d189e1dbbd7": {
+			"sources": [
+				"kube-metadata-collector",
+				"docker",
+				"kubelet"
+			],
+			"tags": [
+				"kube_service:travel-app-manual-testing-standalone",
+				"kube_app_instance:travel-app-manual-testing",
+				"kube_namespace:staging",
+				"pega/isolationID:sharks02",
+				"kube_deployment:travel-app-manual-testing-standalone",
+				"helm.sh/chart:standalone-0.3.10-SNAPSHOT",
+				"app.kubernetes.io/instance:travel-app-manual-testing",
+				"app.kubernetes.io/managed-by:Helm",
+				"kube_app_name:standalone",
+				"pega/modelID:67a2bb11-e667-4f8e-8f4a-905e9ed8d61e",
+				"pod-template-hash:96585cdfd",
+				"kube_app_managed_by:Helm",
+				"kube_app_version:0.1.0",
+				"pega/modelName:travelse",
+				"pega/isolationName:sharks02",
+				"pod_phase:running",
+				"app.kubernetes.io/name:standalone",
+				"app.kubernetes.io/version:0.1.0",
+				"kube_replica_set:travel-app-manual-testing-standalone-96585cdfd",
+				"pod_name:travel-app-manual-testing-standalone-96585cdfd-jr2wt"
+			]
+		}
+	}
+}

@@ -1,0 +1,20 @@
+init_config:
+instances:
+  - class: Win32_OperatingSystem
+    metrics:
+      - [NumberOfProcesses, testing.system.proc.count, gauge]
+      - [NumberOfUsers, testing.system.users.count, gauge]
+  - class: Win32_PerfFormattedData_PerfProc_Process
+    metrics:
+      - [ThreadCount, wmi.proc.threads.count, gauge]
+      - [VirtualBytes, wmi.proc.mem.virtual, gauge]
+      - [PercentProcessorTime, wmi.proc.cpu_pct, gauge]
+    tag_by: Name
+  - class: Win32_PerfFormattedData_PerfProc_Process
+    metrics:
+      - [IOReadBytesPerSec, test.proc.io.bytes_read, gauge]
+    filters:
+      - Name: 'app%'
+    tag_by: Name
+    tag_queries:
+      - [IDProcess, Win32_Process, Handle, CommandLine]

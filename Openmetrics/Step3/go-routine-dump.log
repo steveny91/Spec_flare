@@ -1,0 +1,1321 @@
+goroutine 1134047 [running]:
+runtime/pprof.writeGoroutineStacks(0x3ef67c0, 0xc0010b6540, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/pprof/pprof.go:679 +0x9d
+runtime/pprof.writeGoroutine(0x3ef67c0, 0xc0010b6540, 0x2, 0x147bb86, 0xc002d1edc0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/pprof/pprof.go:668 +0x44
+runtime/pprof.(*Profile).WriteTo(0x5616d40, 0x3ef67c0, 0xc0010b6540, 0x2, 0xc0010b6540, 0xd)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/pprof/pprof.go:329 +0x3da
+net/http/pprof.handler.ServeHTTP(0xc001e381f1, 0x9, 0x3f67ac0, 0xc0010b6540, 0xc0020cb400)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/pprof/pprof.go:245 +0x33a
+net/http/pprof.Index(0x3f67ac0, 0xc0010b6540, 0xc0020cb400)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/pprof/pprof.go:268 +0x6f1
+net/http.HandlerFunc.ServeHTTP(0x3b1c008, 0x3f67ac0, 0xc0010b6540, 0xc0020cb400)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0x57e56c0, 0x3f67ac0, 0xc0010b6540, 0xc0020cb400)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2387 +0x1bd
+net/http.serverHandler.ServeHTTP(0xc0009b4000, 0x3f67ac0, 0xc0010b6540, 0xc0020cb400)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc001e8c500, 0x3f73a40, 0xc0019cb980)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2928 +0x384
+goroutine 1 [chan receive, 10984 minutes]:
+github.com/DataDog/datadog-agent/cmd/agent/app.run(0x5627f00, 0x580e2f0, 0x0, 0x0, 0x0, 0x0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/app/run.go:127 +0x211
+github.com/spf13/cobra.(*Command).execute(0x5627f00, 0x580e2f0, 0x0, 0x0, 0x5627f00, 0x580e2f0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/spf13/cobra/command.go:842 +0x460
+github.com/spf13/cobra.(*Command).ExecuteC(0x56232e0, 0x0, 0x84e00, 0xc0000c2058)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/spf13/cobra/command.go:950 +0x349
+github.com/spf13/cobra.(*Command).Execute(...)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/spf13/cobra/command.go:887
+main.main()
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/main.go:18 +0x2d
+goroutine 6 [sync.Cond.Wait, 10984 minutes]:
+runtime.goparkunlock(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/proc.go:310
+sync.runtime_notifyListWait(0xc00005e810, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/sema.go:510 +0xf8
+sync.(*Cond).Wait(0xc00005e800)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/sync/cond.go:56 +0x9d
+github.com/cihub/seelog.(*asyncLoopLogger).processItem(0xc000126000, 0xc000080700)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:50 +0x9b
+github.com/cihub/seelog.(*asyncLoopLogger).processQueue(0xc000126000)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:63 +0x42
+created by github.com/cihub/seelog.NewAsyncLoopLogger
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:40 +0x9c
+goroutine 7 [sync.Cond.Wait, 10984 minutes]:
+runtime.goparkunlock(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/proc.go:310
+sync.runtime_notifyListWait(0xc00005e990, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/sema.go:510 +0xf8
+sync.(*Cond).Wait(0xc00005e980)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/sync/cond.go:56 +0x9d
+github.com/cihub/seelog.(*asyncLoopLogger).processItem(0xc000126120, 0x0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:50 +0x9b
+github.com/cihub/seelog.(*asyncLoopLogger).processQueue(0xc000126120)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:63 +0x42
+created by github.com/cihub/seelog.NewAsyncLoopLogger
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:40 +0x9c
+goroutine 8 [select]:
+github.com/patrickmn/go-cache.(*janitor).Run(0xc000396130, 0xc000392a00)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/patrickmn/go-cache/cache.go:1079 +0xd5
+created by github.com/patrickmn/go-cache.runJanitor
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/patrickmn/go-cache/cache.go:1099 +0xa9
+goroutine 9 [chan receive]:
+k8s.io/klog.(*loggingT).flushDaemon(0x57e6560)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/k8s.io/klog/klog.go:1010 +0x8b
+created by k8s.io/klog.init.0
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/k8s.io/klog/klog.go:411 +0xd6
+goroutine 74 [syscall, 10984 minutes]:
+os/signal.signal_recv(0x14ceeb6)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/sigqueue.go:147 +0x9c
+os/signal.loop()
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/os/signal/signal_unix.go:23 +0x22
+created by os/signal.init.0
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/os/signal/signal_unix.go:29 +0x41
+goroutine 86 [select, 10984 minutes]:
+github.com/DataDog/datadog-agent/cmd/agent/app.run.func2(0xc0000c2a20, 0xc0008cee40)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/app/run.go:98 +0xe8
+created by github.com/DataDog/datadog-agent/cmd/agent/app.run
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/app/run.go:96 +0x143
+goroutine 87 [chan receive, 10984 minutes]:
+github.com/DataDog/datadog-agent/cmd/agent/app.run.func3(0xc0008ceea0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/app/run.go:117 +0x47
+created by github.com/DataDog/datadog-agent/cmd/agent/app.run
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/app/run.go:116 +0x1d9
+goroutine 89 [sync.Cond.Wait]:
+runtime.goparkunlock(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/proc.go:310
+sync.runtime_notifyListWait(0xc0008ead10, 0x2d8b)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/sema.go:510 +0xf8
+sync.(*Cond).Wait(0xc0008ead00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/sync/cond.go:56 +0x9d
+github.com/cihub/seelog.(*asyncLoopLogger).processItem(0xc0005fc750, 0x0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:50 +0x9b
+github.com/cihub/seelog.(*asyncLoopLogger).processQueue(0xc0005fc750)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:63 +0x42
+created by github.com/cihub/seelog.NewAsyncLoopLogger
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/cihub/seelog/behavior_asynclooplogger.go:40 +0x9c
+goroutine 90 [IO wait]:
+internal/poll.runtime_pollWait(0x7f9830640f58, 0x72, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0006d7518, 0x72, 0x0, 0x0, 0x3a0df4c)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Accept(0xc0006d7500, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:384 +0x1f8
+net.(*netFD).accept(0xc0006d7500, 0xc000093d80, 0x18b7214, 0xc0009b40a0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:238 +0x42
+net.(*TCPListener).accept(0xc000873200, 0x5fbd2930, 0xc000093d80, 0x14fad56)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/tcpsock_posix.go:139 +0x32
+net.(*TCPListener).Accept(0xc000873200, 0xc000093dd0, 0x18, 0xc0000b7380, 0x18b6744)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/tcpsock.go:261 +0x47
+net/http.(*Server).Serve(0xc0009b4000, 0x3f67800, 0xc000873200, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2896 +0x280
+net/http.(*Server).ListenAndServe(0xc0009b4000, 0xc0009b4000, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2825 +0xb7
+net/http.ListenAndServe(0xc000962500, 0xe, 0x3ef65a0, 0x57e56c0, 0xe, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:3081 +0x74
+created by github.com/DataDog/datadog-agent/cmd/agent/app.StartAgent
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/app/run.go:201 +0x70e
+goroutine 91 [IO wait]:
+internal/poll.runtime_pollWait(0x7f9830640e88, 0x72, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0008d6918, 0x72, 0x0, 0x0, 0x3a0df4c)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Accept(0xc0008d6900, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:384 +0x1f8
+net.(*netFD).accept(0xc0008d6900, 0xc0009d7e00, 0x18b7214, 0xc000128340)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:238 +0x42
+net.(*TCPListener).accept(0xc000958e20, 0x5fbd2927, 0xc0009d7e00, 0x14fad56)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/tcpsock_posix.go:139 +0x32
+net.(*TCPListener).Accept(0xc000958e20, 0xc0009d7e50, 0x18, 0xc0000b7500, 0x18b6744)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/tcpsock.go:261 +0x47
+net/http.(*Server).Serve(0xc0001282a0, 0x3f67800, 0xc000958e20, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2896 +0x280
+created by github.com/DataDog/datadog-agent/pkg/api/healthprobe.Serve
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/api/healthprobe/healthprobe.go:49 +0x34d
+goroutine 92 [chan receive, 10984 minutes]:
+github.com/DataDog/datadog-agent/pkg/api/healthprobe.closeOnContext(0x3f73a40, 0xc0008ea000, 0xc0001282a0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/api/healthprobe/healthprobe.go:56 +0x52
+created by github.com/DataDog/datadog-agent/pkg/api/healthprobe.Serve
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/api/healthprobe/healthprobe.go:50 +0x38c
+goroutine 161 [chan receive, 10984 minutes]:
+google.golang.org/grpc.(*addrConn).resetTransport(0xc00004e580)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/google.golang.org/grpc/clientconn.go:1164 +0x6ea
+created by google.golang.org/grpc.(*addrConn).connect
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/google.golang.org/grpc/clientconn.go:800 +0x128
+goroutine 147 [select, 10984 minutes]:
+net/http.(*persistConn).readLoop(0xc00093b0e0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:2032 +0x999
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1580 +0xb0d
+goroutine 148 [select, 10984 minutes]:
+net/http.(*persistConn).writeLoop(0xc00093b0e0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:2210 +0x123
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1581 +0xb32
+goroutine 160 [select, 10984 minutes]:
+google.golang.org/grpc.(*ccBalancerWrapper).watcher(0xc0004fd340)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/google.golang.org/grpc/balancer_conn_wrappers.go:69 +0xc2
+created by google.golang.org/grpc.newCCBalancerWrapper
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/google.golang.org/grpc/balancer_conn_wrappers.go:60 +0x16d
+goroutine 164 [IO wait, 10984 minutes]:
+internal/poll.runtime_pollWait(0x7f98306408d8, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0007d6398, 0x72, 0x800, 0x812, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0007d6380, 0xc000120900, 0x812, 0x812, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc0007d6380, 0xc000120900, 0x812, 0x812, 0x203000, 0x0, 0x7b3)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000a6c010, 0xc000120900, 0x812, 0x812, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+crypto/tls.(*atLeastReader).Read(0xc00082c220, 0xc000120900, 0x812, 0x812, 0x79, 0x3ef3180, 0xc0008f99f0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:780 +0x60
+bytes.(*Buffer).ReadFrom(0xc0004185d8, 0x3ef2f40, 0xc00082c220, 0x1479b65, 0x3623340, 0x3956d00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bytes/buffer.go:204 +0xb4
+crypto/tls.(*Conn).readFromUntil(0xc000418380, 0x3ef64c0, 0xc000a6c010, 0x5, 0xc000a6c010, 0x9)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:802 +0xec
+crypto/tls.(*Conn).readRecordOrCCS(0xc000418380, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:609 +0x124
+crypto/tls.(*Conn).readRecord(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:577
+crypto/tls.(*Conn).Read(0xc000418380, 0xc00090a000, 0x8000, 0x8000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:1255 +0x161
+bufio.(*Reader).Read(0xc000a9de60, 0xc0009b42d8, 0x9, 0x9, 0xc0003a1c00, 0x7f98340a5b28, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:226 +0x26a
+io.ReadAtLeast(0x3ef2d20, 0xc000a9de60, 0xc0009b42d8, 0x9, 0x9, 0x9, 0x1a176f8, 0xc0007082d0, 0xc000700004)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/io/io.go:310 +0x87
+io.ReadFull(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/io/io.go:329
+golang.org/x/net/http2.readFrameHeader(0xc0009b42d8, 0x9, 0x9, 0x3ef2d20, 0xc000a9de60, 0x0, 0x0, 0xc0007082d0, 0x0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/golang.org/x/net/http2/frame.go:237 +0x87
+golang.org/x/net/http2.(*Framer).ReadFrame(0xc0009b42a0, 0xc0007082d0, 0xc000708200, 0x0, 0x0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/golang.org/x/net/http2/frame.go:492 +0xa1
+google.golang.org/grpc/internal/transport.(*http2Client).reader(0xc000766000)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/google.golang.org/grpc/internal/transport/http2_client.go:1264 +0x183
+created by google.golang.org/grpc/internal/transport.newHTTP2Client
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/google.golang.org/grpc/internal/transport/http2_client.go:300 +0xd23
+goroutine 225 [select]:
+github.com/DataDog/datadog-agent/pkg/collector/scheduler.(*jobQueue).process(0xc000818750, 0xc000f87f20, 0x1)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/scheduler/job.go:175 +0x10d
+github.com/DataDog/datadog-agent/pkg/collector/scheduler.(*jobQueue).run.func1(0xc000818750, 0xc000f87f20)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/scheduler/job.go:164 +0x5f
+created by github.com/DataDog/datadog-agent/pkg/collector/scheduler.(*jobQueue).run
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/scheduler/job.go:162 +0x49
+goroutine 194 [chan receive (nil chan), 10984 minutes]:
+github.com/DataDog/datadog-agent/cmd/agent/api/pb.RegisterAgentHandlerFromEndpoint.func1.1(0x3f73a80, 0xc000050060, 0xc00010aa80, 0xc000705c90, 0xe)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/api/pb/api.pb.gw.go:95 +0x4c
+created by github.com/DataDog/datadog-agent/cmd/agent/api/pb.RegisterAgentHandlerFromEndpoint.func1
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/api/pb/api.pb.gw.go:94 +0x1b4
+goroutine 195 [IO wait]:
+internal/poll.runtime_pollWait(0x7f9830640a78, 0x72, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00076a298, 0x72, 0x0, 0x0, 0x3a0df4c)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Accept(0xc00076a280, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:384 +0x1f8
+net.(*netFD).accept(0xc00076a280, 0x0, 0xc000364d90, 0x149e591)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:238 +0x42
+net.(*TCPListener).accept(0xc000a01400, 0x136678892332f31e, 0xc000364da0, 0xc000364e00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/tcpsock_posix.go:139 +0x32
+net.(*TCPListener).Accept(0xc000a01400, 0x27f359e7, 0x27f359e700364da0, 0x5fbd292d, 0xc000364e00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/tcpsock.go:261 +0x47
+crypto/tls.(*listener).Accept(0xc000778820, 0xc000364e50, 0x18, 0xc000a85380, 0x18b6744)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/tls.go:59 +0x37
+net/http.(*Server).Serve(0xc000128a80, 0x3f51a80, 0xc000778820, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2896 +0x280
+created by github.com/DataDog/datadog-agent/cmd/agent/api.StartServer
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/api/server.go:136 +0x8f6
+goroutine 163 [select, 10984 minutes]:
+net/http.(*http2serverConn).serve(0xc000750000)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/h2_bundle.go:4423 +0x588
+net/http.(*http2Server).ServeConn(0xc00005e0c0, 0x3f9b000, 0xc0001b5180, 0xc00058bc10)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/h2_bundle.go:4031 +0x73a
+net/http.http2ConfigureServer.func1(0xc000128a80, 0xc0001b5180, 0x3ef86e0, 0xc00082c040)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/h2_bundle.go:3857 +0xef
+net/http.(*conn).serve(0xc0001e0000, 0x3f73b00, 0xc00083c0c0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:1800 +0x122c
+created by net/http.(*Server).Serve
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2928 +0x384
+goroutine 196 [select]:
+github.com/DataDog/datadog-agent/pkg/forwarder.(*Worker).Start.func1(0xc0004fd700)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/forwarder/worker.go:104 +0x221
+created by github.com/DataDog/datadog-agent/pkg/forwarder.(*Worker).Start
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/forwarder/worker.go:87 +0x3f
+goroutine 197 [select]:
+github.com/DataDog/datadog-agent/pkg/forwarder.(*domainForwarder).handleFailedTransactions(0xc0004888c0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/forwarder/domain_forwarder.go:138 +0x118
+created by github.com/DataDog/datadog-agent/pkg/forwarder.(*domainForwarder).Start
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/forwarder/domain_forwarder.go:196 +0x4f2
+goroutine 198 [chan receive]:
+github.com/DataDog/datadog-agent/pkg/status/health.(*catalog).run(0xc000393600)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/status/health/health.go:80 +0x53
+created by github.com/DataDog/datadog-agent/pkg/status/health.(*catalog).register
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/status/health/health.go:52 +0x23b
+goroutine 199 [select]:
+github.com/DataDog/datadog-agent/pkg/forwarder.(*forwarderHealth).healthCheckLoop(0xc0004fd680)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/forwarder/forwarder_health.go:116 +0x1e2
+created by github.com/DataDog/datadog-agent/pkg/forwarder.(*forwarderHealth).Start
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/forwarder/forwarder_health.go:88 +0x92
+goroutine 200 [chan receive]:
+github.com/DataDog/datadog-agent/pkg/status/health.(*catalog).run(0xc0003935c0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/status/health/health.go:80 +0x53
+created by github.com/DataDog/datadog-agent/pkg/status/health.(*catalog).register
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/status/health/health.go:52 +0x23b
+goroutine 201 [select]:
+github.com/DataDog/datadog-agent/pkg/aggregator.(*BufferedAggregator).run(0xc0009fe900)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/aggregator/aggregator.go:645 +0x322
+created by github.com/DataDog/datadog-agent/pkg/aggregator.InitAggregatorWithFlushInterval.func1
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/aggregator/aggregator.go:159 +0x84
+goroutine 202 [select]:
+github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners.(*packetsBuffer).flushLoop(0xc0004fd740)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners/packets_buffer.go:38 +0xa3
+created by github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners.newPacketsBuffer
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners/packets_buffer.go:32 +0x10e
+goroutine 203 [select]:
+github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners.(*packetAssembler).flushLoop(0xc0004fd800)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners/packet_assembler.go:44 +0xa3
+created by github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners.newPacketAssembler
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners/packet_assembler.go:38 +0xe0
+goroutine 204 [IO wait]:
+internal/poll.runtime_pollWait(0x7f9830640808, 0x72, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00076a998, 0x72, 0x2000, 0x2000, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).ReadFrom(0xc00076a980, 0xc000374000, 0x2000, 0x2000, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:219 +0x1c3
+net.(*netFD).readFrom(0xc00076a980, 0xc000374000, 0x2000, 0x2000, 0xc0007a1ea8, 0x1479c05, 0x36fa6c0, 0x37b0360, 0x3f17e00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:208 +0x5b
+net.(*UDPConn).readFrom(0xc000528870, 0xc000374000, 0x2000, 0x2000, 0xc0007a1f48, 0x2c88076, 0xc000c04000, 0xc000374000)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/udpsock_posix.go:47 +0x6a
+net.(*UDPConn).ReadFrom(0xc000528870, 0xc000374000, 0x2000, 0x2000, 0x0, 0x3f20400, 0xc002113dd0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/udpsock.go:121 +0x5d
+github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners.(*UDPListener).Listen(0xc0006dea50)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/listeners/udp.go:100 +0xf8
+created by github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).handleMessages
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:272 +0x84
+goroutine 205 [select]:
+github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).worker(0xc000957ba0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:313 +0x119
+created by github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).handleMessages
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:283 +0xe9
+goroutine 206 [select]:
+github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).worker(0xc000957ba0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:313 +0x119
+created by github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).handleMessages
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:283 +0xe9
+goroutine 207 [select]:
+github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).worker(0xc000957ba0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:313 +0x119
+created by github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).handleMessages
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:283 +0xe9
+goroutine 208 [select]:
+github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).worker(0xc000957ba0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:313 +0x119
+created by github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).handleMessages
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:283 +0xe9
+goroutine 209 [select]:
+github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).worker(0xc000957ba0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:313 +0x119
+created by github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).handleMessages
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:283 +0xe9
+goroutine 210 [select]:
+github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).worker(0xc000957ba0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:313 +0x119
+created by github.com/DataDog/datadog-agent/pkg/dogstatsd.(*Server).handleMessages
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/dogstatsd/server.go:283 +0xe9
+goroutine 312 [select, 169 minutes]:
+github.com/DataDog/datadog-agent/pkg/util/docker.(*DockerUtil).dispatchEvents(0xc000128380, 0xc00083c690)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/util/docker/event_stream.go:103 +0x3a4
+created by github.com/DataDog/datadog-agent/pkg/util/docker.(*DockerUtil).SubscribeToContainerEvents
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/util/docker/event_stream.go:33 +0xbb
+goroutine 346 [runnable, locked to thread]:
+github.com/DataDog/datadog-agent/pkg/telemetry.(*promCounter).Inc(0xc000528288, 0x0, 0x0, 0x0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/telemetry/prom_counter.go:30 +0x6f
+github.com/DataDog/datadog-agent/pkg/collector/python.MemoryTracker(0x7f97fc04f580, 0x22, 0x0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/python/memory.go:80 +0x507
+github.com/DataDog/datadog-agent/pkg/collector/python.TrackedCString(0xc001712a80, 0x21, 0x7f97fc00ecb0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/python/memory.go:114 +0xae
+github.com/DataDog/datadog-agent/pkg/collector/python.Tags(0x7f97dc0ba760, 0x7f9800000002, 0xc000d8ba80)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/python/tagger.go:55 +0x116
+github.com/DataDog/datadog-agent/pkg/collector/python._cgoexpwrap_b42a327c3c60_Tags(0x7f97dc0ba760, 0x7f9700000002, 0x0)
+	_cgo_gotypes.go:903 +0x70
+github.com/DataDog/datadog-agent/pkg/collector/python._Cfunc_run_check(0x7f97e80031d0, 0x7f9814153a30, 0x0)
+	_cgo_gotypes.go:613 +0x4e
+github.com/DataDog/datadog-agent/pkg/collector/python.(*PythonCheck).runCheck.func1(0xc000f82080, 0x1a)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/python/check.go:74 +0xa4
+github.com/DataDog/datadog-agent/pkg/collector/python.(*PythonCheck).runCheck(0xc000f82080, 0x5fbd2901, 0x0, 0x0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/python/check.go:74 +0x172
+github.com/DataDog/datadog-agent/pkg/collector/python.(*PythonCheck).Run(0xc000f82080, 0x2576f1c53188c, 0x57e5f20)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/python/check.go:103 +0x30
+github.com/DataDog/datadog-agent/pkg/collector/runner.(*Runner).work(0xc000708b10)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/runner/runner.go:270 +0x4c4
+created by github.com/DataDog/datadog-agent/pkg/collector/runner.(*Runner).AddWorker
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/runner/runner.go:100 +0x8a
+goroutine 343 [select]:
+github.com/DataDog/datadog-agent/pkg/tagger.(*Tagger).run(0xc0001544d0, 0x3, 0xc000957f90)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/tagger/tagger.go:95 +0x142
+created by github.com/DataDog/datadog-agent/pkg/tagger.(*Tagger).Init
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/tagger/tagger.go:89 +0x1c9
+goroutine 245 [IO wait, 10984 minutes]:
+internal/poll.runtime_pollWait(0x7f98306409a8, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000812098, 0x72, 0x200, 0x205, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000812080, 0xc00024c000, 0x205, 0x205, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc000812080, 0xc00024c000, 0x205, 0x205, 0x203000, 0x0, 0x200)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000a30020, 0xc00024c000, 0x205, 0x205, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+crypto/tls.(*atLeastReader).Read(0xc00082c240, 0xc00024c000, 0x205, 0x205, 0x1f, 0x3ef3180, 0xc0008f8a78)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:780 +0x60
+bytes.(*Buffer).ReadFrom(0xc0001b53d8, 0x3ef2f40, 0xc00082c240, 0x1479b65, 0x3623340, 0x3956d00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bytes/buffer.go:204 +0xb4
+crypto/tls.(*Conn).readFromUntil(0xc0001b5180, 0x3ef64c0, 0xc000a30020, 0x5, 0xc000a30020, 0x9)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:802 +0xec
+crypto/tls.(*Conn).readRecordOrCCS(0xc0001b5180, 0x0, 0x0, 0x1877bfb)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:609 +0x124
+crypto/tls.(*Conn).readRecord(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:577
+crypto/tls.(*Conn).Read(0xc0001b5180, 0xc000518118, 0x9, 0x9, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:1255 +0x161
+io.ReadAtLeast(0x7f983033a048, 0xc0001b5180, 0xc000518118, 0x9, 0x9, 0x9, 0x1000001878aa8, 0x0, 0x1)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/io/io.go:310 +0x87
+io.ReadFull(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/io/io.go:329
+net/http.http2readFrameHeader(0xc000518118, 0x9, 0x9, 0x7f983033a048, 0xc0001b5180, 0x0, 0xc000000000, 0xc0008f8f28, 0xc00074e120)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/h2_bundle.go:1477 +0x87
+net/http.(*http2Framer).ReadFrame(0xc0005180e0, 0xc0008f8ee0, 0x2, 0x0, 0x1)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/h2_bundle.go:1735 +0xa1
+net/http.(*http2serverConn).readFrames(0xc000750000)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/h2_bundle.go:4310 +0xa4
+created by net/http.(*http2serverConn).serve
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/h2_bundle.go:4415 +0x347
+goroutine 165 [select, 10984 minutes]:
+google.golang.org/grpc/internal/transport.(*controlBuffer).get(0xc000294820, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/google.golang.org/grpc/internal/transport/controlbuf.go:395 +0x122
+google.golang.org/grpc/internal/transport.(*loopyWriter).run(0xc000a9df80, 0x0, 0x0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/google.golang.org/grpc/internal/transport/controlbuf.go:513 +0x1e3
+google.golang.org/grpc/internal/transport.newHTTP2Client.func3(0xc000766000)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/google.golang.org/grpc/internal/transport/http2_client.go:346 +0x7b
+created by google.golang.org/grpc/internal/transport.newHTTP2Client
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/google.golang.org/grpc/internal/transport/http2_client.go:344 +0xedb
+goroutine 342 [select]:
+github.com/DataDog/datadog-agent/pkg/tagger/collectors.(*DockerCollector).Stream(0xc000f973b0, 0x6, 0xc00016bf08)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/tagger/collectors/docker_main.go:67 +0x1ad
+created by github.com/DataDog/datadog-agent/pkg/tagger.(*Tagger).registerCollectors
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/tagger/tagger.go:190 +0x421
+goroutine 1110314 [select]:
+net/http.(*persistConn).writeLoop(0xc00064f0e0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:2210 +0x123
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1581 +0xb32
+goroutine 260 [IO wait]:
+internal/poll.runtime_pollWait(0x7f9830640258, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc00064d998, 0x72, 0xc400, 0xc4cf, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc00064d980, 0xc001026000, 0xc4cf, 0xc4cf, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc00064d980, 0xc001026000, 0xc4cf, 0xc4cf, 0x203000, 0x0, 0xc4ca)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000528000, 0xc001026000, 0xc4cf, 0xc4cf, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+crypto/tls.(*atLeastReader).Read(0xc003eaeb20, 0xc001026000, 0xc4cf, 0xc4cf, 0xf4, 0x3ef3180, 0xc001bfe970)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:780 +0x60
+bytes.(*Buffer).ReadFrom(0xc000a8acd8, 0x3ef2f40, 0xc003eaeb20, 0x1479b65, 0x3623340, 0x3956d00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bytes/buffer.go:204 +0xb4
+crypto/tls.(*Conn).readFromUntil(0xc000a8aa80, 0x3ef64c0, 0xc000528000, 0x5, 0xc000528000, 0x203000)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:802 +0xec
+crypto/tls.(*Conn).readRecordOrCCS(0xc000a8aa80, 0x0, 0x0, 0xc003eaeae0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:609 +0x124
+crypto/tls.(*Conn).readRecord(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:577
+crypto/tls.(*Conn).Read(0xc000a8aa80, 0xc0006eb000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:1255 +0x161
+bufio.(*Reader).Read(0xc00085faa0, 0xc0007c82d8, 0x9, 0x9, 0xc001bfed10, 0x0, 0x1a2a7d5)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:226 +0x26a
+io.ReadAtLeast(0x3ef2d20, 0xc00085faa0, 0xc0007c82d8, 0x9, 0x9, 0x9, 0xc000096040, 0x0, 0x3ef3180)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/io/io.go:310 +0x87
+io.ReadFull(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/io/io.go:329
+golang.org/x/net/http2.readFrameHeader(0xc0007c82d8, 0x9, 0x9, 0x3ef2d20, 0xc00085faa0, 0x0, 0x0, 0xc00200c270, 0x0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/golang.org/x/net/http2/frame.go:237 +0x87
+golang.org/x/net/http2.(*Framer).ReadFrame(0xc0007c82a0, 0xc00200c270, 0x0, 0x0, 0x0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/golang.org/x/net/http2/frame.go:492 +0xa1
+golang.org/x/net/http2.(*clientConnReadLoop).run(0xc001bfefb8, 0xc000920fa8, 0x1a137b8)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/golang.org/x/net/http2/transport.go:1746 +0x8c
+golang.org/x/net/http2.(*ClientConn).readLoop(0xc0005c9980)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/golang.org/x/net/http2/transport.go:1674 +0xa3
+created by golang.org/x/net/http2.(*Transport).newClientConn
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/golang.org/x/net/http2/transport.go:674 +0x62f
+goroutine 266 [select]:
+github.com/DataDog/datadog-agent/pkg/collector/scheduler.(*jobQueue).process(0xc000126750, 0xc000f87f20, 0x1)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/scheduler/job.go:175 +0x10d
+github.com/DataDog/datadog-agent/pkg/collector/scheduler.(*jobQueue).run.func1(0xc000126750, 0xc000f87f20)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/scheduler/job.go:164 +0x5f
+created by github.com/DataDog/datadog-agent/pkg/collector/scheduler.(*jobQueue).run
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/scheduler/job.go:162 +0x49
+goroutine 347 [chan receive]:
+github.com/DataDog/datadog-agent/pkg/collector/runner.(*Runner).work(0xc000708b10)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/runner/runner.go:245 +0x161
+created by github.com/DataDog/datadog-agent/pkg/collector/runner.(*Runner).AddWorker
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/runner/runner.go:100 +0x8a
+goroutine 345 [chan receive]:
+github.com/DataDog/datadog-agent/pkg/collector/runner.(*Runner).work(0xc000708b10)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/runner/runner.go:245 +0x161
+created by github.com/DataDog/datadog-agent/pkg/collector/runner.(*Runner).AddWorker
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/runner/runner.go:100 +0x8a
+goroutine 1133766 [select, 2 minutes]:
+net/http.(*persistConn).writeLoop(0xc001620120)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:2210 +0x123
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1581 +0xb32
+goroutine 348 [chan receive]:
+github.com/DataDog/datadog-agent/pkg/collector/runner.(*Runner).work(0xc000708b10)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/runner/runner.go:245 +0x161
+created by github.com/DataDog/datadog-agent/pkg/collector/runner.(*Runner).AddWorker
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/runner/runner.go:100 +0x8a
+goroutine 313 [IO wait, 169 minutes]:
+internal/poll.runtime_pollWait(0x7f9830640ce8, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0008d6e18, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0008d6e00, 0xc0009e7000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc0008d6e00, 0xc0009e7000, 0x1000, 0x1000, 0xc000d081b8, 0xdfb6ec2d073be601, 0xc000980738)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000011a10, 0xc0009e7000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+net/http.(*persistConn).Read(0xc00093b0e0, 0xc0009e7000, 0x1000, 0x1000, 0xc0008d8b28, 0xc0027c2561, 0x13)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1758 +0x75
+bufio.(*Reader).fill(0xc0009d87e0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).ReadSlice(0xc0009d87e0, 0x10a, 0x0, 0x0, 0x186, 0x0, 0x38e9600)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:359 +0x3d
+net/http/internal.readChunkLine(0xc0009d87e0, 0x199, 0x0, 0x3fcae20, 0x0, 0x186)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/internal/chunked.go:122 +0x34
+net/http/internal.(*chunkedReader).beginChunk(0xc00083cf30)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/internal/chunked.go:48 +0x32
+net/http/internal.(*chunkedReader).Read(0xc00083cf30, 0xc0027c2001, 0xdff, 0xdff, 0x38e9600, 0x0, 0x3464d20)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/internal/chunked.go:93 +0x132
+net/http.(*body).readLocked(0xc0008ea480, 0xc0027c2001, 0xdff, 0xdff, 0x575, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transfer.go:847 +0x5f
+net/http.(*body).Read(0xc0008ea480, 0xc0027c2001, 0xdff, 0xdff, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transfer.go:839 +0x102
+net/http.(*bodyEOFSignal).Read(0xc0008ea4c0, 0xc0027c2001, 0xdff, 0xdff, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:2582 +0xe5
+encoding/json.(*Decoder).refill(0xc0008d8b00, 0xc001ca910a, 0x9)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/encoding/json/stream.go:161 +0xeb
+encoding/json.(*Decoder).readValue(0xc0008d8b00, 0x0, 0x0, 0x38e9600)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/encoding/json/stream.go:136 +0x1dc
+encoding/json.(*Decoder).Decode(0xc0008d8b00, 0x340d520, 0xc001ca9170, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/encoding/json/stream.go:63 +0x79
+github.com/docker/docker/client.(*Client).Events.func1(0xc0000ab9e0, 0xc0008d6c00, 0xc00066a110, 0xa, 0x0, 0x0, 0xc00083c6c0, 0xc00074e2a0, 0x3f73a40, 0xc0008ea400, ...)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/docker/docker/client/events.go:53 +0x37f
+created by github.com/docker/docker/client.(*Client).Events
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/docker/docker/client/events.go:25 +0x117
+goroutine 349 [chan receive, 10984 minutes]:
+github.com/DataDog/datadog-agent/pkg/collector/scheduler.(*Scheduler).Run.func1(0xc000f87f20)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/scheduler/scheduler.go:154 +0xb4
+created by github.com/DataDog/datadog-agent/pkg/collector/scheduler.(*Scheduler).Run
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/collector/scheduler/scheduler.go:142 +0x98
+goroutine 263 [select, 4 minutes]:
+github.com/patrickmn/go-cache.(*janitor).Run(0xc000f6eed0, 0xc000ede1c0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/patrickmn/go-cache/cache.go:1079 +0xd5
+created by github.com/patrickmn/go-cache.runJanitor
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/patrickmn/go-cache/cache.go:1099 +0xa9
+goroutine 192 [select]:
+github.com/DataDog/datadog-agent/pkg/autodiscovery.(*AutoConfig).serviceListening(0xc000818000)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/autodiscovery/autoconfig.go:96 +0x187
+created by github.com/DataDog/datadog-agent/pkg/autodiscovery.NewAutoConfig
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/autodiscovery/autoconfig.go:84 +0x37c
+goroutine 193 [select]:
+github.com/DataDog/datadog-agent/pkg/autodiscovery.(*configPoller).poll(0xc0007060a0, 0xc000818000)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/autodiscovery/config_poller.go:73 +0x117
+created by github.com/DataDog/datadog-agent/pkg/autodiscovery.(*configPoller).start
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/autodiscovery/config_poller.go:66 +0x146
+goroutine 354 [select]:
+github.com/DataDog/datadog-agent/pkg/autodiscovery/listeners.(*KubeletListener).Listen.func1(0xc0009d80c0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/autodiscovery/listeners/kubelet.go:111 +0x1bf
+created by github.com/DataDog/datadog-agent/pkg/autodiscovery/listeners.(*KubeletListener).Listen
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/autodiscovery/listeners/kubelet.go:103 +0x5c
+goroutine 415 [select]:
+github.com/DataDog/datadog-agent/pkg/metadata.(*Scheduler).AddCollector.func1(0xc000eee480, 0xc001106360, 0x1a3185c5000, 0x3ef3760, 0x580e2f0, 0x3a09e56, 0x4)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/metadata/scheduler.go:91 +0x15a
+created by github.com/DataDog/datadog-agent/pkg/metadata.(*Scheduler).AddCollector
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/metadata/scheduler.go:87 +0x1f5
+goroutine 416 [select]:
+github.com/DataDog/datadog-agent/pkg/metadata.(*Scheduler).AddCollector.func1(0xc000eee480, 0xc001106380, 0x8bb2c97000, 0x3ef3360, 0x580e2f0, 0x3a17efe, 0xc)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/metadata/scheduler.go:91 +0x15a
+created by github.com/DataDog/datadog-agent/pkg/metadata.(*Scheduler).AddCollector
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/metadata/scheduler.go:87 +0x1f5
+goroutine 417 [select]:
+github.com/DataDog/datadog-agent/pkg/metadata.(*Scheduler).AddCollector.func1(0xc000eee480, 0xc0011063a0, 0x45d964b800, 0x3ef3780, 0x580e2f0, 0x3a12953, 0x9)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/metadata/scheduler.go:91 +0x15a
+created by github.com/DataDog/datadog-agent/pkg/metadata.(*Scheduler).AddCollector
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/metadata/scheduler.go:87 +0x1f5
+goroutine 434 [select]:
+github.com/DataDog/datadog-agent/pkg/metadata.(*Scheduler).AddCollector.func1(0xc000eee480, 0xc001106400, 0x8bb2c97000, 0x3ef70c0, 0xc000803380, 0x3a163aa, 0xb)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/metadata/scheduler.go:91 +0x15a
+created by github.com/DataDog/datadog-agent/pkg/metadata.(*Scheduler).AddCollector
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/metadata/scheduler.go:87 +0x1f5
+goroutine 435 [chan receive, 10939 minutes]:
+github.com/DataDog/datadog-agent/pkg/metadata/inventories.StartMetadataUpdatedGoroutine.func1(0x45d964b800, 0x3ef37a0, 0xc000eee480)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/metadata/inventories/inventories.go:182 +0x3a
+created by github.com/DataDog/datadog-agent/pkg/metadata/inventories.StartMetadataUpdatedGoroutine
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/metadata/inventories/inventories.go:180 +0x53
+goroutine 466 [select]:
+k8s.io/apimachinery/pkg/util/wait.JitterUntil(0xc000362eb0, 0x37e11d600, 0x3ff3333333333333, 0x1, 0xc0006689c0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/k8s.io/apimachinery/pkg/util/wait/wait.go:164 +0x181
+k8s.io/client-go/tools/leaderelection.(*LeaderElector).acquire(0xc000eb2d80, 0x3f73a40, 0xc000cc9ac0, 0x0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/k8s.io/client-go/tools/leaderelection/leaderelection.go:242 +0x21a
+k8s.io/client-go/tools/leaderelection.(*LeaderElector).Run(0xc000eb2d80, 0x3f73a80, 0xc000050060)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/k8s.io/client-go/tools/leaderelection/leaderelection.go:201 +0x94
+github.com/DataDog/datadog-agent/pkg/util/kubernetes/apiserver/leaderelection.(*LeaderEngine).runLeaderElection(0xc000df4000)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/util/kubernetes/apiserver/leaderelection/leaderelection.go:200 +0x83
+created by github.com/DataDog/datadog-agent/pkg/util/kubernetes/apiserver/leaderelection.(*LeaderEngine).StartLeaderElectionRun.func1
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/util/kubernetes/apiserver/leaderelection/leaderelection.go:160 +0x3e
+goroutine 1133765 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x7f9830640668, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000598318, 0x72, 0x8000, 0x8003, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000598300, 0xc000baa000, 0x8003, 0x8003, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc000598300, 0xc000baa000, 0x8003, 0x8003, 0x203000, 0x0, 0x804)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000010060, 0xc000baa000, 0x8003, 0x8003, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+crypto/tls.(*atLeastReader).Read(0xc000e3c540, 0xc000baa000, 0x8003, 0x8003, 0xc000b2c8c0, 0x148718e, 0xc000b2c8a0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:780 +0x60
+bytes.(*Buffer).ReadFrom(0xc00145e5d8, 0x3ef2f40, 0xc000e3c540, 0x1479b65, 0x3623340, 0x3956d00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bytes/buffer.go:204 +0xb4
+crypto/tls.(*Conn).readFromUntil(0xc00145e380, 0x3ef64c0, 0xc000010060, 0x5, 0xc000010060, 0x378c120)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:802 +0xec
+crypto/tls.(*Conn).readRecordOrCCS(0xc00145e380, 0x0, 0x0, 0x3)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:609 +0x124
+crypto/tls.(*Conn).readRecord(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:577
+crypto/tls.(*Conn).Read(0xc00145e380, 0xc0001b8000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:1255 +0x161
+net/http.(*persistConn).Read(0xc001620120, 0xc0001b8000, 0x1000, 0x1000, 0xc0029f4540, 0xc000b2cc20, 0x1474475)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1758 +0x75
+bufio.(*Reader).fill(0xc0000aa300)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).Peek(0xc0000aa300, 0x1, 0x0, 0x0, 0x1, 0xc00303e000, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:138 +0x4f
+net/http.(*persistConn).readLoop(0xc001620120)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1911 +0x1d6
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1580 +0xb0d
+goroutine 337 [chan receive, 10984 minutes]:
+k8s.io/apimachinery/pkg/watch.(*Broadcaster).loop(0xc000cc9a40)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/k8s.io/apimachinery/pkg/watch/mux.go:207 +0x66
+created by k8s.io/apimachinery/pkg/watch.NewBroadcaster
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/k8s.io/apimachinery/pkg/watch/mux.go:75 +0xcc
+goroutine 1133723 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x7f9830436790, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000f92018, 0x72, 0x200, 0x205, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000f92000, 0xc000bbdd40, 0x205, 0x205, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc000f92000, 0xc000bbdd40, 0x205, 0x205, 0x203000, 0xc000507880, 0x7f98340a46d0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc001d40000, 0xc000bbdd40, 0x205, 0x205, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+crypto/tls.(*atLeastReader).Read(0xc000873a40, 0xc000bbdd40, 0x205, 0x205, 0xc000589568, 0x18b0526, 0xc000589548)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:780 +0x60
+bytes.(*Buffer).ReadFrom(0xc00196a258, 0x3ef2f40, 0xc000873a40, 0x1479b65, 0x3623340, 0x3956d00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bytes/buffer.go:204 +0xb4
+crypto/tls.(*Conn).readFromUntil(0xc00196a000, 0x3ef64c0, 0xc001d40000, 0x5, 0xc001d40000, 0x22)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:802 +0xec
+crypto/tls.(*Conn).readRecordOrCCS(0xc00196a000, 0x0, 0x0, 0x14a744c)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:609 +0x124
+crypto/tls.(*Conn).readRecord(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:577
+crypto/tls.(*Conn).Read(0xc00196a000, 0xc0006ea000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:1255 +0x161
+net/http.(*connReader).Read(0xc002520090, 0xc0006ea000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:785 +0xf4
+bufio.(*Reader).fill(0xc004046300)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).ReadSlice(0xc004046300, 0xc0004ec00a, 0x1d, 0xc0005899a8, 0x147bb86, 0xc001b78700, 0x100)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:359 +0x3d
+bufio.(*Reader).ReadLine(0xc004046300, 0xc0005899b0, 0xc000507880, 0x7f98340a46d0, 0x0, 0x1, 0xc000f92000)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:388 +0x34
+net/textproto.(*Reader).readLineSlice(0xc0025200c0, 0xc001b78700, 0x0, 0x0, 0xc000589d70, 0xc000f92000)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/textproto/reader.go:57 +0x6c
+net/textproto.(*Reader).ReadLine(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/textproto/reader.go:38
+net/http.readRequest(0xc004046300, 0x0, 0xc001b78700, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/request.go:1012 +0x92
+net/http.(*conn).readRequest(0xc000a60000, 0x3f73a40, 0xc001920280, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:965 +0x15f
+net/http.(*conn).serve(0xc000a60000, 0x3f73a40, 0xc001920280)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:1817 +0x6d4
+created by net/http.(*Server).Serve
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2928 +0x384
+goroutine 1134100 [IO wait]:
+internal/poll.runtime_pollWait(0x7f9830640b48, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0004b1998, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0004b1980, 0xc00215a000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc0004b1980, 0xc00215a000, 0x1000, 0x1000, 0x50, 0xc00257c190, 0xc000a7ef28)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc002048058, 0xc00215a000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+net/http.(*persistConn).Read(0xc0039b6360, 0xc00215a000, 0x1000, 0x1000, 0x14743ad, 0x60, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1758 +0x75
+bufio.(*Reader).fill(0xc003e95440)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).Peek(0xc003e95440, 0x1, 0xc0032c4660, 0x5555555555555555, 0x38, 0x8, 0x257a4ec0f376c)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:138 +0x4f
+net/http.(*persistConn).readLoop(0xc0039b6360)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1911 +0x1d6
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1580 +0xb0d
+goroutine 1131884 [select]:
+net/http.(*persistConn).writeLoop(0xc000582b40)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:2210 +0x123
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1581 +0xb32
+goroutine 1134053 [IO wait]:
+internal/poll.runtime_pollWait(0x7f9830640c18, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc0032dd998, 0x72, 0x7b00, 0x7b4b, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc0032dd980, 0xc003aac000, 0x7b4b, 0x7b4b, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc0032dd980, 0xc003aac000, 0x7b4b, 0x7b4b, 0x203000, 0x0, 0x804)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc0004b7208, 0xc003aac000, 0x7b4b, 0x7b4b, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+crypto/tls.(*atLeastReader).Read(0xc003e43460, 0xc003aac000, 0x7b4b, 0x7b4b, 0x28, 0x8, 0xc0042da8a0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:780 +0x60
+bytes.(*Buffer).ReadFrom(0xc002270cd8, 0x3ef2f40, 0xc003e43460, 0x1479b65, 0x3623340, 0x3956d00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bytes/buffer.go:204 +0xb4
+crypto/tls.(*Conn).readFromUntil(0xc002270a80, 0x3ef64c0, 0xc0004b7208, 0x5, 0xc0004b7208, 0x378c120)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:802 +0xec
+crypto/tls.(*Conn).readRecordOrCCS(0xc002270a80, 0x0, 0x0, 0x3)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:609 +0x124
+crypto/tls.(*Conn).readRecord(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:577
+crypto/tls.(*Conn).Read(0xc002270a80, 0xc00398d000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:1255 +0x161
+net/http.(*persistConn).Read(0xc003934240, 0xc00398d000, 0x1000, 0x1000, 0xc00160eea0, 0xc0042dac20, 0x1474475)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1758 +0x75
+bufio.(*Reader).fill(0xc003df9b60)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).Peek(0xc003df9b60, 0x1, 0x0, 0x0, 0x1, 0xc001f7ed00, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:138 +0x4f
+net/http.(*persistConn).readLoop(0xc003934240)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1911 +0x1d6
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1580 +0xb0d
+goroutine 1134084 [select]:
+net/http.(*persistConn).readLoop(0xc002a658c0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:2032 +0x999
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1580 +0xb0d
+goroutine 1134064 [IO wait]:
+internal/poll.runtime_pollWait(0x7f9830640598, 0x77, 0xc000c2b680)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000f06018, 0x77, 0x3f73a00, 0xc0046f5380, 0xc000f06000)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitWrite(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:96
+internal/poll.(*FD).WaitWrite(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:498
+net.(*netFD).connect(0xc000f06000, 0x3f73ac0, 0xc0046f5380, 0x0, 0x0, 0x3ef6ae0, 0xc003ef98e0, 0x0, 0x0, 0x0, ...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:152 +0x29d
+net.(*netFD).dial(0xc000f06000, 0x3f73ac0, 0xc0046f5380, 0x3f8ab00, 0x0, 0x3f8ab00, 0xc0004bc870, 0x0, 0x1, 0xc000587360)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/sock_posix.go:149 +0xff
+net.socket(0x3f73ac0, 0xc0046f5380, 0x3a093c0, 0x3, 0x2, 0x1, 0x0, 0x0, 0x3f8ab00, 0x0, ...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/sock_posix.go:70 +0x1c0
+net.internetSocket(0x3f73ac0, 0xc0046f5380, 0x3a093c0, 0x3, 0x3f8ab00, 0x0, 0x3f8ab00, 0xc0004bc870, 0x1, 0x0, ...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/ipsock_posix.go:141 +0x141
+net.(*sysDialer).doDialTCP(0xc000813c00, 0x3f73ac0, 0xc0046f5380, 0x0, 0xc0004bc870, 0x35df140, 0x580e2f0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/tcpsock_posix.go:65 +0xc2
+net.(*sysDialer).dialTCP(0xc000813c00, 0x3f73ac0, 0xc0046f5380, 0x0, 0xc0004bc870, 0xc000dc1580, 0x10, 0x10)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/tcpsock_posix.go:61 +0xd7
+net.(*sysDialer).dialSingle(0xc000813c00, 0x3f73ac0, 0xc0046f5380, 0x3f203c0, 0xc0004bc870, 0x0, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/dial.go:578 +0x36e
+net.(*sysDialer).dialSerial(0xc000813c00, 0x3f73ac0, 0xc0046f5380, 0xc000dc1580, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/dial.go:546 +0x221
+net.(*Dialer).DialContext(0xc0000aa900, 0x3f73a80, 0xc000050060, 0x3a093c0, 0x3, 0xc001481a70, 0x10, 0x0, 0x0, 0x0, ...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/dial.go:424 +0x666
+net/http.(*Transport).dial(0x5620c00, 0x3f73a80, 0xc000050060, 0x3a093c0, 0x3, 0xc001481a70, 0x10, 0x0, 0x0, 0x0, ...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1045 +0x1f5
+net/http.(*Transport).dialConn(0x5620c00, 0x3f73a80, 0xc000050060, 0x0, 0xc003ef98c0, 0x4, 0xc001481a70, 0x10, 0x0, 0x3b1c278, ...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1483 +0x195d
+net/http.(*Transport).dialConnFor(0x5620c00, 0xc00036f290)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1313 +0xdc
+created by net/http.(*Transport).queueForDial
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1282 +0x41d
+goroutine 1134044 [select]:
+net/http.setRequestCancel.func3(0x0, 0xc001f9bd40, 0xc00257cd70, 0xc00298b67c, 0xc001101bc0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/client.go:321 +0xcf
+created by net/http.setRequestCancel
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/client.go:320 +0x24b
+goroutine 1134059 [select]:
+net.(*netFD).connect.func2(0x3f73ac0, 0xc003f74c60, 0xc000e61200, 0xc003044f00, 0xc003044ea0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:129 +0xba
+created by net.(*netFD).connect
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:128 +0x275
+goroutine 1134005 [IO wait]:
+internal/poll.runtime_pollWait(0x7f9830640328, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc001059d98, 0x72, 0x200, 0x205, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc001059d80, 0xc00145d680, 0x205, 0x205, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc001059d80, 0xc00145d680, 0x205, 0x205, 0x203000, 0x346d9e0, 0xc000c31401)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc001d40750, 0xc00145d680, 0x205, 0x205, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+crypto/tls.(*atLeastReader).Read(0xc000cd4c60, 0xc00145d680, 0x205, 0x205, 0x2, 0x7f98340a4008, 0xc000c314c8)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:780 +0x60
+bytes.(*Buffer).ReadFrom(0xc000d7c258, 0x3ef2f40, 0xc000cd4c60, 0x1479b65, 0x3623340, 0x3956d00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bytes/buffer.go:204 +0xb4
+crypto/tls.(*Conn).readFromUntil(0xc000d7c000, 0x3ef64c0, 0xc001d40750, 0x5, 0xc001d40750, 0x31c0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:802 +0xec
+crypto/tls.(*Conn).readRecordOrCCS(0xc000d7c000, 0x0, 0x0, 0x2)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:609 +0x124
+crypto/tls.(*Conn).readRecord(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:577
+crypto/tls.(*Conn).Read(0xc000d7c000, 0xc002d041f1, 0x1, 0x1, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:1255 +0x161
+net/http.(*connReader).backgroundRead(0xc002d041e0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:677 +0x58
+created by net/http.(*connReader).startBackgroundRead
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:673 +0xd4
+goroutine 1133952 [select]:
+net/http.(*persistConn).writeLoop(0xc003de06c0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:2210 +0x123
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1581 +0xb32
+goroutine 1134066 [IO wait]:
+internal/poll.runtime_pollWait(0x7f9830436450, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000e53d98, 0x72, 0x200, 0x205, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000e53d80, 0xc00364ed80, 0x205, 0x205, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc000e53d80, 0xc00364ed80, 0x205, 0x205, 0x203000, 0xc0000b5880, 0x7f98340a4008)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000a6c700, 0xc00364ed80, 0x205, 0x205, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+crypto/tls.(*atLeastReader).Read(0xc000f94ce0, 0xc00364ed80, 0x205, 0x205, 0xc0006c7568, 0x18b0526, 0xc0006c7548)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:780 +0x60
+bytes.(*Buffer).ReadFrom(0xc0031f6cd8, 0x3ef2f40, 0xc000f94ce0, 0x1479b65, 0x3623340, 0x3956d00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bytes/buffer.go:204 +0xb4
+crypto/tls.(*Conn).readFromUntil(0xc0031f6a80, 0x3ef64c0, 0xc000a6c700, 0x5, 0xc000a6c700, 0x22)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:802 +0xec
+crypto/tls.(*Conn).readRecordOrCCS(0xc0031f6a80, 0x0, 0x0, 0x14a744c)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:609 +0x124
+crypto/tls.(*Conn).readRecord(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:577
+crypto/tls.(*Conn).Read(0xc0031f6a80, 0xc003a2a000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:1255 +0x161
+net/http.(*connReader).Read(0xc000db4000, 0xc003a2a000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:785 +0xf4
+bufio.(*Reader).fill(0xc003fe3080)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).ReadSlice(0xc003fe3080, 0xc003a7a00a, 0x1d, 0xc0006c79a8, 0x147bb86, 0xc0020cbf00, 0x100)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:359 +0x3d
+bufio.(*Reader).ReadLine(0xc003fe3080, 0xc0006c79b0, 0xc0000b5880, 0x7f98340a4008, 0x0, 0x0, 0xc000e53d80)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:388 +0x34
+net/textproto.(*Reader).readLineSlice(0xc002d04210, 0xc0020cbf00, 0x0, 0x0, 0xc0006c7d70, 0xc000e53d80)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/textproto/reader.go:57 +0x6c
+net/textproto.(*Reader).ReadLine(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/textproto/reader.go:38
+net/http.readRequest(0xc003fe3080, 0x0, 0xc0020cbf00, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/request.go:1012 +0x92
+net/http.(*conn).readRequest(0xc000b41360, 0x3f73a40, 0xc000d7e100, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:965 +0x15f
+net/http.(*conn).serve(0xc000b41360, 0x3f73a40, 0xc000d7e100)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:1817 +0x6d4
+created by net/http.(*Server).Serve
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2928 +0x384
+goroutine 1133612 [select, 2 minutes]:
+net/http.(*persistConn).writeLoop(0xc000e2fc20)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:2210 +0x123
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1581 +0xb32
+goroutine 1133767 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x7f9830640188, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000e02198, 0x72, 0x200, 0x205, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000e02180, 0xc00145cfc0, 0x205, 0x205, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc000e02180, 0xc00145cfc0, 0x205, 0x205, 0x203000, 0xc000064a00, 0x3ef2f00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc00451c0b8, 0xc00145cfc0, 0x205, 0x205, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+crypto/tls.(*atLeastReader).Read(0xc00188d460, 0xc00145cfc0, 0x205, 0x205, 0x0, 0x8, 0xc001571548)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:780 +0x60
+bytes.(*Buffer).ReadFrom(0xc000418cd8, 0x3ef2f40, 0xc00188d460, 0x1479b65, 0x3623340, 0x3956d00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bytes/buffer.go:204 +0xb4
+crypto/tls.(*Conn).readFromUntil(0xc000418a80, 0x3ef64c0, 0xc00451c0b8, 0x5, 0xc00451c0b8, 0x5632a9c)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:802 +0xec
+crypto/tls.(*Conn).readRecordOrCCS(0xc000418a80, 0x0, 0x0, 0x14a744c)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:609 +0x124
+crypto/tls.(*Conn).readRecord(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:577
+crypto/tls.(*Conn).Read(0xc000418a80, 0xc000f44000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:1255 +0x161
+net/http.(*connReader).Read(0xc002fc0480, 0xc000f44000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:785 +0xf4
+bufio.(*Reader).fill(0xc001457da0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).ReadSlice(0xc001457da0, 0xc0018d000a, 0x1d, 0xc0015719a8, 0x147bb86, 0xc0030aac00, 0x100)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:359 +0x3d
+bufio.(*Reader).ReadLine(0xc001457da0, 0xc0015719b0, 0xc0008c6700, 0x7f98340a4d98, 0x0, 0x2, 0xc000e02180)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:388 +0x34
+net/textproto.(*Reader).readLineSlice(0xc002fc04b0, 0xc0030aac00, 0x0, 0x0, 0xc001571d70, 0xc000e02180)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/textproto/reader.go:57 +0x6c
+net/textproto.(*Reader).ReadLine(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/textproto/reader.go:38
+net/http.readRequest(0xc001457da0, 0x0, 0xc0030aac00, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/request.go:1012 +0x92
+net/http.(*conn).readRequest(0xc0001f0be0, 0x3f73a40, 0xc004affc00, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:965 +0x15f
+net/http.(*conn).serve(0xc0001f0be0, 0x3f73a40, 0xc004affc00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:1817 +0x6d4
+created by net/http.(*Server).Serve
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2928 +0x384
+goroutine 1134048 [IO wait]:
+internal/poll.runtime_pollWait(0x7f9830436520, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000f1e698, 0x72, 0x0, 0x1, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000f1e680, 0xc0020c8731, 0x1, 0x1, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc000f1e680, 0xc0020c8731, 0x1, 0x1, 0x1, 0x225e4fc, 0x1)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc001d5b910, 0xc0020c8731, 0x1, 0x1, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+net/http.(*connReader).backgroundRead(0xc0020c8720)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:677 +0x58
+created by net/http.(*connReader).startBackgroundRead
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:673 +0xd4
+goroutine 1131883 [IO wait]:
+internal/poll.runtime_pollWait(0x7f98304366c0, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000d46b18, 0x72, 0x1000, 0x1000, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000d46b00, 0xc0031cf000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc000d46b00, 0xc0031cf000, 0x1000, 0x1000, 0x14a0dbc, 0xc0042e0b20, 0x14cb9b0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000a30980, 0xc0031cf000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+net/http.(*persistConn).Read(0xc000582b40, 0xc0031cf000, 0x1000, 0x1000, 0xc0032c56e0, 0xc0042e0c20, 0x1474475)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1758 +0x75
+bufio.(*Reader).fill(0xc0049bdd40)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).Peek(0xc0049bdd40, 0x1, 0x0, 0x0, 0x1, 0xc001f7fa00, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:138 +0x4f
+net/http.(*persistConn).readLoop(0xc000582b40)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1911 +0x1d6
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1580 +0xb0d
+goroutine 1134101 [select]:
+net/http.(*persistConn).writeLoop(0xc0039b6360)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:2210 +0x123
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1581 +0xb32
+goroutine 1110313 [IO wait]:
+internal/poll.runtime_pollWait(0x7f98306403f8, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000e52918, 0x72, 0xdf00, 0xdf01, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000e52900, 0xc0036c0000, 0xdf01, 0xdf01, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc000e52900, 0xc0036c0000, 0xdf01, 0xdf01, 0x203000, 0x0, 0xdefc)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000d914a0, 0xc0036c0000, 0xdf01, 0xdf01, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+crypto/tls.(*atLeastReader).Read(0xc003f06500, 0xc0036c0000, 0xdf01, 0xdf01, 0x28, 0x8, 0xc0008f58a0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:780 +0x60
+bytes.(*Buffer).ReadFrom(0xc000d7d3d8, 0x3ef2f40, 0xc003f06500, 0x1479b65, 0x3623340, 0x3956d00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bytes/buffer.go:204 +0xb4
+crypto/tls.(*Conn).readFromUntil(0xc000d7d180, 0x3ef64c0, 0xc000d914a0, 0x5, 0xc000d914a0, 0x10)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:802 +0xec
+crypto/tls.(*Conn).readRecordOrCCS(0xc000d7d180, 0x0, 0x0, 0x3)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:609 +0x124
+crypto/tls.(*Conn).readRecord(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:577
+crypto/tls.(*Conn).Read(0xc000d7d180, 0xc0009e6000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:1255 +0x161
+net/http.(*persistConn).Read(0xc00064f0e0, 0xc0009e6000, 0x1000, 0x1000, 0xc00061a480, 0xc0008f5c20, 0x1474475)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1758 +0x75
+bufio.(*Reader).fill(0xc0034013e0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).Peek(0xc0034013e0, 0x1, 0x0, 0x0, 0x1, 0xc00160f600, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:138 +0x4f
+net/http.(*persistConn).readLoop(0xc00064f0e0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1911 +0x1d6
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1580 +0xb0d
+goroutine 1134004 [select]:
+net/http.(*persistConn).roundTrip(0xc0039b6360, 0xc00202a9c0, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:2431 +0x770
+net/http.(*Transport).roundTrip(0x5620c00, 0xc00121e400, 0xc002f49800, 0xc003a26d70, 0x147c3f8)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:535 +0x9b6
+net/http.(*Transport).RoundTrip(0x5620c00, 0xc00121e400, 0x5620c00, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/roundtrip.go:17 +0x35
+net/http.send(0xc00121e400, 0x3ef65c0, 0x5620c00, 0x0, 0x0, 0x0, 0xc002048048, 0x203000, 0x1, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/client.go:250 +0x443
+net/http.(*Client).send(0xc00202a900, 0xc00121e400, 0x0, 0x0, 0x0, 0xc002048048, 0x0, 0x1, 0x39b1fa0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/client.go:174 +0xfa
+net/http.(*Client).do(0xc00202a900, 0xc00121e400, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/client.go:641 +0x3ce
+net/http.(*Client).Do(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/client.go:509
+github.com/DataDog/datadog-agent/pkg/flare.zipHTTPCallContent(0xc0038ec450, 0x22, 0xc0041e7560, 0x13, 0x3a29587, 0x13, 0xc000643bc0, 0x33, 0x0, 0x0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/flare/archive.go:697 +0x1f9
+github.com/DataDog/datadog-agent/pkg/flare.zipStackTraces(...)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/flare/archive.go:681
+github.com/DataDog/datadog-agent/pkg/flare.createArchive(0xc0038ec3f0, 0x2a, 0x3a0e100, 0xc00395f6f0, 0x3a3b27c, 0x1a, 0x0, 0x0, 0x0, 0x0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/flare/archive.go:202 +0x961
+github.com/DataDog/datadog-agent/pkg/flare.CreateArchive(0x3a1bc00, 0xc0008b4540, 0x21, 0xc000555800, 0x1b, 0x3a3b27c, 0x1a, 0x1, 0x0, 0x1, ...)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/flare/archive.go:95 +0x2af
+github.com/DataDog/datadog-agent/cmd/agent/api/agent.makeFlare(0x3f67ac0, 0xc0010b7ea0, 0xc0018dd600)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/api/agent/agent.go:89 +0x101
+net/http.HandlerFunc.ServeHTTP(0x3b173d8, 0x3f67ac0, 0xc0010b7ea0, 0xc0018dd600)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2007 +0x44
+github.com/DataDog/datadog-agent/cmd/agent/api.validateToken.func1(0x3f67ac0, 0xc0010b7ea0, 0xc0018dd600)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/api/server.go:158 +0x99
+net/http.HandlerFunc.ServeHTTP(0xc0005d31a0, 0x3f67ac0, 0xc0010b7ea0, 0xc0018dd600)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2007 +0x44
+github.com/gorilla/mux.(*Router).ServeHTTP(0xc0004c8000, 0x3f67ac0, 0xc0010b7ea0, 0xc0018dd100)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/gorilla/mux/mux.go:210 +0xe2
+net/http.StripPrefix.func1(0x3f67ac0, 0xc0010b7ea0, 0xc0018dd000)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2046 +0x18a
+net/http.HandlerFunc.ServeHTTP(0xc000803470, 0x3f67ac0, 0xc0010b7ea0, 0xc0018dd000)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2007 +0x44
+net/http.(*ServeMux).ServeHTTP(0xc0004fcf00, 0x3f67ac0, 0xc0010b7ea0, 0xc0018dd000)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2387 +0x1bd
+github.com/DataDog/datadog-agent/cmd/agent/api.grpcHandlerFunc.func1(0x3f67ac0, 0xc0010b7ea0, 0xc0018dd000)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/cmd/agent/api/server.go:61 +0x8f
+net/http.HandlerFunc.ServeHTTP(0xc000778800, 0x3f67ac0, 0xc0010b7ea0, 0xc0018dd000)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2007 +0x44
+net/http.serverHandler.ServeHTTP(0xc000128a80, 0x3f67ac0, 0xc0010b7ea0, 0xc0018dd000)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc0037b6000, 0x3f73a40, 0xc002555100)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2928 +0x384
+goroutine 1134065 [select]:
+net.(*netFD).connect.func2(0x3f73ac0, 0xc0046f5380, 0xc000f06000, 0xc00160f260, 0xc00160f1a0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:129 +0xba
+created by net.(*netFD).connect
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:128 +0x275
+goroutine 1133611 [IO wait, 2 minutes]:
+internal/poll.runtime_pollWait(0x7f9830436860, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000db1598, 0x72, 0xf900, 0xf9b1, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000db1580, 0xc003232000, 0xf9b1, 0xf9b1, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc000db1580, 0xc003232000, 0xf9b1, 0xf9b1, 0x203000, 0x0, 0x804)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000528dc0, 0xc003232000, 0xf9b1, 0xf9b1, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+crypto/tls.(*atLeastReader).Read(0xc000873c60, 0xc003232000, 0xf9b1, 0xf9b1, 0x28, 0x8, 0xc00079d8a0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:780 +0x60
+bytes.(*Buffer).ReadFrom(0xc0038ba258, 0x3ef2f40, 0xc000873c60, 0x1479b65, 0x3623340, 0x3956d00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bytes/buffer.go:204 +0xb4
+crypto/tls.(*Conn).readFromUntil(0xc0038ba000, 0x3ef64c0, 0xc000528dc0, 0x5, 0xc000528dc0, 0x378c120)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:802 +0xec
+crypto/tls.(*Conn).readRecordOrCCS(0xc0038ba000, 0x0, 0x0, 0x3)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:609 +0x124
+crypto/tls.(*Conn).readRecord(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:577
+crypto/tls.(*Conn).Read(0xc0038ba000, 0xc000e41000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:1255 +0x161
+net/http.(*persistConn).Read(0xc000e2fc20, 0xc000e41000, 0x1000, 0x1000, 0xc0015c1d40, 0xc00079dc20, 0x1474475)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1758 +0x75
+bufio.(*Reader).fill(0xc002976180)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).Peek(0xc002976180, 0x1, 0x0, 0x0, 0x1, 0xc0015c1800, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:138 +0x4f
+net/http.(*persistConn).readLoop(0xc000e2fc20)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1911 +0x1d6
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1580 +0xb0d
+goroutine 1133951 [IO wait]:
+internal/poll.runtime_pollWait(0x7f9830436930, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000e1a518, 0x72, 0x13100, 0x1315f, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000e1a500, 0xc002ff8000, 0x1315f, 0x1315f, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc000e1a500, 0xc002ff8000, 0x1315f, 0x1315f, 0x203000, 0x7f98305d2c48, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000d90000, 0xc002ff8000, 0x1315f, 0x1315f, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+crypto/tls.(*atLeastReader).Read(0xc000dba2e0, 0xc002ff8000, 0x1315f, 0x1315f, 0xc000a7b8c0, 0x148718e, 0xc000a7b8a0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:780 +0x60
+bytes.(*Buffer).ReadFrom(0xc003c70258, 0x3ef2f40, 0xc000dba2e0, 0x1479b65, 0x3623340, 0x3956d00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bytes/buffer.go:204 +0xb4
+crypto/tls.(*Conn).readFromUntil(0xc003c70000, 0x3ef64c0, 0xc000d90000, 0x5, 0xc000d90000, 0x378c120)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:802 +0xec
+crypto/tls.(*Conn).readRecordOrCCS(0xc003c70000, 0x0, 0x0, 0x3)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:609 +0x124
+crypto/tls.(*Conn).readRecord(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:577
+crypto/tls.(*Conn).Read(0xc003c70000, 0xc00270d000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:1255 +0x161
+net/http.(*persistConn).Read(0xc003de06c0, 0xc00270d000, 0x1000, 0x1000, 0xc0015804e0, 0xc000a7bc20, 0x1474475)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1758 +0x75
+bufio.(*Reader).fill(0xc002977c80)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).Peek(0xc002977c80, 0x1, 0x0, 0x0, 0x1, 0xc00233e000, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:138 +0x4f
+net/http.(*persistConn).readLoop(0xc003de06c0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1911 +0x1d6
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1580 +0xb0d
+goroutine 1036705 [select]:
+net/http.(*persistConn).writeLoop(0xc003e30360)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:2210 +0x123
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1581 +0xb32
+goroutine 1036704 [IO wait]:
+internal/poll.runtime_pollWait(0x7f98306404c8, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000e09e98, 0x72, 0x9400, 0x94af, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000e09e80, 0xc000f48000, 0x94af, 0x94af, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc000e09e80, 0xc000f48000, 0x94af, 0x94af, 0x203000, 0x0, 0x94aa)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000a31820, 0xc000f48000, 0x94af, 0x94af, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+crypto/tls.(*atLeastReader).Read(0xc000b04d00, 0xc000f48000, 0x94af, 0x94af, 0x28, 0x8, 0xc0008fa8a0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:780 +0x60
+bytes.(*Buffer).ReadFrom(0xc003c713d8, 0x3ef2f40, 0xc000b04d00, 0x1479b65, 0x3623340, 0x3956d00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bytes/buffer.go:204 +0xb4
+crypto/tls.(*Conn).readFromUntil(0xc003c71180, 0x3ef64c0, 0xc000a31820, 0x5, 0xc000a31820, 0x10)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:802 +0xec
+crypto/tls.(*Conn).readRecordOrCCS(0xc003c71180, 0x0, 0x0, 0x3)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:609 +0x124
+crypto/tls.(*Conn).readRecord(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:577
+crypto/tls.(*Conn).Read(0xc003c71180, 0xc000b43000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:1255 +0x161
+net/http.(*persistConn).Read(0xc003e30360, 0xc000b43000, 0x1000, 0x1000, 0xc001f7e3c0, 0xc0008fac20, 0x1474475)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1758 +0x75
+bufio.(*Reader).fill(0xc003d325a0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).Peek(0xc003d325a0, 0x1, 0x0, 0x0, 0x1, 0xc0032c5900, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:138 +0x4f
+net/http.(*persistConn).readLoop(0xc003e30360)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1911 +0x1d6
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1580 +0xb0d
+goroutine 1134058 [IO wait]:
+internal/poll.runtime_pollWait(0x7f9830640db8, 0x77, 0xc00111a780)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000e61218, 0x77, 0x3f73a00, 0xc003f74c60, 0xc000e61200)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitWrite(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:96
+internal/poll.(*FD).WaitWrite(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:498
+net.(*netFD).connect(0xc000e61200, 0x3f73ac0, 0xc003f74c60, 0x0, 0x0, 0x3ef6ae0, 0xc002e22ea0, 0x0, 0x0, 0x0, ...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:152 +0x29d
+net.(*netFD).dial(0xc000e61200, 0x3f73ac0, 0xc003f74c60, 0x3f8ab00, 0x0, 0x3f8ab00, 0xc0026dd0e0, 0x0, 0x1, 0xc0006c3360)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/sock_posix.go:149 +0xff
+net.socket(0x3f73ac0, 0xc003f74c60, 0x3a093c0, 0x3, 0x2, 0x1, 0x0, 0x0, 0x3f8ab00, 0x0, ...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/sock_posix.go:70 +0x1c0
+net.internetSocket(0x3f73ac0, 0xc003f74c60, 0x3a093c0, 0x3, 0x3f8ab00, 0x0, 0x3f8ab00, 0xc0026dd0e0, 0x1, 0x0, ...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/ipsock_posix.go:141 +0x141
+net.(*sysDialer).doDialTCP(0xc000e61180, 0x3f73ac0, 0xc003f74c60, 0x0, 0xc0026dd0e0, 0x35df140, 0x580e2f0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/tcpsock_posix.go:65 +0xc2
+net.(*sysDialer).dialTCP(0xc000e61180, 0x3f73ac0, 0xc003f74c60, 0x0, 0xc0026dd0e0, 0xc003211830, 0x10, 0x10)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/tcpsock_posix.go:61 +0xd7
+net.(*sysDialer).dialSingle(0xc000e61180, 0x3f73ac0, 0xc003f74c60, 0x3f203c0, 0xc0026dd0e0, 0x0, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/dial.go:578 +0x36e
+net.(*sysDialer).dialSerial(0xc000e61180, 0x3f73ac0, 0xc003f74c60, 0xc003211830, 0x1, 0x1, 0x0, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/dial.go:546 +0x221
+net.(*Dialer).DialContext(0xc0000aa900, 0x3f73a80, 0xc000050060, 0x3a093c0, 0x3, 0xc002e22e80, 0x12, 0x0, 0x0, 0x0, ...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/dial.go:424 +0x666
+net/http.(*Transport).dial(0x5620c00, 0x3f73a80, 0xc000050060, 0x3a093c0, 0x3, 0xc002e22e80, 0x12, 0x0, 0x0, 0x0, ...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1045 +0x1f5
+net/http.(*Transport).dialConn(0x5620c00, 0x3f73a80, 0xc000050060, 0x0, 0xc0031b6c80, 0x4, 0xc002e22e80, 0x12, 0x0, 0xc0012ca7a8, ...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1483 +0x195d
+net/http.(*Transport).dialConnFor(0x5620c00, 0xc001003e40)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1313 +0xdc
+created by net/http.(*Transport).queueForDial
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1282 +0x41d
+goroutine 1134054 [select]:
+net/http.(*persistConn).writeLoop(0xc003934240)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:2210 +0x123
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1581 +0xb32
+goroutine 1134062 [chan receive]:
+github.com/containerd/containerd/pkg/dialer.timeoutDialer.func1(0xc003045500, 0xc0030454a0, 0xc0032ac060, 0x2a, 0x4a8178923)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/containerd/containerd/pkg/dialer/dialer.go:58 +0x8f
+created by github.com/containerd/containerd/pkg/dialer.timeoutDialer
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/containerd/containerd/pkg/dialer/dialer.go:49 +0xbe
+goroutine 1134085 [select]:
+net/http.(*persistConn).writeLoop(0xc002a658c0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:2210 +0x123
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1581 +0xb32
+goroutine 1134013 [IO wait]:
+internal/poll.runtime_pollWait(0x7f9830640738, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000e1a718, 0x72, 0x200, 0x205, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000e1a700, 0xc00145c240, 0x205, 0x205, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc000e1a700, 0xc00145c240, 0x205, 0x205, 0x203000, 0xc000060000, 0x3ef2f00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc003bc6298, 0xc00145c240, 0x205, 0x205, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+crypto/tls.(*atLeastReader).Read(0xc003eaeb80, 0xc00145c240, 0x205, 0x205, 0x0, 0x8, 0xc000d89548)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:780 +0x60
+bytes.(*Buffer).ReadFrom(0xc000e24258, 0x3ef2f40, 0xc003eaeb80, 0x1479b65, 0x3623340, 0x3956d00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bytes/buffer.go:204 +0xb4
+crypto/tls.(*Conn).readFromUntil(0xc000e24000, 0x3ef64c0, 0xc003bc6298, 0x5, 0xc003bc6298, 0x5632a9c)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:802 +0xec
+crypto/tls.(*Conn).readRecordOrCCS(0xc000e24000, 0x0, 0x0, 0x14a744c)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:609 +0x124
+crypto/tls.(*Conn).readRecord(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:577
+crypto/tls.(*Conn).Read(0xc000e24000, 0xc0031ce000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:1255 +0x161
+net/http.(*connReader).Read(0xc0010963c0, 0xc0031ce000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:785 +0xf4
+bufio.(*Reader).fill(0xc003d95ce0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).ReadSlice(0xc003d95ce0, 0xc000b8e00a, 0x1d, 0xc000d899a8, 0x147bb86, 0xc001ba0900, 0x100)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:359 +0x3d
+bufio.(*Reader).ReadLine(0xc003d95ce0, 0xc000d899b0, 0xc000507880, 0x7f98340a4008, 0x0, 0x0, 0xc000e1a700)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:388 +0x34
+net/textproto.(*Reader).readLineSlice(0xc0010963f0, 0xc001ba0900, 0x0, 0x0, 0xc000d89d70, 0xc000e1a700)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/textproto/reader.go:57 +0x6c
+net/textproto.(*Reader).ReadLine(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/textproto/reader.go:38
+net/http.readRequest(0xc003d95ce0, 0x0, 0xc001ba0900, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/request.go:1012 +0x92
+net/http.(*conn).readRequest(0xc001ea8000, 0x3f73a40, 0xc003eed480, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:965 +0x15f
+net/http.(*conn).serve(0xc001ea8000, 0x3f73a40, 0xc003eed480)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:1817 +0x6d4
+created by net/http.(*Server).Serve
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/server.go:2928 +0x384
+goroutine 1091176 [select]:
+net/http.(*persistConn).writeLoop(0xc00051cfc0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:2210 +0x123
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1581 +0xb32
+goroutine 1134061 [select]:
+github.com/containerd/containerd/pkg/dialer.timeoutDialer(0xc0032ac060, 0x2a, 0x4a8178923, 0x4a8178923, 0x369e301, 0xc000084700, 0x7f98340a46d0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/containerd/containerd/pkg/dialer/dialer.go:66 +0x156
+github.com/containerd/containerd/pkg/dialer.ContextDialer(0x3f73ac0, 0xc003f75140, 0xc0032ac060, 0x2a, 0x7f98340a46d0, 0x0, 0x3563de0, 0xc0026dd890)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/github.com/containerd/containerd/pkg/dialer/dialer.go:35 +0x80
+google.golang.org/grpc/internal/transport.dial(0x3f73ac0, 0xc003f75140, 0x3b18880, 0xc0032ac060, 0x2a, 0x34e6080, 0x0, 0x0, 0x0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/google.golang.org/grpc/internal/transport/http2_client.go:140 +0x74
+google.golang.org/grpc/internal/transport.newHTTP2Client(0x3f73ac0, 0xc003f75140, 0x3f73a40, 0xc00150a600, 0xc0032ac060, 0x2a, 0x0, 0x0, 0xc0032ac060, 0x2a, ...)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/google.golang.org/grpc/internal/transport/http2_client.go:173 +0x11e
+google.golang.org/grpc/internal/transport.NewClientTransport(...)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/google.golang.org/grpc/internal/transport/transport.go:581
+google.golang.org/grpc.(*addrConn).createTransport(0xc0012b0dc0, 0xc0032ac060, 0x2a, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x3a1c9ee, ...)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/google.golang.org/grpc/clientconn.go:1285 +0x488
+google.golang.org/grpc.(*addrConn).tryAllAddrs(0xc0012b0dc0, 0xc00150a340, 0x1, 0x1, 0xbfe76830ba3342ec, 0x257739a454be4, 0x57e5f20, 0x0, 0x0, 0x0, ...)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/google.golang.org/grpc/clientconn.go:1208 +0x30e
+google.golang.org/grpc.(*addrConn).resetTransport(0xc0012b0dc0)
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/google.golang.org/grpc/clientconn.go:1118 +0x237
+created by google.golang.org/grpc.(*addrConn).connect
+	/.omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/vendor/google.golang.org/grpc/clientconn.go:800 +0x128
+goroutine 1091175 [IO wait]:
+internal/poll.runtime_pollWait(0x7f98304365f0, 0x72, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/runtime/netpoll.go:184 +0x55
+internal/poll.(*pollDesc).wait(0xc000e8c698, 0x72, 0x1b00, 0x1b11, 0xffffffffffffffff)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:87 +0x45
+internal/poll.(*pollDesc).waitRead(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_poll_runtime.go:92
+internal/poll.(*FD).Read(0xc000e8c680, 0xc0001d2000, 0x1b11, 0x1b11, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/internal/poll/fd_unix.go:169 +0x1cf
+net.(*netFD).Read(0xc000e8c680, 0xc0001d2000, 0x1b11, 0x1b11, 0x203000, 0x0, 0x1b04)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/fd_unix.go:202 +0x4f
+net.(*conn).Read(0xc000010220, 0xc0001d2000, 0x1b11, 0x1b11, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/net.go:184 +0x68
+crypto/tls.(*atLeastReader).Read(0xc000f88980, 0xc0001d2000, 0x1b11, 0x1b11, 0x2, 0x8, 0xc001c028a0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:780 +0x60
+bytes.(*Buffer).ReadFrom(0xc000a8a958, 0x3ef2f40, 0xc000f88980, 0x1479b65, 0x3623340, 0x3956d00)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bytes/buffer.go:204 +0xb4
+crypto/tls.(*Conn).readFromUntil(0xc000a8a700, 0x3ef64c0, 0xc000010220, 0x5, 0xc000010220, 0x22)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:802 +0xec
+crypto/tls.(*Conn).readRecordOrCCS(0xc000a8a700, 0x0, 0x0, 0x3)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:609 +0x124
+crypto/tls.(*Conn).readRecord(...)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:577
+crypto/tls.(*Conn).Read(0xc000a8a700, 0xc000b42000, 0x1000, 0x1000, 0x0, 0x0, 0x0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/crypto/tls/conn.go:1255 +0x161
+net/http.(*persistConn).Read(0xc00051cfc0, 0xc000b42000, 0x1000, 0x1000, 0xc0028deb40, 0xc001c02c20, 0x1474475)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1758 +0x75
+bufio.(*Reader).fill(0xc003b5cf60)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:100 +0x103
+bufio.(*Reader).Peek(0xc003b5cf60, 0x1, 0x0, 0x0, 0x1, 0xc00268da00, 0x561e980)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/bufio/bufio.go:138 +0x4f
+net/http.(*persistConn).readLoop(0xc00051cfc0)
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1911 +0x1d6
+created by net/http.(*Transport).dialConn
+	/root/.gimme/versions/go1.13.11.linux.amd64/src/net/http/transport.go:1580 +0xb0d

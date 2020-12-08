@@ -1,0 +1,7 @@
+init_config:
+instances: [{}]
+logs:
+   - type: file
+     path: C:\ProgramData\Datadog\logs\agent.log
+     service: datadog
+     source: datadog

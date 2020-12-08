@@ -1,0 +1,12 @@
+ConfigureErrors:
+  pdh_check (1.9.0):
+  - |
+    could not invoke 'pdh_check' python check constructor. New constructor API returned:
+    __init__() missing 1 required positional argument: 'agentConfig'Deprecated constructor API returned:
+    Traceback (most recent call last):
+      File "C:\Program Files\Datadog\Datadog Agent\embedded3\lib\site-packages\datadog_checks\pdh_check\pdh_check.py", line 24, in __init__
+        PDHBaseCheck.__init__(self, name, init_config, agentConfig, instances, counter_list)
+      File "C:\Program Files\Datadog\Datadog Agent\embedded3\lib\site-packages\datadog_checks\base\checks\win\winpdh_base.py", line 106, in __init__
+        raise AttributeError('No valid counters to collect')
+    AttributeError: No valid counters to collect
+Py3Warnings: {}

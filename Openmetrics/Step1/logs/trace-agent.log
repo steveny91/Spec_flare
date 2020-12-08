@@ -1,0 +1,4 @@
+2020-11-17 00:34:48 UTC | TRACE | INFO | (pkg/util/log/log.go:482 in func1) | Loaded configuration: /etc/datadog-agent/datadog.yaml
+2020-11-17 00:34:48 UTC | TRACE | INFO | (pkg/trace/agent/run.go:84 in Run) | trace-agent not enabled. Set the environment variable
+DD_APM_ENABLED=true or add "apm_config.enabled: true" entry
+to your datadog.yaml. Exiting...

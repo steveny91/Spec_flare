@@ -1,0 +1,334 @@
+===============
+Agent (v7.18.1)
+===============
+  Status date: 2020-08-31 02:27:33.426842 EDT
+  Agent start: 2020-08-31 02:25:16.103783 EDT
+  Pid: 23612
+  Go Version: go1.12.9
+  Python Version: 3.8.1
+  Build arch: amd64
+  Check Runners: 4
+  Log Level: debug
+  Paths
+  =====
+    Config File: C:\ProgramData\Datadog\datadog.yaml
+    conf.d: C:\ProgramData\Datadog\conf.d
+    checks.d: C:\ProgramData\Datadog\checks.d
+  Clocks
+  ======
+    NTP offset: -458.395ms
+    System UTC time: 2020-08-31 02:27:33.426842 EDT
+  Host Info
+  =========
+    bootTime: 2020-08-27 21:39:50.000000 EDT
+    os: windows
+    platform: Windows 10 Home
+    platformFamily: Windows 10 Home
+    platformVersion: 10.0 Build 18362
+    procs: 349
+    uptime: 76h45m25s
+  Hostnames
+  =========
+    hostname: DESKTOP-D6V56SV
+    socket-fqdn: DESKTOP-D6V56SV
+    socket-hostname: DESKTOP-D6V56SV
+    hostname provider: os
+    unused hostname providers:
+      aws: not retrieving hostname from AWS: the host is not an ECS instance, and other providers already retrieve non-default hostnames
+      configuration/environment: hostname is empty
+      gce: unable to retrieve hostname from GCE: Get http://169.254.169.254/computeMetadata/v1/instance/hostname: dial tcp 169.254.169.254:80: connectex: A socket operation was attempted to an unreachable network.
+  Metadata
+  ========
+    hostname_source: os
+=========
+Collector
+=========
+  Running Checks
+  ==============
+    cpu
+    ---
+      Instance ID: cpu [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\cpu.d\conf.yaml.default
+      Total Runs: 9
+      Metric Samples: Last Run: 7, Total: 57
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 0s
+      Last Execution Date : 2020-08-31 02:27:23.000000 EDT
+      Last Successful Execution Date : 2020-08-31 02:27:23.000000 EDT
+    disk (2.7.0)
+    ------------
+      Instance ID: disk:e5dffb8bef24336f [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\disk.d\conf.yaml.default
+      Total Runs: 9
+      Metric Samples: Last Run: 14, Total: 126
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 0s
+      Last Execution Date : 2020-08-31 02:27:30.000000 EDT
+      Last Successful Execution Date : 2020-08-31 02:27:30.000000 EDT
+    file_handle
+    -----------
+      Instance ID: file_handle [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\file_handle.d\conf.yaml.default
+      Total Runs: 9
+      Metric Samples: Last Run: 1, Total: 9
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 4ms
+      Last Execution Date : 2020-08-31 02:27:22.000000 EDT
+      Last Successful Execution Date : 2020-08-31 02:27:22.000000 EDT
+    io
+    --
+      Instance ID: io [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\io.d\conf.yaml.default
+      Total Runs: 9
+      Metric Samples: Last Run: 25, Total: 225
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 0s
+      Last Execution Date : 2020-08-31 02:27:29.000000 EDT
+      Last Successful Execution Date : 2020-08-31 02:27:29.000000 EDT
+    memory
+    ------
+      Instance ID: memory [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\memory.d\conf.yaml.default
+      Total Runs: 9
+      Metric Samples: Last Run: 17, Total: 153
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 3ms
+      Last Execution Date : 2020-08-31 02:27:21.000000 EDT
+      Last Successful Execution Date : 2020-08-31 02:27:21.000000 EDT
+    network (1.14.0)
+    ----------------
+      Instance ID: network:e0204ad63d43c949 [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\network.d\conf.yaml.default
+      Total Runs: 9
+      Metric Samples: Last Run: 48, Total: 432
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 2ms
+      Last Execution Date : 2020-08-31 02:27:28.000000 EDT
+      Last Successful Execution Date : 2020-08-31 02:27:28.000000 EDT
+    ntp
+    ---
+      Instance ID: ntp:d884b5186b651429 [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\ntp.d\conf.yaml.default
+      Total Runs: 1
+      Metric Samples: Last Run: 1, Total: 1
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 1, Total: 1
+      Average Execution Time : 5.267s
+      Last Execution Date : 2020-08-31 02:25:23.000000 EDT
+      Last Successful Execution Date : 2020-08-31 02:25:23.000000 EDT
+    oracle (2.0.0)
+    --------------
+      Instance ID: oracle:1dd7bd75e745f06b [ERROR]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\oracle.d\conf.yaml
+      Total Runs: 10
+      Metric Samples: Last Run: 0, Total: 0
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 1, Total: 10
+      Average Execution Time : 1ms
+      Last Execution Date : 2020-08-31 02:27:33.000000 EDT
+      Last Successful Execution Date : Never
+      Error: No JVM shared library file (jvm.dll) found. Try setting up the JAVA_HOME environment variable properly.
+      Traceback (most recent call last):
+        File "C:\Program Files\Datadog\Datadog Agent\embedded3\lib\site-packages\datadog_checks\base\checks\base.py", line 713, in run
+          self.check(instance)
+        File "C:\Program Files\Datadog\Datadog Agent\embedded3\lib\site-packages\datadog_checks\oracle\oracle.py", line 81, in check
+          self.create_connection()
+        File "C:\Program Files\Datadog\Datadog Agent\embedded3\lib\site-packages\datadog_checks\oracle\oracle.py", line 124, in create_connection
+          connection = jdb.connect(
+        File "C:\Program Files\Datadog\Datadog Agent\embedded3\lib\site-packages\jaydebeapi\__init__.py", line 401, in connect
+          jconn = _jdbc_connect(jclassname, url, driver_args, jars, libs)
+        File "C:\Program Files\Datadog\Datadog Agent\embedded3\lib\site-packages\jaydebeapi\__init__.py", line 177, in _jdbc_connect_jpype
+          jvm_path = jpype.getDefaultJVMPath()
+        File "C:\Program Files\Datadog\Datadog Agent\embedded3\lib\site-packages\jpype\_core.py", line 337, in getDefaultJVMPath
+          return finder.get_jvm_path()
+        File "C:\Program Files\Datadog\Datadog Agent\embedded3\lib\site-packages\jpype\_jvmfinder.py", line 181, in get_jvm_path
+          raise JVMNotFoundException("No JVM shared library file ({0}) "
+      jpype._jvmfinder.JVMNotFoundException: No JVM shared library file (jvm.dll) found. Try setting up the JAVA_HOME environment variable properly.
+    service (1.0.0)
+    ---------------
+      Instance ID: service:d884b5186b651429 [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\service.yaml
+      Total Runs: 9
+      Metric Samples: Last Run: 0, Total: 0
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 1, Total: 9
+      Average Execution Time : 0s
+      Last Execution Date : 2020-08-31 02:27:25.000000 EDT
+      Last Successful Execution Date : 2020-08-31 02:27:25.000000 EDT
+    uptime
+    ------
+      Instance ID: uptime [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\uptime.d\conf.yaml.default
+      Total Runs: 9
+      Metric Samples: Last Run: 1, Total: 9
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 0s
+      Last Execution Date : 2020-08-31 02:27:20.000000 EDT
+      Last Successful Execution Date : 2020-08-31 02:27:20.000000 EDT
+    winproc
+    -------
+      Instance ID: winproc [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\winproc.d\conf.yaml.default
+      Total Runs: 9
+      Metric Samples: Last Run: 2, Total: 18
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 4ms
+      Last Execution Date : 2020-08-31 02:27:27.000000 EDT
+      Last Successful Execution Date : 2020-08-31 02:27:27.000000 EDT
+    wmi_check (1.7.2)
+    -----------------
+      Instance ID: wmi_check:1f8c02f477e7e613 [ERROR]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\wmi_check.d\conf.yaml
+      Total Runs: 9
+      Metric Samples: Last Run: 0, Total: 0
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 392ms
+      Last Execution Date : 2020-08-31 02:27:31.000000 EDT
+      Last Successful Execution Date : Never
+      Error: 
+      Traceback (most recent call last):
+        File "C:\Program Files\Datadog\Datadog Agent\embedded3\lib\site-packages\datadog_checks\base\checks\base.py", line 713, in run
+          self.check(instance)
+        File "C:\Program Files\Datadog\Datadog Agent\embedded3\lib\site-packages\datadog_checks\wmi_check\wmi_check.py", line 71, in check
+          metrics = self._extract_metrics(wmi_sampler, tag_by, tag_queries, constant_tags)
+        File "C:\Program Files\Datadog\Datadog Agent\embedded3\lib\site-packages\datadog_checks\base\checks\win\wmi\__init__.py", line 165, in _extract_metrics
+          tags.append(self._get_tag_query_tag(wmi_sampler, wmi_obj, query))
+        File "C:\Program Files\Datadog\Datadog Agent\embedded3\lib\site-packages\datadog_checks\base\checks\win\wmi\__init__.py", line 123, in _get_tag_query_tag
+          self._raise_on_invalid_tag_query_result(tag_query_sampler, wmi_obj, tag_query)
+        File "C:\Program Files\Datadog\Datadog Agent\embedded3\lib\site-packages\datadog_checks\base\checks\win\wmi\__init__.py", line 101, in _raise_on_invalid_tag_query_result
+          raise TypeError
+      TypeError
+      Instance ID: wmi_check:b622eb805c30c1f5 [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\wmi_check.d\conf.yaml
+      Total Runs: 9
+      Metric Samples: Last Run: 2, Total: 18
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 62ms
+      Last Execution Date : 2020-08-31 02:27:32.000000 EDT
+      Last Successful Execution Date : 2020-08-31 02:27:32.000000 EDT
+      Instance ID: wmi_check:bee71cb6c1fcaf5 [OK]
+      Configuration Source: file:C:\ProgramData\Datadog\conf.d\wmi_check.d\conf.yaml
+      Total Runs: 9
+      Metric Samples: Last Run: 1,065, Total: 9,510
+      Events: Last Run: 0, Total: 0
+      Service Checks: Last Run: 0, Total: 0
+      Average Execution Time : 814ms
+      Last Execution Date : 2020-08-31 02:27:25.000000 EDT
+      Last Successful Execution Date : 2020-08-31 02:27:25.000000 EDT
+  Check Initialization Errors
+  ===========================
+      pdh_check (1.9.0)
+      -----------------
+      instance 0:
+        could not invoke 'pdh_check' python check constructor. New constructor API returned:
+__init__() missing 1 required positional argument: 'agentConfig'Deprecated constructor API returned:
+Traceback (most recent call last):
+  File "C:\Program Files\Datadog\Datadog Agent\embedded3\lib\site-packages\datadog_checks\pdh_check\pdh_check.py", line 24, in __init__
+    PDHBaseCheck.__init__(self, name, init_config, agentConfig, instances, counter_list)
+  File "C:\Program Files\Datadog\Datadog Agent\embedded3\lib\site-packages\datadog_checks\base\checks\win\winpdh_base.py", line 106, in __init__
+    raise AttributeError('No valid counters to collect')
+AttributeError: No valid counters to collect
+  Loading Errors
+  ==============
+    pdh_check
+    ---------
+      Core Check Loader:
+        Check pdh_check not found in Catalog
+      JMX Check Loader:
+        check is not a jmx check, or unable to determine if it's so
+      Python Check Loader:
+        Could not configure any python check pdh_check
+========
+JMXFetch
+========
+  Initialized checks
+  ==================
+    no checks
+  Failed checks
+  =============
+    no checks
+=========
+Forwarder
+=========
+  Transactions
+  ============
+    CheckRunsV1: 9
+    Dropped: 0
+    DroppedOnInput: 0
+    Events: 0
+    HostMetadata: 0
+    IntakeV1: 2
+    Metadata: 0
+    Requeued: 0
+    Retried: 0
+    RetryQueueSize: 0
+    Series: 0
+    ServiceChecks: 0
+    SketchSeries: 0
+    Success: 20
+    TimeseriesV1: 9
+  API Keys status
+  ===============
+    API key ending with c4a41: API Key valid
+==========
+Endpoints
+==========
+  https://app.datadoghq.com - API Key ending with:
+      - c4a41
+==========
+Logs Agent
+==========
+    Sending compressed logs in HTTPS to agent-http-intake.logs.datadoghq.com on port 0
+    BytesSent: 364069
+    EncodedBytesSent: 45689
+    LogsProcessed: 908
+    LogsSent: 878
+  apache
+  ------
+    Type: file
+    Path: C:\Users\GTX1080i7\AppData\Roaming\Logs\app.log
+    Status: Error: open C:\Users\GTX1080i7\AppData\Roaming\Logs\app.log: permission denied
+
+  service
+  -------
+    Type: file
+    Path: C:\ProgramData\Datadog\logs\agent.log
+    Status: OK
+    Inputs: C:\ProgramData\Datadog\logs\agent.log 
+=========
+Aggregator
+=========
+  Checks Metric Sample: 10,796
+  Dogstatsd Metric Sample: 597
+  Event: 1
+  Events Flushed: 1
+  Number Of Flushes: 9
+  Series Flushed: 10,824
+  Service Check: 139
+  Service Checks Flushed: 144
+=========
+DogStatsD
+=========
+  Event Packets: 0
+  Event Parse Errors: 0
+  Metric Packets: 596
+  Metric Parse Errors: 0
+  Service Check Packets: 0
+  Service Check Parse Errors: 0
+  Udp Bytes: 38,414
+  Udp Packet Reading Errors: 0
+  Udp Packets: 597
+  Uds Bytes: 0
+  Uds Origin Detection Errors: 0
+  Uds Packet Reading Errors: 0
+  Uds Packets: 0
